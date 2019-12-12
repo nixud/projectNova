@@ -1,0 +1,16 @@
+﻿public enum RareLevel {
+    S,
+    A,
+    B,
+    C,
+    D,
+    E,
+    SSSS,
+    SSS,
+    SS,
+    Special0,
+    Special1,
+    Special2,
+    Special3,
+    Special4,
+}
