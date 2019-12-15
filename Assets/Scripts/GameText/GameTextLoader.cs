@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class GameTextLoader
 {
-    TextAsset textAsset = new TextAsset();
+    private string[][] Array;
+    string[] lineArray;
+
     public GameTextLoader() {
-        textAsset = Resources.Load("GameText/GameText",typeof(TextAsset)) as TextAsset;
+        //读取csv二进制文件  
+        TextAsset binAsset = Resources.Load("GameText/GameText", typeof(TextAsset)) as TextAsset;
+
+        string tes = binAsset.text.Replace("<br />\n", "").Replace("\n", "");
+
+        //读取每一行的内容  
+        lineArray = tes.Split("\r"[0]);
+
+        //创建二维数组  
+        Array = new string[lineArray.Length][];
+
+        //把csv中的数据储存在二位数组中  
+        for (int i = 0; i < lineArray.Length; i++)
+        {
+            Array[i] = lineArray[i].Split(',');
+        }
+
     }
     public string GetText(int number) {
-        string text = textAsset.ToString();
-        string[] s = text.Split('\n',',');
-        for (int i = 0; i < s.Length; i++) {
-            if (s[i] == number.ToString()) return s[i + 1];
+
+        for (int i = 0; i < lineArray.Length; i++) {
+            if (Array[i][0] == number.ToString()) return Array[i][1];
         }
         return "null";
     }

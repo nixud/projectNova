@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 136132031}
   - component: {fileID: 136132030}
   - component: {fileID: 136132033}
+  - component: {fileID: 136132034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -293,6 +294,18 @@ MonoBehaviour:
   Ship: {fileID: 1621733684}
   ShipInformation: {fileID: 739028165}
   ShipPic: {fileID: 738118924}
+--- !u!114 &136132034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136132029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e7bfef35232c2409a06d9bf0d210d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &258056398
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +461,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598160855}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: ShipPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598160855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +586,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641255396}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: CommanderGroupPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &641255396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1175,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764378004}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: ShipPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764378004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1829,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1493132332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: CommanderGroupPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1493132332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,7 +2376,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779241871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: CommanderPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1779241871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2587,7 +2655,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1917881384}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136132033}
+        m_MethodName: CommanderPicChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1917881384
 MonoBehaviour:
   m_ObjectHideFlags: 0
