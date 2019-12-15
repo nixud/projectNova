@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStatus
+public class PlayerStatus : MonoBehaviour
 {
     private static PlayerStatus instance = null;
     private static readonly object padlock = new object();
@@ -34,12 +34,17 @@ public class PlayerStatus
         int FrontPic;
         int BackPic;
     };
+
+    private int CommanderPicNumber;
+    private int CommanderGroupPicNumber;
+
     public int StarCoins;
 
     public int Fuel;
 
     private Ship ship;
     private Plugin plugin;
+
     private List<Weapon> weapons;
     private List<Plugin> plugins;
     private List<Item> items;
