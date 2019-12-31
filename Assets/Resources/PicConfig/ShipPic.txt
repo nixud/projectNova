@@ -1,4 +1,3 @@
 2
-Images/CommanderPic/
-portrait_corporate02
-portrait_corporate05
+Images/ShipPic/
+Ship1

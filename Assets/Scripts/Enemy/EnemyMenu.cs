@@ -13,9 +13,9 @@ public class EnemyMenu : EditorWindow
 
     static string[] selStrings;
 
-    static bool SaveError = false;
-    static bool SaveErrorTemp = false;
-    static bool NoWeapon = false;
+    //static bool SaveError = false;
+    //static bool SaveErrorTemp = false;
+    //static bool NoWeapon = false;
 
     static int selGridInt = 0;
     static int selGridInttemp = 0;
@@ -75,7 +75,7 @@ public class EnemyMenu : EditorWindow
     }
     static void AddEnemy()
     {
-        SaveError = false;
+        //SaveError = false;
 
         enemy = new Enemy();
         enemy.Number = "";
@@ -139,11 +139,11 @@ public class EnemyMenu : EditorWindow
     }
     public void DeleteData(int index, List<Enemy> enemylist)
     {
-        SaveError = false;
+        //SaveError = false;
 
         SaveData(enemy);
 
-        SaveError = false;
+        //SaveError = false;
 
         enemylist.RemoveAt(index);
         JsonLoader<Enemy> loader = new JsonLoader<Enemy>();

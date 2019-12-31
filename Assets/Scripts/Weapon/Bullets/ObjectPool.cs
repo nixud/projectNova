@@ -96,7 +96,7 @@ public class ObjectPool
     /// <param name="objName"></param>
     public void RecycleObj(GameObject obj)
     {
-        if (obj.active == true)
+        if (obj.activeSelf == true)
         {
             //设置为非激活
             obj.SetActive(false);

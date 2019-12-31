@@ -34,6 +34,8 @@ public class SetPlayerInfo : MonoBehaviour
         CommanderPic.GetComponent<Image>().sprite = PicImageLoader.GetPic(PicNumber1);
         CommanderGroupPic.GetComponent<Image>().sprite = GroupPicImageLoader.GetPic(PicNumber2);
         ShipPic.GetComponent<Image>().sprite = ShipPicImageLoader.GetPic(PicNumber3);
+
+        ShipInformation.GetComponent<Text>().text = new GameTextLoader("ShipInfo").GetText(ShipPicImageLoader.GetSring(PicNumber3));
     }
 
     public void CommanderPicChange(int ChangeNum) {
@@ -64,6 +66,8 @@ public class SetPlayerInfo : MonoBehaviour
             {
                 PicNumber3 += ChangeNum;
                 ShipPic.GetComponent<Image>().sprite = ShipPicImageLoader.GetPic(PicNumber3);
+                ShipInformation.GetComponent<Text>().text = new GameTextLoader("ShipInfo").GetText(ShipPicImageLoader.GetSring(PicNumber3));
+
             }
         }
     }

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class NewBehaviourScript : MonoBehaviour
 {
     public AnimationCurve test;
-    bool isMoveToTarget = true;
+    //bool isMoveToTarget = true;
     // Start is called before the first frame update
     void Start()
     {

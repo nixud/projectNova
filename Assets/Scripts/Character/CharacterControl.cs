@@ -15,6 +15,9 @@ public class CharacterControl : MonoBehaviour
     public GameObject ShootPosition;
 
     public Ship ship;
+    private float playerHP = 3;
+
+    public UIcontroller uIcontroller;
 
     WeaponControl weaponControl;
 
@@ -26,6 +29,10 @@ public class CharacterControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
+        uIcontroller.Init(4);
+        uIcontroller.AddArmor();
+
         UserConfig.Instance.SetAutoFire(IsAutoFire);
 
         gameCamera = Camera.main.GetComponent<GameCamera>();
@@ -89,5 +96,20 @@ public class CharacterControl : MonoBehaviour
     {
         weaponControl.StopRay();
     }
+    public void DecHP()
+    {
+        PlayerHittedEffect();
+        playerHP -= 0.5f;
+        if (playerHP <= 0.01f)
+        {
+            PlayerDead();
+        }
+        uIcontroller--;
+    }
+    public void PlayerHittedEffect() {
 
+    }
+    public void PlayerDead() {
+        Debug.Log("IsDead");
+    }
 }

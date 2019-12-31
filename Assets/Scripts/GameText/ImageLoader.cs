@@ -23,4 +23,8 @@ public class ImageLoader
     public int GetNum() {
         return picNumber;
     }
+
+    public string GetSring(int num) {
+        return s[num + 1];
+    }
 }

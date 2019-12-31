@@ -7,7 +7,7 @@ public class Ship
     public string Number;
     public string Name;
     public string Description;
-    public int MaxHealth;
+    public float MaxHealth;
     public int MaxArmor;
     public int MaxFuel;
     public int WeaponMountNumber;

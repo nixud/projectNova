@@ -7,9 +7,9 @@ public class GameTextLoader
     private string[][] Array;
     string[] lineArray;
 
-    public GameTextLoader() {
+    public GameTextLoader(string Type) {
         //读取csv二进制文件  
-        TextAsset binAsset = Resources.Load("GameText/GameText", typeof(TextAsset)) as TextAsset;
+        TextAsset binAsset = Resources.Load("GameText/" + Type, typeof(TextAsset)) as TextAsset;
 
         string tes = binAsset.text.Replace("<br />\n", "").Replace("\n", "");
 
@@ -26,7 +26,7 @@ public class GameTextLoader
         }
 
     }
-    public string GetText(int number) {
+    public string GetText(string number) {
 
         for (int i = 0; i < lineArray.Length; i++) {
             if (Array[i][0] == number.ToString()) return Array[i][1];

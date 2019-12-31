@@ -14,13 +14,13 @@ public class ItemMenu : EditorWindow
     static string[] selStrings;
 
     static bool SaveError = false;
-    static bool SaveErrorTemp = false;
-    static bool NoWeapon = false;
+    //static bool SaveErrorTemp = false;
+    //static bool NoWeapon = false;
 
     static int selGridInt = 0;
     static int selGridInttemp = 0;
 
-    RareLevel rareLevel = RareLevel.E;
+    //RareLevel rareLevel = RareLevel.E;
 
     [MenuItem("Nova/ItemEditor", false, 0)]
     static void Init()

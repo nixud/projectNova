@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class WeaponControl : MonoBehaviour
 {
-    Weapon weapon;
-    GameObject bullet;
-    GameObject ray;
+    [HideInInspector]
+    public Weapon weapon;
+    [HideInInspector]
+    public GameObject bullet;
+    [HideInInspector]
+    public GameObject ray;
 
     bool IsInCD;
     bool IsRayhiting;

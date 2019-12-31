@@ -27,7 +27,7 @@ public class GameCamera : MonoBehaviour
         if (cameraWidth != devWidth)
         {
             orthographicSize = devWidth / (2 * aspectRatio);
-            Debug.Log("new orthographicSize = " + orthographicSize);
+            //Debug.Log("new orthographicSize = " + orthographicSize);
             this.GetComponent<Camera>().orthographicSize = orthographicSize;
         }
 

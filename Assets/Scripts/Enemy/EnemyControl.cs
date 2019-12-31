@@ -8,9 +8,9 @@ public class EnemyControl : MonoBehaviour
 
     public string DestoryEffect;
 
-    private bool IsNotRecycled = false;
+    private bool IsNotRecycled = true;
 
-    public void Hitted(int hp)
+    public void Hitted(float hp)
     {
         HP -= hp;
         if (HP <= 0) RecycleNow();
@@ -20,7 +20,7 @@ public class EnemyControl : MonoBehaviour
     {
         if (IsNotRecycled)
         {
-            if (DestoryEffect != null)
+            if (DestoryEffect != null && DestoryEffect!="")
             {
                 GameObject shootHitEffect = ObjectPool.GetInstance().GetObj(DestoryEffect, "EnemyDestoryEffects");
                 shootHitEffect.transform.position = transform.position;

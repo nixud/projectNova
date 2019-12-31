@@ -7,11 +7,11 @@ using System.Collections.Generic;
 
 public class WeaponMenu : EditorWindow
 {
-    int number = 0;
+    //int number = 0;
 
     bool SaveError = false;
     bool SaveErrorTemp = false;
-    bool NoWeapon = false;
+    //bool NoWeapon = false;
 
     int SpecialNumber;
 

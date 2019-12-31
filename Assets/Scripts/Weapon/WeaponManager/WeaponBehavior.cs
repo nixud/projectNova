@@ -18,6 +18,10 @@ public class WeaponBehavior : MonoBehaviour
     bool IsRayhiting;
     bool IsRayOn;
 
+    public WeaponBehavior(Weapon w) {
+        weapon = w;
+    }
+
     public virtual void Shoot(Vector3 shootPosition, Vector3 shootForward) {
         if (!IsInCD)
         {

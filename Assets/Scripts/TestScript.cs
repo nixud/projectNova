@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
+    //public UIcontroller uIcontroller;
     // Start is called before the first frame update
     void Start()
     {
-        GameTextLoader gameTextLoader = new GameTextLoader();
-        Debug.Log(gameTextLoader.GetText(1));
+        //uIcontroller.Init(5);
+        
+
+        // GameTextLoader gameTextLoader = new GameTextLoader("GameText");
+        //Debug.Log(gameTextLoader.GetText(1));
     }
 }

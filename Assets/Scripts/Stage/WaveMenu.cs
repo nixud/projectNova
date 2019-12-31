@@ -14,8 +14,8 @@ public class WaveMenu : EditorWindow
     static string[] selStrings;
 
     static bool SaveError = false;
-    static bool SaveErrorTemp = false;
-    static bool NoWeapon = false;
+    //static bool SaveErrorTemp = false;
+    //static bool NoWeapon = false;
 
     static int selGridInt = 0;
     static int selGridInttemp = 0;

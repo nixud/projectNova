@@ -126,7 +126,8 @@ public class BeamScript : MonoBehaviour {
 
     void ShootBeamInDir(Vector3 start, Vector3 dir)
     {
-        line.SetVertexCount(2);
+        line.positionCount = 2;
+        //line.SetVertexCount(2);
         line.SetPosition(0, start);
         beamStart.transform.position = start;
 

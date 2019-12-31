@@ -18,9 +18,9 @@ public class RayCreater : MonoBehaviour
     //定义一个Vector3,用来存储鼠标点击的位置
     private Vector3 position;
     //用来索引端点
-    private int index = 0;
+    //private int index = 0;
     //端点数
-    private int LengthOfLineRenderer = 0;
+    //private int LengthOfLineRenderer = 0;
 
     void Start()
     {
@@ -33,9 +33,12 @@ public class RayCreater : MonoBehaviour
         Texture texture = Resources.Load("1", typeof(Texture)) as Texture;
         lineRenderer.material.SetTexture("_MainTex", RayTexture);
         //设置颜色
-        lineRenderer.SetColors(Color.red, Color.yellow);
+        lineRenderer.startColor = Color.red;
+        lineRenderer.endColor = Color.yellow;
+
         //设置宽度
-        lineRenderer.SetWidth(RayWidth, RayWidth);
+        lineRenderer.startWidth = RayWidth;
+        lineRenderer.endWidth = RayWidth;
 
     }
 }

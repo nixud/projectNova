@@ -106,14 +106,14 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnEnable() {
-        //StartCoroutine(AutoRecycle());
-        Target = GameObject.Find("New Sprite").transform;
+        StartCoroutine(AutoRecycle());
+        //Target = GameObject.Find("New Sprite").transform;
         IsNotRecycled = true;
     }
 
     IEnumerator AutoRecycle()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(15f);
 
         RecycleNow();
     }
@@ -144,8 +144,15 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.GetComponent<EnemyControl>().HP -= Damage;
-        HitRecycleNow();
+        if (isPlayerBullet && (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss"))
+        {
+            collision.gameObject.GetComponent<EnemyControl>().Hitted(Damage);
+            HitRecycleNow();
+        }
+        else if (!isPlayerBullet && collision.gameObject.tag == "Player") {
+            collision.gameObject.GetComponent<CharacterControl>().DecHP();
+            HitRecycleNow();
+        }
     }
 
 }
