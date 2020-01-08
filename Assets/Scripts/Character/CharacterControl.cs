@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterControl : MonoBehaviour
 {
@@ -21,16 +22,23 @@ public class CharacterControl : MonoBehaviour
 
     WeaponControl weaponControl;
 
+    ScoreData scoreData;
+
     float devWidth;
     float devHeight;
 
     public bool IsAutoFire;
     public string WeaponName;
+
+    float itemTime = 0;
+    bool isUsingItem = false;
     // Start is called before the first frame update
     void Start()
     {
+        scoreData = ScoreData.Instance;
+
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
-        uIcontroller.Init(4);
+        uIcontroller.Init((int)playerHP);
         uIcontroller.AddArmor();
 
         UserConfig.Instance.SetAutoFire(IsAutoFire);
@@ -67,6 +75,12 @@ public class CharacterControl : MonoBehaviour
         if (Mathf.Abs(newPosi.y) >= devHeight)
             MoveDir = new Vector3(MoveDir.x, 0, MoveDir.z);
         gameObject.transform.Translate(MoveDir * speed);
+
+        if (scoreData.levelScore >= 10)
+        {
+            SceneManager.LoadScene("ScoreBroad");
+            ObjectPool.GetInstance().EmptyPool();
+        }
     }
 
     public void SetPosition(Vector3 position) {
@@ -110,6 +124,7 @@ public class CharacterControl : MonoBehaviour
 
     }
     public void PlayerDead() {
-        Debug.Log("IsDead");
+        SceneManager.LoadScene("ScoreBroadFailed");
+        ObjectPool.GetInstance().EmptyPool();
     }
 }

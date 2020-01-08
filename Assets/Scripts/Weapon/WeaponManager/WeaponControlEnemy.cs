@@ -7,6 +7,18 @@ public class WeaponControlEnemy : WeaponControl
 {
     private Vector3 shootPoint;
     public string WeaponName;
+
+    /*
+    private bool IsNotRecycled = false;
+    private void OnEnable()
+    {
+        IsNotRecycled = true;
+    }
+    private void OnDisable()
+    {
+        IsNotRecycled = false;
+    }*/
+
     private void Start()
     {
         LoadWeapon(WeaponName);
@@ -17,7 +29,10 @@ public class WeaponControlEnemy : WeaponControl
     }
     private void Update()
     {
-        Shoot(transform.position - new Vector3(0,0.4f,0),Vector3.down);
+        //if(IsNotRecycled)
+        //    Shoot(transform.position - new Vector3(0,0.4f,0),Vector3.down);
     }
-
+    public void ShootBehaviour() {
+        Shoot(transform.position - new Vector3(0, 0.4f, 0), Vector3.down);
+    }
 }

@@ -115,4 +115,9 @@ public class ObjectPool
 
     }
 
+    public void EmptyPool() {
+        pool.Clear();
+        prefabs.Clear();
+    }
+
 }

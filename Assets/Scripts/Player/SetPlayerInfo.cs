@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SetPlayerInfo : MonoBehaviour
 {
@@ -70,5 +71,9 @@ public class SetPlayerInfo : MonoBehaviour
 
             }
         }
+    }
+
+    public void EnterGame() {
+        SceneManager.LoadScene("MapTest");
     }
 }

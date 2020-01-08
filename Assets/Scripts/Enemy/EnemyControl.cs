@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
-    public float HP = 100;
+    public float HP = 10;
+    public float maxHP = 10;
 
     public string DestoryEffect;
 
-    private bool IsNotRecycled = true;
+    public bool IsNotRecycled = true;
 
     public void Hitted(float hp)
     {
@@ -16,7 +17,13 @@ public class EnemyControl : MonoBehaviour
         if (HP <= 0) RecycleNow();
     }
 
-    void RecycleNow()
+    public void Awake()
+    {
+        HP = maxHP;
+        IsNotRecycled = true;
+    }
+    /*
+    public void RecycleNow()
     {
         if (IsNotRecycled)
         {
@@ -26,7 +33,13 @@ public class EnemyControl : MonoBehaviour
                 shootHitEffect.transform.position = transform.position;
             }
             ObjectPool.GetInstance().RecycleObj(gameObject);
+            HP = maxHP;
             IsNotRecycled = false;
         }
+    }*/
+    public void RecycleNow()
+    {
+        Destroy(gameObject);
+        ScoreData.Instance.levelScore++;
     }
 }

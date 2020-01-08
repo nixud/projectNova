@@ -20,42 +20,71 @@ public class UIcontroller : MonoBehaviour
     public void Init(int bloodsNum) {
         bloodsNumMax = bloodsNum;
         bloodsNow = bloodsNumMax * 2;
-        for (int i = 0; i < bloodsNum; i++) {
-            bloods[i].GetComponent<Image>().sprite = FullBlood;
+        if (bloodsNum <= bloods.Count)
+        {
+            for (int i = 0; i < bloodsNum; i++)
+            {
+                bloods[i].GetComponent<Image>().sprite = FullBlood;
+            }
+            for (int i = bloodsNum; i < bloods.Count; i++)
+                bloods[i].SetActive(false);
         }
-        for (int i = bloodsNum; i < bloods.Count; i++)
-            bloods[i].SetActive(false);
+        else {
+            for (int i = 0; i < bloods.Count; i++)
+            {
+                bloods[i].GetComponent<Image>().sprite = FullBlood;
+            }
+        }
     }
 
     public void AddArmor() {
         ArmorNum++;
-        for (int i = bloodsNumMax; i < bloodsNumMax + ArmorNum; i++)
+        if (bloodsNumMax + ArmorNum <= bloods.Count)
         {
-            bloods[i].SetActive(true);
-            bloods[i].GetComponent<Image>().sprite = Armor;
+            for (int i = bloodsNumMax; i < bloodsNumMax + ArmorNum; i++)
+            {
+                bloods[i].SetActive(true);
+                bloods[i].GetComponent<Image>().sprite = Armor;
+            }
         }
+
     }
 
     public void DestoryArmor() {
         if (ArmorNum > 0) ArmorNum--;
-        bloods[bloodsNumMax + ArmorNum].SetActive(false);
+        if(bloodsNumMax + ArmorNum<= bloods.Count)
+            bloods[bloodsNumMax + ArmorNum].SetActive(false);
     }
 
     public void DestroyAllArmor()
     {
         ArmorNum = 0;
-        for (int i = bloodsNumMax; i < bloods.Count; i++) {
-            bloods[i].SetActive(false);
-        }
+        if (bloodsNumMax <= bloods.Count)
+            for (int i = bloodsNumMax; i < bloods.Count; i++) {
+                bloods[i].SetActive(false);
+            }
     }
 
     public void FreshBlood(){
-        for (int i=0;i<(bloodsNow/2);i++) {
-            bloods[i].GetComponent<Image>().sprite = FullBlood;
+        if (bloodsNumMax <= bloods.Count && bloodsNow <= bloods.Count)
+        {
+            for (int i = 0; i < (bloodsNow / 2); i++)
+            {
+                bloods[i].GetComponent<Image>().sprite = FullBlood;
+            }
+            for (int i = bloodsNow / 2; i < bloodsNumMax; i++)
+                bloods[i].GetComponent<Image>().sprite = EmptyBlood;
+            if (bloodsNow % 2 == 1) bloods[bloodsNow / 2].GetComponent<Image>().sprite = HalfBlood;
         }
-        for (int i = bloodsNow / 2; i < bloodsNumMax; i++)
-            bloods[i].GetComponent<Image>().sprite = EmptyBlood;
-        if (bloodsNow % 2 == 1) bloods[bloodsNow / 2].GetComponent<Image>().sprite = HalfBlood;
+        else {
+            for (int i = 0; i < (bloodsNow / 2); i++)
+            {
+                bloods[i].GetComponent<Image>().sprite = FullBlood;
+            }
+            for (int i = bloodsNow / 2; i < bloods.Count; i++)
+                bloods[i].GetComponent<Image>().sprite = EmptyBlood;
+            if (bloodsNow % 2 == 1) bloods[bloodsNow / 2].GetComponent<Image>().sprite = HalfBlood;
+        }
     }
 
     public static UIcontroller operator -- (UIcontroller uIcontroller) {

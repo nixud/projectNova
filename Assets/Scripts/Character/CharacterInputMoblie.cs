@@ -97,4 +97,8 @@ public class CharacterInputMoblie : MonoBehaviour
         characterControl.StopRay();
         isButtonDown = false;
     }
+
+    public void UseItem() {
+
+    }
 }
