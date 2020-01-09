@@ -38,9 +38,9 @@ public class PlayerStatus : MonoBehaviour
     private int CommanderPicNumber;
     private int CommanderGroupPicNumber;
 
-    public int StarCoins;
+    public int StarCoins = 233;
 
-    public int Fuel;
+    public int Fuel = 114;
 
     private Ship ship;
     private Plugin plugin;
