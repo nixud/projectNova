@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6606226724523506239}
   - component: {fileID: 6606226724523506368}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: test
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
+  maxHP: 10
   DestoryEffect: 
+  IsNotRecycled: 1
 --- !u!114 &6606226724523506238
 MonoBehaviour:
   m_ObjectHideFlags: 0

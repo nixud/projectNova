@@ -4571,7 +4571,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111432}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4580,7 +4580,7 @@ Transform:
   - {fileID: 464546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114229467745938250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4600,18 +4600,18 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -4631,9 +4631,9 @@ MonoBehaviour:
   SplitNum: 2
   Issplit: 1
   SplitBulletNumber: TorchFirePurple
-  splitRange: 5
+  splitRange: 6
   Accuracy: 0.5
-  ShotgunNum: 3
+  ShotgunNum: 6
   ShotgunRandomNum: 1
   SplitedNum: 0
   splitedRange: 1
