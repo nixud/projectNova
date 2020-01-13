@@ -113,7 +113,7 @@ public class Bullet : MonoBehaviour
 
     IEnumerator AutoRecycle()
     {
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(10f);
 
         RecycleNow();
     }
@@ -125,6 +125,7 @@ public class Bullet : MonoBehaviour
                 GameObject shootHitEffect = ObjectPool.GetInstance().GetObj(DestoryEffect, "BulletEffects");
                 shootHitEffect.transform.position = transform.position;
             }
+            Nowtime = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
         }
@@ -138,6 +139,7 @@ public class Bullet : MonoBehaviour
                 GameObject shootHitEffect = ObjectPool.GetInstance().GetObj(HitEffect, "BulletEffects");
                 shootHitEffect.transform.position = transform.position;
             }
+            Nowtime = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
         }
