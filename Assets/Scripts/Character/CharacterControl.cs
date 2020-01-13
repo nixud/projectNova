@@ -85,8 +85,7 @@ public class CharacterControl : MonoBehaviour
 
         if (scoreData.levelScore >= 10)
         {
-            SceneManager.LoadScene("ScoreBroad");
-            ObjectPool.GetInstance().EmptyPool();
+            PlayerDead();
         }
     }
 

@@ -117,7 +117,9 @@ public class ObjectPool
 
     public void EmptyPool() {
         pool.Clear();
+        Debug.Log(pool.Count);
         prefabs.Clear();
+        Debug.Log(prefabs.Count);
     }
 
 }
