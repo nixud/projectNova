@@ -1316,6 +1316,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1353,7 +1354,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.17822178, g: 0.27400765, b: 0.4245283, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1411,6 +1412,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6b7f0369823574b98a37da718ea2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f053d9bc5b3ea7438b0ac4a10c65799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiny: []
+  small:
+  - {fileID: 21300000, guid: 96baaa8110a817b4d95743a1d016d2a6, type: 3}
+  ScrollSpeed: 0.4
+  SpawnNumber: 50
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0

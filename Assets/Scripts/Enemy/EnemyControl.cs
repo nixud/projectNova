@@ -11,7 +11,7 @@ public class EnemyControl : MonoBehaviour
 
     public bool IsNotRecycled = true;
 
-    public void Hitted(float hp)
+    public virtual void Hitted(float hp)
     {
         HP -= hp;
         if (HP <= 0) RecycleNow();

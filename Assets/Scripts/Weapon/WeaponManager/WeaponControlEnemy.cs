@@ -27,11 +27,7 @@ public class WeaponControlEnemy : WeaponControl
             ray = ObjectPool.GetInstance().GetObj(weapon.RayNumber, "Bullets");
         }
     }
-    private void Update()
-    {
-        //if(IsNotRecycled)
-        //    Shoot(transform.position - new Vector3(0,0.4f,0),Vector3.down);
-    }
+
     public void ShootBehaviour() {
         Shoot(transform.position - new Vector3(0, 0.4f, 0), Vector3.down);
     }
