@@ -880,7 +880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430462698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.37, z: 0}
+  m_LocalPosition: {x: 0.69, y: 1.37, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1396354086}
@@ -1712,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475154, guid: e6cfe8f2b0ae3124ba05cdb797b3b5f6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 475154, guid: e6cfe8f2b0ae3124ba05cdb797b3b5f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2747,7 +2747,6 @@ GameObject:
   - component: {fileID: 1396354085}
   - component: {fileID: 1396354088}
   - component: {fileID: 1396354087}
-  - component: {fileID: 1396354089}
   - component: {fileID: 1396354090}
   - component: {fileID: 1396354091}
   - component: {fileID: 1396354092}
@@ -2818,6 +2817,7 @@ Transform:
   m_LocalScale: {x: 0.64871997, y: 0.64871997, z: 0.64871997}
   m_Children:
   - {fileID: 430462699}
+  - {fileID: 1506913481}
   - {fileID: 1833770771}
   - {fileID: 1165203392}
   - {fileID: 1647202360}
@@ -2836,7 +2836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8b213df08e20b4b8f31123d223c676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootPosition: {fileID: 430462698}
 --- !u!114 &1396354088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2855,24 +2854,14 @@ MonoBehaviour:
   PositionBasic: {x: 0, y: 0, z: 0}
   gameCamera: {fileID: 0}
   ShootButton: {fileID: 1264550598}
-  ShootPosition: {fileID: 430462698}
   uIcontroller: {fileID: 0}
+  shootPoints:
+  - {fileID: 430462698}
+  - {fileID: 1506913480}
   IsAutoFire: 0
-  WeaponName: testWeapon
---- !u!114 &1396354089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396354084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86e4dd835b2f46348b011281c467111f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  ray: {fileID: 0}
+  WeaponName:
+  - testWeapon
+  - testWeapon
 --- !u!114 &1396354090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2885,7 +2874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a0aaf0a8f7c92408b2f8a3ee827eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootPosition: {fileID: 430462698}
   gameCamera: {fileID: 0}
 --- !u!61 &1396354091
 BoxCollider2D:
@@ -3580,7 +3568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441788, guid: f4bf11c9d706d57469304374d50db93e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 441788, guid: f4bf11c9d706d57469304374d50db93e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3768,6 +3756,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500455063}
   m_CullTransparentMesh: 0
+--- !u!1 &1506913480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506913481}
+  m_Layer: 0
+  m_Name: PlayerFirePoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506913481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506913480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.76, y: 1.43, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 1396354086}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1574290962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4458,7 +4476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475154, guid: e6cfe8f2b0ae3124ba05cdb797b3b5f6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 475154, guid: e6cfe8f2b0ae3124ba05cdb797b3b5f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

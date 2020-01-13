@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,14 +14,14 @@ public class CharacterControl : MonoBehaviour
 
     public GameCamera gameCamera;
     public GameObject ShootButton;
-    public GameObject ShootPosition;
 
     public Ship ship;
     private float playerHP = 3;
 
     public UIcontroller uIcontroller;
 
-    WeaponControl weaponControl;
+    List<WeaponControl> weaponControl = new List<WeaponControl>();
+    public List<GameObject> shootPoints = new List<GameObject>();
 
     ScoreData scoreData;
 
@@ -28,13 +29,16 @@ public class CharacterControl : MonoBehaviour
     float devHeight;
 
     public bool IsAutoFire;
-    public string WeaponName;
+    public List<string> WeaponName = new List<string>();
 
     float itemTime = 0;
     bool isUsingItem = false;
     // Start is called before the first frame update
     void Start()
     {
+        if (shootPoints.Count != WeaponName.Count)
+            throw new Exception();
+
         scoreData = ScoreData.Instance;
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
@@ -52,8 +56,11 @@ public class CharacterControl : MonoBehaviour
 
         PositionBasic = Character.transform.position;
 
-        weaponControl = gameObject.GetComponent<WeaponControl>();
-        weaponControl.LoadWeapon(WeaponName);
+        for (int i = 0; i < WeaponName.Count; i++)
+        {
+            weaponControl.Add(gameObject.AddComponent<WeaponControl>());
+            weaponControl[i].LoadWeapon(WeaponName[i]);
+        }
 
         if (UserConfig.Instance.GetAutoFire() == true)
         {
@@ -66,7 +73,7 @@ public class CharacterControl : MonoBehaviour
     void FixedUpdate()
     {
         if (UserConfig.Instance.GetAutoFire() == true) {
-            Shoot(ShootPosition.transform.position);
+            Shoot();
         }
 
         Vector3 newPosi = Character.transform.position + MoveDir*speed;
@@ -100,15 +107,18 @@ public class CharacterControl : MonoBehaviour
     public void SetPositionEnd() {
         PositionBasic = gameObject.transform.position;
     }
-    public void Shoot(Vector3 position) {
-        weaponControl.Shoot(position, Vector3.up);
+    public void Shoot() {
+        for(int i=0;i<weaponControl.Count;i++)
+            weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
     }
     public void StartRay() {
-        weaponControl.StartRay();
+        for (int i = 0; i < weaponControl.Count; i++)
+            weaponControl[i].StartRay();
     }
     public void StopRay()
     {
-        weaponControl.StopRay();
+        for (int i = 0; i < weaponControl.Count; i++)
+            weaponControl[i].StopRay();
     }
     public void DecHP()
     {

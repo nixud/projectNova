@@ -6,7 +6,6 @@ public class CharacterInput : MonoBehaviour
 {
     CharacterControl characterControl;
     Vector3 moveDir = new Vector3(0, 0, 0);
-    public GameObject ShootPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +17,7 @@ public class CharacterInput : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
-            characterControl.Shoot(ShootPosition.transform.position);
+            characterControl.Shoot();
 
         moveDir = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.W) && moveDir.y<=0)

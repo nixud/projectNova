@@ -7,7 +7,6 @@ public class CharacterInputMoblie : MonoBehaviour
     CharacterControl characterControl;
 
     Vector3 moveDir = new Vector3(0, 0, 0);
-    public GameObject ShootPosition;
 
     Vector3 touchPosition = new Vector3(0,0,0);
     bool isTouching = false;
@@ -84,7 +83,7 @@ public class CharacterInputMoblie : MonoBehaviour
     }
 #endif
     public void Shoot() {
-        characterControl.Shoot(ShootPosition.transform.position);
+        characterControl.Shoot();
     }
 
     public void ButtonDown()

@@ -52,7 +52,7 @@ public class Bullet : MonoBehaviour
         SplitedScale = 1;
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         if (IsNotRecycled) {
             Nowtime += Time.deltaTime;
             NowSpeed = Speed.Evaluate(Nowtime);

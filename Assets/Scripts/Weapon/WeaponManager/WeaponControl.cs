@@ -72,7 +72,10 @@ public class WeaponControl : MonoBehaviour
     }
 
     public void StartRay() {
-        IsRayOn = true;
+        if (weapon.isRay)
+        {
+            IsRayOn = true;
+        }
     }
 
     public void StopRay() {

@@ -12,7 +12,6 @@ public class BossControl : EnemyControl
     }
     public override void Hitted(float hp)
     {
-        Debug.Log("hhh");
         HP -= hp;
         BossBlood.GetComponent<Slider>().value = Mathf.Clamp01(HP / maxHP);
         if (HP <= 0) RecycleNow();
