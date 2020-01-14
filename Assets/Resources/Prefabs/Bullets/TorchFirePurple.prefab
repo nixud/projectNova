@@ -4628,16 +4628,18 @@ MonoBehaviour:
   Scale: {x: 1, y: 1, z: 1}
   isPlayerBullet: 1
   CanTrackEnemy: 0
-  SplitNum: 2
+  SplitNum: 1
   Issplit: 1
   SplitBulletNumber: TorchFirePurple
-  splitRange: 6
+  splitRange: 4
   Accuracy: 0.5
   ShotgunNum: 6
   ShotgunRandomNum: 1
   SplitedNum: 0
   splitedRange: 1
+  splitedOutRange: 4
   SplitedScale: 1
+  splitedOutRangeNow: 0
   Target: {fileID: 0}
 --- !u!198 &19822104
 ParticleSystem:

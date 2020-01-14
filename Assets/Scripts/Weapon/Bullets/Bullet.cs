@@ -38,14 +38,19 @@ public class Bullet : MonoBehaviour
 
     [HideInInspector]
     public int SplitedNum = 0;
+    [HideInInspector]
     public float splitedRange = 1;
+    [Header("用于设置子弹飞出多少距离爆炸")]
+    public float splitedOutRange = 4;
+    [HideInInspector]
     public float SplitedScale = 1;
+    [HideInInspector]
+    public float splitedOutRangeNow = 0;
 
     public Transform Target = null;
 
     public void ActiveIt()
     {
-        //Debug.Log("这行倒霉代码已经被执行了");
         transform.localScale = Scale;
         SplitedNum = 0;
         splitedRange = 1;
@@ -82,27 +87,40 @@ public class Bullet : MonoBehaviour
 
                 if (hit.collider != null && hit.distance <= splitRange * splitedRange && hit.collider.tag == "Enemy")
                 {
-                    float maxdegree = Accuracy * Mathf.PI / 2;
-                    int BulletNumber = ShotgunNum;
-                    for (int i = 0; i < BulletNumber; i++)
-                    {
-                        float angle = -maxdegree + i * (2 * maxdegree) / (BulletNumber - 1);
-
-                        GameObject bullet = ObjectPool.GetInstance().GetObj(BulletBody, "Bullets");
-                        bullet.GetComponent<Bullet>().SplitedNum = SplitedNum+1;
-                        Vector3 dir = transform.forward + new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0);
-                        dir.Normalize();
-
-                        bullet.GetComponent<Bullet>().SplitedScale = SplitedScale / 2;
-                        bullet.transform.localScale *= bullet.GetComponent<Bullet>().SplitedScale;
-                        bullet.GetComponent<Bullet>().splitedRange = splitedRange/2;
-                        bullet.GetComponent<Bullet>().dir = dir;
-                        bullet.GetComponent<Bullet>().transform.position = transform.position;
+                    splitIt();
+                }
+                else if (hit.collider == null) {
+                    splitedOutRangeNow += NowSpeed;
+                    if (splitedOutRange < splitedOutRangeNow) {
+                        splitedOutRangeNow = 0;
+                        splitIt();
                     }
-                    RecycleNow();
                 }
             }
         }
+    }
+
+    private void splitIt() {
+        float maxdegree = Accuracy * Mathf.PI / 2;
+        int BulletNumber = ShotgunNum;
+        for (int i = 0; i < BulletNumber; i++)
+        {
+            float angle = -maxdegree + i * (2 * maxdegree) / (BulletNumber - 1);
+
+            GameObject bullet = ObjectPool.GetInstance().GetObj(BulletBody, "Bullets");
+            bullet.GetComponent<Bullet>().SplitedNum = SplitedNum + 1;
+            Vector3 dir = transform.forward + new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0);
+            dir.Normalize();
+
+            bullet.GetComponent<Bullet>().SplitedScale = SplitedScale / 2;
+            bullet.transform.localScale *= bullet.GetComponent<Bullet>().SplitedScale;
+            bullet.GetComponent<Bullet>().splitedRange = splitedRange / 2;
+            bullet.GetComponent<Bullet>().splitedOutRange = splitedOutRange;
+            bullet.GetComponent<Bullet>().splitedOutRangeNow = 0;
+            bullet.GetComponent<Bullet>().dir = dir;
+            bullet.GetComponent<Bullet>().transform.position = transform.position;
+        }
+        RecycleNow();
     }
 
     private void OnEnable() {
@@ -126,6 +144,7 @@ public class Bullet : MonoBehaviour
                 shootHitEffect.transform.position = transform.position;
             }
             Nowtime = 0;
+            splitedOutRangeNow = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
         }
@@ -140,6 +159,7 @@ public class Bullet : MonoBehaviour
                 shootHitEffect.transform.position = transform.position;
             }
             Nowtime = 0;
+            splitedOutRangeNow = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
         }

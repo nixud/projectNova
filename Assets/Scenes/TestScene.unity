@@ -2858,11 +2858,9 @@ MonoBehaviour:
   uIcontroller: {fileID: 0}
   shootPoints:
   - {fileID: 430462698}
-  - {fileID: 1506913480}
   IsAutoFire: 0
   WeaponName:
-  - testWeapon
-  - testWeapon
+  - Dapaotest
 --- !u!114 &1396354090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3174,7 +3172,7 @@ PrefabInstance:
     - target: {fileID: 6606226724523506372, guid: 0d06eb4adcd90004992bc780aace91c6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6606226724523506371, guid: 0d06eb4adcd90004992bc780aace91c6,
         type: 3}
