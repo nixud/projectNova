@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class ShootSpeedUp : ItemEffects
 {
-    public ShootSpeedUp(GameObject Obj)
+    public ShootSpeedUp()
     {
         time = 10;
-        this.gameObject = Obj;
     }
     public override void Run() {
-        gameObject.GetComponent<WeaponControl>().weapon.FireSpeed /= 2;
+        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("/",3);
     }
     public override void End()
     {
-        gameObject.GetComponent<WeaponControl>().weapon.FireSpeed *= 2;
+        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("*", 3);
     }
 }

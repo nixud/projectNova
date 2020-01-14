@@ -93,6 +93,7 @@ public class WeaponControl : MonoBehaviour
         weapon =  jsonLoader.LoadData(WeaponNumber);
         jsonLoader = null;
     }
+
     IEnumerator WeaponCD() {
         IsInCD = true;
         yield return new WaitForSeconds(weapon.FireSpeed);

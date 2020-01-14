@@ -10,7 +10,7 @@ public class CharacterControl : MonoBehaviour
     public Vector3 MoveDir;
     public float speed;
 
-    public Vector3 PositionBasic = new Vector3(0,0,0);
+    public Vector3 PositionBasic = new Vector3(0, 0, 0);
 
     public GameCamera gameCamera;
     public GameObject ShootButton;
@@ -31,11 +31,16 @@ public class CharacterControl : MonoBehaviour
     public bool IsAutoFire;
     public List<string> WeaponName = new List<string>();
 
+    public Item item;
     float itemTime = 0;
     bool isUsingItem = false;
     // Start is called before the first frame update
     void Start()
     {
+        item = new Item();
+        item.EffectNumber = 1;
+        item.LoadEffect();
+
         if (shootPoints.Count != WeaponName.Count)
             throw new Exception();
 
@@ -49,7 +54,7 @@ public class CharacterControl : MonoBehaviour
 
         gameCamera = Camera.main.GetComponent<GameCamera>();
         ShootButton = GameObject.Find("ShootButton");
-        
+
         devWidth = gameCamera.GetdevWidth() * 0.5f;
         devHeight = gameCamera.GetdevHeight() * 0.5f;
         if (Character == null) Character = gameObject;
@@ -72,11 +77,12 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (UserConfig.Instance.GetAutoFire() == true) {
+        if (UserConfig.Instance.GetAutoFire() == true)
+        {
             Shoot();
         }
 
-        Vector3 newPosi = Character.transform.position + MoveDir*speed;
+        Vector3 newPosi = Character.transform.position + MoveDir * speed;
         if (Mathf.Abs(newPosi.x) >= devWidth)
             MoveDir = new Vector3(0, MoveDir.y, MoveDir.z);
         if (Mathf.Abs(newPosi.y) >= devHeight)
@@ -87,11 +93,13 @@ public class CharacterControl : MonoBehaviour
         {
             PlayerDead();
         }
+
     }
 
-    public void SetPosition(Vector3 position) {
+    public void SetPosition(Vector3 position)
+    {
         Vector3 newPosi = PositionBasic + position;
-        
+
         if (newPosi.x > devWidth)
             newPosi = new Vector3(devWidth, newPosi.y, newPosi.z);
         else if (newPosi.x < -devWidth)
@@ -103,14 +111,17 @@ public class CharacterControl : MonoBehaviour
 
         gameObject.transform.position = newPosi;
     }
-    public void SetPositionEnd() {
+    public void SetPositionEnd()
+    {
         PositionBasic = gameObject.transform.position;
     }
-    public void Shoot() {
-        for(int i=0;i<weaponControl.Count;i++)
+    public void Shoot()
+    {
+        for (int i = 0; i < weaponControl.Count; i++)
             weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
     }
-    public void StartRay() {
+    public void StartRay()
+    {
         for (int i = 0; i < weaponControl.Count; i++)
             weaponControl[i].StartRay();
     }
@@ -129,11 +140,41 @@ public class CharacterControl : MonoBehaviour
         }
         uIcontroller--;
     }
-    public void PlayerHittedEffect() {
+    public void PlayerHittedEffect()
+    {
 
     }
-    public void PlayerDead() {
+    public void PlayerDead()
+    {
         SceneManager.LoadScene("ScoreBroadFailed");
         ObjectPool.GetInstance().EmptyPool();
+    }
+    public void UsingItem()
+    {
+        if (!isUsingItem)
+        {
+            isUsingItem = true;
+            StartCoroutine(Useitem());
+        }
+    }
+
+    IEnumerator Useitem()
+    {
+        item.Run();
+        yield return new WaitForSeconds(item.itemEffects.time);
+        item.End();
+        isUsingItem = false;
+    }
+
+    public void WeaponSpeedChange(string mode,float num) {
+        if (mode == "*")
+        {
+            for (int i = 0; i < weaponControl.Count; i++)
+                weaponControl[i].weapon.FireSpeed *= num;
+        }
+        else if (mode == "/") {
+            for (int i = 0; i < weaponControl.Count; i++)
+                weaponControl[i].weapon.FireSpeed /= num;
+        }
     }
 }

@@ -22,4 +22,21 @@ public class Item : IComparable
         Item p = obj as Item;
         return this.Number.CompareTo(p.Number);
     }
+
+    public ItemEffects itemEffects;
+
+    public void LoadEffect() {
+        if (EffectNumber == 1)
+            itemEffects = new ShootSpeedUp();
+    }
+
+    public void Run() {
+        if (itemEffects != null)
+            itemEffects.Run();
+    }
+    public void End()
+    {
+        if (itemEffects != null)
+            itemEffects.End();
+    }
 }

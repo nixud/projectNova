@@ -98,6 +98,6 @@ public class CharacterInputMoblie : MonoBehaviour
     }
 
     public void UseItem() {
-
+        characterControl.UsingItem();
     }
 }
