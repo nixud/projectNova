@@ -24,10 +24,18 @@ public class EnemyBehaviourController : MonoBehaviour
 
     private void Start()
     {
-        behaviours.Add(new MoveForward(gameObject, 3f, 1f));
-        behaviours.Add(new AlwaysShoot(gameObject, -1f));
-        behaviours.Add(new StayHere(gameObject,2f));
-        behaviours.Add(new MoveForward(gameObject,2f,20f));
+        if (gameObject.name == "test")
+        {
+            behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
+            behaviours.Add(new AlwaysShoot(gameObject, -1f));
+            behaviours.Add(new StayHere(gameObject, 2f));
+            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
+        }
+        else
+        {
+            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 1f));
+            LeftAndRightBehaviour();
+        }
     }
 
     private void Update()
@@ -69,5 +77,12 @@ public class EnemyBehaviourController : MonoBehaviour
             AlwaysShootUntilNextBehaviour = false;
             AlwaysShootUntilNextBehaviourEnd = false;
         }
+    }
+
+    private void LeftAndRightBehaviour() {
+        behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0.3f, -1, 0), 1f));
+        behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(-0.3f, -1, 0), 1f));
+        behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0.3f, -1, 0), 1f));
+        behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(-0.3f, -1, 0), 1f));
     }
 }

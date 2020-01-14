@@ -5,17 +5,18 @@ using UnityEngine;
 public class MoveForward : EnemyBehaviours
 {
     private float NowSpeed;
+    private Vector3 Dir;
 
-    public MoveForward(GameObject Obj, float NowSpeed, float t)
+    public MoveForward(GameObject Obj, float NowSpeed, Vector3 dir, float t)
     {
         time = t;
         this.NowSpeed = NowSpeed;
         this.gameObject = Obj;
-        Debug.Log("向前移动");
+        Dir = dir;
     }
 
     public override Vector3 Calculate(float Dt) {
-        return new Vector3(0,-1f,0) * NowSpeed * Dt;
+        return Dir * NowSpeed * Dt;
     }
     public override void Run(float Dt) {
         gameObject.transform.Translate(Calculate(Dt));
