@@ -91,7 +91,7 @@ public class CharacterControl : MonoBehaviour
 
         if (scoreData.levelScore >= 10)
         {
-            PlayerDead();
+            PlayerWin();
         }
 
     }
@@ -147,6 +147,11 @@ public class CharacterControl : MonoBehaviour
     public void PlayerDead()
     {
         SceneManager.LoadScene("ScoreBroadFailed");
+        ObjectPool.GetInstance().EmptyPool();
+    }
+    public void PlayerWin()
+    {
+        SceneManager.LoadScene("ScoreBroad");
         ObjectPool.GetInstance().EmptyPool();
     }
     public void UsingItem()
