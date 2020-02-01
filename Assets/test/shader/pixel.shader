@@ -3,7 +3,8 @@
 	Properties
 	{
 		_MainTex("Texture", 2D) = "white" {}
-		_PixelSize("Pixel Size", Range(1,256)) = 64
+		_PixelSizeX("Pixel SizeX", Range(1,256)) = 64
+        _PixelSizeY("Pixel SizeY", Range(1,256)) = 64
 	}
 		SubShader
 	{
@@ -32,7 +33,8 @@
 
 	sampler2D _MainTex;
 	float4 _MainTex_ST;
-	float _PixelSize;
+	float _PixelSizeX;
+    float _PixelSizeY;
 
 	v2f vert(appdata v)
 	{
@@ -46,8 +48,8 @@
 	{
 		fixed4 col;
 
-	float ratioX = (int)(i.uv.x * _PixelSize) / _PixelSize;
-	float ratioY = (int)(i.uv.y * _PixelSize) / _PixelSize;
+	float ratioX = (int)(i.uv.x * _PixelSizeX) / _PixelSizeX;
+	float ratioY = (int)(i.uv.y * _PixelSizeY) / _PixelSizeY;
 
 	col = tex2D(_MainTex, float2(ratioX, ratioY));
 
