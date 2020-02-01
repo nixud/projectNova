@@ -50,16 +50,17 @@
 
 	float ratioX = (int)(i.uv.x * _PixelSizeX) / _PixelSizeX;
 	float ratioY = (int)(i.uv.y * _PixelSizeY) / _PixelSizeY;
-
-	col = tex2D(_MainTex, float2(ratioX, ratioY));
+    
+	col = tex2D(_MainTex, float2(ratioX+0.5/_PixelSizeX, ratioY));
 
 	if (col.a < 0.5)
 	{
 		col.a = 0;
 	}
-	else col.a = 0.8;
+	else col.a = 1;
+    
+    return col;
 
-	return col;
 	}
 		ENDCG
 	}
