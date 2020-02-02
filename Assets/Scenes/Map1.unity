@@ -189,7 +189,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 37589977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 37589974}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &37589977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +392,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 78468639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 78468636}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &78468639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +516,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95077218}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 95077215}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &95077218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +640,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 143023504}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 143023501}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &143023504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,7 +865,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 287812244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 287812241}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &287812244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,7 +989,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311607054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 311607051}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &311607054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,7 +1113,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 385781394}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 385781391}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &385781394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,7 +1309,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 657806015}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 657806012}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &657806015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,7 +1374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &666123951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1517,6 +1605,7 @@ MonoBehaviour:
   - {fileID: 385781391}
   - {fileID: 385781391}
   - {fileID: 1011398927}
+  - {fileID: 1201436762}
   NormalStagePoint:
   - {fileID: 899850328}
   - {fileID: 930911245}
@@ -1535,6 +1624,8 @@ MonoBehaviour:
   - {fileID: 1254155061}
   - {fileID: 311607051}
   SpecialStagePoint: []
+  StagePointCheck: []
+  StagePointCheckTemp: []
   EasyStageNum: 12
   NormalStageNum: 8
   DiffStageNum: 2
@@ -1616,7 +1707,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799321138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 799321135}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799321138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1729,7 +1831,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 801376266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 801376263}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &801376266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,7 +1955,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 816673587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 816673584}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &816673587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,7 +2079,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 818238240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 818238237}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818238240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,7 +2203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 899850331}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 899850328}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &899850331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,7 +2327,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 930911248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 930911245}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &930911248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,7 +2451,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1008370206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1008370203}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1008370206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,7 +2575,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1011398930}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1011398927}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1011398930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,7 +2699,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1137266294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1137266291}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1137266294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +2900,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1153983948}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1153983945}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1153983948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2823,7 +3024,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1171654360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1171654357}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1171654360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2936,7 +3148,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1185128636}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1185128633}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1185128636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3049,7 +3272,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1201436765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1201436762}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201436765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3162,7 +3396,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1254155064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1254155061}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1254155064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3275,7 +3520,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1364187772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1364187769}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1364187772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3388,7 +3644,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1412129643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1412129640}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1412129643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3501,7 +3768,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454767482}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1454767479}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454767482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3739,7 +4017,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562926920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1562926917}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1562926920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3918,7 +4207,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652730313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1652730310}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652730313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,7 +4331,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1655797207}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1655797204}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1655797207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4144,7 +4455,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1706646493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1706646490}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1706646493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4257,7 +4579,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1718499775}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1718499772}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1718499775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,7 +4703,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1764411701}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1764411698}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1764411701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4483,7 +4827,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1808245613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1808245610}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1808245613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4596,7 +4951,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1883530534}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1883530531}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1883530534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4709,7 +5075,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962055575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1962055572}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962055575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,7 +5199,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1995217942}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1995217939}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1995217942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4935,7 +5323,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2013645511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2013645508}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2013645511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5125,7 +5524,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2100650602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 775222706}
+        m_MethodName: StagePointPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100650599}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2100650602
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,10 +22,15 @@ public class StageScene : MonoBehaviour
     public List<GameObject> DiffStagePoint = new List<GameObject>();
     public List<GameObject> SpecialStagePoint = new List<GameObject>();
 
+    public List<GameObject> StagePointCheck = new List<GameObject>();
+    public List<GameObject> StagePointCheckTemp = new List<GameObject>();
+
     public int EasyStageNum;
     public int NormalStageNum;
     public int DiffStageNum;
     public int SpecialStageNum;
+
+    private bool CanPass = true;
 
     public void Start()
     {
@@ -33,13 +38,17 @@ public class StageScene : MonoBehaviour
         {
             RandomStage();
             PlayerPlane = GameObject.Find("New Sprite");
-            PlayerPlane.transform.position = EasyStagePoint[0].transform.position;
+            PlayerPlane.transform.position = StagePointCheck[0].transform.position;
             FreshStageButton();
             IsSpawned = true;
         }
     }
 
     public void RandomStage() {
+        CanPass = true;
+        StagePointCheck.Clear();
+        StagePointCheckTemp.Clear();
+
         for (int i = 0; i < EasyStagePoint.Count; i++)
             EasyStagePoint[i].SetActive(true);
         for (int i = 0; i < NormalStagePoint.Count; i++)
@@ -55,6 +64,11 @@ public class StageScene : MonoBehaviour
                 i++;
             }
         }
+        for (int i = 0; i < EasyStagePoint.Count;i++) {
+            if (EasyStagePoint[i].activeSelf)
+                StagePointCheck.Add(EasyStagePoint[i]);
+        }
+
         for (int i = 0; i < NormalStagePoint.Count - NormalStageNum;)
         {
             int randomNumber = (int)Random.Range(0, NormalStagePoint.Count - 0.01f);
@@ -64,6 +78,12 @@ public class StageScene : MonoBehaviour
                 i++;
             }
         }
+        for (int i = 0; i < NormalStagePoint.Count; i++)
+        {
+            if (NormalStagePoint[i].activeSelf)
+                StagePointCheck.Add(NormalStagePoint[i]);
+        }
+
         for (int i = 0; i < DiffStagePoint.Count - DiffStageNum;)
         {
             int randomNumber = (int)Random.Range(0, DiffStagePoint.Count - 0.01f);
@@ -73,6 +93,16 @@ public class StageScene : MonoBehaviour
                 i++;
             }
         }
+        for (int i = 0; i < DiffStagePoint.Count; i++)
+        {
+            if (DiffStagePoint[i].activeSelf)
+                StagePointCheck.Add(DiffStagePoint[i]);
+        }
+
+        StagePointCheckTemp.Add(StagePointCheck[0]);
+        CheckPointPass(0);
+
+        if (!CanPass) RandomStage();
     }
 
     public void FreshStageButton()
@@ -80,21 +110,58 @@ public class StageScene : MonoBehaviour
         for (int i = 0; i < EasyStagePoint.Count; i++)
             if (!RangeCalculate(EasyStagePoint[i],PlayerPlane))
                 EasyStagePoint[i].GetComponent<Button>().interactable = false;
+            else EasyStagePoint[i].GetComponent<Button>().interactable = true;
+
         for (int i = 0; i < NormalStagePoint.Count; i++)
             if (!RangeCalculate(NormalStagePoint[i], PlayerPlane))
                 NormalStagePoint[i].GetComponent<Button>().interactable = false;
+            else NormalStagePoint[i].GetComponent<Button>().interactable = true;
         for (int i = 0; i < DiffStagePoint.Count; i++)
             if (!RangeCalculate(DiffStagePoint[i], PlayerPlane))
                 DiffStagePoint[i].GetComponent<Button>().interactable = false;
+            else DiffStagePoint[i].GetComponent<Button>().interactable = true;
     }
 
-    private bool RangeCalculate(GameObject gameObject,GameObject gameObject2) {
+    private void CheckPointPass(int number) {
+        bool canpass = false;
+        for (int i=0;i<StagePointCheck.Count;i++) {
+            if(number != i && RangeCalculatePoint(StagePointCheck[number], StagePointCheck[i])) {
+                canpass = true;
+                if (!StagePointCheckTemp.Contains(StagePointCheck[i]))
+                {
+                    StagePointCheckTemp.Add(StagePointCheck[i]);
+                    CheckPointPass(i);
+                }
+            }
+        }
+        if (CanPass == true)
+        {
+            CanPass = canpass;
+        }
+    }
+
+    private bool RangeCalculate(GameObject gameObject1,GameObject gameObject2) {
         Vector2 player = new Vector2(gameObject2.transform.position.x, PlayerPlane.transform.position.y);
-        Vector2 point = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+        Vector2 point = new Vector2(gameObject1.transform.position.x, gameObject1.transform.position.y);
         float distance = Vector2.Distance(player, point);
         if (distance < Range)
             return true;
         return false;
+    }
+
+    private bool RangeCalculatePoint(GameObject gameObject1, GameObject gameObject2)
+    {
+        Vector2 player = new Vector2(gameObject2.transform.position.x, gameObject2.transform.position.y);
+        Vector2 point = new Vector2(gameObject1.transform.position.x, gameObject1.transform.position.y);
+        float distance = Vector2.Distance(player, point);
+        if (distance < Range)
+            return true;
+        return false;
+    }
+
+    public void StagePointPressed(GameObject button) {
+        PlayerPlane.transform.position = button.transform.position;
+        FreshStageButton();
     }
 
     public void EnterTestLevel() {
