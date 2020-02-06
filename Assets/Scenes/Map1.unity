@@ -1374,7 +1374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &666123951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1436,7 +1436,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 775222706}
-        m_MethodName: RandomStage
+        m_MethodName: ClearThisStage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5438,7 +5438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u91CD\u65B0\u968F\u673A\u4E00\u6B21"
+  m_Text: "\u6807\u8BB0\u6B64\u5173\u5DF2\u901A\u5173"
 --- !u!222 &2090718284
 CanvasRenderer:
   m_ObjectHideFlags: 0

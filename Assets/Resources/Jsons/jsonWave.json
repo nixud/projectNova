@@ -1,1 +1,1 @@
-[{"Number":"30","EnemyNum":0,"MapNum":1,"EnemyNumber":null,"Diffculty":30},{"Number":"40","EnemyNum":0,"MapNum":1,"EnemyNumber":null,"Diffculty":40},{"Number":"0","EnemyNum":0,"MapNum":0,"EnemyNumber":null,"Diffculty":10},{"Number":"70","EnemyNum":0,"MapNum":1,"EnemyNumber":null,"Diffculty":70},{"Number":"10","EnemyNum":0,"MapNum":0,"EnemyNumber":null,"Diffculty":10}]
+[{"MapNum":1,"EnemyNumber":["enemy1","enemy2"],"EnemyTime":[0.0,0.0],"EnemyPositionX":[0.5,-0.5],"EnemyPositionY":[1.1,1.1],"Diffculty":5}]

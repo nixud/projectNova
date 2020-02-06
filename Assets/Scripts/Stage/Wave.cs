@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Wave
 {
-    public string Number;
-    public int EnemyNum;
     public int MapNum;
-    public string EnemyNumber;
+    public List<string> EnemyNumber;
+    public List<float> EnemyTime;
+    public List<float> EnemyPositionX;
+    public List<float> EnemyPositionY;
     public int Diffculty;
 }

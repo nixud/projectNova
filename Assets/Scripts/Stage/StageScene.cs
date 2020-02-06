@@ -25,6 +25,9 @@ public class StageScene : MonoBehaviour
     public List<GameObject> StagePointCheck = new List<GameObject>();
     public List<GameObject> StagePointCheckTemp = new List<GameObject>();
 
+    private List<int> StagePointStatus = new List<int>();
+    private int PlayerPosition = 0;
+
     public int EasyStageNum;
     public int NormalStageNum;
     public int DiffStageNum;
@@ -48,6 +51,7 @@ public class StageScene : MonoBehaviour
         CanPass = true;
         StagePointCheck.Clear();
         StagePointCheckTemp.Clear();
+        StagePointStatus.Clear();
 
         for (int i = 0; i < EasyStagePoint.Count; i++)
             EasyStagePoint[i].SetActive(true);
@@ -66,7 +70,10 @@ public class StageScene : MonoBehaviour
         }
         for (int i = 0; i < EasyStagePoint.Count;i++) {
             if (EasyStagePoint[i].activeSelf)
+            {
                 StagePointCheck.Add(EasyStagePoint[i]);
+                StagePointStatus.Add(0);
+            }
         }
 
         for (int i = 0; i < NormalStagePoint.Count - NormalStageNum;)
@@ -80,8 +87,10 @@ public class StageScene : MonoBehaviour
         }
         for (int i = 0; i < NormalStagePoint.Count; i++)
         {
-            if (NormalStagePoint[i].activeSelf)
-                StagePointCheck.Add(NormalStagePoint[i]);
+            if (NormalStagePoint[i].activeSelf) {
+                StagePointCheck.Add(NormalStagePoint[i]); 
+                StagePointStatus.Add(0);
+            }
         }
 
         for (int i = 0; i < DiffStagePoint.Count - DiffStageNum;)
@@ -96,7 +105,10 @@ public class StageScene : MonoBehaviour
         for (int i = 0; i < DiffStagePoint.Count; i++)
         {
             if (DiffStagePoint[i].activeSelf)
+            {
                 StagePointCheck.Add(DiffStagePoint[i]);
+                StagePointStatus.Add(0);
+            }
         }
 
         StagePointCheckTemp.Add(StagePointCheck[0]);
@@ -116,10 +128,16 @@ public class StageScene : MonoBehaviour
             if (!RangeCalculate(NormalStagePoint[i], PlayerPlane))
                 NormalStagePoint[i].GetComponent<Button>().interactable = false;
             else NormalStagePoint[i].GetComponent<Button>().interactable = true;
+
         for (int i = 0; i < DiffStagePoint.Count; i++)
             if (!RangeCalculate(DiffStagePoint[i], PlayerPlane))
                 DiffStagePoint[i].GetComponent<Button>().interactable = false;
             else DiffStagePoint[i].GetComponent<Button>().interactable = true;
+
+        for (int i = 0; i < StagePointStatus.Count; i++) {
+            if (StagePointStatus[i] == 1)
+                StagePointCheck[i].GetComponent<Image>().color = new Color(1,1,1,0.5f);
+        }
     }
 
     private void CheckPointPass(int number) {
@@ -160,7 +178,13 @@ public class StageScene : MonoBehaviour
     }
 
     public void StagePointPressed(GameObject button) {
+        PlayerPosition = StagePointCheck.IndexOf(button);
         PlayerPlane.transform.position = button.transform.position;
+        FreshStageButton();
+    }
+
+    public void ClearThisStage() {
+        StagePointStatus[PlayerPosition] = 1;
         FreshStageButton();
     }
 

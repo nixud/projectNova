@@ -8,10 +8,19 @@ public class TestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //uIcontroller.Init(5);
-        
+        /*
+        JsonLoader<Wave> loader = new JsonLoader<Wave>();
+        Wave wave = new Wave();
+        wave.Diffculty = 5;
+        wave.MapNum = 1;
+        wave.EnemyNumber = new List<string> {"enemy1","enemy2"};
+        wave.EnemyTime = new List<float> {0,0};
+        wave.EnemyPositionX = new List<float> {0.5f,-0.5f};
+        wave.EnemyPositionY = new List<float> {1.1f,1.1f};
 
-        // GameTextLoader gameTextLoader = new GameTextLoader("GameText");
-        //Debug.Log(gameTextLoader.GetText(1));
+        List<Wave> waves = new List<Wave>();
+        waves.Add(wave);
+
+        loader.SaveData(waves);*/
     }
 }

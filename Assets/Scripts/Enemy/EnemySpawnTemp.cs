@@ -18,7 +18,7 @@ public class EnemySpawnTemp : MonoBehaviour
             time = 0;
         }
     }
-    private void LoadEnemy(string EnemyNumber) {
+    private void LoadEnemy(string enemyNumber) {
         GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + EnemyNumber);
         Instantiate(prefab);
         prefab.transform.position = new Vector2(Random.Range(-5.4f,5.4f), 10.6f);
