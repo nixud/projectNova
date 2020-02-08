@@ -18,6 +18,7 @@
 
     public int StageSort = 0;
     public MapConfigData mapConfigData;
+
     public bool isCleared = false;
     public string Diffculty;
 }

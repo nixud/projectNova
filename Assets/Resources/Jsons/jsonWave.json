@@ -1,1 +1,2 @@
-[{"MapNum":1,"EnemyNumber":["enemy1","enemy2"],"EnemyTime":[0.0,0.0],"EnemyPositionX":[0.5,-0.5],"EnemyPositionY":[1.1,1.1],"Diffculty":5}]
+[{"MapNum":1,"EnemyNumber":["enemy1","enemy2"],"EnemyTime":[0.0,0.0],"EnemyPositionX":[0.5,-0.5],"EnemyPositionY":[1.1,1.1],"Diffculty":30},
+{"MapNum":1,"EnemyNumber":["enemy1","enemy2"],"EnemyTime":[0.0,0.0],"EnemyPositionX":[0.5,-0.5],"EnemyPositionY":[1.1,1.1],"Diffculty":70}]

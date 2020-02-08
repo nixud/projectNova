@@ -28,6 +28,6 @@ public class Weapon : IComparable
 
     public int CompareTo(object obj) {
         Weapon p = obj as Weapon;
-        return this.Number.CompareTo(p.Number);
+        return CompareTo(p.Number);
     }
 }

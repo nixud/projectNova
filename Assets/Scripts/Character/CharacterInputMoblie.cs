@@ -9,6 +9,7 @@ public class CharacterInputMoblie : MonoBehaviour
     Vector3 moveDir = new Vector3(0, 0, 0);
 
     Vector3 touchPosition = new Vector3(0,0,0);
+
     bool isTouching = false;
 
     Vector3 mousePosi;
@@ -34,6 +35,8 @@ public class CharacterInputMoblie : MonoBehaviour
     }
 
 #if UNITY_ANDROID
+
+
     // Update is called once per frame
     void Update()
     {

@@ -13,13 +13,13 @@ public class EnemySpawnTemp : MonoBehaviour
     {
         time += Time.deltaTime;
         if (time >= spawnTime) {
-            Debug.Log("生成一个玩意儿");
+            //Debug.Log("生成一个玩意儿");
             LoadEnemy("test");
             time = 0;
         }
     }
     private void LoadEnemy(string enemyNumber) {
-        GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + EnemyNumber);
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + enemyNumber);
         Instantiate(prefab);
         prefab.transform.position = new Vector2(Random.Range(-5.4f,5.4f), 10.6f);
     }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaveGroupCreater
 {
+    //此段代码已作废
+
     private List<Wave> waves;
     public WaveGroupCreater() {
         JsonLoader<Wave> loader = new JsonLoader<Wave>();

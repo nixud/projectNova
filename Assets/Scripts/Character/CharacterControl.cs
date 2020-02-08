@@ -89,11 +89,6 @@ public class CharacterControl : MonoBehaviour
             MoveDir = new Vector3(MoveDir.x, 0, MoveDir.z);
         gameObject.transform.Translate(MoveDir * speed);
 
-        if (scoreData.levelScore >= 10)
-        {
-            PlayerWin();
-        }
-
     }
 
     public void SetPosition(Vector3 position)
@@ -149,11 +144,7 @@ public class CharacterControl : MonoBehaviour
         SceneManager.LoadScene("ScoreBroadFailed");
         ObjectPool.GetInstance().EmptyPool();
     }
-    public void PlayerWin()
-    {
-        SceneManager.LoadScene("ScoreBroad");
-        ObjectPool.GetInstance().EmptyPool();
-    }
+
     public void UsingItem()
     {
         if (!isUsingItem)

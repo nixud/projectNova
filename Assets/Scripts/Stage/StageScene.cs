@@ -22,8 +22,8 @@ public class StageScene : MonoBehaviour
     public List<GameObject> DiffStagePoint = new List<GameObject>();
     public List<GameObject> SpecialStagePoint = new List<GameObject>();
 
-    public List<GameObject> StagePointCheck = new List<GameObject>();
-    public List<GameObject> StagePointCheckTemp = new List<GameObject>();
+    private List<GameObject> StagePointCheck = new List<GameObject>();
+    private List<GameObject> StagePointCheckTemp = new List<GameObject>();
 
     private List<int> StagePointStatus = new List<int>();
     private int PlayerPosition = 0;
@@ -32,6 +32,13 @@ public class StageScene : MonoBehaviour
     public int NormalStageNum;
     public int DiffStageNum;
     public int SpecialStageNum;
+
+    public int StageSort = 0;
+    public MapConfigData mapConfigData;
+    [HideInInspector]
+    public bool isCleared = false;
+    [HideInInspector]
+    public string Diffculty;
 
     private bool CanPass = true;
 
@@ -188,6 +195,17 @@ public class StageScene : MonoBehaviour
         FreshStageButton();
     }
 
+    public void StartStage() {
+        NowStageInfomation.GetInstance().Diffculty = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().Diffculty;
+        NowStageInfomation.GetInstance().isCleared = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().isCleared;
+
+        NowStageInfomation.GetInstance().mapConfigData = this.GetComponent<MapConfigData>();
+
+        Debug.Log(NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount);
+
+        SceneManager.LoadScene("SampleScene");
+    }
+    
     public void EnterTestLevel() {
         SceneManager.LoadScene("SampleScene");
     }

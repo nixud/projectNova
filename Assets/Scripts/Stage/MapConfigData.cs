@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapConfigData:MonoBehaviour {
+    public int MapNumber;
+
     public int EasyStageWaveMinAmount;
     public int EasyStageWaveMaxAmount;
     public int MediumStageWaveMinAmount;
@@ -17,7 +19,7 @@ public class MapConfigData:MonoBehaviour {
     public int HardStageMinDiffculty;
     public int HardStageMaxDiffculty;
 
-    public int EasyStageDiffcultyRatio;
-    public int MediumStageDiffcultyRatio;
-    public int HardStageDiffcultyRatio;
+    public float EasyStageDiffcultyRatio;
+    public float MediumStageDiffcultyRatio;
+    public float HardStageDiffcultyRatio;
 }

@@ -39,7 +39,6 @@ public class EnemyControl : MonoBehaviour
     }*/
     public void RecycleNow()
     {
-        Debug.Log("www");
         Destroy(gameObject);
         ScoreData.Instance.levelScore++;
     }
