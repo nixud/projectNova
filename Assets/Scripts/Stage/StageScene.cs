@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -52,6 +53,7 @@ public class StageScene : MonoBehaviour
 
     private void Start()
     {
+
         mapInfomation = MapInfomation.GetInstance();
 
         if (mapInfomation.MapStatus[mapConfigData.MapNumber] == '0')
@@ -149,7 +151,7 @@ public class StageScene : MonoBehaviour
             DiffStagePoint[i].SetActive(true);
 
         for (int i = 0; i<EasyStagePoint.Count - EasyStageNum;) {
-            int randomNumber = (int)Random.Range(0, EasyStagePoint.Count -0.01f);
+            int randomNumber = (int)UnityEngine.Random.Range(0, EasyStagePoint.Count -0.01f);
             if (EasyStagePoint[randomNumber].activeSelf)
             {
                 EasyStagePoint[randomNumber].SetActive(false);
@@ -168,7 +170,7 @@ public class StageScene : MonoBehaviour
 
         for (int i = 0; i < NormalStagePoint.Count - NormalStageNum;)
         {
-            int randomNumber = (int)Random.Range(0, NormalStagePoint.Count - 0.01f);
+            int randomNumber = (int)UnityEngine.Random.Range(0, NormalStagePoint.Count - 0.01f);
             if (NormalStagePoint[randomNumber].activeSelf)
             {
                 NormalStagePoint[randomNumber].SetActive(false);
@@ -187,7 +189,7 @@ public class StageScene : MonoBehaviour
 
         for (int i = 0; i < DiffStagePoint.Count - DiffStageNum;)
         {
-            int randomNumber = (int)Random.Range(0, DiffStagePoint.Count - 0.01f);
+            int randomNumber = (int)UnityEngine.Random.Range(0, DiffStagePoint.Count - 0.01f);
             if (DiffStagePoint[randomNumber].activeSelf)
             {
                 DiffStagePoint[randomNumber].SetActive(false);

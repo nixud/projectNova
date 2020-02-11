@@ -33,8 +33,9 @@ public class EnemyBehaviourController : MonoBehaviour
         }
         else
         {
+            behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
             //behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 10f));
+            behaviours.Add(new Kamikaze(gameObject, 6f, 6f));
         }
     }
 

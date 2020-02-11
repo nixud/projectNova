@@ -25,21 +25,16 @@ public class EnemyControl : MonoBehaviour
         HP = maxHP;
         IsNotRecycled = true;
     }
-    /*
-    public void RecycleNow()
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (IsNotRecycled)
+        if (collision.gameObject.tag == "Player")
         {
-            if (DestoryEffect != null && DestoryEffect!="")
-            {
-                GameObject shootHitEffect = ObjectPool.GetInstance().GetObj(DestoryEffect, "EnemyDestoryEffects");
-                shootHitEffect.transform.position = transform.position;
-            }
-            ObjectPool.GetInstance().RecycleObj(gameObject);
-            HP = maxHP;
-            IsNotRecycled = false;
+            collision.gameObject.GetComponent<CharacterControl>().DecHP();
+            RecycleNow();
         }
-    }*/
+    }
+
     public void RecycleNow()
     {
         Destroy(gameObject);
