@@ -1846,7 +1846,7 @@ MonoBehaviour:
   HardStageWaveMaxAmount: 12
   EasyStageMinDiffculty: 0
   EasyStageMaxDiffculty: 100
-  MediumStageMinDiffculty: 30
+  MediumStageMinDiffculty: 10
   MediumStageMaxDiffculty: 130
   HardStageMinDiffculty: 50
   HardStageMaxDiffculty: 150
@@ -3132,7 +3132,7 @@ MonoBehaviour:
   - {fileID: 1254155061}
   - {fileID: 311607051}
   SpecialStagePoint: []
-  EasyStageNum: 12
+  EasyStageNum: 15
   NormalStageNum: 8
   DiffStageNum: 2
   SpecialStageNum: 0

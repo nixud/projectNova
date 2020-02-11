@@ -154,6 +154,7 @@ public class StageIniter : MonoBehaviour
     private void UseSpawnEnemy() {
         if (thisWavePointer == thisStageWaves[0].EnemyNumber.Count)
             thisWaveFinished = true;
+        Debug.Log(thisStageWaves[0].EnemyPositionX[thisWavePointer]);
         SpawnEnemy(thisStageWaves[0].EnemyNumber[thisWavePointer],
                 thisStageWaves[0].EnemyPositionX[thisWavePointer],
                 thisStageWaves[0].EnemyPositionY[thisWavePointer]);
@@ -166,11 +167,11 @@ public class StageIniter : MonoBehaviour
 
     private void SpawnEnemy(string enemyNumber,float positionX, float positionY) {
         GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + enemyNumber);
-        Instantiate(prefab);
-        prefab.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth()/2 * positionX,
+        GameObject result = Instantiate(prefab);
+        result.name = enemyNumber;
+        //Debug.Log(Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * positionX);
+        result.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth()/2 * positionX,
             Camera.main.GetComponent<GameCamera>().GetdevHeight()/2 * positionY);
-        prefab.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * positionX,
-            Camera.main.GetComponent<GameCamera>().GetdevHeight() / 2 * positionY);
     }
 
     public void KilledOneEnemy(){

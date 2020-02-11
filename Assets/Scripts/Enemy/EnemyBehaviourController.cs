@@ -24,16 +24,16 @@ public class EnemyBehaviourController : MonoBehaviour
 
     private void Start()
     {
-        if (gameObject.name == "test")
+        if (gameObject.name == "tests")
         {
             behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
             behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new StayHere(gameObject, 2f));
+            //behaviours.Add(new StayHere(gameObject, 2f));
             behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
         }
         else
         {
-            behaviours.Add(new AlwaysShoot(gameObject, -1f));
+            //behaviours.Add(new AlwaysShoot(gameObject, -1f));
             behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 10f));
         }
     }

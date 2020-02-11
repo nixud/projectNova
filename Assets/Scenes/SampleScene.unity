@@ -4870,10 +4870,8 @@ MonoBehaviour:
   uIcontroller: {fileID: 0}
   shootPoints:
   - {fileID: 783462416}
-  - {fileID: 1471653889}
   IsAutoFire: 0
   WeaponName:
-  - testWeapon
   - testWeapon
 --- !u!212 &1712843129
 SpriteRenderer:
