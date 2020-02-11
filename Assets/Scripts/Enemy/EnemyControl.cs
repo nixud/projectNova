@@ -14,7 +14,10 @@ public class EnemyControl : MonoBehaviour
     public virtual void Hitted(float hp)
     {
         HP -= hp;
-        if (HP <= 0) RecycleNow();
+        if (HP <= 0 && IsNotRecycled) { 
+            RecycleNow();
+            IsNotRecycled = false;
+        }
     }
 
     public void Awake()
@@ -40,6 +43,7 @@ public class EnemyControl : MonoBehaviour
     public void RecycleNow()
     {
         Destroy(gameObject);
+        Camera.main.GetComponent<StageIniter>().KilledOneEnemy();
         ScoreData.Instance.levelScore++;
     }
 }

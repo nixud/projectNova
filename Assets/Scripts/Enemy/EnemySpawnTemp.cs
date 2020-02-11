@@ -7,7 +7,7 @@ public class EnemySpawnTemp : MonoBehaviour
     private float spawnTime = 3f;
     private float time = 0;
 
-    private int EnemyNumber = 0;
+    //private int EnemyNumber = 0;
 
     private void Update()
     {

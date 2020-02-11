@@ -14,7 +14,7 @@ public class ScoreBoard : MonoBehaviour
     }
 
     public void BackToStageScene() {
-        SceneManager.LoadScene("MapTest");
+        SceneManager.LoadScene("Map1");
         ScoreData.Instance.levelScore = 0;
     }
 }

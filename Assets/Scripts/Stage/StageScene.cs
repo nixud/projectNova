@@ -33,6 +33,14 @@ public class StageScene : MonoBehaviour
     public int DiffStageNum;
     public int SpecialStageNum;
 
+    public int EasyStagePointCount;
+    public int NormalStagePointCount;
+    public int DiffStagePointCount;
+
+    public List<int> StagePointCheckTable;
+
+    public MapInfomation mapInfomation;
+
     public int StageSort = 0;
     public MapConfigData mapConfigData;
     [HideInInspector]
@@ -42,15 +50,88 @@ public class StageScene : MonoBehaviour
 
     private bool CanPass = true;
 
-    public void Start()
+    private void Start()
     {
-        if (IsSpawned == false)
+        mapInfomation = MapInfomation.GetInstance();
+
+        if (mapInfomation.MapStatus[mapConfigData.MapNumber] == '0')
         {
             RandomStage();
-            PlayerPlane = GameObject.Find("New Sprite");
-            PlayerPlane.transform.position = StagePointCheck[0].transform.position;
-            FreshStageButton();
-            IsSpawned = true;
+            mapInfomation.MapStatus[mapConfigData.MapNumber] = '1';
+            mapInfomation.EasyStagePointCount = EasyStagePoint.Count;
+            mapInfomation.NormalStagePointCount = NormalStagePoint.Count;
+            mapInfomation.DiffStagePointCount = DiffStagePoint.Count;
+
+            //mapInfomation.StagePointCheck = StagePointCheck;
+            //mapInfomation.StagePointCheckTemp = StagePointCheckTemp;
+
+            mapInfomation.StagePointStatus = StagePointStatus;
+            mapInfomation.PlayerPosition = PlayerPosition;
+
+            NowStageInfomation.GetInstance().PlayerPosition = 0;
+        }
+        else {
+            EasyStagePointCount = mapInfomation.EasyStagePointCount;
+            NormalStagePointCount = mapInfomation.NormalStagePointCount;
+            DiffStagePointCount = mapInfomation.DiffStagePointCount;
+
+            StagePointCheck = new List<GameObject>();
+            StagePointCheckTemp = mapInfomation.StagePointCheckTemp;
+
+            StagePointStatus = mapInfomation.StagePointStatus;
+            PlayerPosition = mapInfomation.PlayerPosition;
+
+            StagePointCheckTable = mapInfomation.StagePointCheckTable;
+
+            LoadStageData();
+
+            if (NowStageInfomation.GetInstance().isCleared) {
+                StagePointStatus[NowStageInfomation.GetInstance().PlayerPosition] = 1;
+                mapInfomation.StagePointStatus = StagePointStatus;
+
+                NowStageInfomation.GetInstance().isCleared = false;
+            }
+        }
+        PlayerPlane = GameObject.Find("New Sprite");
+        PlayerPlane.transform.position = StagePointCheck[NowStageInfomation.GetInstance().PlayerPosition].transform.position;
+        FreshStageButton();
+    }
+
+    private void LoadStageData() {
+        int num = 0;
+        for (int i=0;i<EasyStagePointCount;i++,num++) {
+            GameObject go = GameObject.Find("StagePoint" + (i + 1).ToString());
+            EasyStagePoint.Add(go);
+            if (StagePointCheckTable[num] == 1)
+            {
+                StagePointCheck.Add(go);
+                go.SetActive(true);
+            }
+            else go.SetActive(false);
+        }
+
+        for (int i = 0; i < NormalStagePointCount; i++, num++)
+        {
+            GameObject go = GameObject.Find("StagePoint" + (num + 1).ToString());
+            NormalStagePoint.Add(go);
+            if (StagePointCheckTable[num] == 1)
+            {
+                StagePointCheck.Add(go);
+                go.SetActive(true);
+            }
+            else go.SetActive(false);
+        }
+
+        for (int i = 0; i < DiffStagePointCount; i++, num++)
+        {
+            GameObject go = GameObject.Find("StagePoint" + (num + 1).ToString());
+            DiffStagePoint.Add(go);
+            if (StagePointCheckTable[num] == 1)
+            {
+                StagePointCheck.Add(go);
+                go.SetActive(true);
+            }
+            else go.SetActive(false);
         }
     }
 
@@ -80,7 +161,9 @@ public class StageScene : MonoBehaviour
             {
                 StagePointCheck.Add(EasyStagePoint[i]);
                 StagePointStatus.Add(0);
+                mapInfomation.StagePointCheckTable.Add(1);
             }
+            else mapInfomation.StagePointCheckTable.Add(0);
         }
 
         for (int i = 0; i < NormalStagePoint.Count - NormalStageNum;)
@@ -97,7 +180,9 @@ public class StageScene : MonoBehaviour
             if (NormalStagePoint[i].activeSelf) {
                 StagePointCheck.Add(NormalStagePoint[i]); 
                 StagePointStatus.Add(0);
+                mapInfomation.StagePointCheckTable.Add(1);
             }
+            else mapInfomation.StagePointCheckTable.Add(0);
         }
 
         for (int i = 0; i < DiffStagePoint.Count - DiffStageNum;)
@@ -115,7 +200,9 @@ public class StageScene : MonoBehaviour
             {
                 StagePointCheck.Add(DiffStagePoint[i]);
                 StagePointStatus.Add(0);
+                mapInfomation.StagePointCheckTable.Add(1);
             }
+            else mapInfomation.StagePointCheckTable.Add(0);
         }
 
         StagePointCheckTemp.Add(StagePointCheck[0]);
@@ -192,18 +279,27 @@ public class StageScene : MonoBehaviour
 
     public void ClearThisStage() {
         StagePointStatus[PlayerPosition] = 1;
+        mapInfomation.StagePointStatus = StagePointStatus;
+
         FreshStageButton();
     }
 
     public void StartStage() {
-        NowStageInfomation.GetInstance().Diffculty = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().Diffculty;
-        NowStageInfomation.GetInstance().isCleared = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().isCleared;
+        if (StagePointStatus[PlayerPosition] == 1)
+        {
+        }
+        else
+        {
+            NowStageInfomation.GetInstance().Diffculty = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().Diffculty;
+            NowStageInfomation.GetInstance().isCleared = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().isCleared;
 
-        NowStageInfomation.GetInstance().mapConfigData = this.GetComponent<MapConfigData>();
+            NowStageInfomation.GetInstance().mapConfigData = Camera.main.GetComponent<MapConfigData>();
 
-        Debug.Log(NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount);
+            NowStageInfomation.GetInstance().PlayerPosition = PlayerPosition;
+            Debug.Log(NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount);
 
-        SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("SampleScene");
+        }
     }
     
     public void EnterTestLevel() {

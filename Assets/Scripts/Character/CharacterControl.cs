@@ -32,7 +32,7 @@ public class CharacterControl : MonoBehaviour
     public List<string> WeaponName = new List<string>();
 
     public Item item;
-    float itemTime = 0;
+    //float itemTime = 0;
     bool isUsingItem = false;
     // Start is called before the first frame update
     void Start()

@@ -33,8 +33,8 @@ public class EnemyBehaviourController : MonoBehaviour
         }
         else
         {
-            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 1f));
-            LeftAndRightBehaviour();
+            behaviours.Add(new AlwaysShoot(gameObject, -1f));
+            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 10f));
         }
     }
 

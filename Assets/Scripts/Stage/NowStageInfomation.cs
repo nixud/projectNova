@@ -16,8 +16,12 @@
 
     #endregion
 
+    public bool IsSpawned;
+
     public int StageSort = 0;
     public MapConfigData mapConfigData;
+
+    public int PlayerPosition;
 
     public bool isCleared = false;
     public string Diffculty;

@@ -116,15 +116,24 @@ public class StageIniter : MonoBehaviour
 
     private int thisWavePointer = 0;
 
+    private bool thisWaveFinished = false;
+
     private void Update()
     {
-        if (time >= thisStageWaves[0].EnemyTime[0])
+        if (thisStageWaves.Count == 0)
+            PlayerWin();
+        else
         {
-            time = 0;
-            SpawnEnemy(thisStageWaves[0].EnemyNumber[thisWavePointer]);
-            thisWavePointer++;
+            if (thisWavePointer == thisStageWaves[0].EnemyNumber.Count)
+                thisWaveFinished = true;
+            if (!thisWaveFinished && time >= thisStageWaves[0].EnemyTime[thisWavePointer])
+            {
+                time = 0;
+                UseSpawnEnemy();
+
+            }
+            time += Time.deltaTime;
         }
-        time += Time.deltaTime;
     }
 
     private void NextWave()
@@ -132,7 +141,9 @@ public class StageIniter : MonoBehaviour
         NowKilledEnemyNumber = 0;
         time = 0;
         thisWavePointer = 0;
-        if (thisStageWaves.Count > 1) {
+        thisWaveFinished = false;
+
+        if (thisStageWaves.Count >= 1) {
             thisStageWaves.RemoveAt(0);
         }
         else {
@@ -140,10 +151,26 @@ public class StageIniter : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy(string enemyNumber) {
+    private void UseSpawnEnemy() {
+        if (thisWavePointer == thisStageWaves[0].EnemyNumber.Count)
+            thisWaveFinished = true;
+        SpawnEnemy(thisStageWaves[0].EnemyNumber[thisWavePointer],
+                thisStageWaves[0].EnemyPositionX[thisWavePointer],
+                thisStageWaves[0].EnemyPositionY[thisWavePointer]);
+        if (thisWavePointer < thisStageWaves[0].EnemyNumber.Count)
+            thisWavePointer++;
+        if(thisWavePointer != thisStageWaves[0].EnemyNumber.Count && thisStageWaves[0].EnemyTime[thisWavePointer] <= time) {
+            UseSpawnEnemy();
+        }
+    }
+
+    private void SpawnEnemy(string enemyNumber,float positionX, float positionY) {
         GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + enemyNumber);
         Instantiate(prefab);
-        prefab.transform.position = new Vector2(Random.Range(-5.4f, 5.4f), 10.6f);
+        prefab.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth()/2 * positionX,
+            Camera.main.GetComponent<GameCamera>().GetdevHeight()/2 * positionY);
+        prefab.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * positionX,
+            Camera.main.GetComponent<GameCamera>().GetdevHeight() / 2 * positionY);
     }
 
     public void KilledOneEnemy(){
@@ -154,6 +181,7 @@ public class StageIniter : MonoBehaviour
 
     public void PlayerWin()
     {
+        NowStageInfomation.GetInstance().isCleared = true;
         SceneManager.LoadScene("ScoreBroad");
         ObjectPool.GetInstance().EmptyPool();
     }
