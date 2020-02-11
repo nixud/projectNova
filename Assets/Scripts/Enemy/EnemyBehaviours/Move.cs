@@ -7,6 +7,9 @@ public class Move : EnemyBehaviours
     private float NowSpeed;
     private Vector3 Dir;
 
+    /// <summary>
+    /// 第二个参数是速度，第三个是方向，第四个是时间。直线运动。
+    /// </summary>
     public Move(GameObject Obj, float NowSpeed, Vector3 dir, float t)
     {
         time = t;
