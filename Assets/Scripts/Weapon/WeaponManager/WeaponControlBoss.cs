@@ -10,6 +10,8 @@ public class WeaponControlBoss : MonoBehaviour
     public List<GameObject> firePoints = new List<GameObject>();
     private List<WeaponControl> weaponControls = new List<WeaponControl>();
 
+
+    public delegate void BossBehaviour();
     /*
     private bool IsNotRecycled = false;
     private void OnEnable()
@@ -46,6 +48,10 @@ public class WeaponControlBoss : MonoBehaviour
     public void ShootBehaviour(int i)
     {
         weaponControls[i].Shoot(firePoints[i].transform.position - new Vector3(0, 0.4f, 0), Vector3.down);
+    }
+
+    public void FanBullet() { 
+        
     }
 }
 

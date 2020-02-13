@@ -310,4 +310,8 @@ public class StageScene : MonoBehaviour
     public void BackToHome() {
         SceneManager.LoadScene("StartScene");
     }
+
+    public void EnterBossLevel() { 
+    
+    }
 }

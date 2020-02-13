@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossControl : EnemyControl
 {
@@ -14,6 +15,10 @@ public class BossControl : EnemyControl
     {
         HP -= hp;
         BossBlood.GetComponent<Slider>().value = Mathf.Clamp01(HP / maxHP);
-        if (HP <= 0) RecycleNow();
+        if (HP <= 0) BossDestoryed();
+    }
+
+    public void BossDestoryed() {
+        SceneManager.LoadScene("SampleSceneBoss");
     }
 }
