@@ -48,7 +48,7 @@ public class CharacterControl : MonoBehaviour
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
         uIcontroller.Init((int)playerHP);
-        uIcontroller.AddArmor();
+        //uIcontroller.AddArmor();
 
         UserConfig.Instance.SetAutoFire(IsAutoFire);
 
