@@ -2,29 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus
 {
-    private static PlayerStatus instance = null;
-    private static readonly object padlock = new object();
-
-    PlayerStatus()
+    #region 单例
+    private static PlayerStatus instance;
+    private PlayerStatus()
     {
     }
-
-    public static PlayerStatus Instance
+    public static PlayerStatus GetInstance()
     {
-        get
+        if (instance == null)
         {
-            lock (padlock)
-            {
-                if (instance == null)
-                {
-                    instance = new PlayerStatus();
-                }
-                return instance;
-            }
+            instance = new PlayerStatus();
         }
+        return instance;
     }
+
+    #endregion
 
     public string CommanderName;
     public string CommanderGroupName;
@@ -41,6 +35,8 @@ public class PlayerStatus : MonoBehaviour
     public int StarCoins = 233;
 
     public int Fuel = 114;
+
+    public float HP = 3;
 
     private Ship ship;
     private Plugin plugin;

@@ -11,11 +11,11 @@ public class BasicUIControl : MonoBehaviour
     {
         FulNum = GameObject.Find("FulNum");
         MoneyNum = GameObject.Find("MoneyNum");
-        FulNum.GetComponent<Text>().text = PlayerStatus.Instance.Fuel.ToString();
-        MoneyNum.GetComponent<Text>().text = PlayerStatus.Instance.StarCoins.ToString();
+        FulNum.GetComponent<Text>().text = PlayerStatus.GetInstance().Fuel.ToString();
+        MoneyNum.GetComponent<Text>().text = PlayerStatus.GetInstance().StarCoins.ToString();
     }
     public void FreshData() {
-        FulNum.GetComponent<Text>().text = PlayerStatus.Instance.Fuel.ToString();
-        MoneyNum.GetComponent<Text>().text = PlayerStatus.Instance.StarCoins.ToString();
+        FulNum.GetComponent<Text>().text = PlayerStatus.GetInstance().Fuel.ToString();
+        MoneyNum.GetComponent<Text>().text = PlayerStatus.GetInstance().StarCoins.ToString();
     }
 }

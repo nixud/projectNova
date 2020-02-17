@@ -47,7 +47,8 @@ public class CharacterControl : MonoBehaviour
         scoreData = ScoreData.Instance;
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
-        uIcontroller.Init((int)playerHP);
+        uIcontroller.Init((int)PlayerStatus.GetInstance().HP);
+//        Debug.Log(PlayerStatus.GetInstance().HP);
         //uIcontroller.AddArmor();
 
         UserConfig.Instance.SetAutoFire(IsAutoFire);
@@ -128,10 +129,12 @@ public class CharacterControl : MonoBehaviour
     public void DecHP()
     {
         PlayerHittedEffect();
-        playerHP -= 0.5f;
-        if (playerHP <= 0.01f)
+        PlayerStatus.GetInstance().HP -= 0.5f;
+//        Debug.Log(PlayerStatus.GetInstance().HP);
+        if (PlayerStatus.GetInstance().HP <= 0.01f)
         {
-            PlayerDead();
+            //PlayerDead();
+            Application.Quit();
         }
         uIcontroller--;
     }

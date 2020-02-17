@@ -8,7 +8,7 @@ public class AlwaysShoot : EnemyBehaviours
     {
         time = t;
         this.gameObject = Obj;
-        Debug.Log("静止");
+//        Debug.Log("静止");
     }
 
     public override Vector3 Calculate(float Dt) {

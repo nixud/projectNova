@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScoreBroadBoss.unity
     guid: f64188559cd8944a4895079749ce3355
+  - enabled: 1
+    path: Assets/Scenes/SampleSceneBoss.unity
+    guid: a5c40cfcc23e0426d9f05b6a8d4bd71c
   m_configObjects: {}

@@ -76,7 +76,7 @@ public class StageIniter : MonoBehaviour
             HighWave = false;
 
             List<Wave> waveTemp = GetTargetWaves(StageMinDiffculty, StageMaxDiffculty);
-            Debug.Log(StageStardandDiffculty);
+//            Debug.Log(StageStardandDiffculty);
             for (int i = 0; i < WaveNumber; i++) {
                 if (HighWave) {
                     thisStageWaves.Add(GetRandomWave(waveTemp, StageStardandDiffculty, StageMaxDiffculty));
@@ -154,7 +154,7 @@ public class StageIniter : MonoBehaviour
     private void UseSpawnEnemy() {
         if (thisWavePointer == thisStageWaves[0].EnemyNumber.Count)
             thisWaveFinished = true;
-        Debug.Log(thisStageWaves[0].EnemyPositionX[thisWavePointer]);
+//        Debug.Log(thisStageWaves[0].EnemyPositionX[thisWavePointer]);
         SpawnEnemy(thisStageWaves[0].EnemyNumber[thisWavePointer],
                 thisStageWaves[0].EnemyPositionX[thisWavePointer],
                 thisStageWaves[0].EnemyPositionY[thisWavePointer]);

@@ -287,20 +287,26 @@ public class StageScene : MonoBehaviour
     }
 
     public void StartStage() {
-        if (StagePointStatus[PlayerPosition] == 1)
+        try
         {
+            if (StagePointStatus[PlayerPosition] == 1)
+            {
+            }
+            else
+            {
+                NowStageInfomation.GetInstance().Diffculty = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().Diffculty;
+                NowStageInfomation.GetInstance().isCleared = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().isCleared;
+
+                NowStageInfomation.GetInstance().mapConfigData = Camera.main.GetComponent<MapConfigData>();
+
+                NowStageInfomation.GetInstance().PlayerPosition = PlayerPosition;
+                //            Debug.Log(NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount);
+
+                SceneManager.LoadScene("SampleScene");
+            }
         }
-        else
-        {
-            NowStageInfomation.GetInstance().Diffculty = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().Diffculty;
-            NowStageInfomation.GetInstance().isCleared = StagePointCheck[PlayerPosition].GetComponent<StageDiffculty>().isCleared;
-
-            NowStageInfomation.GetInstance().mapConfigData = Camera.main.GetComponent<MapConfigData>();
-
-            NowStageInfomation.GetInstance().PlayerPosition = PlayerPosition;
-            Debug.Log(NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount);
-
-            SceneManager.LoadScene("SampleScene");
+        catch {
+            SceneManager.LoadScene("SampleSceneBoss");
         }
     }
     

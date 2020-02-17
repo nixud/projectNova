@@ -31,7 +31,7 @@ public class BGScroll : MonoBehaviour
     void Update()
     {
         for (int i = 0; i < SpawnNumber; i++) {
-            stars[i].transform.Translate(new Vector3(0,-1*ScrollSpeed*Time.deltaTime));
+            stars[i].transform.Translate(new Vector3(0,-1*i*0.04f*ScrollSpeed*Time.deltaTime));
             if(stars[i].transform.position.y<-10f)
                 stars[i].transform.position = new Vector3(Random.Range(-5.4f, 5.4f), 10f);
         }
