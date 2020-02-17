@@ -130,11 +130,12 @@ public class CharacterControl : MonoBehaviour
     {
         PlayerHittedEffect();
         PlayerStatus.GetInstance().HP -= 0.5f;
-//        Debug.Log(PlayerStatus.GetInstance().HP);
-        if (PlayerStatus.GetInstance().HP <= 0.01f)
+        //Debug.Log(PlayerStatus.GetInstance().HP);
+        if (PlayerStatus.GetInstance().HP <= 0.3f)
         {
-            //PlayerDead();
-            Application.Quit();
+            PlayerDead();
+            //Debug.Log("草");
+            //Application.Quit();
         }
         uIcontroller--;
     }

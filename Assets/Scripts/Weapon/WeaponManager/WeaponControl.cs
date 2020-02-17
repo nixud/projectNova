@@ -42,7 +42,8 @@ public class WeaponControl : MonoBehaviour
                         float angle = -maxdegree + i *(2* maxdegree)/(BulletNumber-1);
 
                         bullet = ObjectPool.GetInstance().GetObj(weapon.BulletNumber, "Bullets");
-                        Vector3 dir = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0);
+                        Vector3 dir;
+                        dir = new Vector3(shootForward.y * Mathf.Sin(angle), shootForward.y * Mathf.Cos(angle), 0);
                         dir.Normalize();
                         bullet.GetComponent<Bullet>().dir = dir;
                         bullet.GetComponent<Bullet>().transform.position = shootPosition;

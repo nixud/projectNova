@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
   ray: {fileID: 0}
-  WeaponName: EnemyWeapon1
+  WeaponName: EnemyWeapon2
 --- !u!114 &6606226724523506239
 MonoBehaviour:
   m_ObjectHideFlags: 0
