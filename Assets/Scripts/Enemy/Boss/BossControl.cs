@@ -10,6 +10,7 @@ public class BossControl : EnemyControl
     private void Start()
     {
         BossBlood = GameObject.Find("BossBlood");
+        BossBlood.GetComponent<Slider>().value = Mathf.Clamp01(HP / maxHP);
     }
     public override void Hitted(float hp)
     {
@@ -19,6 +20,6 @@ public class BossControl : EnemyControl
     }
 
     public void BossDestoryed() {
-        SceneManager.LoadScene("SampleSceneBoss");
+        SceneManager.LoadScene("StartScene");
     }
 }

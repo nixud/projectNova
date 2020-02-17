@@ -74,6 +74,6 @@ public class SetPlayerInfo : MonoBehaviour
     }
 
     public void EnterGame() {
-        SceneManager.LoadScene("MapTest");
+        SceneManager.LoadScene("Map1");
     }
 }
