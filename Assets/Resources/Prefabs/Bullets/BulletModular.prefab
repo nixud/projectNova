@@ -4771,7 +4771,9 @@ MonoBehaviour:
   ShotgunRandomNum: 0
   SplitedNum: 0
   splitedRange: 1
+  splitedOutRange: 4
   SplitedScale: 1
+  splitedOutRangeNow: 0
   Target: {fileID: 0}
 --- !u!61 &1217614790077428214
 BoxCollider2D:
