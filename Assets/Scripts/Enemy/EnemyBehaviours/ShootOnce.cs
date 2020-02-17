@@ -8,13 +8,13 @@ public class ShootOnce : EnemyBehaviours
     {
         time = t;
         this.gameObject = Obj;
-        Debug.Log("静止");
+        //Debug.Log("静止");
     }
 
     public override Vector3 Calculate(float Dt) {
         return new Vector3(0,0,0);
     }
     public override void Run(float Dt) {
-        gameObject.GetComponent<WeaponControlEnemy>().ShootBehaviour();
+        gameObject.GetComponent<EnemyControl>().Shoot();
     }
 }

@@ -88,11 +88,12 @@ public class WeaponControl : MonoBehaviour
         }
     }
 
-    public void LoadWeapon(string WeaponNumber)
+    public Weapon LoadWeapon(string WeaponNumber)
     {
         WeaponJsonLoader jsonLoader = new WeaponJsonLoader();
         weapon =  jsonLoader.LoadData(WeaponNumber);
         jsonLoader = null;
+        return weapon;
     }
 
     IEnumerator WeaponCD() {

@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6606226724523506239}
   - component: {fileID: 6606226724523506368}
   m_Layer: 0
-  m_Name: test
+  m_Name: Enemy000001
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b6f71fa9292954a890cfea39578ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
-  maxHP: 10
+  HP: 100
+  maxHP: 100
   DestoryEffect: 
   IsNotRecycled: 1
   shootPoints:
