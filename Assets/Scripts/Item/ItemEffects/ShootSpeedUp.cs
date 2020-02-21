@@ -6,7 +6,7 @@ public class ShootSpeedUp : ItemEffects
 {
     public ShootSpeedUp()
     {
-        time = 10;
+        time = 4;
     }
     public override void Run() {
         GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("/",3);

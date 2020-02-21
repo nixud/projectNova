@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class CharacterControl : MonoBehaviour
@@ -34,6 +35,8 @@ public class CharacterControl : MonoBehaviour
     public Item item;
     //float itemTime = 0;
     bool isUsingItem = false;
+
+    public Sprite temp;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,11 @@ public class CharacterControl : MonoBehaviour
         {
             weaponControl.Add(gameObject.AddComponent<WeaponControl>());
             weaponControl[i].LoadWeapon(WeaponName[i]);
+            if (weaponControl[i].weapon.isRay)
+            {
+                Debug.Log(weaponControl[i].weapon.RayNumber);
+                weaponControl[i].ray = ObjectPool.GetInstance().GetObj(weaponControl[i].weapon.RayNumber, "Bullets");
+            }
         }
 
         if (UserConfig.Instance.GetAutoFire() == true)
@@ -160,6 +168,7 @@ public class CharacterControl : MonoBehaviour
 
     IEnumerator Useitem()
     {
+        GameObject.Find("ItemButton").GetComponent<Image>().sprite = temp;
         item.Run();
         yield return new WaitForSeconds(item.itemEffects.time);
         item.End();
