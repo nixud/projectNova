@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d279a1c711444e97f60648e2830a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 8
+  Damage: 15
   Speed:
     serializedVersion: 2
     m_Curve:

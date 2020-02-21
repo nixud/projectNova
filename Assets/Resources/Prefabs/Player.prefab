@@ -259,11 +259,11 @@ MonoBehaviour:
   - {fileID: 3301522348364521353}
   IsAutoFire: 1
   WeaponName:
+  - testWeapon2
+  - testWeapon2
   - testWeapon
-  - testWeapon
-  - testWeapon
-  - testWeapon
-  - testWeapon
+  - testWeapon2
+  - testWeapon2
 --- !u!114 &3301522347482042097
 MonoBehaviour:
   m_ObjectHideFlags: 0
