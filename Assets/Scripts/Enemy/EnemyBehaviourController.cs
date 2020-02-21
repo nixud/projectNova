@@ -27,16 +27,29 @@ public class EnemyBehaviourController : MonoBehaviour
         if (gameObject.name == "test")
         {
             behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
+            behaviours.Add(new ShootPlayerOnce(gameObject,-1f));
             behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new StayHere(gameObject, 2f));
+            behaviours.Add(new StayHere(gameObject, 4f));
             behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
         }
-        else
+        else if(gameObject.name == "Enemy000004")
         {
             behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
+            behaviours.Add(new ShootPlayerOnce(gameObject, -1f));
+            behaviours.Add(new AlwaysShoot(gameObject, -1f));
+            behaviours.Add(new StayHere(gameObject, 16f));
+            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
+        }
+        else if (gameObject.name == "Enemy000003")
+        {
+            behaviours.Add(new Kamikaze(gameObject, 3f, 10f));
+        }
+        else {
+            behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 1f));
+            behaviours.Add(new ShootPlayerOnce(gameObject, -1f));
             behaviours.Add(new AlwaysShoot(gameObject, -1f));
             behaviours.Add(new StayHere(gameObject, 8f));
-            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
+            behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
         }
     }
 
@@ -46,7 +59,7 @@ public class EnemyBehaviourController : MonoBehaviour
         {
 
             if (AlwaysShoot || AlwaysShootUntilNextBehaviour)
-                gameObject.GetComponent<EnemyControl>().Shoot();
+                gameObject.GetComponent<EnemyControl>().Shoot(Vector3.down);
 
             if (behaviours.Count > 0) behaviours[0].Run(Time.deltaTime);
 

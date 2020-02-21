@@ -55,6 +55,11 @@ public class Bullet : MonoBehaviour
         SplitedNum = 0;
         splitedRange = 1;
         SplitedScale = 1;
+
+        Target = GameObject.Find("Player").transform;
+
+        //transform.forward = dir;
+        //transform.Rotate(new Vector3(0,0,30));
     }
 
     private void Update() {
@@ -66,7 +71,7 @@ public class Bullet : MonoBehaviour
             {
                 transform.Translate(dir * NowSpeed);
             }
-            else {
+            else {/*
                 float deltaTime = Time.deltaTime;
 
                 NowSpeed *= 20;
@@ -80,6 +85,21 @@ public class Bullet : MonoBehaviour
                 transform.forward = Vector3.Slerp(transform.forward, offset, deltaTime / needTime).normalized;
 
                 transform.position += transform.forward * NowSpeed * deltaTime;
+                */
+
+                Vector2 offset = (Target.position - transform.position).normalized;
+
+                float angle = Vector2.Angle(dir, offset);
+
+                //Debug.Log(angle);
+
+                //transform.rotation = Quaternion.Euler(0,0,angle);
+
+                transform.Rotate(new Vector3(0,0,angle));
+
+                transform.position += transform.forward * NowSpeed * Time.deltaTime;
+
+                //transform.Translate(dir * NowSpeed);
             }
 
             if (Issplit && SplitNum > SplitedNum) {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootOnce : EnemyBehaviours
+public class ShootPlayerOnce : EnemyBehaviours
 {
-    public ShootOnce(GameObject Obj,float t)
+    public ShootPlayerOnce(GameObject Obj,float t)
     {
         time = t;
         this.gameObject = Obj;
@@ -15,6 +15,7 @@ public class ShootOnce : EnemyBehaviours
         return new Vector3(0,0,0);
     }
     public override void Run(float Dt) {
-        gameObject.GetComponent<EnemyControl>().Shoot(Vector3.down);
+        Vector3 dir = -(gameObject.transform.position - GameObject.Find("Player").transform.position).normalized;
+        gameObject.GetComponent<EnemyControl>().Shoot(dir);
     }
 }

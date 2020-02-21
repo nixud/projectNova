@@ -72,8 +72,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   BulletBody: Player0001
-  HitEffect: BulletImpactModular
-  DestoryEffect: BulletImpactModular
+  HitEffect: BulletImpactModularYellow
+  DestoryEffect: BulletImpactModularYellow
   ShootGunEffect: 
   FireAudio: {fileID: 0}
   HitAudio: {fileID: 0}

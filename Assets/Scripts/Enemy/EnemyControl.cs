@@ -19,7 +19,7 @@ public class EnemyControl : MonoBehaviour
     public virtual void Hitted(float hp)
     {
         HP -= hp;
-        if (HP <= 0 && IsNotRecycled) { 
+        if (HP <= 0 && IsNotRecycled) {
             RecycleNow();
             IsNotRecycled = false;
         }
@@ -54,9 +54,9 @@ public class EnemyControl : MonoBehaviour
         ScoreData.Instance.levelScore++;
     }
 
-    public void Shoot()
+    public void Shoot(Vector3 dir)
     {
         for (int i = 0; i < weaponControls.Count; i++)
-            weaponControls[i].Shoot(shootPoints[i].transform.position, Vector3.down);
+            weaponControls[i].Shoot(shootPoints[i].transform.position, dir);
     }
 }
