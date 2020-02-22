@@ -53,7 +53,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.0016479492
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -61,8 +61,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
+      time: 0.5293474
+      value: 0.26151437
+      inSlope: 0.46152613
+      outSlope: 0.46152613
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1.0224557
-      value: 0.347934
+      value: 0.34958196
       inSlope: 0.1897529
       outSlope: 0.1897529
       tangentMode: 0
@@ -91,7 +100,9 @@ MonoBehaviour:
   ShotgunRandomNum: 0
   SplitedNum: 0
   splitedRange: 1
+  splitedOutRange: 4
   SplitedScale: 1
+  splitedOutRangeNow: 0
   Target: {fileID: 0}
 --- !u!198 &19880836
 ParticleSystem:
