@@ -49,6 +49,8 @@ public class Bullet : MonoBehaviour
 
     public Transform Target = null;
 
+    public float eulers;
+
     public void ActiveIt()
     {
         transform.localScale = Scale;
@@ -60,7 +62,7 @@ public class Bullet : MonoBehaviour
 
         //transform.forward = dir;
         //Debug.Log(dir);
-        //transform.Rotate(new Vector3(0,0,Mathf.Atan(dir.x/dir.y)));
+
     }
 
     private void Update() {
@@ -157,6 +159,7 @@ public class Bullet : MonoBehaviour
         RecycleNow();
     }
     void RecycleNow() {
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         if (IsNotRecycled)
         {
             if (DestoryEffect != null)
@@ -172,6 +175,7 @@ public class Bullet : MonoBehaviour
     }
     void HitRecycleNow()
     {
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         if (IsNotRecycled)
         {
             if (HitEffect != null)

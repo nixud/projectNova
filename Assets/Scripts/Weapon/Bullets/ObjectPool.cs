@@ -69,11 +69,7 @@ public class ObjectPool
             prefab = prefabs[objName];
             if (path == "Bullets")
             {
-                try
-                {
-                    prefab.GetComponent<Bullet>().ActiveIt();
-                }
-                catch { Debug.Log("ray"); }
+                prefab.GetComponent<Bullet>().ActiveIt();
             }
         }
         else     //如果没有加载过该预设体
@@ -82,13 +78,8 @@ public class ObjectPool
             prefab = Resources.Load<GameObject>("Prefabs/" + path + "/" + objName);
 
             if (path == "Bullets")
-            {
-                try
-                {
-                    prefab.GetComponent<Bullet>().ActiveIt();
-                }
-                catch { Debug.Log("ray"); }
-
+            { 
+                prefab.GetComponent<Bullet>().ActiveIt();
             }
             //更新字典
             prefabs.Add(objName, prefab);
