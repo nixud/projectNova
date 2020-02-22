@@ -56,10 +56,11 @@ public class Bullet : MonoBehaviour
         splitedRange = 1;
         SplitedScale = 1;
 
-        Target = GameObject.Find("Player").transform;
+        //Target = GameObject.Find("Player").transform;
 
         //transform.forward = dir;
-        //transform.Rotate(new Vector3(0,0,30));
+        //Debug.Log(dir);
+        //transform.Rotate(new Vector3(0,0,Mathf.Atan(dir.x/dir.y)));
     }
 
     private void Update() {
@@ -69,7 +70,7 @@ public class Bullet : MonoBehaviour
 
             if (!CanTrackEnemy)
             {
-                transform.Translate(dir * NowSpeed);
+                transform.Translate(dir * NowSpeed, Space.World);
             }
             else {/*
                 float deltaTime = Time.deltaTime;
@@ -95,7 +96,7 @@ public class Bullet : MonoBehaviour
 
                 //transform.rotation = Quaternion.Euler(0,0,angle);
 
-                transform.Rotate(new Vector3(0,0,angle));
+                transform.Rotate(new Vector3(0,0,0.01f));
 
                 transform.position += transform.forward * NowSpeed * Time.deltaTime;
 

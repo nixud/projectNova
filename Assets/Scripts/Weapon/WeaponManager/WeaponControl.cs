@@ -47,6 +47,8 @@ public class WeaponControl : MonoBehaviour
                         dir.Normalize();
                         bullet.GetComponent<Bullet>().dir = dir;
                         bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                        //Debug.Log(Mathf.Atan(dir.x / dir.y));
+                        bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, -Mathf.Atan(dir.x / dir.y)*180/Mathf.PI));
                     }
                 }
 
