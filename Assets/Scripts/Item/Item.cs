@@ -15,7 +15,7 @@ public class Item : IComparable
 
     public RareLevel rareLevel = RareLevel.E;
 
-    public int EffectNumber;//效果编号（可能用不到）
+    public int EffectNumber;
 
     public int CompareTo(object obj)
     {
