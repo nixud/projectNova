@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//控制boss的类。boss有专有的血条。
 public class BossControl : EnemyControl
 {
     private GameObject BossBlood;

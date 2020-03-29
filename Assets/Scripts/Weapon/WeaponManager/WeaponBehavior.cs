@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
+//这个类暂时没有用。
 public class WeaponBehavior : MonoBehaviour
 {
     Weapon weapon;

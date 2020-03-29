@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//获取玩家输入的类。获取后的移动方向会赋值给characterControl.MoveDir
 public class CharacterInput : MonoBehaviour
 {
     CharacterControl characterControl;

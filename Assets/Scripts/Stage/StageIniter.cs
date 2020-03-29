@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//包括生成敌人、判断输赢在内的关卡内控制脚本。
 public class StageIniter : MonoBehaviour
 {
     private int WaveNumber;

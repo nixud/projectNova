@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//用于关卡与地图间传值。
 public class MapInfomation
 {
     #region 单例

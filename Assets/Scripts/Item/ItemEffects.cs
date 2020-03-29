@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//负责道具效果的抽象类。
 public abstract class ItemEffects
 {
     public GameObject gameObject;

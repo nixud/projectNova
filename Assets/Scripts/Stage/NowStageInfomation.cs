@@ -1,4 +1,5 @@
-﻿public class NowStageInfomation
+﻿//记录目前地图的信息。
+public class NowStageInfomation
 {
     #region 单例
     private static NowStageInfomation instance;

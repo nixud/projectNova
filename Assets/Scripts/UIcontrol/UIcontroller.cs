@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//控制血量和护甲的显示
 public class UIcontroller : MonoBehaviour
 {
     public List<GameObject> bloods;

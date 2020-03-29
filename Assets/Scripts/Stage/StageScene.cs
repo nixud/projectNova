@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//地图的处理。包括随机生成地图上的关卡和加载之前的关卡。
 public class StageScene : MonoBehaviour
 {
     private bool IsSpawned;

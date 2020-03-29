@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//单张地图（目前就一张）的设定。
 public class MapConfigData:MonoBehaviour {
     public int MapNumber;
 

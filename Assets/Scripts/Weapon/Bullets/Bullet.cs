@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//这部分会被重写。
 public class Bullet : MonoBehaviour
 {
     public float Damage;

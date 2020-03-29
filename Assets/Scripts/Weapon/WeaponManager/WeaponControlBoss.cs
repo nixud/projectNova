@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//boss专用的控制类。
 public class WeaponControlBoss : MonoBehaviour
 {
     private Vector3 shootPoint;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyBehaviourController : MonoBehaviour
 {
+    //用于敌人行动逻辑控制的类
     private float time = 0;
 
     public bool AlwaysShoot;
@@ -24,6 +25,7 @@ public class EnemyBehaviourController : MonoBehaviour
 
     private void Start()
     {
+        //暂时的敌人逻辑获取
         if (gameObject.name == "test")
         {
             behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));

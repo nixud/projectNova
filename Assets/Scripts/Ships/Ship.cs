@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//玩家的船。
 public class Ship
 {
     public string Number;

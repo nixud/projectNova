@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//控制敌人的类。所有敌人都需使用该类。
 public class EnemyControl : MonoBehaviour
 {
     public float HP = 10;

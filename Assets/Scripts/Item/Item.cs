@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+//所有道具的基类。道具通过继承它实现。
 public class Item : IComparable
 {
     public int Number;

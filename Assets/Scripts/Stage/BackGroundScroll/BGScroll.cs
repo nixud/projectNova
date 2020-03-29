@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//控制关卡内卷轴背景。
 public class BGScroll : MonoBehaviour
 {
     public List<Sprite> tiny = new List<Sprite>();

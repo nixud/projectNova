@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//玩家的控制类。包括玩家移动，武器，ui和道具等。
 public class CharacterControl : MonoBehaviour
 {
     public GameObject Character;
@@ -37,7 +38,7 @@ public class CharacterControl : MonoBehaviour
     bool isUsingItem = false;
 
     public Sprite temp;
-    // Start is called before the first frame update
+    //初始化
     void Start()
     {
         item = new Item();
@@ -83,7 +84,7 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    //用于移动。movedir会被改变，然后在这里进行移动。
     void FixedUpdate()
     {
         if (UserConfig.Instance.GetAutoFire() == true)
@@ -99,7 +100,8 @@ public class CharacterControl : MonoBehaviour
         gameObject.transform.Translate(MoveDir * speed);
 
     }
-
+    //用于防止移动到墙边的方法。
+    //但是没被用到。
     public void SetPosition(Vector3 position)
     {
         Vector3 newPosi = PositionBasic + position;
@@ -119,21 +121,25 @@ public class CharacterControl : MonoBehaviour
     {
         PositionBasic = gameObject.transform.position;
     }
+    //射击。循环调用所有的武器。
     public void Shoot()
     {
         for (int i = 0; i < weaponControl.Count; i++)
             weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
     }
+    //开始发射激光
     public void StartRay()
     {
         for (int i = 0; i < weaponControl.Count; i++)
             weaponControl[i].StartRay();
     }
+    //停止发射激光
     public void StopRay()
     {
         for (int i = 0; i < weaponControl.Count; i++)
             weaponControl[i].StopRay();
     }
+    //扣血。uicontrller的--表示减一个血。
     public void DecHP()
     {
         PlayerHittedEffect();
@@ -151,12 +157,13 @@ public class CharacterControl : MonoBehaviour
     {
 
     }
+    //玩家死去时的判定
     public void PlayerDead()
     {
         SceneManager.LoadScene("ScoreBroadFailed");
         ObjectPool.GetInstance().EmptyPool();
     }
-
+    //使用道具
     public void UsingItem()
     {
         if (!isUsingItem)
@@ -165,7 +172,7 @@ public class CharacterControl : MonoBehaviour
             StartCoroutine(Useitem());
         }
     }
-
+    //计算道具cd
     IEnumerator Useitem()
     {
         GameObject.Find("ItemButton").GetComponent<Image>().sprite = temp;
@@ -174,7 +181,7 @@ public class CharacterControl : MonoBehaviour
         item.End();
         isUsingItem = false;
     }
-
+    //这是一个改变武器射速的方法，由相应道具调用
     public void WeaponSpeedChange(string mode,float num) {
         if (mode == "*")
         {

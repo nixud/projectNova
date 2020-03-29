@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//移动设备使用的输入类。同时包括了射击的方法。
 public class CharacterInputMoblie : MonoBehaviour
 {
     CharacterControl characterControl;

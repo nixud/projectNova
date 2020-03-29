@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//控制敌人的武器的类，继承了weaponcontrol。
 public class WeaponControlEnemy : WeaponControl
 {
     private Vector3 shootPoint;

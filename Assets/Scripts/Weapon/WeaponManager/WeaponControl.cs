@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//控制武器的。一个weaponcontrol对应一个武器。
 public class WeaponControl : MonoBehaviour
 {
     [HideInInspector]
