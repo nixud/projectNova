@@ -21,8 +21,8 @@ public class Kamikaze : EnemyBehaviours
         Player = GameObject.Find("Player");
         Dir = (Player.transform.position - gameObject.transform.position).normalized;
 
-        //float eulers = -Mathf.Atan(Dir.x / Dir.y) * 180 / Mathf.PI;
-        float eulers = -Mathf.Atan(Dir.x / Dir.y);
+        Dir.Normalize();
+        float eulers = -Mathf.Atan(Dir.x / Dir.y) * 180 / Mathf.PI;
         gameObject.transform.Rotate(new Vector3(0, 0, eulers));
     }
 
