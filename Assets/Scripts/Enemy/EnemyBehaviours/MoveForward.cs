@@ -12,6 +12,11 @@ public class MoveForward : EnemyBehaviours
         time = t;
         this.NowSpeed = NowSpeed;
         this.gameObject = Obj;
+        if (Mathf.Abs(dir.x) > 0.001f)
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, Mathf.Asin(dir.y / dir.x));
+            Debug.Log(Mathf.Asin(dir.y / dir.x));
+        }
         Dir = dir;
     }
 

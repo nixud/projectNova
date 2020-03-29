@@ -34,7 +34,7 @@ public class EnemyBehaviourController : MonoBehaviour
             behaviours.Add(new StayHere(gameObject, 4f));
             behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
         }
-        else if(gameObject.name == "Enemy000004")
+        else if(gameObject.name == "Enemy000003")
         {
             behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
             behaviours.Add(new ShootOnce(gameObject, -1f));
@@ -42,9 +42,9 @@ public class EnemyBehaviourController : MonoBehaviour
             behaviours.Add(new StayHere(gameObject, 16f));
             behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
         }
-        else if (gameObject.name == "Enemy000003")
+        else if (gameObject.name == "Enemy000005")
         {
-            behaviours.Add(new Kamikaze(gameObject, 3f, 10f));
+            behaviours.Add(new Kamikaze(gameObject, 6f, 10f));
         }
         else {
             behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 1f));

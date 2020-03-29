@@ -17,8 +17,12 @@ public class Kamikaze : EnemyBehaviours
         time = t;
         this.NowSpeed = NowSpeed;
         this.gameObject = Obj;
+
         Player = GameObject.Find("Player");
         Dir = (Player.transform.position - gameObject.transform.position).normalized;
+
+        float eulers = -Mathf.Atan(Dir.x / Dir.y) * 180 / Mathf.PI;
+        gameObject.transform.Rotate(new Vector3(0, 0, eulers));
     }
 
     public override Vector3 Calculate(float Dt) {
