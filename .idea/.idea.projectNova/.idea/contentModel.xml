@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Joklr\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Joklr\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_projectNova.-442799077.00" t="ExcludeRecursive" />
+    <e p="D:\unity\projectNova" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="DOTween" t="Include">
+          <e p="Modules" t="Include">
+            <e p="DOTweenModuleAudio.cs" t="Include" />
+            <e p="DOTweenModulePhysics.cs" t="Include" />
+            <e p="DOTweenModulePhysics2D.cs" t="Include" />
+            <e p="DOTweenModuleSprite.cs" t="Include" />
+            <e p="DOTweenModuleUI.cs" t="Include" />
+            <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+            <e p="DOTweenModuleUtils.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="JsonDotNet" t="Include">
+          <e p="link.xml" t="Include" />
+        </e>
+        <e p="Pixel Arsenal" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ButtonScript.cs" t="Include" />
+              <e p="DragMouseOrbit.cs" t="Include" />
+              <e p="FireProjectile.cs" t="Include" />
+              <e p="LoadSceneOnClickPA.cs" t="Include" />
+              <e p="Projectile.cs" t="Include" />
+              <e p="ProjectileScript.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Pixel Arsenal - ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="BeamScript.cs" t="Include" />
+            <e p="lightScript.cs" t="Include" />
+            <e p="loopScript.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Pixel UI" t="Include">
+          <e p="Changelog.txt" t="Include" />
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ClockDemo.cs" t="Include" />
+              <e p="CubitsController.cs" t="Include" />
+              <e p="DemoDialogue.cs" t="Include" />
+              <e p="DemoWindow.cs" t="Include" />
+              <e p="ExampleController.cs" t="Include" />
+              <e p="ExperienceButton.cs" t="Include" />
+              <e p="ExperienceLabel.cs" t="Include" />
+              <e p="IconDemo.cs" t="Include" />
+              <e p="LoadScene.cs" t="Include" />
+              <e p="MagicTargetController.cs" t="Include" />
+              <e p="PanelController.cs" t="Include" />
+              <e p="PingPong.cs" t="Include" />
+              <e p="Shake.cs" t="Include" />
+              <e p="SlimusController.cs" t="Include" />
+              <e p="SwatchButton.cs" t="Include" />
+              <e p="SwatchHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="CardProfile.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CreateBaseMenu.cs" t="Include" />
+              <e p="CreateExtrasMenu.cs" t="Include" />
+              <e p="CreateRoundedMenu.cs" t="Include" />
+              <e p="CreateSquareMenu.cs" t="Include" />
+              <e p="CreateTextMenu.cs" t="Include" />
+            </e>
+            <e p="Range.cs" t="Include" />
+            <e p="Rotator.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+            <e p="UICard.cs" t="Include" />
+            <e p="UIClock.cs" t="Include" />
+            <e p="UIDeck.cs" t="Include" />
+            <e p="UIDialogueWindow.cs" t="Include" />
+            <e p="UIExperienceBar.cs" t="Include" />
+            <e p="UIFader.cs" t="Include" />
+            <e p="UIRescaler.cs" t="Include" />
+            <e p="UIStatBar.cs" t="Include" />
+            <e p="UITabbedWindow.cs" t="Include" />
+            <e p="UITooltip.cs" t="Include" />
+            <e p="UITypewriter.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="GameText" t="Include">
+            <e p="GameText.txt" t="Include" />
+            <e p="ShipInfo.txt" t="Include" />
+          </e>
+          <e p="PicConfig" t="Include">
+            <e p="CommanderGroupPic.txt" t="Include" />
+            <e p="CommanderPic.txt" t="Include" />
+            <e p="ShipPic.txt" t="Include" />
+          </e>
+          <e p="盗版素材" t="Include">
+            <e p="Misc" t="Include">
+              <e p="占位.txt" t="Include" />
+            </e>
+            <e p="声音" t="Include">
+              <e p="BGM" t="Include">
+                <e p="占位.txt" t="Include" />
+              </e>
+              <e p="SFX" t="Include">
+                <e p="占位.txt" t="Include" />
+              </e>
+            </e>
+            <e p="道具" t="Include">
+              <e p="占位.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Character" t="Include">
+            <e p="CharacterControl.cs" t="Include" />
+            <e p="CharacterInput.cs" t="Include" />
+            <e p="CharacterInputMoblie.cs" t="Include" />
+          </e>
+          <e p="Enemy" t="Include">
+            <e p="Boss" t="Include">
+              <e p="BossControl.cs" t="Include" />
+            </e>
+            <e p="Enemy.cs" t="Include" />
+            <e p="EnemyBehaviourController.cs" t="Include" />
+            <e p="EnemyBehaviours" t="Include">
+              <e p="AlwaysShoot.cs" t="Include" />
+              <e p="AlwaysShootUNB.cs" t="Include" />
+              <e p="Kamikaze.cs" t="Include" />
+              <e p="Move.cs" t="Include" />
+              <e p="MoveForward.cs" t="Include" />
+              <e p="ShootOnce.cs" t="Include" />
+              <e p="ShootPlayerOnce.cs" t="Include" />
+              <e p="StayHere.cs" t="Include" />
+            </e>
+            <e p="EnemyBehaviours.cs" t="Include" />
+            <e p="EnemyBehavioursMove.cs" t="Include" />
+            <e p="EnemyControl.cs" t="Include" />
+            <e p="EnemyJsonLoader.cs" t="Include" />
+            <e p="EnemyMenu.cs" t="Include" />
+            <e p="EnemySpawnTemp.cs" t="Include" />
+          </e>
+          <e p="GameCamera.cs" t="Include" />
+          <e p="GameText" t="Include">
+            <e p="GameTextLoader.cs" t="Include" />
+            <e p="ImageLoader.cs" t="Include" />
+          </e>
+          <e p="Item" t="Include">
+            <e p="Bag.cs" t="Include" />
+            <e p="ExpendableItemButton.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="ItemButton.cs" t="Include" />
+            <e p="ItemEffects" t="Include">
+              <e p="ShootSpeedUp.cs" t="Include" />
+            </e>
+            <e p="ItemEffects.cs" t="Include" />
+            <e p="ItemLoader.cs" t="Include" />
+            <e p="ItemMenu.cs" t="Include" />
+            <e p="ItemUIControl.cs" t="Include" />
+          </e>
+          <e p="JsonLoader.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="PlayerImage.cs" t="Include" />
+            <e p="PlayerInfo.cs" t="Include" />
+            <e p="PlayerStatus.cs" t="Include" />
+            <e p="SampleSceneControl.cs" t="Include" />
+            <e p="SetPlayerInfo.cs" t="Include" />
+            <e p="StartSceneControl.cs" t="Include" />
+          </e>
+          <e p="Plugin" t="Include">
+            <e p="Plugin.cs" t="Include" />
+            <e p="PluginBehaviour.cs" t="Include" />
+            <e p="PluginMenu.cs" t="Include" />
+          </e>
+          <e p="RareLevel.cs" t="Include" />
+          <e p="SceneUIControl" t="Include">
+            <e p="BasicUIControl.cs" t="Include" />
+          </e>
+          <e p="Score" t="Include">
+            <e p="ScoreBoard.cs" t="Include" />
+            <e p="ScoreData.cs" t="Include" />
+          </e>
+          <e p="Ships" t="Include">
+            <e p="Ship.cs" t="Include" />
+          </e>
+          <e p="Stage" t="Include">
+            <e p="BackGroundScroll" t="Include">
+              <e p="BGScroll.cs" t="Include" />
+            </e>
+            <e p="MapConfigData.cs" t="Include" />
+            <e p="MapInfomation.cs" t="Include" />
+            <e p="NowStageInfomation.cs" t="Include" />
+            <e p="StageCreater.cs" t="Include" />
+            <e p="StageDiffculty.cs" t="Include" />
+            <e p="StageIniter.cs" t="Include" />
+            <e p="StageScene.cs" t="Include" />
+            <e p="Wave.cs" t="Include" />
+            <e p="WaveGroupCreater.cs" t="Include" />
+            <e p="WaveMenu.cs" t="Include" />
+          </e>
+          <e p="TestScript.cs" t="Include" />
+          <e p="UIcontrol" t="Include">
+            <e p="UIcontroller.cs" t="Include" />
+          </e>
+          <e p="UserConfig.cs" t="Include" />
+          <e p="Weapon" t="Include">
+            <e p="Bullets" t="Include">
+              <e p="Bullet.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="RayCreater.cs" t="Include" />
+              <e p="RecycleMe.cs" t="Include" />
+            </e>
+            <e p="WeaponManager" t="Include">
+              <e p="Weapon.cs" t="Include" />
+              <e p="WeaponBehavior.cs" t="Include" />
+              <e p="WeaponControl.cs" t="Include" />
+              <e p="WeaponControlBoss.cs" t="Include" />
+              <e p="WeaponControlEnemy.cs" t="Include" />
+              <e p="WeaponJsonLoader.cs" t="Include" />
+              <e p="WeaponMenu.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Wingman" t="Include">
+            <e p="Wingman.cs" t="Include" />
+          </e>
+        </e>
+        <e p="test" t="Include">
+          <e p="line.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
+          <e p="shader" t="Include">
+            <e p="Example.cs" t="Include" />
+            <e p="pixel.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="projectNova.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

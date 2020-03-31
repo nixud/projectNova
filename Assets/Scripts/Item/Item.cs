@@ -26,14 +26,18 @@ public class Item : IComparable
 
     public ItemEffects itemEffects;
 
-    public void LoadEffect() {
+    private Item LoadEffect() {
         if (EffectNumber == 1)
             itemEffects = new ShootSpeedUp();
+
+        return this;
     }
 
     public void Run() {
         if (itemEffects != null)
             itemEffects.Run();
+        else 
+            LoadEffect().Run();
     }
     public void End()
     {

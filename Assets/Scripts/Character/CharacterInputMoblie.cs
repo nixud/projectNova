@@ -101,7 +101,7 @@ public class CharacterInputMoblie : MonoBehaviour
         isButtonDown = false;
     }
 
-    public void UseItem() {
-        characterControl.UsingItem();
-    }
+    // public void UseItem() {
+    //     characterControl.UsingItem();
+    // }
 }
