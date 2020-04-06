@@ -52,10 +52,10 @@ public class CharacterControl : MonoBehaviour
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
         uIcontroller.Init((int)PlayerStatus.GetInstance().HP);
-//        Debug.Log(PlayerStatus.GetInstance().HP);
+        //        Debug.Log(PlayerStatus.GetInstance().HP);
         //uIcontroller.AddArmor();
 
-        UserConfig.Instance.SetAutoFire(IsAutoFire);
+        BattleUserConfig.Instance.SetAutoFire(IsAutoFire);
 
         gameCamera = Camera.main.GetComponent<GameCamera>();
         ShootButton = GameObject.Find("ShootButton");
@@ -77,7 +77,7 @@ public class CharacterControl : MonoBehaviour
             }
         }
 
-        if (UserConfig.Instance.GetAutoFire() == true)
+        if (BattleUserConfig.Instance.GetAutoFire() == true)
         {
             ShootButton.SetActive(false);
             StartRay();
@@ -87,7 +87,7 @@ public class CharacterControl : MonoBehaviour
     //用于移动。movedir会被改变，然后在这里进行移动。
     void FixedUpdate()
     {
-        if (UserConfig.Instance.GetAutoFire() == true)
+        if (BattleUserConfig.Instance.GetAutoFire() == true)
         {
             Shoot();
         }
