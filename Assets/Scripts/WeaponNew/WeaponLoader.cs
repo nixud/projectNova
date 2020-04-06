@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class WeaponLoader : MonoBehaviour
 {
-    static WeaponNew LoadWeapon(string WeaponNumber) {
+    public static WeaponNew LoadWeaponAndAttachToGO(string WeaponNumber,GameObject go) {
         WeaponJsonLoader jsonLoader = new WeaponJsonLoader();
         Weapon weapon = jsonLoader.LoadData(WeaponNumber);
 
-        WeaponNew result = new WeaponNormalGun(weapon);
+        WeaponNew weaponNew;
 
-        if (weapon.isRay == false) {
-            if (weapon.IsAShotgun == false) {
-                result = new WeaponNormalGun(weapon);
-            }
-        }
+        weaponNew = go.AddComponent<WeaponNormalGun>();
 
-        return result;
+        weaponNew.LoadInfomation(weapon);
+
+        return weaponNew;
     }
 }

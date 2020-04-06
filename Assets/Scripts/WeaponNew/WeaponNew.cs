@@ -33,4 +33,5 @@ public abstract class WeaponNew : MonoBehaviour, IComparable
     }
 
     public abstract void Shoot(Vector3 shootPosition, Vector3 shootForward);
+    public abstract void LoadInfomation(Weapon weapon);
 }

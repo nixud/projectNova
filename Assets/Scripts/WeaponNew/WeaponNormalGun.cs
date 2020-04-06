@@ -8,7 +8,7 @@ public class WeaponNormalGun : WeaponNew
 
     bool IsInCD;
 
-    public WeaponNormalGun(Weapon weapon) {
+    public override void LoadInfomation(Weapon weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
