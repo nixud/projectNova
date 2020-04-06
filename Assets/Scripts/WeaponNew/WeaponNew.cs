@@ -3,7 +3,7 @@ using XLua;
 using UnityEngine;
 
 [Hotfix]
-public abstract class WeaponNew : IComparable
+public abstract class WeaponNew : MonoBehaviour, IComparable
 {
     public string Number;
     public string WeaponName;
