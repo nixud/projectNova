@@ -28,7 +28,7 @@ public abstract class WeaponNew : MonoBehaviour, IComparable
 
     public int CompareTo(object obj)
     {
-        Weapon p = obj as Weapon;
+        WeaponNew p = obj as WeaponNew;
         return CompareTo(p.Number);
     }
 
