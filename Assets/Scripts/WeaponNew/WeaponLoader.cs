@@ -12,7 +12,14 @@ public class WeaponLoader : MonoBehaviour
 
         WeaponNew weaponNew;
 
-        weaponNew = go.AddComponent<WeaponNormalGun>();
+        if (weapon.IsAShotgun == false)
+        {
+            weaponNew = go.AddComponent<WeaponNormalGun>();
+        }
+        else
+        {
+            weaponNew = go.AddComponent<WeaponNormalGun>();
+        }
 
         weaponNew.LoadInfomation(weapon);
 

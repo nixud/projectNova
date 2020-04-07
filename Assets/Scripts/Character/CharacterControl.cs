@@ -134,7 +134,7 @@ public class CharacterControl : MonoBehaviour
         //for (int i = 0; i < weaponControl.Count; i++)
         //    weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
         for (int i = 0; i < weaponNews.Count; i++) {
-
+            weaponNews[i].Shoot(shootPoints[i].transform.position, Vector3.up);
         }
     }
     //开始发射激光

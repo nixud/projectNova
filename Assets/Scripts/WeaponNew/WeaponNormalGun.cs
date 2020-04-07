@@ -8,8 +8,6 @@ public class WeaponNormalGun : WeaponNew
 {
     GameObject bullet;
 
-    bool IsInCD;
-
     public override void LoadInfomation(Weapon weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
@@ -33,9 +31,9 @@ public class WeaponNormalGun : WeaponNew
                 bullet.GetComponent<Bullet>().dir = shootForward;
                 bullet.GetComponent<Bullet>().transform.position = shootPosition;
             }
-        }
 
-        StartCoroutine(WeaponCD());
+            StartCoroutine(WeaponCD());
+        }
     }
 
     IEnumerator WeaponCD()

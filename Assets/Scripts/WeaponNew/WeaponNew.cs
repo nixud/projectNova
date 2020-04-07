@@ -26,6 +26,8 @@ public abstract class WeaponNew : MonoBehaviour, IComparable
 
     public RareLevel rareLevel = 0;
 
+    protected bool IsInCD = false;
+
     public int CompareTo(object obj)
     {
         WeaponNew p = obj as WeaponNew;
