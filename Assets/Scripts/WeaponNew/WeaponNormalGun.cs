@@ -25,12 +25,10 @@ public class WeaponNormalGun : WeaponNew
     {
         if (!IsInCD)
         {
-            if (!IsAShotgun)
-            {
-                bullet = ObjectPool.GetInstance().GetObj(BulletNumber, "Bullets");
-                bullet.GetComponent<Bullet>().dir = shootForward;
-                bullet.GetComponent<Bullet>().transform.position = shootPosition;
-            }
+
+            bullet = ObjectPool.GetInstance().GetObj(BulletNumber, "Bullets");
+            bullet.GetComponent<Bullet>().dir = shootForward;
+            bullet.GetComponent<Bullet>().transform.position = shootPosition;
 
             StartCoroutine(WeaponCD());
         }

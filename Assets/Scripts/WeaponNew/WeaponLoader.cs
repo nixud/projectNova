@@ -18,7 +18,7 @@ public class WeaponLoader : MonoBehaviour
         }
         else
         {
-            weaponNew = go.AddComponent<WeaponNormalGun>();
+            weaponNew = go.AddComponent<WeaponShotGun>();
         }
 
         weaponNew.LoadInfomation(weapon);
