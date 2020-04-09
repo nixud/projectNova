@@ -23,6 +23,7 @@ public class CharacterControl : MonoBehaviour
     public UIcontroller uIcontroller;
 
     List<WeaponControl> weaponControl = new List<WeaponControl>();
+    List<WeaponNew> weaponNews = new List<WeaponNew>();
     public List<GameObject> shootPoints = new List<GameObject>();
 
     ScoreData scoreData;
@@ -45,17 +46,17 @@ public class CharacterControl : MonoBehaviour
         item.EffectNumber = 1;
         item.LoadEffect();
 
-        if (shootPoints.Count != WeaponName.Count)
+        if (shootPoints.Count < WeaponName.Count)
             throw new Exception();
 
         scoreData = ScoreData.Instance;
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
         uIcontroller.Init((int)PlayerStatus.GetInstance().HP);
-//        Debug.Log(PlayerStatus.GetInstance().HP);
+        //        Debug.Log(PlayerStatus.GetInstance().HP);
         //uIcontroller.AddArmor();
 
-        UserConfig.Instance.SetAutoFire(IsAutoFire);
+        BattleUserConfig.Instance.SetAutoFire(IsAutoFire);
 
         gameCamera = Camera.main.GetComponent<GameCamera>();
         ShootButton = GameObject.Find("ShootButton");
@@ -77,7 +78,13 @@ public class CharacterControl : MonoBehaviour
             }
         }
 
-        if (UserConfig.Instance.GetAutoFire() == true)
+        //WeaponLoader weaponLoader = new WeaponLoader();
+        for (int i = 0; i < WeaponName.Count; i++)
+        {
+            weaponNews.Add(WeaponLoader.LoadWeaponAndAttachToGO(WeaponName[i],gameObject));
+        }
+
+        if (BattleUserConfig.Instance.GetAutoFire() == true)
         {
             ShootButton.SetActive(false);
             StartRay();
@@ -87,7 +94,7 @@ public class CharacterControl : MonoBehaviour
     //用于移动。movedir会被改变，然后在这里进行移动。
     void FixedUpdate()
     {
-        if (UserConfig.Instance.GetAutoFire() == true)
+        if (BattleUserConfig.Instance.GetAutoFire() == true)
         {
             Shoot();
         }
@@ -124,8 +131,11 @@ public class CharacterControl : MonoBehaviour
     //射击。循环调用所有的武器。
     public void Shoot()
     {
-        for (int i = 0; i < weaponControl.Count; i++)
-            weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
+        //for (int i = 0; i < weaponControl.Count; i++)
+        //    weaponControl[i].Shoot(shootPoints[i].transform.position, Vector3.up);
+        for (int i = 0; i < weaponNews.Count; i++) {
+            weaponNews[i].Shoot(shootPoints[i].transform.position, Vector3.up);
+        }
     }
     //开始发射激光
     public void StartRay()

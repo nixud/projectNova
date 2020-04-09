@@ -2498,6 +2498,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.32
       objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042099, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.08212423
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042099, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.05243361
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042099, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.002254054
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042099, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.05305034
+      objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042101, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: m_Name
@@ -2570,8 +2590,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
+      propertyPath: WeaponName.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
       propertyPath: WeaponName.Array.data[0]
-      value: testWeapon
+      value: testWeapon2
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
@@ -2586,12 +2611,12 @@ PrefabInstance:
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.data[3]
-      value: testWeapon2
+      value: testWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.data[4]
-      value: testWeapon2
+      value: testWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
