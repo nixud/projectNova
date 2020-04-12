@@ -36,7 +36,7 @@ public class WingmanSystem : MonoBehaviour
             {
                 wingmanController.SetTarget(wingmans[i - 1]);
             }
-            Debug.Log(curPrefab);
+            //Debug.Log(curPrefab);
             wingmans.Add(curPrefab);
         }
     }
