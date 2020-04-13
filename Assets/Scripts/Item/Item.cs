@@ -29,6 +29,8 @@ public class Item : IComparable
     private Item LoadEffect() {
         if (EffectNumber == 1)
             itemEffects = new ShootSpeedUp();
+        else if (EffectNumber == 2)
+            itemEffects = new KillSelf();
 
         return this;
     }

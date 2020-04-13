@@ -10,9 +10,7 @@ public class Bag
     // 单例
     private Bag()
     {
-        PermanentItemEquipped = null;
-        ExpendableItemEquipped = null;
-        ExpendableItemCount = 0;
+        Init();
     }
     private static Bag _instance;
     public static Bag Instance
@@ -35,7 +33,9 @@ public class Bag
     
     public void Init()
     {
-        
+        PermanentItemEquipped = ItemLoader.LoadData(2);
+        ExpendableItemEquipped = ItemLoader.LoadData(1);
+        ExpendableItemCount = 20;
     }
 
     

@@ -13,7 +13,7 @@ public class ExpendableItemButton : MonoBehaviour
     private Item item;
     private Button button;
 
-    private float cd;
+    private float cd = 0.2f;  // 访误触cd
     private float timer;
     private bool isUsingItem;
     private int count;
@@ -45,7 +45,6 @@ public class ExpendableItemButton : MonoBehaviour
         if (item != null)
         {
             this.item = item;
-            cd = this.item.CD;
             this.count = count;
             itemCount.text = count.ToString();
         }
@@ -84,7 +83,7 @@ public class ExpendableItemButton : MonoBehaviour
         {
             timer += Time.deltaTime;
             Render.fillAmount = 1 - (timer / cd);
-            if (cd - timer < 0.005f)
+            if (cd - timer < 0.00005f)
             {
                 isUsingItem = false;
                 timer = 0;

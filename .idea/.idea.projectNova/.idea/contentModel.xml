@@ -154,6 +154,7 @@
             <e p="Item.cs" t="Include" />
             <e p="ItemButton.cs" t="Include" />
             <e p="ItemEffects" t="Include">
+              <e p="KillSelf.cs" t="Include" />
               <e p="ShootSpeedUp.cs" t="Include" />
             </e>
             <e p="ItemEffects.cs" t="Include" />
