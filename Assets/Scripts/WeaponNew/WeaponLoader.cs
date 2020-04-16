@@ -13,8 +13,6 @@ public class WeaponLoader : MonoBehaviour
 
         WeaponNew weaponNew;
 
-        //Debug.Log(weapon.WeaponSort);
-
         if (weapon.WeaponSort == 1)
         {
             weaponNew = go.AddComponent<WeaponNormalGun>();
@@ -27,6 +25,8 @@ public class WeaponLoader : MonoBehaviour
         {
             weaponNew = go.AddComponent<WeaponRay>();
         }
+        else if(weapon.WeaponSort == 4)
+            weaponNew = go.AddComponent<WeaponMechineGun>();
         else throw new Exception();
 
         weaponNew.LoadInfomation(weapon);
