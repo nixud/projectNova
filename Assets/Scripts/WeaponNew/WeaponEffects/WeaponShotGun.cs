@@ -45,11 +45,17 @@ public class WeaponShotGun : WeaponNew
             {
                 float angle = -maxdegree + i * (2 * maxdegree) / (BulletNum - 1);
 
-                bullet = ObjectPool.GetInstance().GetObj(this.BulletNumber, "Bullets");
-                Vector3 dir = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0);
+                bullet = ObjectPool.GetInstance().GetObj(BulletNumber, "Bullets");
+                Vector3 dir;
+                dir = new Vector3(shootForward.y * Mathf.Sin(angle), shootForward.y * Mathf.Cos(angle), 0);
                 dir.Normalize();
                 bullet.GetComponent<Bullet>().dir = dir;
                 bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                //Debug.Log(Mathf.Atan(dir.x / dir.y));
+                float eulers = -Mathf.Atan(dir.x / dir.y) * 180 / Mathf.PI;
+                bullet.GetComponent<Bullet>().transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, eulers));
+                bullet.GetComponent<Bullet>().eulers = eulers;
             }
 
             StartCoroutine(WeaponCD());

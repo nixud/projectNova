@@ -73,7 +73,7 @@ public class CharacterControl : MonoBehaviour
             weaponControl[i].LoadWeapon(WeaponName[i]);
         }*/
 
-        WeaponLoader weaponLoader = new WeaponLoader();
+        //WeaponLoader weaponLoader = new WeaponLoader();
         for (int i = 0; i < WeaponName.Count; i++)
         {
             weaponNews.Add(WeaponLoader.LoadWeaponAndAttachToGO(WeaponName[i],gameObject));

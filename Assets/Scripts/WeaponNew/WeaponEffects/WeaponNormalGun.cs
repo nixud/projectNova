@@ -16,7 +16,7 @@ public class WeaponNormalGun : WeaponNew
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
 
-        FireSpeed = weapon.WeaponInts[0];
+        FireSpeed = weapon.WeaponFloats[0];
         BulletNumber = weapon.WeaponStrings[0];
 
         IconPath = weapon.IconPath;
