@@ -12,13 +12,19 @@ public class WeaponLoader : MonoBehaviour
 
         WeaponNew weaponNew;
 
-        if (weapon.IsAShotgun == false)
+        if (weapon.isRay == true)
         {
-            weaponNew = go.AddComponent<WeaponNormalGun>();
+            weaponNew = go.AddComponent<WeaponRay>();
         }
-        else
-        {
-            weaponNew = go.AddComponent<WeaponShotGun>();
+        else {
+            if (weapon.IsAShotgun == false)
+            {
+                weaponNew = go.AddComponent<WeaponNormalGun>();
+            }
+            else
+            {
+                weaponNew = go.AddComponent<WeaponShotGun>();
+            }
         }
 
         weaponNew.LoadInfomation(weapon);

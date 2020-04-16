@@ -5314,5 +5314,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: WeaponName.Array.data[0]
+      value: RayWeaponTest
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f665eca5f5cf419ebbfe265d37db975, type: 3}

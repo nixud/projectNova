@@ -66,19 +66,14 @@ public class CharacterControl : MonoBehaviour
         if (Character == null) Character = gameObject;
 
         PositionBasic = Character.transform.position;
-
+        /*
         for (int i = 0; i < WeaponName.Count; i++)
         {
             weaponControl.Add(gameObject.AddComponent<WeaponControl>());
             weaponControl[i].LoadWeapon(WeaponName[i]);
-            if (weaponControl[i].weapon.isRay)
-            {
-                Debug.Log(weaponControl[i].weapon.RayNumber);
-                weaponControl[i].ray = ObjectPool.GetInstance().GetObj(weaponControl[i].weapon.RayNumber, "Bullets");
-            }
-        }
+        }*/
 
-        //WeaponLoader weaponLoader = new WeaponLoader();
+        WeaponLoader weaponLoader = new WeaponLoader();
         for (int i = 0; i < WeaponName.Count; i++)
         {
             weaponNews.Add(WeaponLoader.LoadWeaponAndAttachToGO(WeaponName[i],gameObject));
