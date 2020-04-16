@@ -8,18 +8,26 @@ public class WeaponShotGun : WeaponNew
 {
     GameObject bullet;
 
-    public override void LoadInfomation(Weapon weapon) {
+    private float FireSpeed;
+    private string BulletNumber;
+
+    private float Accuracy;
+    private bool IsShotGunEven;
+    private int ShotgunNum;
+    private int ShotgunRandomNum;
+
+    public override void LoadInfomation(WeaponInformation weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
-        FireSpeed = weapon.FireSpeed;
-        BulletNumber = weapon.BulletNumber;
 
-        Accuracy = weapon.Accuracy;
-        IsAShotgun = weapon.IsAShotgun;
-        IsShotGunEven = weapon.IsShotGunEven;
-        ShotgunNum = weapon.ShotgunNum;
-        ShotgunRandomNum = weapon.ShotgunRandomNum;
+        FireSpeed = weapon.WeaponFloats[0];
+        BulletNumber = weapon.WeaponStrings[0];
+
+        Accuracy = weapon.WeaponFloats[1];
+        IsShotGunEven = weapon.WeaponBools[0];
+        ShotgunNum = weapon.WeaponInts[0];
+        ShotgunRandomNum = weapon.WeaponInts[1];
 
         IconPath = weapon.IconPath;
         PicPath = weapon.PicPath;

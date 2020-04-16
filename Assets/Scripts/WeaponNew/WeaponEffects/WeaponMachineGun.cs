@@ -1,14 +1,14 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using XLua;
 
 [Hotfix]
-public class WeaponNormalGun : WeaponNew
+public class WeaponMechineGun : WeaponNew
 {
     GameObject bullet;
 
-    public override void LoadInfomation(Weapon weapon) {
+    public override void LoadInfomation(WeaponInformation weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
@@ -41,3 +41,4 @@ public class WeaponNormalGun : WeaponNew
         IsInCD = false;
     }
 }
+*/

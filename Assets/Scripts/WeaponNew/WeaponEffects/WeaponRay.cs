@@ -10,33 +10,34 @@ public class WeaponRay : WeaponNew
 
     GameObject ray;
 
+    private string RayNumber;
+    private float RayDamagePerSec;
+    private float RayWidth;
+
     bool IsRayhiting;
     bool IsRayOn;
 
     Vector3 shootPosition;
     Vector3 shootForward;
 
-    public override void LoadInfomation(Weapon weapon) {
+    public override void LoadInfomation(WeaponInformation weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
 
-        isRay = weapon.isRay;
-        RayNumber = weapon.RayNumber;
-        RayDamagePerSec = weapon.RayDamagePerSec;
+        RayNumber = weapon.WeaponStrings[0];
+        RayDamagePerSec = weapon.WeaponFloats[0];
+        RayWidth = weapon.WeaponFloats[1];
 
         IconPath = weapon.IconPath;
         PicPath = weapon.PicPath;
 
         rareLevel = weapon.rareLevel;
 
-        if (weapon.isRay)
-        {
-            ray = ObjectPool.GetInstance().GetObj(weapon.RayNumber, "Rays");
-        }
+        ray = ObjectPool.GetInstance().GetObj(RayNumber, "Rays");
 
-        ray.GetComponent<LineRenderer>().startWidth = 0.2f;
-        ray.GetComponent<LineRenderer>().endWidth = 0.2f;
+        ray.GetComponent<LineRenderer>().startWidth = RayWidth;
+        ray.GetComponent<LineRenderer>().endWidth = RayWidth;
     }
 
     public override void Shoot(Vector3 shootPosition, Vector3 shootForward)

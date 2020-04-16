@@ -1,5 +1,42 @@
-[{"MapNum":1,"EnemyNumber":["Enemy000003"],"EnemyTime":[0.0],"EnemyPositionX":[0],"EnemyPositionY":[1.1],"Diffculty":30},
-{"MapNum":1,"EnemyNumber":["Enemy000001","Enemy000001","Enemy000001"],"EnemyTime":[0.0,0.0,0.5],"EnemyPositionX":[0.7,-0.7,0],"EnemyPositionY":[1.1,1.1,1.1],"Diffculty":30},
-{"MapNum":1,"EnemyNumber":["Enemy000001","Enemy000001","Enemy000003"],"EnemyTime":[0.0,0.0,0.5],"EnemyPositionX":[0.7,-0.7,0],"EnemyPositionY":[1.1,1.1,1.1],"Diffculty":70},
-{"MapNum":1,"EnemyNumber":["Enemy000001","Enemy000001","Enemy000003","Enemy000005","Enemy000005"],"EnemyTime":[0.0,0.0,0.5,1,2],"EnemyPositionX":[0.7,-0.7,0,1.1,-1.1],"EnemyPositionY":[1.1,1.1,1.1,0.7,0.7],"Diffculty":85},
-{"MapNum":1,"EnemyNumber":["Enemy000003","Enemy000003"],"EnemyTime":[0.0,0.0],"EnemyPositionX":[0.7,-0.7],"EnemyPositionY":[1.1,1.1],"Diffculty":70}]
+[
+    {
+        "MapNum": 1,
+        "EnemyNumber": [ "Enemy000003" ],
+        "EnemyTime": [ 0.0 ],
+        "EnemyPositionX": [ 0 ],
+        "EnemyPositionY": [ 1.1 ],
+        "Diffculty": 30
+    },
+    {
+        "MapNum": 1,
+        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001" ],
+        "EnemyTime": [ 0.0, 0.0, 0.5 ],
+        "EnemyPositionX": [ 0.7, -0.7, 0 ],
+        "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
+        "Diffculty": 30
+    },
+    {
+        "MapNum": 1,
+        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003" ],
+        "EnemyTime": [ 0.0, 0.0, 0.5 ],
+        "EnemyPositionX": [ 0.7, -0.7, 0 ],
+        "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
+        "Diffculty": 70
+    },
+    {
+        "MapNum": 1,
+        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003", "Enemy000005", "Enemy000005" ],
+        "EnemyTime": [ 0.0, 0.0, 0.5, 1, 2 ],
+        "EnemyPositionX": [ 0.7, -0.7, 0, 1.1, -1.1 ],
+        "EnemyPositionY": [ 1.1, 1.1, 1.1, 0.7, 0.7 ],
+        "Diffculty": 85
+    },
+    {
+        "MapNum": 1,
+        "EnemyNumber": [ "Enemy000003", "Enemy000003" ],
+        "EnemyTime": [ 0.0, 0.0 ],
+        "EnemyPositionX": [ 0.7, -0.7 ],
+        "EnemyPositionY": [ 1.1, 1.1 ],
+        "Diffculty": 70
+    }
+]

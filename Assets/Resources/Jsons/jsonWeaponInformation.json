@@ -1,0 +1,80 @@
+﻿[
+    {
+        "Number": "testWeapon",
+        "WeaponName": "舰载磁轨炮",
+        "Description": "中等频率向前方发射一枚低伤害弹丸。实弹动能类的武器不需要高精度的设备，因而并不需要官方渠道就能够获得，这类舰载磁轨炮是不少星际海盗的首选装备——当然，是入不了眼的小海盗。",
+        "WeaponFloats": [ 0.2 ],
+        "WeaponStrings": [ "Player0001" ],
+        "WeaponBools": null,
+        "WeaponInts": null,
+        "WeaponSort": 1,
+        "IconPath": null,
+        "PicPath": null,
+        "rareLevel": 4
+    },
+    {
+        "Number": "testWeapon2",
+        "WeaponName": "等离子鱼叉",
+        "Description": "向前方快速发射夹角为15度的三束鱼叉形等离子束，其中中间一束体积和大小都比较高\n非官方渠道生产的等离子束武器，如同它的名字“鱼叉”一样，能够用三束等离子束轻而易举地洞穿想要逃离战场的漏网之鱼。当然，这需要你的能源充足。",
+        "WeaponFloats": [ 0.8 , 0.4 ],
+        "WeaponStrings": [ "Player0002" ],
+        "WeaponBools": [ true ],
+        "WeaponInts": [ 3 ],
+        "WeaponSort": 2,
+        "IconPath": null,
+        "PicPath": null,
+        "rareLevel": 4
+    },
+    {
+        "Number": "RayWeaponTest",
+        "WeaponName": "测试激光",
+        "Description": "没有描述",
+        "WeaponFloats": [ 40 , 0.2 ],
+        "WeaponStrings": [ "RayTest" ],
+        "WeaponBools": [ true ],
+        "WeaponInts": null,
+        "WeaponSort": 3,
+        "IconPath": null,
+        "PicPath": null,
+        "rareLevel": 0
+    },
+    {
+        "Number": "EnemyWeapon1",
+        "WeaponName": "充能热线炮",
+        "Description": "没有描述",
+        "WeaponFloats": [ 2.5 ],
+        "WeaponStrings": [ "Enemy0" ],
+        "WeaponBools": null,
+        "WeaponInts": null,
+        "IconPath": null,
+        "PicPath": null,
+        "WeaponSort": 1,
+        "rareLevel": 4
+    },
+    {
+        "Number": "EnemyWeapon3",
+        "WeaponName": "联装充能热线炮",
+        "Description": "没有描述",
+        "WeaponFloats": [ 1.25, 0.7 ],
+        "WeaponStrings": [ "Enemy0" ],
+        "WeaponBools": [ true ],
+        "WeaponInts": [ 11 ],
+        "WeaponSort": 2,
+        "IconPath": null,
+        "PicPath": null,
+        "rareLevel": 4
+    },
+    {
+        "Number": "EnemyWeapon8",
+        "WeaponName": "充能热线炮MKII",
+        "Description": "没有描述",
+        "WeaponFloats": [ 0.5 ],
+        "WeaponStrings": [ "Enemy0" ],
+        "WeaponBools": null,
+        "WeaponInts": null,
+        "WeaponSort": 1,
+        "IconPath": null,
+        "PicPath": null,
+        "rareLevel": 4
+    }
+]
