@@ -56,7 +56,7 @@ public class WeaponRay : WeaponNew
 
             RaycastHit2D hit = Physics2D.Raycast(shootPosition, shootForward);
 
-            if (hit.collider != null && hit.distance <= 30)
+            if (hit.collider != null && hit.distance <= 30 && hit.collider.gameObject.tag == "Enemy")
             {
                 ray.GetComponent<LineRenderer>().SetPosition(1, hit.point);
                 if (!IsRayhiting)
@@ -74,11 +74,7 @@ public class WeaponRay : WeaponNew
     IEnumerator RayCD(RaycastHit2D hit)
     {
         IsRayhiting = true;
-        try
-        {
-            hit.collider.gameObject.GetComponent<EnemyControl>().Hitted(RayDamagePerSec / 5);
-        }
-        catch { }
+        hit.collider.gameObject.GetComponent<EnemyControl>().Hitted(RayDamagePerSec / 5);
         yield return new WaitForSeconds(0.2f);
         IsRayhiting = false;
     }
