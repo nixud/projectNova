@@ -14,6 +14,8 @@ public class Item : IComparable
     public float CD;
     public string PicPath;
 
+    public ItemType Type;
+    
     public RareLevel rareLevel = RareLevel.E;
 
     public int EffectNumber;
@@ -24,26 +26,43 @@ public class Item : IComparable
         return this.Number.CompareTo(p.Number);
     }
 
-    public ItemEffects itemEffects;
+    private ItemEffects _itemEffects;
+    public ItemEffects ItemEffects
+    {
+        get
+        {
+            if (_itemEffects == null)
+                LoadEffect();
+            return _itemEffects;
+        }
+    }
 
-    private Item LoadEffect() {
+    private void LoadEffect() {
         if (EffectNumber == 1)
-            itemEffects = new ShootSpeedUp();
+            _itemEffects = new ShootSpeedUp();
         else if (EffectNumber == 2)
-            itemEffects = new KillSelf();
-
-        return this;
+            _itemEffects = new KillSelf();
+        else if (EffectNumber == 3)
+            _itemEffects = new Equip1();
+        else if (EffectNumber == 4)
+            _itemEffects = new Equip2();
+        else if (EffectNumber == 5)
+            _itemEffects = new plugin1();
+        
+        Debug.Log("load effect : " + EffectNumber);
     }
 
     public void Run() {
-        if (itemEffects != null)
-            itemEffects.Run();
-        else 
-            LoadEffect().Run();
+        ItemEffects.Run();
     }
+
+    public void Update()
+    {
+        ItemEffects.Update();
+    }
+    
     public void End()
     {
-        if (itemEffects != null)
-            itemEffects.End();
+        ItemEffects.End();
     }
 }

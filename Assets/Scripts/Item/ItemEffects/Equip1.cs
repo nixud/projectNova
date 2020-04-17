@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillSelf : ItemEffects, IConsume
+public class Equip1 : ItemEffects, IConsume
 {
     public int EffectCount { get; }
     public float Cd { get; }
 
-    public KillSelf()
+    public Equip1()
     {
         EffectCount = 5;
         time = 0f;
@@ -17,21 +17,21 @@ public class KillSelf : ItemEffects, IConsume
 
     public override void Run()
     {
-        GameObject.Find("Player").GetComponent<CharacterControl>().DecHP();
+        Debug.Log("Test1 run");
     }
 
     public override void Update()
     {
-        return;
+        Debug.Log("Test1 update");
     }
 
     public override void End()
     {
-        return;
+        Debug.Log("Test1 end");
     }
 
     public override bool Condition()
     {
-        return GameObject.Find("Player").transform.position.x > 0;
+        return true;
     }
 }

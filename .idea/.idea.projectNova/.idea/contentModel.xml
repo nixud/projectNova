@@ -153,14 +153,20 @@
             <e p="ExpendableItemButton.cs" t="Include" />
             <e p="Item.cs" t="Include" />
             <e p="ItemButton.cs" t="Include" />
+            <e p="ItemControl.cs" t="Include" />
             <e p="ItemEffects" t="Include">
+              <e p="Equip1.cs" t="Include" />
+              <e p="Equip2.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
+              <e p="plugin1.cs" t="Include" />
+              <e p="plugin2.cs" t="Include" />
+              <e p="plugin3.cs" t="Include" />
               <e p="ShootSpeedUp.cs" t="Include" />
             </e>
             <e p="ItemEffects.cs" t="Include" />
             <e p="ItemLoader.cs" t="Include" />
             <e p="ItemMenu.cs" t="Include" />
-            <e p="ItemUIControl.cs" t="Include" />
+            <e p="ItemUtility.cs" t="Include" />
           </e>
           <e p="JsonLoader.cs" t="Include" />
           <e p="Player" t="Include">
