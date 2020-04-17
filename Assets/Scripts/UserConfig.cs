@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public sealed class UserConfig
+public sealed class BattleUserConfig
 {
-    private static readonly UserConfig instance = new UserConfig();
+    private static readonly BattleUserConfig instance = new BattleUserConfig();
 
-    static UserConfig()
+    static BattleUserConfig()
     {
     }
 
-    private UserConfig()
+    private BattleUserConfig()
     {
     }
 
-    public static UserConfig Instance
+    public static BattleUserConfig Instance
     {
         get
         {
