@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/items.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/items.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemUIControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemUIControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButton2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButton2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButtonRender.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test/ItemButtonRender.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ExpendableItemButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIcontroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInputMoblie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/WaveMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Bag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/80/4cd276d3/IComparable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A3F68E4-AE18-416E-9941-EAFA34CABA8A/5f/fa2ce02b/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/2f/3c359399/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyJsonLoader.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInputMoblie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUIControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/Bag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ExpendableItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Test1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Test2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\unity\projectNova\.idea\.idea.projectNova\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZpY9FVm8VZlSeokfwxYYXRINIa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="" />
+      <created>1585537351471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585537351471</updated>
+      <workItem from="1585537360772" duration="1153000" />
+      <workItem from="1585539276916" duration="1189000" />
+      <workItem from="1585553673582" duration="10965000" />
+      <workItem from="1585622055748" duration="3510000" />
+      <workItem from="1585641234128" duration="1681000" />
+      <workItem from="1585643186535" duration="845000" />
+      <workItem from="1586833118372" duration="6195000" />
+      <workItem from="1586851634372" duration="7940000" />
+      <workItem from="1586916728506" duration="7463000" />
+      <workItem from="1586951173817" duration="1006000" />
+      <workItem from="1587003771111" duration="19080000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.1.center" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.1.left" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.1.right" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.2.bottom" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.2.center" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.2.left" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.2.right" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.3.bottom" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.3.center" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.3.left" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state width="1877" height="325" key="GridCell.Tab.3.right" timestamp="1586926453830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
+    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1587115213666">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587115213666" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585558541072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585558541072" />
+    <state x="806" y="427" key="VCS.ChangelistChooser" timestamp="1586922254001">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586922254001" />
+  </component>
+</project>
