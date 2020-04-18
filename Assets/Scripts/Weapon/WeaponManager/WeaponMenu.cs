@@ -1,4 +1,4 @@
-﻿#if UNITY_EDITOR
+﻿/*#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor.Experimental.UIElements;
 using UnityEditor;
@@ -180,3 +180,4 @@ public class WeaponMenu : EditorWindow
     }
 }
 #endif
+*/

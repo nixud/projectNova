@@ -8,12 +8,16 @@ public class WeaponNormalGun : WeaponNew
 {
     GameObject bullet;
 
-    public override void LoadInfomation(Weapon weapon) {
+    private float FireSpeed;
+    private string BulletNumber;
+
+    public override void LoadInfomation(WeaponInformation weapon) {
         Number = weapon.Number;
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
-        FireSpeed = weapon.FireSpeed;
-        BulletNumber = weapon.BulletNumber;
+
+        FireSpeed = weapon.WeaponFloats[0];
+        BulletNumber = weapon.WeaponStrings[0];
 
         IconPath = weapon.IconPath;
         PicPath = weapon.PicPath;
