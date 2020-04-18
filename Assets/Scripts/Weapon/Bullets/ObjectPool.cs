@@ -53,7 +53,7 @@ public class ObjectPool
                 result.SetActive(true);
 
                 if (path == "Bullets")
-                    result.GetComponent<Bullet>().ActiveIt();
+                    result.GetComponent<BulletHelper>().ActiveIt();
                 //从池中移除该对象
                 pool[objName].Remove(result);
                 //返回结果
@@ -69,7 +69,7 @@ public class ObjectPool
             prefab = prefabs[objName];
             if (path == "Bullets")
             {
-                prefab.GetComponent<Bullet>().ActiveIt();
+                prefab.GetComponent<BulletHelper>().ActiveIt();
             }
         }
         else     //如果没有加载过该预设体
@@ -78,8 +78,8 @@ public class ObjectPool
             prefab = Resources.Load<GameObject>("Prefabs/" + path + "/" + objName);
 
             if (path == "Bullets")
-            { 
-                prefab.GetComponent<Bullet>().ActiveIt();
+            {
+                prefab.GetComponent<BulletHelper>().ActiveIt();
             }
             //更新字典
             prefabs.Add(objName, prefab);
