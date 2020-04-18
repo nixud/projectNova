@@ -13,6 +13,7 @@ public class EnemyControl : MonoBehaviour
     public bool IsNotRecycled = true;
 
     List<WeaponControlEnemy> weaponControls = new List<WeaponControlEnemy>();
+    List<WeaponNew> weaponNews = new List<WeaponNew>();
     public List<GameObject> shootPoints = new List<GameObject>();
 
     public List<string> WeaponName = new List<string>();
@@ -31,11 +32,16 @@ public class EnemyControl : MonoBehaviour
         HP = maxHP;
         IsNotRecycled = true;
 
-        for (int i = 0; i < WeaponName.Count; i++)
+        /*for (int i = 0; i < WeaponName.Count; i++)
         {
             weaponControls.Add(gameObject.AddComponent<WeaponControlEnemy>());
             weaponControls[i].WeaponName = WeaponName[i];
             weaponControls[i].LoadWeapon(WeaponName[i]);
+        }*/
+        //WeaponLoader weaponLoader = new WeaponLoader();
+        for (int i = 0; i < WeaponName.Count; i++)
+        {
+            weaponNews.Add(WeaponLoader.LoadWeaponAndAttachToGO(WeaponName[i], gameObject));
         }
     }
 
@@ -57,7 +63,11 @@ public class EnemyControl : MonoBehaviour
 
     public void Shoot(Vector3 dir)
     {
-        for (int i = 0; i < weaponControls.Count; i++)
-            weaponControls[i].Shoot(shootPoints[i].transform.position, dir);
+        //for (int i = 0; i < weaponControls.Count; i++)
+        //    weaponControls[i].Shoot(shootPoints[i].transform.position, dir);
+        for (int i = 0; i < weaponNews.Count; i++)
+        {
+            weaponNews[i].Shoot(shootPoints[i].transform.position, Vector3.down);
+        }
     }
 }
