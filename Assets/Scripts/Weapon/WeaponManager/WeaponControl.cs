@@ -33,8 +33,15 @@ public class WeaponControl : MonoBehaviour
                 if (!weapon.IsAShotgun)
                 {
                     bullet = ObjectPool.GetInstance().GetObj(weapon.BulletNumber, "Bullets");
-                    bullet.GetComponent<Bullet>().dir = shootForward;
-                    bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                    try
+                    {
+                        bullet.GetComponent<Bullet>().dir = shootForward;
+                        bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                    }
+                    catch {
+                        bullet.GetComponent<BulletHelper>().bulletNew.dir = shootForward;
+                        bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
+                    }
                 }
                 else {
                     float maxdegree = weapon.Accuracy * Mathf.PI/2;
@@ -46,14 +53,24 @@ public class WeaponControl : MonoBehaviour
                         Vector3 dir;
                         dir = new Vector3(shootForward.y * Mathf.Sin(angle), shootForward.y * Mathf.Cos(angle), 0);
                         dir.Normalize();
-                        bullet.GetComponent<Bullet>().dir = dir;
-                        bullet.GetComponent<Bullet>().transform.position = shootPosition;
-                        //Debug.Log(Mathf.Atan(dir.x / dir.y));
-                        float eulers = -Mathf.Atan(dir.x / dir.y) * 180 / Mathf.PI;
-                        bullet.GetComponent<Bullet>().transform.rotation = Quaternion.Euler(new Vector3(0, 0,0));
-                        bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, eulers));
-                        bullet.GetComponent<Bullet>().eulers = eulers;
 
+                        try
+                        {
+                            bullet.GetComponent<Bullet>().dir = dir;
+                            bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                            float eulers = -Mathf.Atan(dir.x / dir.y) * 180 / Mathf.PI;
+                            bullet.GetComponent<Bullet>().transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                            bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, eulers));
+                            bullet.GetComponent<Bullet>().eulers = eulers;
+                        }
+                        catch {
+                            bullet.GetComponent<BulletHelper>().bulletNew.dir = dir;
+                            bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
+                            float eulers = -Mathf.Atan(dir.x / dir.y) * 180 / Mathf.PI;
+                            bullet.GetComponent<BulletHelper>().bulletNew.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                            bullet.GetComponent<BulletHelper>().bulletNew.transform.Rotate(new Vector3(0, 0, eulers));
+                            bullet.GetComponent<BulletHelper>().bulletNew.eulers = eulers;
+                        }
                     }
                 }
 
