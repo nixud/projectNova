@@ -156,7 +156,6 @@ public class Bullet : MonoBehaviour
     IEnumerator AutoRecycle()
     {
         yield return new WaitForSeconds(10f);
-
         RecycleNow();
     }
     void RecycleNow() {
