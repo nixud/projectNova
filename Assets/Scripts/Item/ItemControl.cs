@@ -21,7 +21,7 @@ public class ItemControl : MonoBehaviour
         _equipments.Clear();
         
         Item plugin = new Item();
-        plugin.EffectNumber = 5;
+        plugin.EffectName = "plugin1";
         _plugins.Add(plugin);
 
         foreach (var p in _plugins)
@@ -30,34 +30,15 @@ public class ItemControl : MonoBehaviour
             _pluginUpdate += p.Update;
             _pluginEnd += p.End;
         }
-
-        Item i1 = new Item();
-        i1.PicPath = @"ItemButton/ItemButton4";
-        i1.EffectNumber = 2;
-        i1.Type = ItemType.Consume;
         
-        Item i2 = new Item();
-        i2.PicPath = @"ItemButton/ItemButton2";
-        i2.EffectNumber = 1;
-        i2.Type = ItemType.Accumulate;
+        var i2 = ItemLoader.LoadData(1);
 
-        Item i3 = new Item();
-        i3.PicPath = @"ItemButton/ItemButton3";
-        i3.EffectNumber = 3;
-        i3.Type = ItemType.Consume;
 
-        Item i4 = new Item();
-        i4.PicPath = @"ItemButton/ItemButton5";
-        i4.EffectNumber = 4;
-        i4.Type = ItemType.Accumulate;
-        
-        
-        GetEquipment(i1);
         GetEquipment(i2);
-        GetEquipment(i3);
-        GetEquipment(i4);
 
         _pluginStart?.Invoke();
+
+
     }
 
     private void Update()

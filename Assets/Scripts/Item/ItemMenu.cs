@@ -40,14 +40,11 @@ public class ItemMenu : EditorWindow
         GUILayout.Label("物品描述");
         item.Description = EditorGUILayout.TextArea(item.Description, GUILayout.MaxHeight(75));
 
-        if(!(item.IsDisposable = EditorGUILayout.Toggle("是否为一次性", item.IsDisposable)))
-            item.CD = EditorGUILayout.FloatField("物品CD", item.CD);
-
         item.PicPath = EditorGUILayout.TextField("图标名", item.PicPath);
 
         item.Price = EditorGUILayout.IntField("物品价格", item.Price);
 
-        item.EffectNumber = EditorGUILayout.IntField("效果编号（如果用得到的话）", item.EffectNumber);
+        // item.EffectNumber = EditorGUILayout.IntField("效果编号（如果用得到的话）", item.EffectNumber);
 
         GUILayout.BeginVertical("Box");
         selGridInttemp = selGridInt;

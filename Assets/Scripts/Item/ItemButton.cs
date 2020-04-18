@@ -10,6 +10,7 @@ public class ItemButton : MonoBehaviour
 {
     public Image Render;
     public Image Condition;
+    public Image UsingItemFreeze;
     public Text Count;
 
     private Image thisImage;
@@ -34,8 +35,6 @@ public class ItemButton : MonoBehaviour
     private int nowEffectCount;
     private float itemCd;
 
-    private Action accCallBack;
-
     void Awake()
     {
         thisImage = GetComponent<Image>();
@@ -43,6 +42,7 @@ public class ItemButton : MonoBehaviour
 
     void Start()
     {
+        UsingItemFreeze.gameObject.SetActive(false);
         ChangeCount();
         ChangeSprite();
     }
@@ -121,19 +121,19 @@ public class ItemButton : MonoBehaviour
     //计算道具cd
     IEnumerator Useitem()
     {
+        UsingItemFreeze.gameObject.SetActive(true);
         shouldChangeItem = false;
         itemStatus.item.Run();
+        
         yield return new WaitForSeconds(effectTime);
+        
         itemStatus.item.End();
         isUsingItem = false;
         shouldFreeze = true;
         shouldChangeItem = true;
         if (type == ItemType.Consume && nowEffectCount == 0)
             transform.GetComponentInParent<ItemControl>().ChangeEquipment();
-        else if (type == ItemType.Accumulate && accCallBack != null)
-        {
-            accCallBack();
-        }
+        UsingItemFreeze.gameObject.SetActive(false);
     }
     
     // cd
@@ -204,6 +204,7 @@ public class ItemButton : MonoBehaviour
 
     private void Init()
     {
+        UsingItemFreeze.gameObject.SetActive(false);
         timer = 0f;
         isUsingItem = false;
         shouldFreeze = false;

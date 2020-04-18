@@ -1,1 +1,13 @@
-[{"Number":1,"Name":"zisha","Description":"没有描述","IsDisposable":true,"Price":0,"CD":0.0,"PicPath":null,"rareLevel":6,"EffectNumber":2,"itemEffects":null},{"Number":2,"Name":"kaipao","Description":"没有描述","IsDisposable":false,"Price":0,"CD":3.0,"PicPath":null,"rareLevel":5,"EffectNumber":1,"itemEffects":null}]
+[
+  {
+    "Number":1,
+    "Name":"SpeedUp",
+    "Description":"射速翻倍",
+    "Price":0,
+    "PicPath":"ItemButton/ItemButton2",
+    "Type":1,
+    "rareLevel":5,
+    "EffectName":"ShootSpeedUp",
+    "ItemEffects":null
+  }
+]

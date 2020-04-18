@@ -149,8 +149,6 @@
             <e p="ImageLoader.cs" t="Include" />
           </e>
           <e p="Item" t="Include">
-            <e p="Bag.cs" t="Include" />
-            <e p="ExpendableItemButton.cs" t="Include" />
             <e p="Item.cs" t="Include" />
             <e p="ItemButton.cs" t="Include" />
             <e p="ItemControl.cs" t="Include" />
@@ -222,7 +220,6 @@
             </e>
             <e p="WeaponManager" t="Include">
               <e p="Weapon.cs" t="Include" />
-              <e p="WeaponBehavior.cs" t="Include" />
               <e p="WeaponControl.cs" t="Include" />
               <e p="WeaponControlBoss.cs" t="Include" />
               <e p="WeaponControlEnemy.cs" t="Include" />
@@ -231,10 +228,16 @@
             </e>
           </e>
           <e p="WeaponNew" t="Include">
+            <e p="WeaponEffects" t="Include">
+              <e p="WeaponMachineGun.cs" t="Include" />
+              <e p="WeaponNormalGun.cs" t="Include" />
+              <e p="WeaponRay.cs" t="Include" />
+              <e p="WeaponShotGun.cs" t="Include" />
+            </e>
+            <e p="WeaponInformation.cs" t="Include" />
+            <e p="WeaponInformationJsonLoader.cs" t="Include" />
             <e p="WeaponLoader.cs" t="Include" />
             <e p="WeaponNew.cs" t="Include" />
-            <e p="WeaponNormalGun.cs" t="Include" />
-            <e p="WeaponShotGun.cs" t="Include" />
           </e>
           <e p="Wingman" t="Include">
             <e p="WeaponControlWingman.cs" t="Include" />

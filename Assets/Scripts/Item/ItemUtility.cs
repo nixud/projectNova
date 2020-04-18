@@ -10,8 +10,8 @@ interface IConsume
 }
 
 public enum ItemType
- { 
-     Plugin,
-     Accumulate,
-     Consume
- }
+{ 
+    Plugin,
+    Accumulate,
+    Consume
+}
