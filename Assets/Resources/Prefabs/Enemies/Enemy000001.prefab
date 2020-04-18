@@ -87,7 +87,7 @@ MonoBehaviour:
   - {fileID: 6932832340490240356}
   - {fileID: 4818397553593832462}
   WeaponName:
-  - EnemyWeapon7
+  - EnemyWeapon1
   - EnemyWeapon1
 --- !u!114 &6606226724523506239
 MonoBehaviour:
