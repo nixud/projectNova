@@ -1,1 +1,26 @@
-[{"Number":"301","Name":"testName301","Description":"A wingman whose number begins with \"3\" is for test.","WeaponNumber":"testWeapon","Price":301,"rareLevel":4},{"Number":"302","Name":"testName302","Description":"A wingman whose number begins with \"3\" is for test.","WeaponNumber":"testWeapon2","Price":302,"rareLevel":4}]
+[
+    {
+        "Number": "101",
+        "Name": "行星观测员-型号：340",
+        "Description": "原本是用于观测行星的无人驾驶小型舰船，但是被反抗军捕获之后假装了部分武装模块，因而成为了优秀的僚机选择。不过或许是行星观测机被捕获太多了，帝国的新式行星观测机上开始携带简单的武装模块了。",
+        "WeaponNumber": "testWeapon",
+        "Price": 35,
+        "rareLevel": 2
+    },
+    {
+        "Number": "301",
+        "Name": "testName301",
+        "Description": "A wingman whose number begins with \"3\" is for test.",
+        "WeaponNumber": "testWeapon",
+        "Price": 301,
+        "rareLevel": 4
+    },
+    {
+        "Number": "302",
+        "Name": "testName302",
+        "Description": "A wingman whose number begins with \"3\" is for test.",
+        "WeaponNumber": "testWeapon2",
+        "Price": 302,
+        "rareLevel": 4
+    }
+]
