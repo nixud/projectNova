@@ -95,7 +95,6 @@ public class ItemButton : MonoBehaviour
         ChangeCount();
         ChangeSprite();
         itemChanged = false;
-        Debug.Log(type.ToString() + " " + nowAccumulate + " " + itemAccumulate);
     }
     
 
@@ -177,7 +176,6 @@ public class ItemButton : MonoBehaviour
             nowAccumulate += acc;
         if (nowAccumulate >= itemAccumulate)
             nowAccumulate = itemAccumulate;
-        Debug.Log(nowAccumulate.ToString() + " " + itemAccumulate.ToString());
     }
     
     public void SaveItemStatus()

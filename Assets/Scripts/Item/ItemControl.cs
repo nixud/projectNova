@@ -53,13 +53,9 @@ public class ItemControl : MonoBehaviour
         
         
         GetEquipment(i1);
-        Debug.Log(1);
         GetEquipment(i2);
-        Debug.Log(2);
         GetEquipment(i3);
-        Debug.Log(3);
         GetEquipment(i4);
-        Debug.Log(4);
 
         _pluginStart?.Invoke();
     }

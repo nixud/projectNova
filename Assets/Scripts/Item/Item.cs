@@ -48,8 +48,6 @@ public class Item : IComparable
             _itemEffects = new Equip2();
         else if (EffectNumber == 5)
             _itemEffects = new plugin1();
-        
-        Debug.Log("load effect : " + EffectNumber);
     }
 
     public void Run() {
