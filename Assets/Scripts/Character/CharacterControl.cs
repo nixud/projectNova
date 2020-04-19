@@ -42,9 +42,9 @@ public class CharacterControl : MonoBehaviour
     //初始化
     void Start()
     {
-        item = new Item();
-        item.EffectNumber = 1;
-        item.LoadEffect();
+        // item = new Item();
+        // item.EffectNumber = 1;
+        // item.LoadEffect();
 
         if (shootPoints.Count < WeaponName.Count)
             throw new Exception();
@@ -169,23 +169,23 @@ public class CharacterControl : MonoBehaviour
         ObjectPool.GetInstance().EmptyPool();
     }
     //使用道具
-    public void UsingItem()
-    {
-        if (!isUsingItem)
-        {
-            isUsingItem = true;
-            StartCoroutine(Useitem());
-        }
-    }
-    //计算道具cd
-    IEnumerator Useitem()
-    {
-        GameObject.Find("ItemButton").GetComponent<Image>().sprite = temp;
-        item.Run();
-        yield return new WaitForSeconds(item.itemEffects.time);
-        item.End();
-        isUsingItem = false;
-    }
+    // public void UsingItem()
+    // {
+    //     if (!isUsingItem)
+    //     {
+    //         isUsingItem = true;
+    //         StartCoroutine(Useitem());
+    //     }
+    // }
+    // //计算道具cd
+    // IEnumerator Useitem()
+    // {
+    //     GameObject.Find("ItemButton").GetComponent<Image>().sprite = temp;
+    //     item.Run();
+    //     yield return new WaitForSeconds(item.itemEffects.time);
+    //     item.End();
+    //     isUsingItem = false;
+    // }
     //这是一个改变武器射速的方法，由相应道具调用
     public void WeaponSpeedChange(string mode,float num) {
         if (mode == "*")

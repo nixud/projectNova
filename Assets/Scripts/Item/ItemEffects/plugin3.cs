@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bag
+public class plugin3
 {
-    
+
 }

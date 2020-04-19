@@ -9,5 +9,7 @@ public abstract class ItemEffects
     public float time = 0;
 
     public abstract void Run();
+    public abstract void Update();
     public abstract void End();
+    public abstract bool Condition();
 }

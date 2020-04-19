@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootSpeedUp : ItemEffects, IAccumulate
+public class Equip2 : ItemEffects, IAccumulate
 {
     public int Accumulate { get; }
-    public ShootSpeedUp()
+    public Equip2()
     {
         Accumulate = 1000;
         time = 4f;
@@ -26,4 +26,5 @@ public class ShootSpeedUp : ItemEffects, IAccumulate
     {
         return true;
     }
+
 }

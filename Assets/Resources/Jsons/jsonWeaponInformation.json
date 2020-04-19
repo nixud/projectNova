@@ -26,6 +26,19 @@
     "rareLevel": 4
   },
   {
+    "Number": "PlayerWeapon1",
+    "WeaponName": "风暴针刺",
+    "Description": "向正前方高频发射5枚夹角为15度的弹片。从人类开始走上星际航行之旅的先行世代就已经在使用的动能武器，在经过帝国的多次优化之后，作为优秀清剿武器被应用于对小型战舰和稀疏小行星带的清理。这种粗放式的实弹动能武器，深受部分军官的喜爱。",
+    "WeaponFloats": [ 0.5, 0.8 ],
+    "WeaponStrings": [ "Player1001" ],
+    "WeaponBools": [ true ],
+    "WeaponInts": [ 5, 0 ],
+    "WeaponSort": 2,
+    "IconPath": null,
+    "PicPath": null,
+    "rareLevel": 1
+  },
+  {
     "Number": "RayWeaponTest",
     "WeaponName": "测试激光",
     "Description": "没有描述",

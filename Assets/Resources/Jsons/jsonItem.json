@@ -1,1 +1,13 @@
-[{"Number":222,"Name":null,"Description":"没有描述","IsDisposable":false,"Price":0,"CD":0.0,"PicPath":null,"rareLevel":4,"EffectNumber":0}]
+[
+  {
+    "Number":1,
+    "Name":"SpeedUp",
+    "Description":"射速翻倍",
+    "Price":0,
+    "PicPath":"ItemButton/ItemButton2",
+    "Type":1,
+    "rareLevel":5,
+    "EffectName":"ShootSpeedUp",
+    "ItemEffects":null
+  }
+]
