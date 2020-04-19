@@ -3,30 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WeaponControlWingman : WeaponControl
+public class WeaponControlWingman : MonoBehaviour
 {
     private Vector3 shootPoint;
     private Wingman wingman;
-    public string wingmanNum;
+    private string wingmanNum;
+    public string WeaponNum;
+    WeaponControl weaponControl;    //旧版实现
+    WeaponNew weaponNew;
 
     private void Start()
     {
         WingmanJsonLoader loader = new WingmanJsonLoader();
         wingman = loader.LoadData(wingmanNum);
-        LoadWeapon(wingman.WeaponNumber);
-        if (weapon.isRay)
-        {
-            ray = ObjectPool.GetInstance().GetObj(weapon.RayNumber, "Bullets");
-        }
+        weaponNew = WeaponLoader.LoadWeaponAndAttachToGO(WeaponNum, gameObject);
+        /*
+        weaponControl = gameObject.AddComponent<WeaponControl>();
+        weaponControl.LoadWeapon(WeaponNum); // 旧weapon实现
+        */
     }
 
-    public void Attack()
+    public void Shoot(Vector3 shootPos,Vector3 shootForward)
     {
-        Shoot(transform.position - new Vector3(0, 0.4f, 0), Vector3.down);
+        weaponNew.Shoot(shootPos, shootForward);
+        // weaponControl.Shoot(shootPos, shootForward);// 旧weapon实现
     }
 
     public void ChangeWingmanNum(string curWingmanNum)
     {
         wingmanNum = curWingmanNum;
     }
+
+
 }

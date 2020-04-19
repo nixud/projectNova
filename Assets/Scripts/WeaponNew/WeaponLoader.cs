@@ -26,7 +26,13 @@ public class WeaponLoader : MonoBehaviour
             weaponNew = go.AddComponent<WeaponRay>();
         }
         else if(weapon.WeaponSort == 4)
+        {
             weaponNew = go.AddComponent<WeaponMechineGun>();
+        }
+        else if (weapon.WeaponSort == 5)
+        {
+            weaponNew = go.AddComponent<WeaponAreaGun>();
+        }
         else throw new Exception();
 
         weaponNew.LoadInfomation(weapon);

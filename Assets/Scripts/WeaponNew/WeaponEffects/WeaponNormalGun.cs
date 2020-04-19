@@ -31,8 +31,16 @@ public class WeaponNormalGun : WeaponNew
         {
 
             bullet = ObjectPool.GetInstance().GetObj(BulletNumber, "Bullets");
-            bullet.GetComponent<Bullet>().dir = shootForward;
-            bullet.GetComponent<Bullet>().transform.position = shootPosition;
+            try
+            {
+                bullet.GetComponent<Bullet>().dir = shootForward;
+                bullet.GetComponent<Bullet>().transform.position = shootPosition;
+            }
+            catch
+            {
+                bullet.GetComponent<BulletHelper>().bulletNew.dir = shootForward;
+                bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
+            }
 
             StartCoroutine(WeaponCD());
         }
