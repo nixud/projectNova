@@ -26,10 +26,10 @@ Transform:
   m_GameObject: {fileID: 128112965452037585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 2816985974544479351}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4823181304249230163
 SpriteRenderer:
@@ -109,8 +109,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4310582491120220365}
   - {fileID: 656288905385727287}
+  - {fileID: 4310582491120220365}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25000134, y: 0.8655175}
+  m_Size: {x: 0.75, y: 4}
   m_EdgeRadius: 0
 --- !u!114 &114287875181707318
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.0023498535
+      value: 0.008026123
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -180,17 +180,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.65546596
-      value: 0.041913528
-      inSlope: 0.26506412
-      outSlope: 0.26506412
+      time: 0.7310885
+      value: 0.023480907
+      inSlope: 0.12687479
+      outSlope: 0.12687479
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.32576072
-      outWeight: 0.33333334
+      outWeight: 0.86798835
     - serializedVersion: 3
-      time: 0.90456295
-      value: 0.29791573
+      time: 0.9633703
+      value: 0.21438912
       inSlope: 2.5003433
       outSlope: 2.5003433
       tangentMode: 0
@@ -198,13 +198,13 @@ MonoBehaviour:
       inWeight: 0.08046802
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1.0083313
-      value: 0.59983397
-      inSlope: 0.6514816
-      outSlope: 0.6514816
+      time: 1.020935
+      value: 0.37472486
+      inSlope: 0.92310447
+      outSlope: 0.92310447
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.39245263
+      inWeight: 0.8303657
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -246,11 +246,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4790993899418264553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0083, y: -0.135, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2816985974544479351}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6509104898818165033
 SpriteRenderer:

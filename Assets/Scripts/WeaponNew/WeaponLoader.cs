@@ -33,6 +33,10 @@ public class WeaponLoader : MonoBehaviour
         {
             weaponNew = go.AddComponent<WeaponAreaGun>();
         }
+        else if (weapon.WeaponSort == 6)
+        {
+            weaponNew = go.AddComponent<WeaponLight>();
+        }
         else throw new Exception();
 
         weaponNew.LoadInfomation(weapon);

@@ -103,7 +103,7 @@ public class WingmanController : MonoBehaviour
             {
                 attackTargetPos = Vector3.zero;
             }
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
     }
 }
