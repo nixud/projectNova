@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2343695037396775969
+--- !u!1 &4761220074972477314
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,54 +8,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2343695037396775970}
-  - component: {fileID: 2343695037396775973}
-  - component: {fileID: 2343695037396775972}
-  - component: {fileID: 2343695037396775971}
-  - component: {fileID: 2343695037396775974}
+  - component: {fileID: 4761220074972477313}
+  - component: {fileID: 4761220074972477318}
+  - component: {fileID: 4761220074972477319}
+  - component: {fileID: 4761220074972477312}
+  - component: {fileID: 4761220074972477317}
   m_Layer: 0
-  m_Name: WingmanTestPrefab
+  m_Name: WingmanPrefab3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2343695037396775970
+--- !u!4 &4761220074972477313
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037396775969}
+  m_GameObject: {fileID: 4761220074972477314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2343695037554875697}
-  - {fileID: 2343695039028629655}
+  - {fileID: 4761220075080244882}
+  - {fileID: 4761220075488645940}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2343695037396775973
+--- !u!114 &4761220074972477318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037396775969}
+  m_GameObject: {fileID: 4761220074972477314}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ee42759189b5e749981a703dcff0840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeed: 0.1
---- !u!114 &2343695037396775972
+--- !u!114 &4761220074972477319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037396775969}
+  m_GameObject: {fileID: 4761220074972477314}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1153d1b4c70ede54ebaeae0d3854ac1d, type: 3}
@@ -64,15 +64,15 @@ MonoBehaviour:
   followTarget: {fileID: 0}
   gapDistance: 0.2
   gapCount: 3
-  attackArrange: 5
---- !u!50 &2343695037396775971
+  attackArrange: 0
+--- !u!50 &4761220074972477312
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037396775969}
+  m_GameObject: {fileID: 4761220074972477314}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -86,13 +86,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2343695037396775974
+--- !u!114 &4761220074972477317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037396775969}
+  m_GameObject: {fileID: 4761220074972477314}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01d4563a923e6f8459fe52e5322d1d72, type: 3}
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
   ray: {fileID: 0}
-  WeaponNum: testWeapon
---- !u!1 &2343695037554875696
+  WeaponNum: WingmanWeapon3
+--- !u!1 &4761220075080244883
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,10 +109,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2343695037554875697}
-  - component: {fileID: 2343695037554875700}
-  - component: {fileID: 2343695037554875699}
-  - component: {fileID: 2343695037554875698}
+  - component: {fileID: 4761220075080244882}
+  - component: {fileID: 4761220075080244887}
+  - component: {fileID: 4761220075080244880}
+  - component: {fileID: 4761220075080244881}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -120,35 +120,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &2343695037554875697
+--- !u!4 &4761220075080244882
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037554875696}
+  m_GameObject: {fileID: 4761220075080244883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2343695037396775970}
+  m_Father: {fileID: 4761220074972477313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2343695037554875700
+--- !u!33 &4761220075080244887
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037554875696}
+  m_GameObject: {fileID: 4761220075080244883}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2343695037554875699
+--- !u!23 &4761220075080244880
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037554875696}
+  m_GameObject: {fileID: 4761220075080244883}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -179,20 +179,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2343695037554875698
+--- !u!65 &4761220075080244881
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695037554875696}
+  m_GameObject: {fileID: 4761220075080244883}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2343695039028629654
+--- !u!1 &4761220075488645941
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,8 +200,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2343695039028629655}
-  - component: {fileID: 2343695039028629656}
+  - component: {fileID: 4761220075488645940}
+  - component: {fileID: 4761220075488645947}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -209,27 +209,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2343695039028629655
+--- !u!4 &4761220075488645940
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695039028629654}
+  m_GameObject: {fileID: 4761220075488645941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 2343695037396775970}
+  m_Father: {fileID: 4761220074972477313}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2343695039028629656
+--- !u!212 &4761220075488645947
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343695039028629654}
+  m_GameObject: {fileID: 4761220075488645941}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -260,7 +260,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 70a7f1f9c2b8541cdae26722c27b28bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fde873a3b96114d66bb8d3c6224196db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

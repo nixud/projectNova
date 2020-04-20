@@ -48,7 +48,7 @@ public class WingmanMenu : EditorWindow
         GUILayout.Label("僚机参数", EditorStyles.largeLabel);
         wingman.Number = EditorGUILayout.TextField("僚机编号", wingman.Number);
         wingman.Name = EditorGUILayout.TextField("僚机名称", wingman.Name);
-        wingman.WeaponNumber = EditorGUILayout.TextField("所用武器编号", wingman.WeaponNumber);
+        wingman.Prefab = EditorGUILayout.TextField("所用武器编号", wingman.Prefab);
         wingman.Price = EditorGUILayout.IntField("僚机价格", wingman.Price);
         GUILayout.Label("僚机描述");
         wingman.Description = EditorGUILayout.TextArea(wingman.Description);
@@ -135,7 +135,7 @@ public class WingmanMenu : EditorWindow
         wingman = new Wingman();        //新建一个空白僚机并*暂存*于wingmans列表
         wingman.Number = "default";
         wingman.Name = "default";
-        wingman.WeaponNumber = "default";
+        wingman.Prefab = "default";
         wingman.Price = 0;
         wingman.rareLevel = 0;
         wingmans.Add(wingman);

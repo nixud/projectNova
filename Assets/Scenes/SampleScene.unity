@@ -5336,8 +5336,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091445767863147800, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
+      propertyPath: wingmansNumbers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091445767863147800, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
       propertyPath: wingmansNumbers.Array.data[0]
-      value: 101
+      value: 004
       objectReference: {fileID: 0}
     - target: {fileID: 6091445767863147800, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}

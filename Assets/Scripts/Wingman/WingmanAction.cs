@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WingmanAction : MonoBehaviour
 {
+    public float movingSpeed;
     private Rigidbody2D rigidBody;
-    private Transform firePos;
     private WeaponControlWingman weaponControlWingman;
     private Wingman wingman;
     // Start is called before the first frame update
@@ -19,15 +19,22 @@ public class WingmanAction : MonoBehaviour
     /// 移动至目标点坐标
     /// </summary>
     /// <param name="targetPos">目标点的二维坐标</param>
-    public void Move(Vector2 targetPos)    
+    public void Move(Vector2 targetPos)
     {
-        rigidBody.MovePosition(targetPos);
+        rigidBody.MovePosition(Vector3.Lerp(transform.position,targetPos,movingSpeed));
     }
     /// <summary>
     /// 向前发射子弹
     /// </summary>
-    public void Attack()
+    public void Attack(Vector3 targetPos)
     {
-        weaponControlWingman.Shoot(transform.position, Vector3.up);
+        if (targetPos == Vector3.zero)
+        {
+            weaponControlWingman.Shoot(transform.position, Vector3.up);
+        }
+        else
+        {
+            weaponControlWingman.Shoot(transform.position, (targetPos - transform.position).normalized);
+        }
     }
 }
