@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plugin1 : ItemEffects
+public class plugin_202 : ItemEffects
 {
     private UIcontroller _uIcontroller;
 
-    public plugin1()
+    public plugin_202()
     {
         _uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
     }
@@ -19,12 +19,14 @@ public class plugin1 : ItemEffects
 
     public override void Update()
     {
-        // Debug.Log("plugin zhengchang");
+        return;
     }
 
     public override void End()
     {
-        return;
+        PlayerStatus.GetInstance().HP -= 2f;
+        _uIcontroller--;
+        _uIcontroller--;
     }
 
     public override bool Condition()

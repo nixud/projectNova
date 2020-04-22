@@ -3,35 +3,47 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 // 设置道具栏道具
 public class ItemControl : MonoBehaviour
 {
     public ItemButton itemButton;
+    public GameObject pluginList;
 
-    private List<Item> _plugins = new List<Item>();
+    public int equipmentMax = 2;
+    public List<Item> plugins = new List<Item>();
     private List<ItemStatus> _equipments = new List<ItemStatus>();
     private int _equipIndex;
     
     private Action _pluginStart, _pluginUpdate, _pluginEnd;
     void Start()
     {
-        _plugins.Clear();
+        SetEquipmentLimit(2);
+        plugins.Clear();
         _equipments.Clear();
         
-        Item plugin = new Item();
-        plugin.EffectName = "plugin1";
-        _plugins.Add(plugin);
+        // Item plugin = new Item();
+        // plugin.EffectName = "plugin1";
+        // plugins.Add(plugin);
 
-        foreach (var p in _plugins)
+        for (int i = 2; i <= 4; i++)
+        {
+            var p = ItemLoader.LoadData(i);
+            plugins.Add(p);
+        }
+
+        foreach (var p in plugins)
         {
             _pluginStart += p.Run;
             _pluginUpdate += p.Update;
             _pluginEnd += p.End;
         }
         
-        var i2 = ItemLoader.LoadData(1);
+        GameObject.Find("PluginList").GetComponent<PluginListControl>().Init();
+
+        var i2 = ItemLoader.LoadData(5);
 
 
         GetEquipment(i2);
@@ -46,6 +58,7 @@ public class ItemControl : MonoBehaviour
         _pluginUpdate?.Invoke();
     }
 
+    // 关卡结束时调用
     public void OnEnd()
     {
         _pluginEnd?.Invoke();
@@ -58,33 +71,39 @@ public class ItemControl : MonoBehaviour
             if (p.Type != ItemType.Plugin)
                 throw new Exception("item type not match");
             else
-                _plugins.Add(p);
+                this.plugins.Add(p);
         }
     }
 
+    // 设置道具栏上限
+    public void SetEquipmentLimit(int max)
+    {
+        equipmentMax = max;
+    }
+
+    // 添加道具
     public void GetEquipment(Item equipment)
     {
         if (equipment.Type != ItemType.Plugin)
         {
-            if (equipment.Type == ItemType.Accumulate)
-                _equipments.Add(new ItemStatus(equipment));
+            if (_equipments.Count == equipmentMax)
+            {
+                _equipments[_equipIndex] = new ItemStatus(equipment);
+            }
             else
-                _equipments.Add(new ItemStatus(item: equipment, effectCount:((IConsume)equipment.ItemEffects).EffectCount));
-            ClearEquipList(_equipIndex);
-            _equipIndex = _equipments.Count - 1;
+            {
+                _equipments.Add(new ItemStatus(equipment));
+                ClearEquipList(_equipIndex);
+                _equipIndex = _equipments.Count - 1;   
+            }
             SetItem(_equipIndex);
         }
         else
             throw new Exception("item type not match");
     }
-
+    
     public void ChangeEquipment()
     {
-        // if (_equipments.Count == 0)
-        // {
-        //     itemButton.SetItem(null);
-        //     return;
-        // }
         itemButton.SaveItemStatus();
         _equipIndex += ClearEquipList(_equipIndex);
         if (_equipIndex >= _equipments.Count)
@@ -92,17 +111,26 @@ public class ItemControl : MonoBehaviour
         SetItem(_equipIndex);
     }
 
-    public void GetAccumulate()
+    // 武器充能
+    public void GetAccumulate(int acc = 0)
     {
         itemButton.GetAccumulation(256);
     }
-    
-    // test
-    public void AddEquip1()
-    {
-        
-    }
 
+    // 删除插件
+    public void DeletePlugin(Item plugin)
+    {
+        if (plugin == null)
+            return;
+
+        _pluginStart -= plugin.Run;
+        _pluginUpdate -= plugin.Update;
+        _pluginEnd -= plugin.End;
+        
+        plugin.End();
+        plugins.Remove(plugin);
+    }
+    
     private int ClearEquipList(int index)
     {
         if (_equipments.Count <= index || _equipments[index] == null)
@@ -135,10 +163,12 @@ public class ItemStatus
     // 充能型道具状态
     public int accumulate;
 
-    public ItemStatus(Item item, int effectCount = 0, int accumulate = 0)
+    public ItemStatus(Item item)
     {
         this.item = item;
-        this.effectCount = effectCount;
-        this.accumulate = accumulate;
+        accumulate = 0;
+        effectCount = 0;
+        if (item.Type == ItemType.Consume)
+            effectCount = ((IConsume) item.ItemEffects).EffectCount;
     }
 }

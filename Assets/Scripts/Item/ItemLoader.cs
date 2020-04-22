@@ -2,26 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ItemLoader 
+public static class ItemLoader
 {
-    public static List<Item> LoadData()
+    private static List<Item> itemInfo;
+    private static void LoadData()
     {
         JsonLoader<Item> loader = new JsonLoader<Item>();
-        return loader.LoadData();
+        itemInfo = loader.LoadData();
     }
     
     public static Item LoadData(int ItemNum)
     {
-        JsonLoader<Item> loader = new JsonLoader<Item>();
-        List<Item> itemlist = new List<Item>();
-
-        itemlist = loader.LoadData();
-
+        if (itemInfo == null)
+            LoadData();
+        
         Item returnItem = new Item();
-        for (int i = 0; i < itemlist.Count; i++)
+        for (int i = 0; i < itemInfo.Count; i++)
         {
-            if (itemlist[i].Number == ItemNum)
-                returnItem = itemlist[i];
+            if (itemInfo[i].Number == ItemNum)
+                returnItem = itemInfo[i];
         }
 
         return returnItem;

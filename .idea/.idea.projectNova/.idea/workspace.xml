@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="" />
+    <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/items.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/items.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,29 +27,44 @@
     <setting file="file://$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIcontroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/16/01a12fde/Single.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponInformation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInputMoblie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/WaveMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginListControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponShotGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginDocker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/NormalBullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/80/4cd276d3/IComparable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A3F68E4-AE18-416E-9941-EAFA34CABA8A/5f/fa2ce02b/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/2f/3c359399/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyJsonLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,7 +74,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInputMoblie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUIControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Bag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ExpendableItemButton.cs" />
@@ -57,15 +84,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginListControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginDocker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIcontroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin2.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
       </list>
     </option>
   </component>
@@ -144,6 +178,9 @@
       <workItem from="1587184917058" duration="1227000" />
       <workItem from="1587209362613" duration="542000" />
       <workItem from="1587210170931" duration="21000" />
+      <workItem from="1587376844493" duration="10768000" />
+      <workItem from="1587434775231" duration="5430000" />
+      <workItem from="1587521930231" duration="900000" />
     </task>
     <servers />
   </component>
@@ -230,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="325" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586926453830" />
-    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1587115213666">
+    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1587394639284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587115213666" />
+    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587394639284" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585558541072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,5 +279,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="806" y="427" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586922254001" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1587392472828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587392472828" />
   </component>
 </project>

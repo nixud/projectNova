@@ -156,15 +156,19 @@
               <e p="Equip1.cs" t="Include" />
               <e p="Equip2.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
-              <e p="plugin1.cs" t="Include" />
-              <e p="plugin2.cs" t="Include" />
-              <e p="plugin3.cs" t="Include" />
+              <e p="plugin_201.cs" t="Include" />
+              <e p="plugin_202.cs" t="Include" />
+              <e p="plugin_203.cs" t="Include" />
               <e p="ShootSpeedUp.cs" t="Include" />
             </e>
             <e p="ItemEffects.cs" t="Include" />
             <e p="ItemLoader.cs" t="Include" />
             <e p="ItemMenu.cs" t="Include" />
             <e p="ItemUtility.cs" t="Include" />
+            <e p="PluginList" t="Include">
+              <e p="PluginDocker.cs" t="Include" />
+              <e p="PluginListControl.cs" t="Include" />
+            </e>
           </e>
           <e p="JsonLoader.cs" t="Include" />
           <e p="Player" t="Include">
@@ -228,7 +232,19 @@
             </e>
           </e>
           <e p="WeaponNew" t="Include">
+            <e p="BulletNew" t="Include">
+              <e p="BulletHelper.cs" t="Include" />
+              <e p="BulletNew.cs" t="Include" />
+              <e p="Bullets" t="Include">
+                <e p="NormalBullet.cs" t="Include" />
+                <e p="WingmanBullet1.cs" t="Include" />
+                <e p="WingmanBullet3.cs" t="Include" />
+                <e p="WingmanBullet4.cs" t="Include" />
+              </e>
+            </e>
             <e p="WeaponEffects" t="Include">
+              <e p="WeaponAreaGun.cs" t="Include" />
+              <e p="WeaponLight.cs" t="Include" />
               <e p="WeaponMachineGun.cs" t="Include" />
               <e p="WeaponNormalGun.cs" t="Include" />
               <e p="WeaponRay.cs" t="Include" />
@@ -241,6 +257,7 @@
           </e>
           <e p="Wingman" t="Include">
             <e p="WeaponControlWingman.cs" t="Include" />
+            <e p="WeaponNewControlWingman.cs" t="Include" />
             <e p="Wingman.cs" t="Include" />
             <e p="WingmanAction.cs" t="Include" />
             <e p="WingmanController.cs" t="Include" />
@@ -249,6 +266,7 @@
             <e p="WingmanSystem.cs" t="Include" />
             <e p="WingmanTest" t="Include">
               <e p="WingmanPlayerTest.cs" t="Include" />
+              <e p="WingmanTest.cs" t="Include" />
             </e>
           </e>
         </e>

@@ -9,5 +9,45 @@
     "rareLevel":5,
     "EffectName":"ShootSpeedUp",
     "ItemEffects":null
+  },
+  {
+    "Number":201,
+    "Name":"强化舱壁",
+    "Description":"",
+    "Price":50,
+    "PicPath":"ItemButton/plugin/plugin1",
+    "Type":0,
+    "rareLevel":1,
+    "EffectName":"plugin_201"
+  },
+  {
+    "Number":202,
+    "Name":"防爆气密门",
+    "Description":"",
+    "Price":30,
+    "PicPath":"ItemButton/plugin/plugin2",
+    "Type":0,
+    "rareLevel":2,
+    "EffectName":"plugin_202"
+  },
+  {
+    "Number":4,
+    "Name":"打得不错",
+    "Description":"无伤打败boss固定掉落",
+    "Price":30,
+    "PicPath":"ItemButton/plugin/plugin3",
+    "Type":0,
+    "rareLevel":5,
+    "EffectName":"plugin_202"
+  },
+  {    
+    "Number":5,
+    "Name":"打得不错",
+    "Description":"无伤打败boss固定掉落",
+    "Price":30,
+    "PicPath":"ItemButton/ItemButton3",
+    "Type":2,
+    "rareLevel":5,
+    "EffectName":"KillSelf"
   }
 ]
