@@ -7,8 +7,9 @@ public class Wingman : IComparable
 {
     public string Number;       // 僚机的主键，编号为数字,
     public string Name;         // 僚机的名字
+    public string Prefab;       // 僚机所用预设
+    public string iconPath;     // 僚机的图标路径
     public string Description;  // 僚机的描述
-    public string Prefab;   // 僚机所用预设
     public int Price;           // 僚机价格
     public RareLevel rareLevel; // 僚机稀有度
 

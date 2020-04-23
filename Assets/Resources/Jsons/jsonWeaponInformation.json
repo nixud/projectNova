@@ -120,11 +120,11 @@
     "Number": "WingmanWeapon2",
     "WeaponName": "采矿激光",
     "Description": "伤害较低的点防御激光",
-    "WeaponFloats": [ 12, 4, 50, 0.2 ],
+    "WeaponFloats": [ 12, 0.2],
     "WeaponStrings": [ "WingmanRay2" ],
     "WeaponBools": null,
     "WeaponInts": null,
-    "WeaponSort": 6,
+    "WeaponSort": 3,
     "IconPath": null,
     "PicPath": null,
     "rareLevel": 3
