@@ -15,7 +15,7 @@
     "Name":"强化舱壁",
     "Description":"",
     "Price":50,
-    "PicPath":"ItemButton/plugin/plugin1",
+    "PicPath":"盗版素材/插件/重型装甲",
     "Type":0,
     "rareLevel":1,
     "EffectName":"plugin_201"
@@ -25,17 +25,17 @@
     "Name":"防爆气密门",
     "Description":"",
     "Price":30,
-    "PicPath":"ItemButton/plugin/plugin2",
+    "PicPath":"盗版素材/插件/防爆气密们",
     "Type":0,
     "rareLevel":2,
     "EffectName":"plugin_202"
   },
   {
-    "Number":4,
+    "Number":203,
     "Name":"打得不错",
     "Description":"无伤打败boss固定掉落",
     "Price":30,
-    "PicPath":"ItemButton/plugin/plugin3",
+    "PicPath":"盗版素材/插件/自动护盾",
     "Type":0,
     "rareLevel":5,
     "EffectName":"plugin_202"

@@ -41,7 +41,11 @@ public class PlayerStatus
     private Ship ship;
     private Plugin plugin;
 
-    private List<Weapon> weapons;
-    private List<Plugin> plugins;
-    private List<Item> items;
+    // private List<Weapon> weapons;
+    // private List<Plugin> plugins;
+    // private List<Item> items;
+    public List<WeaponNew> Weapons = new List<WeaponNew>();
+    public List<Item> Plugins = new List<Item>();
+    public List<Item> Equipments = new List<Item>();
+    public List<Wingman> Wingmans = new List<Wingman>();
 }

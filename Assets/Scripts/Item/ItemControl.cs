@@ -10,10 +10,9 @@ using UnityEngine.UI;
 public class ItemControl : MonoBehaviour
 {
     public ItemButton itemButton;
-    public GameObject pluginList;
 
-    public int equipmentMax = 2;
-    public List<Item> plugins = new List<Item>();
+    [HideInInspector]public int equipmentMax = 2;
+    [HideInInspector]public List<Item> plugins;
     private List<ItemStatus> _equipments = new List<ItemStatus>();
     private int _equipIndex;
     
@@ -21,19 +20,20 @@ public class ItemControl : MonoBehaviour
     void Start()
     {
         SetEquipmentLimit(2);
-        plugins.Clear();
         _equipments.Clear();
-        
-        // Item plugin = new Item();
-        // plugin.EffectName = "plugin1";
-        // plugins.Add(plugin);
 
-        for (int i = 2; i <= 4; i++)
+        plugins = PlayerStatus.GetInstance().Plugins;
+
+        #region test
+
+        for (int i = 201; i <= 203; i++)
         {
             var p = ItemLoader.LoadData(i);
             plugins.Add(p);
         }
 
+        #endregion
+        
         foreach (var p in plugins)
         {
             _pluginStart += p.Run;
@@ -41,16 +41,19 @@ public class ItemControl : MonoBehaviour
             _pluginEnd += p.End;
         }
         
-        GameObject.Find("PluginList").GetComponent<PluginListControl>().Init();
+        foreach (var equipment in PlayerStatus.GetInstance().Equipments)
+        {
+            GetEquipment(equipment, false);
+        }
+
+        #region test
 
         var i2 = ItemLoader.LoadData(5);
-
-
         GetEquipment(i2);
+        
+        #endregion
 
         _pluginStart?.Invoke();
-
-
     }
 
     private void Update()
@@ -82,7 +85,7 @@ public class ItemControl : MonoBehaviour
     }
 
     // 添加道具
-    public void GetEquipment(Item equipment)
+    public void GetEquipment(Item equipment, bool addToStatus = true)
     {
         if (equipment.Type != ItemType.Plugin)
         {
@@ -97,6 +100,9 @@ public class ItemControl : MonoBehaviour
                 _equipIndex = _equipments.Count - 1;   
             }
             SetItem(_equipIndex);
+            
+            if (addToStatus)
+                PlayerStatus.GetInstance().Equipments.Add(equipment);
         }
         else
             throw new Exception("item type not match");
@@ -112,7 +118,7 @@ public class ItemControl : MonoBehaviour
     }
 
     // 武器充能
-    public void GetAccumulate(int acc = 0)
+    public void GetAccumulate()
     {
         itemButton.GetAccumulation(256);
     }

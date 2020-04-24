@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plugin3 : ItemEffects
+public class plugin_203 : ItemEffects
 {
     private BulletNew[] bullets;
     private float damageRate;
-    public plugin3()
+    public plugin_203()
     {
         damageRate = 1.3f;
     }

@@ -115,6 +115,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bag" t="Include">
+            <e p="BagElemListController.cs" t="Include" />
+            <e p="BagListElem.cs" t="Include" />
+            <e p="BagPluginListController.cs" t="Include" />
+            <e p="BagUIController.cs" t="Include" />
+          </e>
           <e p="Character" t="Include">
             <e p="CharacterControl.cs" t="Include" />
             <e p="CharacterInput.cs" t="Include" />
@@ -165,6 +171,10 @@
             <e p="ItemLoader.cs" t="Include" />
             <e p="ItemMenu.cs" t="Include" />
             <e p="ItemUtility.cs" t="Include" />
+            <e p="PickEquip" t="Include">
+              <e p="EquipObject.cs" t="Include" />
+              <e p="PickButton.cs" t="Include" />
+            </e>
             <e p="PluginList" t="Include">
               <e p="PluginDocker.cs" t="Include" />
               <e p="PluginListControl.cs" t="Include" />

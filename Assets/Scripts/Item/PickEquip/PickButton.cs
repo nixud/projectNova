@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PickButton : MonoBehaviour
+{
+    public Image image;
+
+    private GameObject _equipObject;
+    private Item _equipment;
+    private ItemControl _itemControl;
+
+    private void Update()
+    {
+        if (_equipment == null)
+            gameObject.SetActive(false);
+    }
+
+    public void Pick()
+    {
+        if (_itemControl == null)
+            _itemControl = transform.GetComponentInParent<ItemControl>();
+        _itemControl.GetEquipment(_equipment);
+
+        Destroy(_equipObject);
+        this._equipment = null;
+    }
+    
+    public void SetEquipToPick(Item equip, GameObject gobj)
+    {
+        _equipment = equip;
+        _equipObject = gobj;
+        if (_equipment == null)
+            return;
+        image.sprite = Resources.Load<Sprite>(_equipment.PicPath);
+    }
+}
