@@ -29,6 +29,7 @@ public class WingmanMenu : EditorWindow
         WingmanJsonLoader loader = new WingmanJsonLoader();
         wingmans = loader.LoadData();
         selStrings = new string[wingmans.Count];
+        selGridInt = 0;
         for (int i = 0; i < wingmans.Count; i++)
         {
             selStrings[i] = wingmans[i].Number;
@@ -48,7 +49,8 @@ public class WingmanMenu : EditorWindow
         GUILayout.Label("僚机参数", EditorStyles.largeLabel);
         wingman.Number = EditorGUILayout.TextField("僚机编号", wingman.Number);
         wingman.Name = EditorGUILayout.TextField("僚机名称", wingman.Name);
-        wingman.Prefab = EditorGUILayout.TextField("所用武器编号", wingman.Prefab);
+        wingman.Prefab = EditorGUILayout.TextField("所用预设", wingman.Prefab);
+        wingman.iconPath = EditorGUILayout.TextField("图标路径", wingman.iconPath);
         wingman.Price = EditorGUILayout.IntField("僚机价格", wingman.Price);
         GUILayout.Label("僚机描述");
         wingman.Description = EditorGUILayout.TextArea(wingman.Description);
@@ -136,6 +138,7 @@ public class WingmanMenu : EditorWindow
         wingman.Number = "default";
         wingman.Name = "default";
         wingman.Prefab = "default";
+        wingman.iconPath = "default";
         wingman.Price = 0;
         wingman.rareLevel = 0;
         wingmans.Add(wingman);
