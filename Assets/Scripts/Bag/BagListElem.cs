@@ -37,7 +37,7 @@ public class BagListElem : MonoBehaviour
         {
             _type = BagElemType.Wingman;
             _wingman = wingman;
-            // ElemIcon.sprite = Resources.Load<Sprite>(wingman.IconPath);
+            elemIcon.sprite = Resources.Load<Sprite>(wingman.iconPath);
         }
         else
             throw  new Exception("Can't identify class");
