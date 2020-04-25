@@ -10,12 +10,6 @@ public abstract class WeaponNew : MonoBehaviour, IComparable
     public string WeaponName;
     public string Description = "没有描述";
 
-    public int WeaponSort;//武器的种类
-    public List<int> WeaponInts;
-    public List<string> WeaponStrings;
-    public List<bool> WeaponBools;
-    public List<float> WeaponFloats;
-
     public string IconPath;
     public string PicPath;
 
