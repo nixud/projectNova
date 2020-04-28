@@ -14,7 +14,7 @@ public class BagListElem : MonoBehaviour
     private BagUIController _bagUiController;
     private BagElemType _type;
 
-    private Item _item;
+    public Item _item;
     private WeaponNew _weapon;
     private Wingman _wingman;
 
@@ -48,8 +48,8 @@ public class BagListElem : MonoBehaviour
 
     public void SetElemToShow()
     {
-        // if (!toggle.isOn)
-        //     return;
+        if (!toggle.isOn)
+            return;
         if (_type == BagElemType.Item)
             _bagUiController.ShowElem(_item, this.gameObject);
         else if (_type == BagElemType.Weapon)
@@ -57,7 +57,19 @@ public class BagListElem : MonoBehaviour
         else if (_type == BagElemType.Wingman)
             _bagUiController.ShowElem(_wingman);
         
-        Debug.Log(_item.Name);
+        Debug.Log("itemset: " + _item.Name);
+    }
+    
+    public void SetElemToShowDefault()
+    {
+        if (_type == BagElemType.Item)
+            _bagUiController.ShowElem(_item, this.gameObject);
+        else if (_type == BagElemType.Weapon)
+            _bagUiController.ShowElem(_weapon);
+        else if (_type == BagElemType.Wingman)
+            _bagUiController.ShowElem(_wingman);
+        
+        Debug.Log("itemset: " + _item.Name);
     }
 
     public void SetEdge()

@@ -19,6 +19,13 @@
           </e>
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="Images" t="Include">
+          <e p="UIs" t="Include">
+            <e p="StageSelect" t="Include">
+              <e p="NewImageEffectShader.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
@@ -127,11 +134,17 @@
             <e p="CharacterInputMoblie.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
+            <e p="BehaviourTest" t="Include">
+              <e p="behTest.cs" t="Include" />
+            </e>
             <e p="Boss" t="Include">
               <e p="BossControl.cs" t="Include" />
             </e>
             <e p="Enemy.cs" t="Include" />
+            <e p="EnemyBehaviourContainer.cs" t="Include" />
             <e p="EnemyBehaviourController.cs" t="Include" />
+            <e p="EnemyBehaviourLoader.cs" t="Include" />
+            <e p="EnemyBehaviourMenu.cs" t="Include" />
             <e p="EnemyBehaviours" t="Include">
               <e p="AlwaysShoot.cs" t="Include" />
               <e p="AlwaysShootUNB.cs" t="Include" />
@@ -216,6 +229,9 @@
             <e p="StageDiffculty.cs" t="Include" />
             <e p="StageIniter.cs" t="Include" />
             <e p="StageScene.cs" t="Include" />
+            <e p="StageUI" t="Include">
+              <e p="ViewScroll.cs" t="Include" />
+            </e>
             <e p="Wave.cs" t="Include" />
             <e p="WaveGroupCreater.cs" t="Include" />
             <e p="WaveMenu.cs" t="Include" />
@@ -252,8 +268,12 @@
                 <e p="WingmanBullet4.cs" t="Include" />
               </e>
             </e>
+            <e p="ItemEffectsOnWeapon" t="Include">
+              <e p="WeaponSpeedChanger.cs" t="Include" />
+            </e>
             <e p="WeaponEffects" t="Include">
               <e p="WeaponAreaGun.cs" t="Include" />
+              <e p="WeaponFlashRay.cs" t="Include" />
               <e p="WeaponLight.cs" t="Include" />
               <e p="WeaponMachineGun.cs" t="Include" />
               <e p="WeaponNormalGun.cs" t="Include" />
@@ -350,6 +370,62 @@
               </e>
             </e>
             <e p="ExampleGenConfig.cs" t="Include" />
+          </e>
+          <e p="Gen" t="Include">
+            <e p="DelegatesGensBridge.cs" t="Include" />
+            <e p="EnumWrap.cs" t="Include" />
+            <e p="link.xml" t="Include" />
+            <e p="PackUnpack.cs" t="Include" />
+            <e p="System_Collections_Generic_List_1_System_Int32_Wrap.cs" t="Include" />
+            <e p="System_Collections_IEnumeratorBridge.cs" t="Include" />
+            <e p="System_ObjectWrap.cs" t="Include" />
+            <e p="Tutorial_BaseClassWrap.cs" t="Include" />
+            <e p="Tutorial_CSCallLua_ItfDBridge.cs" t="Include" />
+            <e p="Tutorial_DerivedClassExtensionsWrap.cs" t="Include" />
+            <e p="Tutorial_DerivedClassWrap.cs" t="Include" />
+            <e p="Tutorial_ICalcWrap.cs" t="Include" />
+            <e p="UnityEngine_AnimationClipWrap.cs" t="Include" />
+            <e p="UnityEngine_AnimationCurveWrap.cs" t="Include" />
+            <e p="UnityEngine_BehaviourWrap.cs" t="Include" />
+            <e p="UnityEngine_BoundsWrap.cs" t="Include" />
+            <e p="UnityEngine_ColorWrap.cs" t="Include" />
+            <e p="UnityEngine_ComponentWrap.cs" t="Include" />
+            <e p="UnityEngine_DebugWrap.cs" t="Include" />
+            <e p="UnityEngine_GameObjectWrap.cs" t="Include" />
+            <e p="UnityEngine_KeyframeWrap.cs" t="Include" />
+            <e p="UnityEngine_LightWrap.cs" t="Include" />
+            <e p="UnityEngine_MathfWrap.cs" t="Include" />
+            <e p="UnityEngine_MonoBehaviourWrap.cs" t="Include" />
+            <e p="UnityEngine_ObjectWrap.cs" t="Include" />
+            <e p="UnityEngine_ParticleSystemWrap.cs" t="Include" />
+            <e p="UnityEngine_QuaternionWrap.cs" t="Include" />
+            <e p="UnityEngine_Ray2DWrap.cs" t="Include" />
+            <e p="UnityEngine_RayWrap.cs" t="Include" />
+            <e p="UnityEngine_RendererWrap.cs" t="Include" />
+            <e p="UnityEngine_ResourcesWrap.cs" t="Include" />
+            <e p="UnityEngine_SkinnedMeshRendererWrap.cs" t="Include" />
+            <e p="UnityEngine_TextAssetWrap.cs" t="Include" />
+            <e p="UnityEngine_TimeWrap.cs" t="Include" />
+            <e p="UnityEngine_TransformWrap.cs" t="Include" />
+            <e p="UnityEngine_Vector2Wrap.cs" t="Include" />
+            <e p="UnityEngine_Vector3Wrap.cs" t="Include" />
+            <e p="UnityEngine_Vector4Wrap.cs" t="Include" />
+            <e p="UnityEngine_WaitForSecondsWrap.cs" t="Include" />
+            <e p="WrapPusher.cs" t="Include" />
+            <e p="XLuaGenAutoRegister.cs" t="Include" />
+            <e p="XLuaTest_BaseTestWrap.cs" t="Include" />
+            <e p="XLuaTest_Foo1ChildWrap.cs" t="Include" />
+            <e p="XLuaTest_Foo1ParentWrap.cs" t="Include" />
+            <e p="XLuaTest_Foo2ChildWrap.cs" t="Include" />
+            <e p="XLuaTest_Foo2ParentWrap.cs" t="Include" />
+            <e p="XLuaTest_FooExtensionWrap.cs" t="Include" />
+            <e p="XLuaTest_FooWrap.cs" t="Include" />
+            <e p="XLuaTest_IExchangerBridge.cs" t="Include" />
+            <e p="XLuaTest_InvokeLua_ICalcBridge.cs" t="Include" />
+            <e p="XLuaTest_LuaBehaviourWrap.cs" t="Include" />
+            <e p="XLuaTest_MyStructWrap.cs" t="Include" />
+            <e p="XLuaTest_NoGcWrap.cs" t="Include" />
+            <e p="XLuaTest_PeddingWrap.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="perf" t="Include">

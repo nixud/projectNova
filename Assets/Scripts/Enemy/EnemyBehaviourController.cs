@@ -12,6 +12,7 @@ public class EnemyBehaviourController : MonoBehaviour
     public bool AlwaysShootUntilNextBehaviourEnd;
 
     private bool IsNotRecycled = false;
+    private bool CanMove = false;
     private void OnEnable()
     {
         IsNotRecycled = true;
@@ -26,38 +27,45 @@ public class EnemyBehaviourController : MonoBehaviour
     private void Start()
     {
         //暂时的敌人逻辑获取
-        if (gameObject.name == "test")
-        {
-            behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
-            behaviours.Add(new ShootPlayerOnce(gameObject,-1f));
-            behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new StayHere(gameObject, 4f));
-            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
-        }
-        else if(gameObject.name == "Enemy000003")
-        {
-            behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
-            behaviours.Add(new ShootOnce(gameObject, -1f));
-            behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new StayHere(gameObject, 16f));
-            behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
-        }
-        else if (gameObject.name == "Enemy000005")
-        {
-            behaviours.Add(new Kamikaze(gameObject, 6f, 10f));
-        }
-        else {
-            behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 1f));
-            behaviours.Add(new ShootOnce(gameObject, -1f));
-            behaviours.Add(new AlwaysShoot(gameObject, -1f));
-            behaviours.Add(new StayHere(gameObject, 8f));
-            behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
-        }
+        // if (gameObject.name == "test")
+        // {
+        //     behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
+        //     behaviours.Add(new ShootPlayerOnce(gameObject,-1f));
+        //     behaviours.Add(new AlwaysShoot(gameObject, -1f));
+        //     behaviours.Add(new StayHere(gameObject, 4f));
+        //     behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
+        // }
+        // else if(gameObject.name == "Enemy000003")
+        // {
+        //     behaviours.Add(new MoveForward(gameObject, 3f, new Vector3(0, -1, 0), 1f));
+        //     behaviours.Add(new ShootOnce(gameObject, -1f));
+        //     behaviours.Add(new AlwaysShoot(gameObject, -1f));
+        //     behaviours.Add(new StayHere(gameObject, 16f));
+        //     behaviours.Add(new MoveForward(gameObject, 2f, new Vector3(0, -1, 0), 20f));
+        // }
+        // else if (gameObject.name == "Enemy000005")
+        // {
+        //     behaviours.Add(new Kamikaze(gameObject, 6f, 10f));
+        // }
+        // else {
+        //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 1f));
+        //     behaviours.Add(new ShootOnce(gameObject, -1f));
+        //     behaviours.Add(new AlwaysShoot(gameObject, -1f));
+        //     behaviours.Add(new StayHere(gameObject, 8f));
+        //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
+        // }
+
     }
 
+    public void SetBehaviour(int count)
+    {
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(GetComponent<Enemy>().Number), gameObject, behaviours);
+        CanMove = true;
+    }
+    
     private void Update()
     {
-        if (IsNotRecycled)
+        if (IsNotRecycled && CanMove)
         {
 
             if (AlwaysShoot || AlwaysShootUntilNextBehaviour)

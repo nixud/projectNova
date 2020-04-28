@@ -18,7 +18,7 @@ public class BagUIController : MonoBehaviour
     public GameObject elemList;
     public GameObject pluginList;
 
-    private GameObject _pluginTemp;
+    public GameObject _pluginTemp;
     private Item _itemTemp;
     
     private void OnEnable()
@@ -68,6 +68,7 @@ public class BagUIController : MonoBehaviour
     {    
         GameObject.Find("ItemControl").GetComponent<ItemControl>().DeletePlugin(_itemTemp);
         Destroy(_pluginTemp);
+        Debug.Log(_pluginTemp.GetComponent<BagListElem>()._item.Name);
         
         DeleteButton.SetActive(false);
         SaleButton.SetActive(false);
@@ -93,11 +94,11 @@ public class BagUIController : MonoBehaviour
             // 默认显示第一列表第一项
             //                 List         panel      first item
             // pluginList.transform.GetChild(1).GetChild(0).GetChild(0).GetComponent<BagListElem>().SetElemToShow();
-            pluginList.GetComponent<BagPluginListController>().SetDefaultElem();
+            _pluginTemp = pluginList.GetComponent<BagPluginListController>().SetDefaultElem();
+            _itemTemp = _pluginTemp.GetComponent<BagListElem>()._item;
         }
         catch (Exception e)
         {
-            Debug.Log("asdasd");
             // ignored
         }
     }

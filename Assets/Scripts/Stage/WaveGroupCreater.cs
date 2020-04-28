@@ -27,7 +27,7 @@ public class WaveGroupCreater
                 Wave waveTemp = mapWave[Random.Range(0, mapWave.Count)];
                 FinalWave.Add(waveTemp);
                 totalDiff += waveTemp.Diffculty;
-            }
+            }  
         }
         return FinalWave;
     }

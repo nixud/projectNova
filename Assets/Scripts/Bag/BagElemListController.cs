@@ -14,7 +14,7 @@ public class BagElemListController : MonoBehaviour
 
     private BagUIController _bagUiController;
     private List<GameObject> _perfabs;
-    private void Start()
+    private void Awake()
     {
         _perfab = Resources.Load<GameObject>(_perfabPath);
         _bagUiController = transform.GetComponentInParent<BagUIController>();

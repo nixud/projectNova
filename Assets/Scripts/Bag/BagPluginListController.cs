@@ -10,13 +10,13 @@ public class BagPluginListController : MonoBehaviour
     public GameObject list;
     public ToggleGroup toggleGroup;
 
-    private static readonly string _perfabPath = @"Prefabs/ItemAbout/ListElem";
+    private static readonly string _perfabPath = "Prefabs/ItemAbout/ListElem";
     private GameObject _perfab;
 
     private BagUIController _bagUiController;
     private List<GameObject> _perfabs;
 
-    private void Start()
+    private void Awake()
     {
         _perfab = Resources.Load<GameObject>(_perfabPath);
         _bagUiController = transform.GetComponentInParent<BagUIController>();
@@ -31,13 +31,13 @@ public class BagPluginListController : MonoBehaviour
             {
                 Destroy(_perfabs[i]);
             }
+            
+            _perfabs.Clear();
         }
         catch (Exception e)
         {
             // ignored
         }
-
-        _perfabs.Clear();
     }
 
     public void RefreshList()
@@ -49,11 +49,15 @@ public class BagPluginListController : MonoBehaviour
             p.GetComponent<BagListElem>().BagListElemInit(_bagUiController, toggleGroup, plugin);
     
             _perfabs.Add(p);
-        }            
+        }
     }
 
-    public void SetDefaultElem()
+    public GameObject SetDefaultElem()
     {
-        transform.GetComponentInChildren<BagListElem>().SetElemToShow();
+        var p = list.transform.GetChild(0).GetComponent<BagListElem>();
+        Debug.Log("default: " + p._item.Name);
+        Debug.Log(p.transform.position);
+        p.SetElemToShowDefault();
+        return p.gameObject;
     }
-}            
+}
