@@ -18,4 +18,8 @@ public class NewBehaviourScript : MonoBehaviour
     {
         //Debug.Log(test.Evaluate(Time.time));
     }
+
+    public void HHH() {
+        Debug.Log("cccc");
+    }
 }
