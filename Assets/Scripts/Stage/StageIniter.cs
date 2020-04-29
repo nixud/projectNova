@@ -158,7 +158,8 @@ public class StageIniter : MonoBehaviour
 //        Debug.Log(thisStageWaves[0].EnemyPositionX[thisWavePointer]);
         SpawnEnemy(thisStageWaves[0].EnemyNumber[thisWavePointer],
                 thisStageWaves[0].EnemyPositionX[thisWavePointer],
-                thisStageWaves[0].EnemyPositionY[thisWavePointer]);
+                thisStageWaves[0].EnemyPositionY[thisWavePointer],
+                thisStageWaves[0].EnemyBehNumber[thisWavePointer]);
         if (thisWavePointer < thisStageWaves[0].EnemyNumber.Count)
             thisWavePointer++;
         if(thisWavePointer != thisStageWaves[0].EnemyNumber.Count && thisStageWaves[0].EnemyTime[thisWavePointer] <= time) {
@@ -166,10 +167,10 @@ public class StageIniter : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy(string enemyNumber,float positionX, float positionY) {
+    private void SpawnEnemy(string enemyNumber,float positionX, float positionY, int behNumber) {
         GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + enemyNumber);
         GameObject result = Instantiate(prefab);
-        result.name = enemyNumber;
+        result.name = behNumber.ToString() + enemyNumber;
         //Debug.Log(Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * positionX);
         result.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth()/2 * positionX,
             Camera.main.GetComponent<GameCamera>().GetdevHeight()/2 * positionY);

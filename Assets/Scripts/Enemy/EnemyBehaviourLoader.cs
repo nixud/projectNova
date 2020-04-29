@@ -14,6 +14,7 @@ public static class EnemyBehaviourLoader
     
     public static EnemyBehaviourContainer LoadBehaviour(string number)
     {
+        EnemyBehaviourContainer temp = new EnemyBehaviourContainer();
         if (_enemyBehaviourContainers == null)
         {
             JsonLoader<EnemyBehaviourContainer> loader = new JsonLoader<EnemyBehaviourContainer>();
@@ -22,11 +23,13 @@ public static class EnemyBehaviourLoader
 
         foreach (var container in _enemyBehaviourContainers)
         {
+            if (container.number == "default")
+                temp = container;
             if (container.number == number)
                 return container;
         }
 
-        return null;
+        return temp;
     }
 
     public static void SaveBehaviour(List<EnemyBehaviourContainer> enemyBehaviourContainers)

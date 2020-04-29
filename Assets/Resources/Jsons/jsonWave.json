@@ -2,6 +2,7 @@
     {
         "MapNum": 1,
         "EnemyNumber": [ "Enemy000003" ],
+        "EnemyBehNumber": [0],
         "EnemyTime": [ 0.0 ],
         "EnemyPositionX": [ 0 ],
         "EnemyPositionY": [ 1.1 ],
@@ -10,6 +11,7 @@
     {
         "MapNum": 1,
         "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001" ],
+        "EnemyBehNumber": [ 0, 0, 0 ],
         "EnemyTime": [ 0.0, 0.0, 0.5 ],
         "EnemyPositionX": [ 0.7, -0.7, 0 ],
         "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
@@ -18,6 +20,7 @@
     {
         "MapNum": 1,
         "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003" ],
+        "EnemyBehNumber": [ 0, 0, 0 ],
         "EnemyTime": [ 0.0, 0.0, 0.5 ],
         "EnemyPositionX": [ 0.7, -0.7, 0 ],
         "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
@@ -26,6 +29,7 @@
     {
         "MapNum": 1,
         "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003", "Enemy000005", "Enemy000005" ],
+        "EnemyBehNumber": [ 0, 0, 0, 0, 0 ],
         "EnemyTime": [ 0.0, 0.0, 0.5, 1, 2 ],
         "EnemyPositionX": [ 0.7, -0.7, 0, 1.1, -1.1 ],
         "EnemyPositionY": [ 1.1, 1.1, 1.1, 0.7, 0.7 ],
@@ -34,6 +38,7 @@
     {
         "MapNum": 1,
         "EnemyNumber": [ "Enemy000003", "Enemy000003" ],
+        "EnemyBehNumber": [ 0, 0 ],
         "EnemyTime": [ 0.0, 0.0 ],
         "EnemyPositionX": [ 0.7, -0.7 ],
         "EnemyPositionY": [ 1.1, 1.1 ],

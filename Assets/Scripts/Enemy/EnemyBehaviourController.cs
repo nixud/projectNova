@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,18 +55,13 @@ public class EnemyBehaviourController : MonoBehaviour
         //     behaviours.Add(new StayHere(gameObject, 8f));
         //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
         // }
-
+        int count = Convert.ToInt32(gameObject.name[0]);
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(gameObject.name.Remove(0, 1)), gameObject, behaviours, count);
     }
 
-    public void SetBehaviour(int count)
-    {
-        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(GetComponent<Enemy>().Number), gameObject, behaviours);
-        CanMove = true;
-    }
-    
     private void Update()
     {
-        if (IsNotRecycled && CanMove)
+        if (IsNotRecycled)
         {
 
             if (AlwaysShoot || AlwaysShootUntilNextBehaviour)

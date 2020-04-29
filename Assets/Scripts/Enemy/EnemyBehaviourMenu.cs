@@ -7,7 +7,6 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.Accessibility;
 
-[CustomEditor(typeof(EnemyBehaviourContainer))]
 public class EnemyBehaviourMenu : EditorWindow
 {
     private static List<EnemyBehaviourContainer> _enemyBehaviourContainers = new List<EnemyBehaviourContainer>();
