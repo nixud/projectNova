@@ -56,7 +56,8 @@ public class EnemyBehaviourController : MonoBehaviour
         //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
         // }
         int count = Convert.ToInt32(gameObject.name[0]);
-        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(gameObject.name.Remove(0, 1)), gameObject, behaviours, count);
+        gameObject.name = gameObject.name.Remove(0, 1);
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(gameObject.name), gameObject, behaviours, count);
     }
 
     private void Update()

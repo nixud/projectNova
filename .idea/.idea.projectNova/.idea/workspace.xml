@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/Wave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/Wave.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,15 +137,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EemyBehaviourLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/Wave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" />
       </list>
     </option>
   </component>
@@ -248,6 +241,7 @@
       <workItem from="1588086266784" duration="147000" />
       <workItem from="1588128988242" duration="1625000" />
       <workItem from="1588155443979" duration="2667000" />
+      <workItem from="1588159687821" duration="129000" />
     </task>
     <servers />
   </component>
