@@ -17,6 +17,20 @@ public class MoveForward : EnemyBehaviours
             gameObject.transform.rotation = Quaternion.Euler(0, 0, Mathf.Asin(dir.y / dir.x));
             Debug.Log(Mathf.Asin(dir.y / dir.x));
         }
+
+        // if (dir == new Vector3(0, 1, 0))
+        // {
+        //     gameObject.transform.rotation = Quaternion.Euler(0, 0, 180);
+        //     Debug.Log("掉头");
+        // }
+        // else if (dir == new Vector3(1, 0, 0))
+        // {
+        //     gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
+        // }
+        // else if (dir == new Vector3(-1, 0, 0))
+        // {
+        //     gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
+        // }
         Dir = dir;
     }
 

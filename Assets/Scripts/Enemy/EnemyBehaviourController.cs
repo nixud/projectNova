@@ -55,9 +55,10 @@ public class EnemyBehaviourController : MonoBehaviour
         //     behaviours.Add(new StayHere(gameObject, 8f));
         //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
         // }
-        int count = Convert.ToInt32(gameObject.name[0]);
-        gameObject.name = gameObject.name.Remove(0, 1);
-        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(gameObject.name), gameObject, behaviours, count);
+
+        int count = (Convert.ToInt32(gameObject.name[0]) - Convert.ToInt32('0')) * 10 + (Convert.ToInt32(gameObject.name[1]) - Convert.ToInt32('0'));
+        gameObject.name = gameObject.name.Remove(0, 2);
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours);
     }
 
     private void Update()
