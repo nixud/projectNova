@@ -66,7 +66,7 @@ public class Bullet : MonoBehaviour
 
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         if (IsNotRecycled) {
             Nowtime += Time.deltaTime;
             NowSpeed = Speed.Evaluate(Nowtime);
