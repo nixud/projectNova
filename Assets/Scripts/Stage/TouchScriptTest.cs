@@ -7,6 +7,8 @@ public class TouchScriptTest : MonoBehaviour
 {
     public StageSceneNew stageSceneNew;
     public float range;
+
+    public GameObject Light;
     // Use this for initialization
     void Start()
     {

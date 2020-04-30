@@ -34,7 +34,7 @@ public class BulletNew : MonoBehaviour
         transform.localScale = Scale;
     }
 
-    protected virtual void Update()
+    protected virtual void FixedUpdate()
     {
         if (IsNotRecycled)
         {
