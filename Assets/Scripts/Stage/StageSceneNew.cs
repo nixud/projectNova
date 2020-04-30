@@ -211,26 +211,42 @@ public class StageSceneNew : MonoBehaviour
     }
 
     public void FreshStageButton()
-    {/*
+    {
         for (int i = 0; i < EasyStagePoint.Count; i++)
-            if (!RangeCalculate(EasyStagePoint[i],PlayerPlane))
-                EasyStagePoint[i].GetComponent<Button>().interactable = false;
-            else EasyStagePoint[i].GetComponent<Button>().interactable = true;
+            if (!RangeCalculate(EasyStagePoint[i], PlayerPlane))
+            {
+                FreshStageButtonSetLight(EasyStagePoint[i], false);
+            }
+            else FreshStageButtonSetLight(EasyStagePoint[i], true);
 
         for (int i = 0; i < NormalStagePoint.Count; i++)
             if (!RangeCalculate(NormalStagePoint[i], PlayerPlane))
-                NormalStagePoint[i].GetComponent<Button>().interactable = false;
-            else NormalStagePoint[i].GetComponent<Button>().interactable = true;
+                FreshStageButtonSetLight(NormalStagePoint[i], false);
+            else FreshStageButtonSetLight(NormalStagePoint[i], true);
 
         for (int i = 0; i < DiffStagePoint.Count; i++)
             if (!RangeCalculate(DiffStagePoint[i], PlayerPlane))
-                DiffStagePoint[i].GetComponent<Button>().interactable = false;
-            else DiffStagePoint[i].GetComponent<Button>().interactable = true;
+                FreshStageButtonSetLight(DiffStagePoint[i], false);
+            else FreshStageButtonSetLight(DiffStagePoint[i], true);
 
         for (int i = 0; i < StagePointStatus.Count; i++) {
             if (StagePointStatus[i] == 1)
-                StagePointCheck[i].GetComponent<Image>().color = new Color(1,1,1,0.5f);
-        }*/
+                StagePointCheck[i].GetComponent<SpriteRenderer>().color = new Color(1,1,1,0.5f);
+        }
+    }
+
+    private void FreshStageButtonSetLight(GameObject gameObject,bool b) {
+        if (b)
+        {
+            gameObject.GetComponent<TouchScriptTest>().Light.SetActive(b);
+            Color color = gameObject.GetComponent<SpriteRenderer>().color;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 1f);
+        }
+        else {
+            gameObject.GetComponent<TouchScriptTest>().Light.SetActive(b);
+            Color color = gameObject.GetComponent<SpriteRenderer>().color;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 0.5f);
+        }
     }
 
     private void CheckPointPass(int number) {
