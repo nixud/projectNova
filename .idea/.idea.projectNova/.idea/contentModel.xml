@@ -235,6 +235,7 @@
             <e p="StageScene.cs" t="Include" />
             <e p="StageSceneNew.cs" t="Include" />
             <e p="StageUI" t="Include">
+              <e p="MoveCamera.cs" t="Include" />
               <e p="ViewScroll.cs" t="Include" />
             </e>
             <e p="TouchScriptTest.cs" t="Include" />
@@ -244,6 +245,7 @@
           </e>
           <e p="TestScript.cs" t="Include" />
           <e p="UIcontrol" t="Include">
+            <e p="GameMenuUI.cs" t="Include" />
             <e p="UIcontroller.cs" t="Include" />
           </e>
           <e p="UserConfig.cs" t="Include" />
