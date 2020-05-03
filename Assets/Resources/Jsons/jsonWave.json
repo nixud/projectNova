@@ -1,47 +1,155 @@
 [
-    {
-        "MapNum": 1,
-        "EnemyNumber": [ "Enemy000003" ],
-        "EnemyBehNumber": [0],
-        "EnemyTime": [ 0.0 ],
-        "EnemyPositionX": [ 0 ],
-        "EnemyPositionY": [ 1.1 ],
-        "Diffculty": 30
-    },
-    {
-        "MapNum": 1,
-        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001" ],
-        "EnemyBehNumber": [ 0, 0, 0 ],
-        "EnemyTime": [ 0.0, 0.0, 0.5 ],
-        "EnemyPositionX": [ 0.7, -0.7, 0 ],
-        "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
-        "Diffculty": 30
-    },
-    {
-        "MapNum": 1,
-        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003" ],
-        "EnemyBehNumber": [ 0, 0, 0 ],
-        "EnemyTime": [ 0.0, 0.0, 0.5 ],
-        "EnemyPositionX": [ 0.7, -0.7, 0 ],
-        "EnemyPositionY": [ 1.1, 1.1, 1.1 ],
-        "Diffculty": 70
-    },
-    {
-        "MapNum": 1,
-        "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000003", "Enemy000005", "Enemy000005" ],
-        "EnemyBehNumber": [ 0, 0, 0, 0, 0 ],
-        "EnemyTime": [ 0.0, 0.0, 0.5, 1, 2 ],
-        "EnemyPositionX": [ 0.7, -0.7, 0, 1.1, -1.1 ],
-        "EnemyPositionY": [ 1.1, 1.1, 1.1, 0.7, 0.7 ],
-        "Diffculty": 85
-    },
-    {
-        "MapNum": 1,
-        "EnemyNumber": [ "Enemy000003", "Enemy000003" ],
-        "EnemyBehNumber": [ 0, 0 ],
-        "EnemyTime": [ 0.0, 0.0 ],
-        "EnemyPositionX": [ 0.7, -0.7 ],
-        "EnemyPositionY": [ 1.1, 1.1 ],
-        "Diffculty": 70
-    }
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000003", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001" ],
+    "EnemyBehNumber": [ 5, 5, 5, 5, 10, 5, 5, 5, 5 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 2.0, 4.0, 6.0, 6.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.66, 0.66, -0.33, 0.33, 0, -0.33, 0.33, -0.66, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 10
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000003", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002" ],
+    "EnemyBehNumber": [ 10, 10, 6, 6, 6, 6, 6, 6 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 2.0, 5.0, 5.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25 ],
+    "EnemyPositionY": [ 1.25, 1.25, 0.8, 0.8, 0.6, 0.6, 0.4, 0.4 ],
+    "Diffculty": 15
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000003" ],
+    "EnemyBehNumber": [ 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10 ],
+    "EnemyTime": [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ],
+    "EnemyPositionX": [ -0.66, -0.33, 0, 0.33, 0.66, 0.33, 0, -0.33, -0.66, -0.33, 0 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 20
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000002", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000010", "Enemy000010" ],
+    "EnemyBehNumber": [ 11, 5, 5, 5, 5, 5, 11, 11, 11, 1, 1 ],
+    "EnemyTime": [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 8.0, 10.0, 10.0 ],
+    "EnemyPositionX": [ -1.25, -0.66, -0.33, 0, 0.33, 0.66, 1.25, -1.25, 1.25, -0.5, 0.5 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 25
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001" ],
+    "EnemyBehNumber": [ 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 ],
+    "EnemyTime": [ 0.0, 0.0, 1.5, 1.5, 3.0, 3.0, 4.5, 4.5, 6.0, 6.0, 7.5, 7.5, 9.0, 9.0, 10.5, 10.5, 12.0, 12.0 ],
+    "EnemyPositionX": [ 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25 ],
+    "EnemyPositionY": [ 0, 0, 0.2, 0.2, 0.4, 0.4, 0.6, 0.6, 0.8, 0.8, 0.6, 0.6, 0.4, 0.4, 0.2, 0.2, 0, 0 ],
+    "Diffculty": 30
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000005", "Enemy000005", "Enemy000005", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000005", "Enemy000005", "Enemy000003" ],
+    "EnemyBehNumber": [ 1, 1, 1, 1, 8, 8, 8, 1, 1, 1, 1, 8, 8, 10 ],
+    "EnemyTime": [ 0.0, 0.0, 0.0, 0.0, 1.0, 3.0, 4.5, 6.0, 6.0, 6.0, 6.0, 7.0, 8.0, 10.0 ],
+    "EnemyPositionX": [ -0.33, 0.33, -0.66, 0.66, -0.5, 0, 0.5, -0.33, 0.33, -0.66, 0.66, -0.5, 0, 0 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 35
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001", "Enemy000001" ],
+    "EnemyBehNumber": [ 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 ],
+    "EnemyTime": [ 0.0, 0.0, 0.0, 1.5, 1.5, 3.0, 3.0, 4.5, 4.5, 6.0, 6.0 ],
+    "EnemyPositionX": [ 0, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25 ],
+    "EnemyPositionY": [ 1.25, 0, 0.8, 0.2, 0.6, 0.4, 0.4, 0.6, 0.2, 0.8, 0 ],
+    "Diffculty": 40
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000007", "Enemy000007", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002" ],
+    "EnemyBehNumber": [ 5, 5, 5, 5, 1, 1, 5, 5, 5, 5 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 2.0, 4.0, 4.0, 6.0, 6.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.66, 0.66, -0.33, 0.33, -0.5, 0.5, -0.33, 0.33, -0.66, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 45
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000010", "Enemy000010", "Enemy000002", "Enemy000002", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000010", "Enemy000002", "Enemy000002", "Enemy000010", "Enemy000010" ],
+    "EnemyBehNumber": [ 5, 5, 7, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 2.0, 2.0, 2.0, 4.0, 6.0, 6.0, 6.0, 6.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.66, 0.66, -0.5, 0.5, -0.33, 0.33, 0, -0.33, 0.33, -0.5, 0.5, -0.66, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 50
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000003", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002", "Enemy000002" ],
+    "EnemyBehNumber": [ 1, 1, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11 ],
+    "EnemyTime": [ 0.0, 0.0, 0.0, 0.0, 2.0, 2.0, 4.0, 4.0, 6.0, 6.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25, -1.25, 1.25 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 55
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000002", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000002", "Enemy000005", "Enemy000002" ],
+    "EnemyBehNumber": [ 5, 5, 8, 5, 5, 8, 5, 5, 8, 5, 5, 8, 5 ],
+    "EnemyTime": [ 0.0, 1.0, 2.0, 2.0, 3.0, 4.0, 4.0, 5.0, 6.0, 6.0, 7.0, 8.0, 8.0 ],
+    "EnemyPositionX": [ -0.66, -0.33, -0.5, 0, 0.33, 0.5, 0.66, 0.33, -1.25, 0, -0.33, 1.25, -0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 60
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000007", "Enemy000007", "Enemy000005", "Enemy000005", "Enemy000003", "Enemy000005", "Enemy000005", "Enemy000003" ],
+    "EnemyBehNumber": [ 1, 1, 8, 8, 10, 8, 8, 10 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 2.0, 4.0, 8.0, 8.0, 10.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -1.25, 1.25, 0, -1.25, 1.25, 0 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 65
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000003", "Enemy000005", "Enemy000005", "Enemy000005", "Enemy000005", "Enemy000005", "Enemy000005", "Enemy000005" ],
+    "EnemyBehNumber": [ 15, 15, 8, 8, 8, 8, 8, 8, 8 ],
+    "EnemyTime": [ 0.0, 0.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -1.25, -0.66, -0.33, 0, 0.33, 0.66, 1.25 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 70
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000003", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000005", "Enemy000002" ],
+    "EnemyBehNumber": [ 15, 15, 5, 8, 5, 8, 5, 8, 5 ],
+    "EnemyTime": [ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -0.66, -1.25, -0.33, 0, 0.33, 1.25, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 75
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000002", "Enemy000010", "Enemy000010", "Enemy000002", "Enemy000010", "Enemy000010", "Enemy000002", "Enemy000010", "Enemy000010", "Enemy000002" ],
+    "EnemyBehNumber": [ 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ],
+    "EnemyTime": [ 0.0, 1.0, 2.0, 2.0, 3.0, 4.0, 4.0, 5.0, 6.0, 6.0, 7.0 ],
+    "EnemyPositionX": [ 0, -0.66, -0.66, 0.66, -0.33, -0.33, 0.33, 0.33, -0.66, 0.66, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 80
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000007", "Enemy000007", "Enemy000002", "Enemy000005", "Enemy000002", "Enemy000003", "Enemy000005", "Enemy000002", "Enemy000005", "Enemy000002" ],
+    "EnemyBehNumber": [ 1, 1, 5, 8, 5, 3, 8, 5, 8, 5 ],
+    "EnemyTime": [ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 4.0, 5.0, 6.0, 7.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, -0.66, -1.25, -0.33, 0, 0, 0.33, 1.25, 0.66 ],
+    "EnemyPositionY": [ 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25 ],
+    "Diffculty": 85
+  },
+  {
+    "MapNum": 1,
+    "EnemyNumber": [ "Enemy000003", "Enemy000003", "Enemy000001", "Enemy000005", "Enemy000001", "Enemy000002", "Enemy000002", "Enemy000001", "Enemy000005", "Enemy000001", "Enemy000001", "Enemy000005", "Enemy000001", "Enemy000002", "Enemy000002", "Enemy000001", "Enemy000005", "Enemy000001", "Enemy000002", "Enemy000002", "Enemy000001", "Enemy000005", "Enemy000001" ],
+    "EnemyBehNumber": [ 15, 15, 6, 8, 6, 11, 11, 6, 8, 6, 6, 8, 6, 11, 11, 6, 8, 6, 11, 11, 6, 8, 6 ],
+    "EnemyTime": [ 0.0, 0.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0, 4.0, 5.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0 ],
+    "EnemyPositionX": [ -0.5, 0.5, 1.25, -0.66, 1.25, -1.25, 1.25, 1.25, -0.33, 1.25, 1.25, 0.33, -1.25, -1.25, 1.25, -1.25, 0.66, -1.25, -1.25, 1.25, -1.25, 0, -1.25 ],
+    "EnemyPositionY": [ 1.25, 1.25, 0, 1.25, 0.2, 1.25, 1.25, 0.4, 1.25, 0.6, 0.8, 1.25, 0.8, 1.25, 1.25, 0.6, 1.25, 0.4, 1.25, 1.25, 0.2, 1.25, 0 ],
+    "Diffculty": 99
+  }
 ]
