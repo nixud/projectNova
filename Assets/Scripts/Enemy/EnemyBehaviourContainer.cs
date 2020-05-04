@@ -17,7 +17,8 @@ public class EnemyBehaviourContainer
         }
         else
             index = 0;
-        
+
+        //Debug.Log(enemyBehaviourContainer.behaviourGroup.Count);
         foreach (var behaviourContainer in enemyBehaviourContainer.behaviourGroup[index])
         {
             switch (behaviourContainer.Type)
