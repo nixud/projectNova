@@ -62,7 +62,7 @@ public class EnemyBehaviourController : MonoBehaviour
         int count = (Convert.ToInt32(gameObject.name[0]) - Convert.ToInt32('0')) * 10 + (Convert.ToInt32(gameObject.name[1]) - Convert.ToInt32('0'));
         gameObject.name = gameObject.name.Remove(0, 2);
         EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours);
-        behaviours[0].Start();
+        behaviours[0]?.Start();
     }
 
     private void Update()

@@ -7,11 +7,6 @@ public class EnemyBehaviourContainer
 {
     public static void SetBehaviour(EnemyBehaviourContainer enemyBehaviourContainer, GameObject gameObject, List<EnemyBehaviours> behaviourses)
     {
-        if (enemyBehaviourContainer.number == "10")
-        {
-            Debug.Log("10 : " + enemyBehaviourContainer.behaviourGroup[0][0].Vector1 + " " + enemyBehaviourContainer.behaviourGroup[0][1].Vector1);
-        }
-        
         int index;
         if (enemyBehaviourContainer.behaviourGroup.Count > 1)
         {
