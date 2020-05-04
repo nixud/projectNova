@@ -176,7 +176,9 @@ public class StageIniter : MonoBehaviour
     private void SpawnEnemy(string enemyNumber,float positionX, float positionY, int behNumber) {
         GameObject prefab = Resources.Load<GameObject>("Prefabs/" + "Enemies" + "/" + enemyNumber);
         GameObject result = Instantiate(prefab);
-        result.name = behNumber.ToString() + enemyNumber;
+        var s = behNumber.ToString();
+        s = s.Length == 2 ? s : "0" + s;
+        result.name = s + enemyNumber;
         //Debug.Log(Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * positionX);
         result.transform.position = new Vector2(Camera.main.GetComponent<GameCamera>().GetdevWidth()/2 * positionX,
             Camera.main.GetComponent<GameCamera>().GetdevHeight()/2 * positionY);

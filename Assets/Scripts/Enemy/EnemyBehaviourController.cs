@@ -12,8 +12,11 @@ public class EnemyBehaviourController : MonoBehaviour
     public bool AlwaysShootUntilNextBehaviour;
     public bool AlwaysShootUntilNextBehaviourEnd;
 
+    [HideInInspector]public bool couldChangeBeh = false;
+
     private bool IsNotRecycled = false;
     private bool CanMove = false;
+
     private void OnEnable()
     {
         IsNotRecycled = true;
@@ -49,15 +52,17 @@ public class EnemyBehaviourController : MonoBehaviour
         //     behaviours.Add(new Kamikaze(gameObject, 6f, 10f));
         // }
         // else {
-        //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 1f));
-        //     behaviours.Add(new ShootOnce(gameObject, -1f));
-        //     behaviours.Add(new AlwaysShoot(gameObject, -1f));
-        //     behaviours.Add(new StayHere(gameObject, 8f));
-        //     behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(0, -1, 0), 20f));
+        // behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(-1, -1, 0), 1f));
+        // behaviours.Add(new AlwaysShootUNB(gameObject, -1));
+        // behaviours.Add(new MoveBetween(gameObject, 2, 10, new Vector3(-4, 6.5f, 0), new Vector3(-1, 6.5f, 0)));
+        // behaviours.Add(new MoveForward(gameObject, 4f, new Vector3(-1, 0, 0), 20f));
         // }
-        int count = Convert.ToInt32(gameObject.name[0]);
-        gameObject.name = gameObject.name.Remove(0, 1);
-        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(gameObject.name), gameObject, behaviours, count);
+        
+        
+        int count = (Convert.ToInt32(gameObject.name[0]) - Convert.ToInt32('0')) * 10 + (Convert.ToInt32(gameObject.name[1]) - Convert.ToInt32('0'));
+        gameObject.name = gameObject.name.Remove(0, 2);
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours);
+        behaviours[0]?.Start();
     }
 
     private void Update()
@@ -78,16 +83,21 @@ public class EnemyBehaviourController : MonoBehaviour
 
     private void NextBehaviour()
     {
+
         if (behaviours.Count > 0)
         {
-            if (behaviours[0].time <= time)
+            if (behaviours[0].time <= time || couldChangeBeh)
             {
+                behaviours[0].End();
                 behaviours.RemoveAt(0);
+                behaviours[0].Start();
                 time = 0;
                 if(AlwaysShootUntilNextBehaviour && AlwaysShootUntilNextBehaviourEnd)
                     AlwaysShootUntilNextBehaviourEnd = false;
                 else if(AlwaysShootUntilNextBehaviour)
                     AlwaysShootUntilNextBehaviour = false;
+
+                couldChangeBeh = false;
             }
         }
         else

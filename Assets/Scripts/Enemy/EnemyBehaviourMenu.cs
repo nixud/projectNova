@@ -65,7 +65,7 @@ public class EnemyBehaviourMenu : EditorWindow
         if (GUILayout.Button("添加基础行为"))
         {
             AddBaseBeh();
-            Refresh(false, false, true);
+            Refresh(false, false, false);
         }
 
         if (GUILayout.Button("删除基础行为"))
@@ -91,6 +91,11 @@ public class EnemyBehaviourMenu : EditorWindow
             AddEnemyBehaviourContainer();
             Refresh(false, true, true);
         }
+
+        if (GUILayout.Button("删除行为"))
+        {
+            DeleteBeh();
+        }
         
         if (GUILayout.Button("保存"))
         {
@@ -105,7 +110,7 @@ public class EnemyBehaviourMenu : EditorWindow
         {
             _containerPosTemp = _containerPos;
             _enemyBehaviourContainer = _enemyBehaviourContainers[_containerPos];
-            RefreshBaseBehList(true);
+            RefreshBaseBehList(false);
             _shouldChangeContainer = false;
         }
 
@@ -113,7 +118,7 @@ public class EnemyBehaviourMenu : EditorWindow
         {
             _baseBehListPosTemp = _baseBehListPos;
             _baseBehaviourContainers = _enemyBehaviourContainer.behaviourGroup[_baseBehListPos];
-            RefreshBaseBeh(true);
+            RefreshBaseBeh(false);
             _shouldChangeBaseBehList = false;
         }
 
@@ -125,6 +130,11 @@ public class EnemyBehaviourMenu : EditorWindow
         }
     }
 
+    private static void DeleteBeh()
+    {
+        _enemyBehaviourContainers.Remove(_enemyBehaviourContainer);
+        Refresh(true, true, true);
+    }
 
     private static void AddEnemyBehaviourContainer()
     {
@@ -168,16 +178,40 @@ public class EnemyBehaviourMenu : EditorWindow
 
         if (_baseBehaviourContainer.Type == BehaviourEnum.Kamikaze ||
             _baseBehaviourContainer.Type == BehaviourEnum.Move ||
-            _baseBehaviourContainer.Type == BehaviourEnum.MoveForward)
+            _baseBehaviourContainer.Type == BehaviourEnum.MoveForward || 
+            _baseBehaviourContainer.Type == BehaviourEnum.Track)
             _baseBehaviourContainer.Speed = EditorGUILayout.FloatField("NowSpeed", _baseBehaviourContainer.Speed);
 
         if (_baseBehaviourContainer.Type == BehaviourEnum.Move ||
             _baseBehaviourContainer.Type == BehaviourEnum.MoveForward)
         {
-            _baseBehaviourContainer.Dir.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.Dir.x);
-            _baseBehaviourContainer.Dir.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.Dir.y);
-            _baseBehaviourContainer.Dir.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Dir.z);
+            _baseBehaviourContainer.Vector1.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.Vector1.x);
+            _baseBehaviourContainer.Vector1.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.Vector1.y);
+            _baseBehaviourContainer.Vector1.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Vector1.z);
         }
+
+        if (_baseBehaviourContainer.Type == BehaviourEnum.MoveBetween)
+        {
+            _baseBehaviourContainer.Speed = EditorGUILayout.FloatField("NowSpeed", _baseBehaviourContainer.Speed);
+            GUILayout.Label("point1");
+            _baseBehaviourContainer.Vector1.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.Vector1.x);
+            _baseBehaviourContainer.Vector1.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.Vector1.y);
+            _baseBehaviourContainer.Vector1.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Vector1.z);
+            GUILayout.Label("point2");
+            _baseBehaviourContainer.vector2.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.vector2.x);
+            _baseBehaviourContainer.vector2.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.vector2.y);
+            _baseBehaviourContainer.vector2.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.vector2.z);
+        }
+
+        if (_baseBehaviourContainer.Type == BehaviourEnum.MoveToPoint || _baseBehaviourContainer.Type == BehaviourEnum.MoveForwardToPoint)
+        {
+            _baseBehaviourContainer.Speed = EditorGUILayout.FloatField("NowSpeed", _baseBehaviourContainer.Speed);
+            GUILayout.Label("Target");
+            _baseBehaviourContainer.Vector1.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.Vector1.x);
+            _baseBehaviourContainer.Vector1.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.Vector1.y);
+            _baseBehaviourContainer.Vector1.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Vector1.z);
+        }
+
 
         GUILayout.EndVertical();
     }

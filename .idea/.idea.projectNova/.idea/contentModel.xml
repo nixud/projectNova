@@ -135,6 +135,8 @@
           </e>
           <e p="Enemy" t="Include">
             <e p="BehaviourTest" t="Include">
+              <e p="aaaaaa.cs" t="Include" />
+              <e p="bbbbbb.cs" t="Include" />
               <e p="behTest.cs" t="Include" />
             </e>
             <e p="Boss" t="Include">
@@ -150,10 +152,14 @@
               <e p="AlwaysShootUNB.cs" t="Include" />
               <e p="Kamikaze.cs" t="Include" />
               <e p="Move.cs" t="Include" />
+              <e p="MoveBetween.cs" t="Include" />
               <e p="MoveForward.cs" t="Include" />
+              <e p="MoveForwardToPoint.cs" t="Include" />
+              <e p="MoveToPoint.cs" t="Include" />
               <e p="ShootOnce.cs" t="Include" />
               <e p="ShootPlayerOnce.cs" t="Include" />
               <e p="StayHere.cs" t="Include" />
+              <e p="Track.cs" t="Include" />
             </e>
             <e p="EnemyBehaviours.cs" t="Include" />
             <e p="EnemyBehavioursMove.cs" t="Include" />
@@ -229,15 +235,19 @@
             <e p="StageDiffculty.cs" t="Include" />
             <e p="StageIniter.cs" t="Include" />
             <e p="StageScene.cs" t="Include" />
+            <e p="StageSceneNew.cs" t="Include" />
             <e p="StageUI" t="Include">
+              <e p="MoveCamera.cs" t="Include" />
               <e p="ViewScroll.cs" t="Include" />
             </e>
+            <e p="TouchScriptTest.cs" t="Include" />
             <e p="Wave.cs" t="Include" />
             <e p="WaveGroupCreater.cs" t="Include" />
             <e p="WaveMenu.cs" t="Include" />
           </e>
           <e p="TestScript.cs" t="Include" />
           <e p="UIcontrol" t="Include">
+            <e p="GameMenuUI.cs" t="Include" />
             <e p="UIcontroller.cs" t="Include" />
           </e>
           <e p="UserConfig.cs" t="Include" />
@@ -277,6 +287,7 @@
               <e p="WeaponLight.cs" t="Include" />
               <e p="WeaponMachineGun.cs" t="Include" />
               <e p="WeaponNormalGun.cs" t="Include" />
+              <e p="WeaponNormalGunShootToPlayer.cs" t="Include" />
               <e p="WeaponRay.cs" t="Include" />
               <e p="WeaponShotGun.cs" t="Include" />
             </e>
