@@ -57,7 +57,13 @@ public class EnemyControl : MonoBehaviour
     public void RecycleNow()
     {
         Destroy(gameObject);
-        Camera.main.GetComponent<StageIniter>().KilledOneEnemy();
+        try
+        {
+            Camera.main.GetComponent<StageIniter>().KilledOneEnemy();
+        }
+        catch {
+            Debug.Log("一个敌人被消灭。如果此消息不在波次测试中出现，请检查代码bug");
+        }
         ScoreData.Instance.levelScore++;
     }
 

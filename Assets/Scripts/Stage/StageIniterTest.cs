@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//这个脚本用于测试波次。
 //包括生成敌人、判断输赢在内的关卡内控制脚本。
-public class StageIniter : MonoBehaviour
+public class StageIniterTest : MonoBehaviour
 {
     private int WaveNumber;
     private List<Wave> thisStageWaves = new List<Wave>();
+
+    public int TargetDiffculty = 50;
 
     #region 敌人生成
     private List<Wave> waves;
 
     private string Diffculty;
-
-    private int StageWaveMinAmount;
-    private int StageWaveMaxAmount;
-    private int StageMinDiffculty;
-    private int StageMaxDiffculty;
 
     private int StageStardandDiffculty;
 
@@ -32,61 +30,13 @@ public class StageIniter : MonoBehaviour
 
         Diffculty = NowStageInfomation.GetInstance().Diffculty;
 
-        if (!NowStageInfomation.GetInstance().isCleared) {
-            if (Diffculty == "Easy") {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.EasyStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.EasyStageMinDiffculty;
+        JsonLoader<Wave> loader = new JsonLoader<Wave>();
+        waves = loader.LoadData();
 
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMaxAmount;
-
-                StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.EasyStageDiffcultyRatio / 2);
+        for (int i = 0; i < waves.Count; i++) {
+            if (waves[i].Diffculty == TargetDiffculty) {
+                thisStageWaves.Add(waves[i]);
             }
-            else if (Diffculty == "Medium")
-            {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.MediumStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.MediumStageMinDiffculty;
-
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.MediumStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.MediumStageWaveMaxAmount;
-
-                StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.MediumStageDiffcultyRatio / 2);
-            }
-            else if (Diffculty == "Hard")
-            {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.HardStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.HardStageMinDiffculty;
-
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.HardStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.HardStageWaveMaxAmount;
-
-                StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.HardStageDiffcultyRatio / 2);
-            }
-
-            MapNum = NowStageInfomation.GetInstance().mapConfigData.MapNumber;
-
-
-            WaveNumber = Random.Range(StageWaveMinAmount, StageWaveMaxAmount);
-
-            JsonLoader<Wave> loader = new JsonLoader<Wave>();
-            waves = loader.LoadData();
-
-            if (WaveNumber % 2 != 0)
-                WaveNumber++;
-
-            HighWave = false;
-
-            List<Wave> waveTemp = GetTargetWaves(StageMinDiffculty, StageMaxDiffculty);
-//            Debug.Log(StageStardandDiffculty);
-            for (int i = 0; i < WaveNumber; i++) {
-                if (HighWave) {
-                    thisStageWaves.Add(GetRandomWave(waveTemp, StageStardandDiffculty, StageMaxDiffculty));
-                }
-                else thisStageWaves.Add(GetRandomWave(waveTemp, StageMinDiffculty, StageStardandDiffculty));
-
-                HighWave = !HighWave;
-            }
-
         }
     }
 
@@ -122,7 +72,7 @@ public class StageIniter : MonoBehaviour
     private void Update()
     {
         if (thisStageWaves.Count == 0)
-            PlayerWin();
+            Debug.Log("测试已完成");
         else
         {
             if (thisWavePointer == thisStageWaves[0].EnemyNumber.Count)
@@ -154,7 +104,7 @@ public class StageIniter : MonoBehaviour
             thisStageWaves.RemoveAt(0);
         }
         else {
-            PlayerWin();
+            Debug.Log("测试已完成");
         }
     }
 
