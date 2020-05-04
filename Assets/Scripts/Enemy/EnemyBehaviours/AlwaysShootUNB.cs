@@ -14,8 +14,19 @@ public class AlwaysShootUNB : EnemyBehaviours
      public override Vector3 Calculate(float Dt) {
          return new Vector3(0,0,0);
      }
+
+     public override void Start()
+     {
+         
+     }
+
      public override void Run(float Dt) {
          gameObject.GetComponent<EnemyBehaviourController>().AlwaysShootUntilNextBehaviour = true;
          gameObject.GetComponent<EnemyBehaviourController>().AlwaysShootUntilNextBehaviourEnd = true;
+     }
+
+     public override void End()
+     {
+         
      }
  }

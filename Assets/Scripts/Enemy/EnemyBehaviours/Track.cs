@@ -5,29 +5,43 @@ using UnityEngine.UI;
 
 public class Track : EnemyBehaviours
 {
-    private Vector3 temp;
+    private Vector3 direction;
     private float speed;
     private Transform player;
 
+    private float lerpSpeed = 0.03f;
+    
     public Track(GameObject gameObject, float speed)
     {
         this.gameObject = gameObject;
         this.speed = speed;
         player = GameObject.Find("Player").transform;
-        temp = (player.position - gameObject.transform.position).normalized;
+        time = float.MaxValue;
     }
     
     public override Vector3 Calculate(float Dt)
     {
-        if (Vector3.Distance(gameObject.transform.position, player.position) > 2f)
-            temp = (player.position - gameObject.transform.position).normalized;
-        return temp;
+        return Vector3.down * (speed * Dt);
+    }
+
+    public override void Start()
+    {
+        gameObject.transform.up = direction;
     }
 
     public override void Run(float Dt)
     {
-        Debug.Log(Calculate(Dt));
-        gameObject.transform.position += Calculate(Dt) * (speed * Dt);
-        Debug.Log(gameObject.transform.position);
+        var tmp = player.position - gameObject.transform.position;
+        //
+        // var angle = Vector2.Angle(new Vector2(tmp.x, tmp.y), new Vector2(-gameObject.transform.up.x, -gameObject.transform.up.y));
+        var lerp = Vector3.Lerp(gameObject.transform.up, -tmp, lerpSpeed);
+        gameObject.transform.up = (new Vector3(lerp.x, lerp.y, 0)).normalized;
+        
+        gameObject.transform.Translate(Calculate(Dt));
+    }
+
+    public override void End()
+    {
+        gameObject.transform.up = direction;
     }
 }

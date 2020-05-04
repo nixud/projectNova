@@ -154,6 +154,8 @@
               <e p="Move.cs" t="Include" />
               <e p="MoveBetween.cs" t="Include" />
               <e p="MoveForward.cs" t="Include" />
+              <e p="MoveForwardToPoint.cs" t="Include" />
+              <e p="MoveToPoint.cs" t="Include" />
               <e p="ShootOnce.cs" t="Include" />
               <e p="ShootPlayerOnce.cs" t="Include" />
               <e p="StayHere.cs" t="Include" />

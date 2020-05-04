@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="" />
+    <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/GameMenu/BackButtonImage.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemies/Enemy000002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemies/Enemy000002.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemyBehaviourTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemyBehaviourTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootOnce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootOnce.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/StayHere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/StayHere.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,10 +91,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/NormalBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardToPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/StayHere.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1319B71-95C3-43E7-9B38-5CD3AA43F5DC/48/981503cf/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/ac/b36c1fcd/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/80/4cd276d3/IComparable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A3F68E4-AE18-416E-9941-EAFA34CABA8A/5f/fa2ce02b/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,14 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Test1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Test2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
@@ -132,26 +151,34 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/WaveGroupCreater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EemyBehaviourLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/Wave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/StayHere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootOnce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardToPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" />
       </list>
     </option>
   </component>
@@ -253,6 +280,9 @@
       <workItem from="1588254616866" duration="167000" />
       <workItem from="1588254813764" duration="1418000" />
       <workItem from="1588257210290" duration="5000" />
+      <workItem from="1588387049081" duration="5743000" />
+      <workItem from="1588569363269" duration="7384000" />
+      <workItem from="1588577807588" duration="5237000" />
     </task>
     <servers />
   </component>
@@ -343,10 +373,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="325" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588060503341" />
-    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1588245710310">
+    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1588580174727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588245710310" />
+    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588580174727" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585558541072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

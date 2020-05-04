@@ -43,8 +43,18 @@ public class MoveBetween : EnemyBehaviours
         }
     }
 
+    public override void Start()
+    {
+        
+    }
+
     public override void Run(float Dt)
     {
         gameObject.transform.position = Calculate(Dt);
+    }
+
+    public override void End()
+    {
+        
     }
 }

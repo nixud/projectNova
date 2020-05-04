@@ -14,8 +14,19 @@ public class ShootPlayerOnce : EnemyBehaviours
     public override Vector3 Calculate(float Dt) {
         return new Vector3(0,0,0);
     }
+
+    public override void Start()
+    {
+        
+    }
+
     public override void Run(float Dt) {
         Vector3 dir = -(gameObject.transform.position - GameObject.Find("Player").transform.position).normalized;
         gameObject.GetComponent<EnemyControl>().Shoot(dir);
+    }
+
+    public override void End()
+    {
+        
     }
 }

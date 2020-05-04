@@ -7,6 +7,11 @@ public class EnemyBehaviourContainer
 {
     public static void SetBehaviour(EnemyBehaviourContainer enemyBehaviourContainer, GameObject gameObject, List<EnemyBehaviours> behaviourses)
     {
+        if (enemyBehaviourContainer.number == "10")
+        {
+            Debug.Log("10 : " + enemyBehaviourContainer.behaviourGroup[0][0].Vector1 + " " + enemyBehaviourContainer.behaviourGroup[0][1].Vector1);
+        }
+        
         int index;
         if (enemyBehaviourContainer.behaviourGroup.Count > 1)
         {
@@ -52,6 +57,12 @@ public class EnemyBehaviourContainer
                 case BehaviourEnum.Track:
                     behaviourses.Add(new Track(gameObject, behaviourContainer.Speed));
                     break;
+                case BehaviourEnum.MoveToPoint:
+                    behaviourses.Add(new MoveToPoint(gameObject, behaviourContainer.Speed, behaviourContainer.Vector1));
+                    break;
+                case BehaviourEnum.MoveForwardToPoint:
+                    behaviourses.Add(new MoveForwardToPoint(gameObject, behaviourContainer.Speed, behaviourContainer.Vector1));
+                    break;
                 default:
                     break;
             }
@@ -96,5 +107,7 @@ public enum BehaviourEnum
     ShootPlayerOnce,
     StayHere,
     MoveBetween,
-    Track
+    Track,
+    MoveToPoint,
+    MoveForwardToPoint
 }

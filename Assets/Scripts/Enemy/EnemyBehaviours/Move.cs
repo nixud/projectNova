@@ -21,7 +21,18 @@ public class Move : EnemyBehaviours
     public override Vector3 Calculate(float Dt) {
         return Dir * NowSpeed * Dt;
     }
+
+    public override void Start()
+    {
+        
+    }
+
     public override void Run(float Dt) {
         gameObject.transform.Translate(Calculate(Dt));
+    }
+
+    public override void End()
+    {
+        
     }
 }
