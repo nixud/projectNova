@@ -83,6 +83,7 @@ MonoBehaviour:
   maxHP: 100
   DestoryEffect: 
   IsNotRecycled: 1
+  canAliveAfterHit: 1
   shootPoints:
   - {fileID: 6932832340490240356}
   - {fileID: 4818397553593832462}
@@ -104,6 +105,7 @@ MonoBehaviour:
   AlwaysShoot: 0
   AlwaysShootUntilNextBehaviour: 0
   AlwaysShootUntilNextBehaviourEnd: 0
+  couldChangeBeh: 0
 --- !u!50 &6606226724523506368
 Rigidbody2D:
   serializedVersion: 4

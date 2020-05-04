@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,12 +12,15 @@ public class EnemyControl : MonoBehaviour
     public string DestoryEffect;
 
     public bool IsNotRecycled = true;
+    public bool canAliveAfterHit = true;
 
     List<WeaponControlEnemy> weaponControls = new List<WeaponControlEnemy>();
     List<WeaponNew> weaponNews = new List<WeaponNew>();
     public List<GameObject> shootPoints = new List<GameObject>();
 
     public List<string> WeaponName = new List<string>();
+
+    private bool canHit = true;
 
     public virtual void Hitted(float hp)
     {
@@ -47,11 +51,18 @@ public class EnemyControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && canHit)
         {
             collision.gameObject.GetComponent<CharacterControl>().DecHP();
-            RecycleNow();
+            if (!canAliveAfterHit)
+                RecycleNow();
+            canHit = false;
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        canHit = true;
     }
 
     public void RecycleNow()
