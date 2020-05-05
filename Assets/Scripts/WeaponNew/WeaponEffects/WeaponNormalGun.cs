@@ -35,11 +35,21 @@ public class WeaponNormalGun : WeaponNew
             {
                 bullet.GetComponent<Bullet>().dir = shootForward;
                 bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                
+                // normalGun子弹朝向
+                float eulers = -Mathf.Atan(shootForward.x / shootForward.y) * 180 / Mathf.PI;
+                bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, eulers));
+                bullet.GetComponent<Bullet>().eulers = eulers;
             }
             catch
             {
                 bullet.GetComponent<BulletHelper>().bulletNew.dir = shootForward;
                 bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
+                
+                // normalGun子弹朝向
+                float eulers = -Mathf.Atan(shootForward.x / shootForward.y) * 180 / Mathf.PI;
+                bullet.GetComponent<BulletHelper>().bulletNew.transform.Rotate(new Vector3(0, 0, eulers));
+                bullet.GetComponent<BulletHelper>().bulletNew.eulers = eulers;
             }
 
             StartCoroutine(WeaponCD());
