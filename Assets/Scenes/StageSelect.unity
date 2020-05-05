@@ -4017,8 +4017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapNumber: 1
-  EasyStageWaveMinAmount: 6
-  EasyStageWaveMaxAmount: 8
+  EasyStageWaveMinAmount: 0
+  EasyStageWaveMaxAmount: 0
   MediumStageWaveMinAmount: 6
   MediumStageWaveMaxAmount: 8
   HardStageWaveMinAmount: 10
@@ -4032,6 +4032,12 @@ MonoBehaviour:
   EasyStageDiffcultyRatio: 1
   MediumStageDiffcultyRatio: 1
   HardStageDiffcultyRatio: 0.8
+  EasyStageDiffcultyIncrease: 5
+  MediumStageDiffcultyIncrease: 3
+  HardStageDiffcultyIncrease: 2
+  EasyStageDiffcultyIncreaseMaxTimes: 10
+  MediumStageDiffcultyIncreaseMaxTimes: 10
+  HardStageDiffcultyIncreaseMaxTimes: 10
 --- !u!1 &781992773
 GameObject:
   m_ObjectHideFlags: 0
