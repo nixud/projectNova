@@ -212,6 +212,16 @@ public class EnemyBehaviourMenu : EditorWindow
             _baseBehaviourContainer.Vector1.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Vector1.z);
         }
 
+        if (_baseBehaviourContainer.Type == BehaviourEnum.MoveForwardChangeVelocity)
+        {
+            _baseBehaviourContainer.Speed = EditorGUILayout.FloatField("StartSpeed", _baseBehaviourContainer.Speed);
+            _baseBehaviourContainer.f_field1 = EditorGUILayout.FloatField("EndSpeed", _baseBehaviourContainer.f_field1);
+            GUILayout.Label("Target");
+            _baseBehaviourContainer.Vector1.x = EditorGUILayout.FloatField("x", _baseBehaviourContainer.Vector1.x);
+            _baseBehaviourContainer.Vector1.y = EditorGUILayout.FloatField("y", _baseBehaviourContainer.Vector1.y);
+            _baseBehaviourContainer.Vector1.z = EditorGUILayout.FloatField("z", _baseBehaviourContainer.Vector1.z);
+        }
+
 
         GUILayout.EndVertical();
     }

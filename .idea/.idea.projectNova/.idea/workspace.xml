@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plugin/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/1e/708a945f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardChangeVelocity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,8 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin3.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" />
@@ -145,19 +149,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardToPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShootUNB.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MovwForwardChangeVelocity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardChangeVelocity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
       </list>
     </option>
   </component>
@@ -264,6 +270,7 @@
       <workItem from="1588577807588" duration="5237000" />
       <workItem from="1588588049601" duration="1326000" />
       <workItem from="1588593464660" duration="573000" />
+      <workItem from="1588667422098" duration="1774000" />
     </task>
     <servers />
   </component>
@@ -354,10 +361,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="325" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588060503341" />
-    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1588580174727">
+    <state x="776" y="101" key="RiderGenerateDialog" timestamp="1588667471485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588580174727" />
+    <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588667471485" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585558541072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

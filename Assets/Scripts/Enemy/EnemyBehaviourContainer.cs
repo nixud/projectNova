@@ -59,6 +59,9 @@ public class EnemyBehaviourContainer
                 case BehaviourEnum.MoveForwardToPoint:
                     behaviourses.Add(new MoveForwardToPoint(gameObject, behaviourContainer.Speed, behaviourContainer.Vector1));
                     break;
+                case BehaviourEnum.MoveForwardChangeVelocity:
+                    behaviourses.Add(new MoveForwardChangeVelocity(gameObject, behaviourContainer.Speed, behaviourContainer.f_field1, behaviourContainer.Vector1, behaviourContainer.Time));
+                    break;
                 default:
                     break;
             }
@@ -75,9 +78,18 @@ public class BaseBehaviourContainer
     public BehaviourEnum Type;
     public float Time;
     public float Speed;
+
+    // 预留字段
+    public float f_field1;
+    public float f_field2;
+    public float f_field3;
+    
     public Vector3 Vector1;
     public Vector3 vector2;
     
+    // 向量预留字段
+    public Vector3 v_field1;
+
     public BaseBehaviourContainer(BehaviourEnum type, float time, float speed = 0, Vector3 vector1 = default, Vector3 vector2 = default)
     {
         this.Type = type;
@@ -105,5 +117,6 @@ public enum BehaviourEnum
     MoveBetween,
     Track,
     MoveToPoint,
-    MoveForwardToPoint
+    MoveForwardToPoint,
+    MoveForwardChangeVelocity
 }

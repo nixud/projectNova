@@ -8,7 +8,13 @@ public class MoveForward : EnemyBehaviours
     private Vector3 Dir;
 
     private Vector3 direction;
-
+    /// <summary>
+    /// 掉头朝向移动
+    /// </summary>
+    /// <param name="Obj"></param>
+    /// <param name="NowSpeed"></param>
+    /// <param name="dir">朝向</param>
+    /// <param name="t">时间</param>
     public MoveForward(GameObject Obj, float NowSpeed, Vector3 dir, float t)
     {
         time = t;
