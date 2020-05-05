@@ -79,10 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b6f71fa9292954a890cfea39578ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 120
-  maxHP: 120
+  HP: 160
+  maxHP: 160
   DestoryEffect: 
   IsNotRecycled: 1
+  canAliveAfterHit: 1
   shootPoints:
   - {fileID: 6932832340490240356}
   - {fileID: 4818397553593832462}
@@ -104,6 +105,7 @@ MonoBehaviour:
   AlwaysShoot: 0
   AlwaysShootUntilNextBehaviour: 0
   AlwaysShootUntilNextBehaviourEnd: 0
+  couldChangeBeh: 0
 --- !u!50 &6606226724523506368
 Rigidbody2D:
   serializedVersion: 4

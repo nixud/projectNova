@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22531bdbc8de246bab25f8401f6eb8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetDiffculty: 10
+  TargetDiffculty: 55
   WaveTimer: {fileID: 1911412584}
 --- !u!20 &519420031
 Camera:
@@ -5973,22 +5973,37 @@ PrefabInstance:
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.data[0]
-      value: PlayerWeapon1
+      value: testWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.data[1]
-      value: PlayerWeapon1
+      value: testWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
       propertyPath: WeaponName.Array.data[2]
-      value: PlayerWeapon1
+      value: testWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: WeaponName.Array.data[3]
+      value: testWeapon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: WeaponName.Array.data[4]
+      value: testWeapon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301522347482042110, guid: 1f665eca5f5cf419ebbfe265d37db975,
+        type: 3}
+      propertyPath: IsAutoFire
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6091445767863147800, guid: 1f665eca5f5cf419ebbfe265d37db975,
         type: 3}
