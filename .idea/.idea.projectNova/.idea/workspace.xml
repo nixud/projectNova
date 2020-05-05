@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,10 +165,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootOnce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardToPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
       </list>
     </option>
   </component>
@@ -277,6 +278,8 @@
       <workItem from="1588667422098" duration="1774000" />
       <workItem from="1588680724341" duration="8735000" />
       <workItem from="1588690503379" duration="816000" />
+      <workItem from="1588691801347" duration="7000" />
+      <workItem from="1588691832473" duration="15000" />
     </task>
     <servers />
   </component>

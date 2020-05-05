@@ -63,7 +63,7 @@ public class EnemyBehaviourController : MonoBehaviour
         gameObject.name = gameObject.name.Remove(0, 2);
         EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours, gameObject.name);
         
-        Debug.Log(gameObject.name + " : " + count.ToString());
+        // Debug.Log(gameObject.name + " : " + count.ToString());
         
         behaviours[0]?.Start();
     }
