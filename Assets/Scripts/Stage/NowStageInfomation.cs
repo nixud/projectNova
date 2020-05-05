@@ -26,4 +26,9 @@ public class NowStageInfomation
 
     public bool isCleared = false;
     public string Diffculty;
+
+    //下面是关卡通过数量统计。
+    public int EasyStagePassnum = 0;
+    public int MediumStagePassnum = 0;
+    public int HardStagePassnum = 0;
 }

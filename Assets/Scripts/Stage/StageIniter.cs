@@ -30,40 +30,46 @@ public class StageIniter : MonoBehaviour
         ObjectPool.GetInstance().EmptyPool();
         thisStageWaves.Clear();
 
-        Diffculty = NowStageInfomation.GetInstance().Diffculty;
+        NowStageInfomation nowStageInfomation = NowStageInfomation.GetInstance();
 
-        if (!NowStageInfomation.GetInstance().isCleared) {
+        Diffculty = nowStageInfomation.Diffculty;
+
+        if (!nowStageInfomation.isCleared) {
+            int DiffcultyIncrease;
             if (Diffculty == "Easy") {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.EasyStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.EasyStageMinDiffculty;
+                DiffcultyIncrease = Mathf.Clamp(nowStageInfomation.EasyStagePassnum,0,nowStageInfomation.mapConfigData.EasyStageDiffcultyIncreaseMaxTimes)
+                    * nowStageInfomation.mapConfigData.EasyStageDiffcultyIncrease;
 
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.EasyStageWaveMaxAmount;
+                StageMaxDiffculty = nowStageInfomation.mapConfigData.EasyStageMaxDiffculty + DiffcultyIncrease;
+                StageMinDiffculty = nowStageInfomation.mapConfigData.EasyStageMinDiffculty + DiffcultyIncrease;
+
+                StageWaveMinAmount = nowStageInfomation.mapConfigData.EasyStageWaveMinAmount;
+                StageWaveMaxAmount = nowStageInfomation.mapConfigData.EasyStageWaveMaxAmount;
 
                 StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.EasyStageDiffcultyRatio / 2);
             }
             else if (Diffculty == "Medium")
             {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.MediumStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.MediumStageMinDiffculty;
+                StageMaxDiffculty = nowStageInfomation.mapConfigData.MediumStageMaxDiffculty;
+                StageMinDiffculty = nowStageInfomation.mapConfigData.MediumStageMinDiffculty;
 
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.MediumStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.MediumStageWaveMaxAmount;
+                StageWaveMinAmount = nowStageInfomation.mapConfigData.MediumStageWaveMinAmount;
+                StageWaveMaxAmount = nowStageInfomation.mapConfigData.MediumStageWaveMaxAmount;
 
                 StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.MediumStageDiffcultyRatio / 2);
             }
             else if (Diffculty == "Hard")
             {
-                StageMaxDiffculty = NowStageInfomation.GetInstance().mapConfigData.HardStageMaxDiffculty;
-                StageMinDiffculty = NowStageInfomation.GetInstance().mapConfigData.HardStageMinDiffculty;
+                StageMaxDiffculty = nowStageInfomation.mapConfigData.HardStageMaxDiffculty;
+                StageMinDiffculty = nowStageInfomation.mapConfigData.HardStageMinDiffculty;
 
-                StageWaveMinAmount = NowStageInfomation.GetInstance().mapConfigData.HardStageWaveMinAmount;
-                StageWaveMaxAmount = NowStageInfomation.GetInstance().mapConfigData.HardStageWaveMaxAmount;
+                StageWaveMinAmount = nowStageInfomation.mapConfigData.HardStageWaveMinAmount;
+                StageWaveMaxAmount = nowStageInfomation.mapConfigData.HardStageWaveMaxAmount;
 
                 StageStardandDiffculty = (int)((StageMinDiffculty + StageMaxDiffculty) * NowStageInfomation.GetInstance().mapConfigData.HardStageDiffcultyRatio / 2);
             }
 
-            MapNum = NowStageInfomation.GetInstance().mapConfigData.MapNumber;
+            MapNum = nowStageInfomation.mapConfigData.MapNumber;
 
 
             WaveNumber = Random.Range(StageWaveMinAmount, StageWaveMaxAmount);
@@ -77,7 +83,7 @@ public class StageIniter : MonoBehaviour
             HighWave = false;
 
             List<Wave> waveTemp = GetTargetWaves(StageMinDiffculty, StageMaxDiffculty);
-//            Debug.Log(StageStardandDiffculty);
+            Debug.Log("关卡难度为"+StageMinDiffculty+"-"+StageMaxDiffculty);
             for (int i = 0; i < WaveNumber; i++) {
                 if (HighWave) {
                     thisStageWaves.Add(GetRandomWave(waveTemp, StageStardandDiffculty, StageMaxDiffculty));
@@ -131,7 +137,6 @@ public class StageIniter : MonoBehaviour
             {
                 if (!thisWaveFinished && time >= thisStageWaves[0].EnemyTime[thisWavePointer])
                 {
-                    time = 0;
                     UseSpawnEnemy();
 
                 }
@@ -193,6 +198,19 @@ public class StageIniter : MonoBehaviour
     public void PlayerWin()
     {
         NowStageInfomation.GetInstance().isCleared = true;
+        if (Diffculty == "Easy")
+        {
+            NowStageInfomation.GetInstance().EasyStagePassnum++;
+        }
+        else if (Diffculty == "Medium")
+        {
+            NowStageInfomation.GetInstance().MediumStagePassnum++;
+        }
+        else if (Diffculty == "Hard")
+        {
+            NowStageInfomation.GetInstance().HardStagePassnum++;
+        }
+
         SceneManager.LoadScene("ScoreBroad");
         ObjectPool.GetInstance().EmptyPool();
     }

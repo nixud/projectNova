@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //这个脚本用于测试波次。
@@ -69,8 +70,14 @@ public class StageIniterTest : MonoBehaviour
 
     private bool thisWaveFinished = false;
 
+    private float WaveTime;
+    public GameObject WaveTimer;
+
     private void Update()
     {
+        WaveTime += Time.deltaTime;
+        WaveTimer.GetComponent<Text>().text = WaveTime.ToString();
+
         if (thisStageWaves.Count == 0)
             Debug.Log("测试已完成");
         else
@@ -81,7 +88,6 @@ public class StageIniterTest : MonoBehaviour
             {
                 if (!thisWaveFinished && time >= thisStageWaves[0].EnemyTime[thisWavePointer])
                 {
-                    time = 0;
                     UseSpawnEnemy();
 
                 }
