@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 //地图的处理。包括随机生成地图上的关卡和加载之前的关卡。
 public class StageSceneNew : MonoBehaviour
@@ -286,11 +287,39 @@ public class StageSceneNew : MonoBehaviour
         return false;
     }
 
+    #region 按下关卡以及飞机移动,包含update在内
+    private bool isMoving = false;
+    private float MovingTime = 1;
+    private float TempMovingTime = 0;
+
     public void StagePointPressed(GameObject button) {
-        PlayerPosition = StagePointCheck.IndexOf(button);
-        PlayerPlane.transform.position = button.transform.position + new Vector3(0,0,-1f);
-        FreshStageButton();
+        if (!isMoving)
+        {
+            PlayerPosition = StagePointCheck.IndexOf(button);
+
+            isMoving = true;
+            TempMovingTime = 0;
+            Vector3 TargetPosition = button.transform.position;//计算移动位置
+            TargetPosition.z = PlayerPlane.transform.position.z;
+            PlayerPlane.transform.DOMove(TargetPosition, MovingTime);//开始移动
+        }
     }
+
+    private void Update()//计时
+    {
+        if (isMoving)
+        {
+            TempMovingTime += Time.deltaTime;
+            if (TempMovingTime >= MovingTime)
+            {
+                isMoving = false;
+                TempMovingTime = 0;
+                FreshStageButton();
+            }
+        }
+    }
+
+    #endregion
 
     public void ClearThisStage() {
         StagePointStatus[PlayerPosition] = 1;

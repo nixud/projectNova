@@ -9,9 +9,19 @@ public class ViewScroll : MonoBehaviour
     public int maxSize = 12;
 
     public Scrollbar scrollbar;
-    public Camera camerA;
+    public Camera _camera;
+    public GameObject player;
 
     public void OnValueChanged() {
-        camerA.orthographicSize = minSize + (maxSize - minSize) * scrollbar.value;
+        _camera.orthographicSize = minSize + (maxSize - minSize) * scrollbar.value;
+
+    }
+
+    private void Update()
+    {
+
+        Vector3 _cameraPosition = player.transform.localPosition * (1 - scrollbar.value);
+        _cameraPosition.z = _camera.transform.localPosition.z;
+        _camera.transform.localPosition = _cameraPosition;
     }
 }
