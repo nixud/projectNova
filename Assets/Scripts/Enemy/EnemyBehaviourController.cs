@@ -88,9 +88,10 @@ public class EnemyBehaviourController : MonoBehaviour
         {
             if (behaviours[0].time <= time || couldChangeBeh)
             {
-                behaviours[0].End();
+                behaviours[0]?.End();
                 behaviours.RemoveAt(0);
-                behaviours[0].Start();
+                if (behaviours.Count > 0)
+                    behaviours[0]?.Start();
                 time = 0;
                 if(AlwaysShootUntilNextBehaviour && AlwaysShootUntilNextBehaviourEnd)
                     AlwaysShootUntilNextBehaviourEnd = false;

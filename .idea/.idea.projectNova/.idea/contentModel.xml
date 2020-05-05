@@ -7,18 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="DOTween" t="Include">
-          <e p="Modules" t="Include">
-            <e p="DOTweenModuleAudio.cs" t="Include" />
-            <e p="DOTweenModulePhysics.cs" t="Include" />
-            <e p="DOTweenModulePhysics2D.cs" t="Include" />
-            <e p="DOTweenModuleSprite.cs" t="Include" />
-            <e p="DOTweenModuleUI.cs" t="Include" />
-            <e p="DOTweenModuleUnityVersion.cs" t="Include" />
-            <e p="DOTweenModuleUtils.cs" t="Include" />
-          </e>
-          <e p="readme.txt" t="Include" />
-        </e>
         <e p="Images" t="Include">
           <e p="UIs" t="Include">
             <e p="StageSelect" t="Include">
@@ -28,71 +16,6 @@
         </e>
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
-        </e>
-        <e p="Pixel Arsenal" t="Include">
-          <e p="Demo" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="ButtonScript.cs" t="Include" />
-              <e p="DragMouseOrbit.cs" t="Include" />
-              <e p="FireProjectile.cs" t="Include" />
-              <e p="LoadSceneOnClickPA.cs" t="Include" />
-              <e p="Projectile.cs" t="Include" />
-              <e p="ProjectileScript.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Pixel Arsenal - ReadMe.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="BeamScript.cs" t="Include" />
-            <e p="lightScript.cs" t="Include" />
-            <e p="loopScript.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Pixel UI" t="Include">
-          <e p="Changelog.txt" t="Include" />
-          <e p="Demo" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="ClockDemo.cs" t="Include" />
-              <e p="CubitsController.cs" t="Include" />
-              <e p="DemoDialogue.cs" t="Include" />
-              <e p="DemoWindow.cs" t="Include" />
-              <e p="ExampleController.cs" t="Include" />
-              <e p="ExperienceButton.cs" t="Include" />
-              <e p="ExperienceLabel.cs" t="Include" />
-              <e p="IconDemo.cs" t="Include" />
-              <e p="LoadScene.cs" t="Include" />
-              <e p="MagicTargetController.cs" t="Include" />
-              <e p="PanelController.cs" t="Include" />
-              <e p="PingPong.cs" t="Include" />
-              <e p="Shake.cs" t="Include" />
-              <e p="SlimusController.cs" t="Include" />
-              <e p="SwatchButton.cs" t="Include" />
-              <e p="SwatchHandler.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="CardProfile.cs" t="Include" />
-            <e p="Editor" t="Include">
-              <e p="CreateBaseMenu.cs" t="Include" />
-              <e p="CreateExtrasMenu.cs" t="Include" />
-              <e p="CreateRoundedMenu.cs" t="Include" />
-              <e p="CreateSquareMenu.cs" t="Include" />
-              <e p="CreateTextMenu.cs" t="Include" />
-            </e>
-            <e p="Range.cs" t="Include" />
-            <e p="Rotator.cs" t="Include" />
-            <e p="Singleton.cs" t="Include" />
-            <e p="UICard.cs" t="Include" />
-            <e p="UIClock.cs" t="Include" />
-            <e p="UIDeck.cs" t="Include" />
-            <e p="UIDialogueWindow.cs" t="Include" />
-            <e p="UIExperienceBar.cs" t="Include" />
-            <e p="UIFader.cs" t="Include" />
-            <e p="UIRescaler.cs" t="Include" />
-            <e p="UIStatBar.cs" t="Include" />
-            <e p="UITabbedWindow.cs" t="Include" />
-            <e p="UITooltip.cs" t="Include" />
-            <e p="UITypewriter.cs" t="Include" />
-          </e>
         </e>
         <e p="Resources" t="Include">
           <e p="GameText" t="Include">
@@ -154,6 +77,7 @@
               <e p="Move.cs" t="Include" />
               <e p="MoveBetween.cs" t="Include" />
               <e p="MoveForward.cs" t="Include" />
+              <e p="MoveForwardChangeVelocity.cs" t="Include" />
               <e p="MoveForwardToPoint.cs" t="Include" />
               <e p="MoveToPoint.cs" t="Include" />
               <e p="ShootOnce.cs" t="Include" />
@@ -234,6 +158,7 @@
             <e p="StageCreater.cs" t="Include" />
             <e p="StageDiffculty.cs" t="Include" />
             <e p="StageIniter.cs" t="Include" />
+            <e p="StageIniterTest.cs" t="Include" />
             <e p="StageScene.cs" t="Include" />
             <e p="StageSceneNew.cs" t="Include" />
             <e p="StageUI" t="Include">
@@ -520,6 +445,85 @@
             </e>
             <e p="LuaCallCSharp" t="Include">
               <e p="LuaCallCs.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="暂时没用到的插件" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="Pixel Arsenal" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ButtonScript.cs" t="Include" />
+                <e p="DragMouseOrbit.cs" t="Include" />
+                <e p="FireProjectile.cs" t="Include" />
+                <e p="LoadSceneOnClickPA.cs" t="Include" />
+                <e p="Projectile.cs" t="Include" />
+                <e p="ProjectileScript.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Pixel Arsenal - ReadMe.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="BeamScript.cs" t="Include" />
+              <e p="lightScript.cs" t="Include" />
+              <e p="loopScript.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Pixel UI" t="Include">
+            <e p="Changelog.txt" t="Include" />
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ClockDemo.cs" t="Include" />
+                <e p="CubitsController.cs" t="Include" />
+                <e p="DemoDialogue.cs" t="Include" />
+                <e p="DemoWindow.cs" t="Include" />
+                <e p="ExampleController.cs" t="Include" />
+                <e p="ExperienceButton.cs" t="Include" />
+                <e p="ExperienceLabel.cs" t="Include" />
+                <e p="IconDemo.cs" t="Include" />
+                <e p="LoadScene.cs" t="Include" />
+                <e p="MagicTargetController.cs" t="Include" />
+                <e p="PanelController.cs" t="Include" />
+                <e p="PingPong.cs" t="Include" />
+                <e p="Shake.cs" t="Include" />
+                <e p="SlimusController.cs" t="Include" />
+                <e p="SwatchButton.cs" t="Include" />
+                <e p="SwatchHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CardProfile.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CreateBaseMenu.cs" t="Include" />
+                <e p="CreateExtrasMenu.cs" t="Include" />
+                <e p="CreateRoundedMenu.cs" t="Include" />
+                <e p="CreateSquareMenu.cs" t="Include" />
+                <e p="CreateTextMenu.cs" t="Include" />
+              </e>
+              <e p="Range.cs" t="Include" />
+              <e p="Rotator.cs" t="Include" />
+              <e p="Singleton.cs" t="Include" />
+              <e p="UICard.cs" t="Include" />
+              <e p="UIClock.cs" t="Include" />
+              <e p="UIDeck.cs" t="Include" />
+              <e p="UIDialogueWindow.cs" t="Include" />
+              <e p="UIExperienceBar.cs" t="Include" />
+              <e p="UIFader.cs" t="Include" />
+              <e p="UIRescaler.cs" t="Include" />
+              <e p="UIStatBar.cs" t="Include" />
+              <e p="UITabbedWindow.cs" t="Include" />
+              <e p="UITooltip.cs" t="Include" />
+              <e p="UITypewriter.cs" t="Include" />
             </e>
           </e>
         </e>
