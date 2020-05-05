@@ -88,7 +88,6 @@ public class StageIniterTest : MonoBehaviour
             {
                 if (!thisWaveFinished && time >= thisStageWaves[0].EnemyTime[thisWavePointer])
                 {
-                    time = 0;
                     UseSpawnEnemy();
 
                 }
