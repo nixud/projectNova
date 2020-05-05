@@ -84,7 +84,7 @@ public class EnemyControl : MonoBehaviour
         //    weaponControls[i].Shoot(shootPoints[i].transform.position, dir);
         for (int i = 0; i < weaponNews.Count; i++)
         {
-            weaponNews[i].Shoot(shootPoints[i].transform.position, Vector3.down);
+            weaponNews[i].Shoot(shootPoints[i].transform.position, dir);
         }
     }
 }

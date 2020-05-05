@@ -39,6 +39,5 @@ public class MoveForwardToPoint : EnemyBehaviours
     public override void End()
     {
         gameObject.transform.up = direction;
-
     }
 }

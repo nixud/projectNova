@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 public class EnemyBehaviourContainer
 {
-    public static void SetBehaviour(EnemyBehaviourContainer enemyBehaviourContainer, GameObject gameObject, List<EnemyBehaviours> behaviourses)
+    public static void SetBehaviour(EnemyBehaviourContainer enemyBehaviourContainer, GameObject gameObject, List<EnemyBehaviours> behaviourses, string enemyName)
     {
         int index;
         if (enemyBehaviourContainer.behaviourGroup.Count > 1)
@@ -18,7 +18,20 @@ public class EnemyBehaviourContainer
         else
             index = 0;
 
-        //Debug.Log(enemyBehaviourContainer.behaviourGroup.Count);
+        if (enemyBehaviourContainer.number == "6" || enemyBehaviourContainer.number == "11")
+        {
+            if (enemyName == "Enemy000002")
+                index += 2;
+        }
+
+        if (enemyBehaviourContainer.number == "5")
+        {
+            if (enemyName == "Enemy000002")
+                index = 1;
+            else
+                index = 0;
+        }
+        
         foreach (var behaviourContainer in enemyBehaviourContainer.behaviourGroup[index])
         {
             switch (behaviourContainer.Type)
@@ -39,10 +52,10 @@ public class EnemyBehaviourContainer
                     behaviourses.Add(new MoveForward(gameObject, behaviourContainer.Speed, behaviourContainer.Vector1, behaviourContainer.Time));
                     break;
                 case BehaviourEnum.ShootOnce:
-                    behaviourses.Add(new ShootOnce(gameObject, behaviourContainer.Time));
+                    behaviourses.Add(new ShootOnce(gameObject, -1f));
                     break;
                 case BehaviourEnum.ShootPlayerOnce:
-                    behaviourses.Add(new ShootPlayerOnce(gameObject, behaviourContainer.Time));
+                    behaviourses.Add(new ShootPlayerOnce(gameObject, -1f));
                     break;
                 case BehaviourEnum.StayHere:
                     behaviourses.Add(new StayHere(gameObject, behaviourContainer.Time));

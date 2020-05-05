@@ -46,6 +46,6 @@ public class MoveForward : EnemyBehaviours
 
     public override void End()
     {
-        gameObject.transform.up = direction;
+        // gameObject.transform.up = direction;
     }
 }

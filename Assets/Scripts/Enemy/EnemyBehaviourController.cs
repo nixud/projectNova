@@ -61,7 +61,10 @@ public class EnemyBehaviourController : MonoBehaviour
         
         int count = (Convert.ToInt32(gameObject.name[0]) - Convert.ToInt32('0')) * 10 + (Convert.ToInt32(gameObject.name[1]) - Convert.ToInt32('0'));
         gameObject.name = gameObject.name.Remove(0, 2);
-        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours);
+        EnemyBehaviourContainer.SetBehaviour(EnemyBehaviourLoader.LoadBehaviour(count.ToString()), gameObject, behaviours, gameObject.name);
+        
+        Debug.Log(gameObject.name + " : " + count.ToString());
+        
         behaviours[0]?.Start();
     }
 
@@ -76,9 +79,18 @@ public class EnemyBehaviourController : MonoBehaviour
             if (behaviours.Count > 0) behaviours[0].Run(Time.deltaTime);
 
             time += Time.deltaTime;
+            CheckShouldRecycle();
             NextBehaviour();
 
         }
+    }
+
+    // 检查小怪出屏直接回收
+    private void CheckShouldRecycle()
+    {
+        if (Mathf.Abs(transform.position.x) > Camera.main.GetComponent<GameCamera>().GetdevWidth() / 2 * 1.26 || 
+            Mathf.Abs(transform.position.y) > Camera.main.GetComponent<GameCamera>().GetdevHeight() / 2 * 1.26)
+            behaviours.Clear();
     }
 
     private void NextBehaviour()

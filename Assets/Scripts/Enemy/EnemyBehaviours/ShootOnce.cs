@@ -8,7 +8,6 @@ public class ShootOnce : EnemyBehaviours
     {
         time = t;
         this.gameObject = Obj;
-        //Debug.Log("静止");
     }
 
     public override Vector3 Calculate(float Dt) {
@@ -21,7 +20,8 @@ public class ShootOnce : EnemyBehaviours
     }
 
     public override void Run(float Dt) {
-        gameObject.GetComponent<EnemyControl>().Shoot(Vector3.down);
+        var dir = -gameObject.transform.up;
+        gameObject.GetComponent<EnemyControl>().Shoot(dir);
     }
 
     public override void End()
