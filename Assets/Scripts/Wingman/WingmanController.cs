@@ -73,13 +73,20 @@ public class WingmanController : MonoBehaviour
             if (cols.Length > 0)
             {
                 List<float> distanceList = new List<float>();
-                Dictionary<float, GameObject> colsDic = new Dictionary<float, GameObject>();
+                Dictionary<GameObject, float> colsDic = new Dictionary<GameObject, float>();
                 for (int i = 0;i < cols.Length; i++)
                 {
                     if (cols[i].transform.CompareTag("Boss") || cols[i].transform.CompareTag("Enemy"))
                     {
                         float distance = (cols[i].transform.position - transform.position).magnitude;
-                        colsDic.Add(distance, cols[i].gameObject);
+                        if (colsDic.ContainsKey(cols[i].gameObject))
+                        {
+                            colsDic.Add(cols[i].gameObject, distance);
+                        }
+                        else
+                        {
+                            colsDic[cols[i].gameObject] = distance;
+                        }
                         if (!distanceList.Contains(distance))
                         {
                             distanceList.Add(distance);
@@ -90,8 +97,13 @@ public class WingmanController : MonoBehaviour
                 {
                     distanceList.Sort();
                     GameObject o;
-                    colsDic.TryGetValue(distanceList[0], out o);
-                    attackTargetPos = o.transform.position;
+                    foreach (KeyValuePair<GameObject, float> c in colsDic)
+                    {
+                        if (c.Value == distanceList[0])
+                            attackTargetPos = c.Key.transform.position;
+                        else
+                            o = gameObject;
+                    }
                 }
                 else
                 {
