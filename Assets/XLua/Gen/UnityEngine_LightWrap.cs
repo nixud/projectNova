@@ -24,7 +24,7 @@ namespace XLua.CSObjectWrap
 			Utils.BeginObjectRegister(type, L, translator, 0, 8, 25, 24);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Reset", _m_Reset);
-			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetLightDirty", _m_SetLightDirty);
+//			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetLightDirty", _m_SetLightDirty);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "AddCommandBuffer", _m_AddCommandBuffer);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "AddCommandBufferAsync", _m_AddCommandBufferAsync);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "RemoveCommandBuffer", _m_RemoveCommandBuffer);
@@ -48,8 +48,8 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "bakingOutput", _g_get_bakingOutput);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "cullingMask", _g_get_cullingMask);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "lightShadowCasterMode", _g_get_lightShadowCasterMode);
-            Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowRadius", _g_get_shadowRadius);
-            Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowAngle", _g_get_shadowAngle);
+//            Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowRadius", _g_get_shadowRadius);
+//            Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowAngle", _g_get_shadowAngle);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadows", _g_get_shadows);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowStrength", _g_get_shadowStrength);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "shadowResolution", _g_get_shadowResolution);
@@ -74,8 +74,8 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "bakingOutput", _s_set_bakingOutput);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "cullingMask", _s_set_cullingMask);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "lightShadowCasterMode", _s_set_lightShadowCasterMode);
-            Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowRadius", _s_set_shadowRadius);
-            Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowAngle", _s_set_shadowAngle);
+//            Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowRadius", _s_set_shadowRadius);
+//            Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowAngle", _s_set_shadowAngle);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadows", _s_set_shadows);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowStrength", _s_set_shadowStrength);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "shadowResolution", _s_set_shadowResolution);
@@ -155,7 +155,7 @@ namespace XLua.CSObjectWrap
             }
             
         }
-        
+        /*
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _m_SetLightDirty(RealStatePtr L)
         {
@@ -181,7 +181,7 @@ namespace XLua.CSObjectWrap
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
             }
             
-        }
+        }*/
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _m_AddCommandBuffer(RealStatePtr L)
@@ -628,7 +628,7 @@ namespace XLua.CSObjectWrap
             }
             return 1;
         }
-        
+        /*
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _g_get_shadowRadius(RealStatePtr L)
         {
@@ -656,7 +656,7 @@ namespace XLua.CSObjectWrap
             }
             return 1;
         }
-        
+        */
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _g_get_shadows(RealStatePtr L)
         {
@@ -999,7 +999,7 @@ namespace XLua.CSObjectWrap
             }
             return 0;
         }
-        
+        /*
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _s_set_shadowRadius(RealStatePtr L)
         {
@@ -1029,7 +1029,7 @@ namespace XLua.CSObjectWrap
             }
             return 0;
         }
-        
+        */
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _s_set_shadows(RealStatePtr L)
         {
