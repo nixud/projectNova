@@ -121,10 +121,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  AutoRecycleTime: 10
+  AutoRecycleTime: 4
   BulletBody: WingmanBullet1
-  HitEffect: BulletImpactModular
-  DestoryEffect: BulletImpactModular
+  HitEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
+  DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
   isPlayerBullet: 1
   FireAudio: {fileID: 0}

@@ -17,4 +17,11 @@ public class ScoreBoard : MonoBehaviour
         SceneManager.LoadScene("StageSelect");
         ScoreData.Instance.levelScore = 0;
     }
+
+    public void BackToStageSceneFailed()
+    {
+        PlayerStatus.GetInstance().HP = PlayerStatus.GetInstance().MaxHP;
+        SceneManager.LoadScene("StageSelect");
+        ScoreData.Instance.levelScore = 0;
+    }
 }

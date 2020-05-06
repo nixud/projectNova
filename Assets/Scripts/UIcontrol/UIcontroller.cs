@@ -18,16 +18,16 @@ public class UIcontroller : MonoBehaviour
 
     public GameObject Bloodimage;
 
-    public void Init(int bloodsNum) {
-        bloodsNumMax = bloodsNum;
+    public void Init(int bloodsNum,int FullBloodsNum) {
+        bloodsNumMax = FullBloodsNum;
         bloodsNow = bloodsNumMax * 2;
-        if (bloodsNum <= bloods.Count)
+        if (FullBloodsNum <= bloods.Count)
         {
-            for (int i = 0; i < bloodsNum; i++)
+            for (int i = 0; i < FullBloodsNum; i++)
             {
                 bloods[i].GetComponent<Image>().sprite = FullBlood;
             }
-            for (int i = bloodsNum; i < bloods.Count; i++)
+            for (int i = FullBloodsNum; i < bloods.Count; i++)
                 bloods[i].SetActive(false);
         }
         else {
@@ -36,6 +36,10 @@ public class UIcontroller : MonoBehaviour
                 bloods[i].GetComponent<Image>().sprite = FullBlood;
             }
         }
+
+        bloodsNow = bloodsNum * 2;
+
+        FreshBlood();
     }
 
     public void AddArmor() {

@@ -52,7 +52,7 @@ public class CharacterControl : MonoBehaviour
         scoreData = ScoreData.Instance;
 
         uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
-        uIcontroller.Init((int)PlayerStatus.GetInstance().HP);
+        uIcontroller.Init((int)PlayerStatus.GetInstance().HP, (int)PlayerStatus.GetInstance().MaxHP);
         //        Debug.Log(PlayerStatus.GetInstance().HP);
         //uIcontroller.AddArmor();
 
