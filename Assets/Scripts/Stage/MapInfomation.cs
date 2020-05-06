@@ -35,6 +35,11 @@ public class MapInfomation
     public int DiffStagePointCount;
     public int SpecialStagePointCount;
 
+    public List<string> EasyStageNames;
+    public List<string> NormalStageNames;
+    public List<string> HardStageNames;
+    public List<string> SpecialStageNames;
+
     public List<int> StagePointStatus;
     public int PlayerPosition = 0;
 

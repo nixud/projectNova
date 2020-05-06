@@ -6756,8 +6756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapNumber: 1
-  EasyStageWaveMinAmount: 4
-  EasyStageWaveMaxAmount: 6
+  EasyStageWaveMinAmount: 0
+  EasyStageWaveMaxAmount: 0
   MediumStageWaveMinAmount: 6
   MediumStageWaveMaxAmount: 8
   HardStageWaveMinAmount: 10

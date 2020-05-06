@@ -20,6 +20,11 @@ public class StageSceneNew : MonoBehaviour
     public List<GameObject> DiffStagePoint = new List<GameObject>();
     public List<GameObject> SpecialStagePoint = new List<GameObject>();
 
+    public List<string> EasyStageNames = new List<string>();
+    public List<string> NormalStageNames = new List<string>();
+    public List<string> DiffStageNames = new List<string>();
+    public List<string> SpecialStageNames = new List<string>();
+
     private List<GameObject> StagePointCheck = new List<GameObject>();
     private List<GameObject> StagePointCheckTemp = new List<GameObject>();
 
@@ -55,6 +60,11 @@ public class StageSceneNew : MonoBehaviour
 
         if (mapInfomation.MapStatus[mapConfigData.MapNumber] == '0')
         {
+            mapInfomation.EasyStageNames = EasyStageNames;
+            mapInfomation.NormalStageNames = NormalStageNames;
+            mapInfomation.HardStageNames = DiffStageNames;
+            mapInfomation.SpecialStageNames = SpecialStageNames;
+
             RandomStage();
             mapInfomation.MapStatus[mapConfigData.MapNumber] = '1';
             mapInfomation.EasyStagePointCount = EasyStagePoint.Count;
@@ -82,6 +92,11 @@ public class StageSceneNew : MonoBehaviour
 
             StagePointCheckTable = mapInfomation.StagePointCheckTable;
 
+            EasyStageNames = mapInfomation.EasyStageNames;
+            NormalStageNames = mapInfomation.NormalStageNames;
+            DiffStageNames = mapInfomation.HardStageNames;
+            SpecialStageNames = mapInfomation.SpecialStageNames;
+
             LoadStageData();
 
             if (NowStageInfomation.GetInstance().isCleared) {
@@ -100,8 +115,8 @@ public class StageSceneNew : MonoBehaviour
     private void LoadStageData() {
         int num = 0;
         for (int i=0;i<EasyStagePointCount;i++,num++) {
-            GameObject go = GameObject.Find("StagePoint" + (i + 1).ToString());
-            EasyStagePoint.Add(go); 
+            GameObject go = EasyStagePoint[i];
+            //EasyStagePoint.Add(go); 
             if (StagePointCheckTable[num] == 1)
             {
                 StagePointCheck.Add(go);
@@ -112,8 +127,7 @@ public class StageSceneNew : MonoBehaviour
 
         for (int i = 0; i < NormalStagePointCount; i++, num++)
         {
-            GameObject go = GameObject.Find("StagePoint" + (num + 1).ToString());
-            NormalStagePoint.Add(go);
+            GameObject go = NormalStagePoint[i];
             if (StagePointCheckTable[num] == 1)
             {
                 StagePointCheck.Add(go);
@@ -124,7 +138,7 @@ public class StageSceneNew : MonoBehaviour
 
         for (int i = 0; i < DiffStagePointCount; i++, num++)
         {
-            GameObject go = GameObject.Find("StagePoint" + (num + 1).ToString());
+            GameObject go = DiffStagePoint[i];
             DiffStagePoint.Add(go);
             if (StagePointCheckTable[num] == 1)
             {
@@ -162,6 +176,8 @@ public class StageSceneNew : MonoBehaviour
                 StagePointCheck.Add(EasyStagePoint[i]);
                 StagePointStatus.Add(0);
                 mapInfomation.StagePointCheckTable.Add(1);
+                
+                mapInfomation.EasyStageNames.Add(EasyStagePoint[i].name);
             }
             else mapInfomation.StagePointCheckTable.Add(0);
         }
@@ -181,6 +197,7 @@ public class StageSceneNew : MonoBehaviour
                 StagePointCheck.Add(NormalStagePoint[i]); 
                 StagePointStatus.Add(0);
                 mapInfomation.StagePointCheckTable.Add(1);
+                mapInfomation.NormalStageNames.Add(NormalStagePoint[i].name);
             }
             else mapInfomation.StagePointCheckTable.Add(0);
         }
@@ -201,6 +218,7 @@ public class StageSceneNew : MonoBehaviour
                 StagePointCheck.Add(DiffStagePoint[i]);
                 StagePointStatus.Add(0);
                 mapInfomation.StagePointCheckTable.Add(1);
+                mapInfomation.HardStageNames.Add(DiffStagePoint[i].name);
             }
             else mapInfomation.StagePointCheckTable.Add(0);
         }
