@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22531bdbc8de246bab25f8401f6eb8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetDiffculty: 55
+  TargetDiffculty: 30
   WaveTimer: {fileID: 1911412584}
 --- !u!20 &519420031
 Camera:

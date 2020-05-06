@@ -36,7 +36,7 @@ public class PlayerStatus
 
     public int Fuel = 114;
 
-    public float HP = 3;
+    public float HP = 9;
 
     private Ship ship;
     private Plugin plugin;
