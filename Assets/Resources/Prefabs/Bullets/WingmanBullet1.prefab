@@ -123,7 +123,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   AutoRecycleTime: 4
   BulletBody: WingmanBullet1
-  HitEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
+  HitEffect: MuzzleFlashRoundGreen
   DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
   isPlayerBullet: 1

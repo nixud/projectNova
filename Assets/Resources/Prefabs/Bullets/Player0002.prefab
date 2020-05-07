@@ -90,7 +90,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   AutoRecycleTime: 3
   BulletBody: Player0002
-  HitEffect: BulletImpactModularBlue
+  HitEffect: MuzzleFlashRoundBlue
   DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
   isPlayerBullet: 1
