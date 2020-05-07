@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 414888}
   - component: {fileID: 5249940353783499385}
-  - component: {fileID: 802480579576913775}
+  - component: {fileID: 114923729878791710}
   - component: {fileID: 1217614790077428214}
+  - component: {fileID: 114772684609376102}
   m_Layer: 0
   m_Name: Player0002
   m_TagString: PlayerBullet
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 190982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 3318144234560075240}
   - {fileID: 2073259184773683218}
@@ -48,9 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff60b81314b2495da9acb61b0e94e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletNew: {fileID: 0}
-  bullet: {fileID: 802480579576913775}
---- !u!114 &802480579576913775
+  bulletNew: {fileID: 114923729878791710}
+  bullet: {fileID: 0}
+--- !u!114 &114923729878791710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,7 +60,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 190982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44d279a1c711444e97f60648e2830a3, type: 3}
+  m_Script: {fileID: 11500000, guid: fa5d2919f71164d218d5be289c06f7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 15
@@ -67,19 +68,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008415222
-      value: 0.30223083
-      inSlope: 0.0049145287
-      outSlope: 0.0049145287
+      time: -0.016220093
+      value: 0.34111023
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.9831543
-      value: 0.30710393
-      inSlope: 0.0049145287
-      outSlope: 0.0049145287
+      time: 1
+      value: 0.34111023
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -87,29 +88,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  BulletBody: Player0001
-  HitEffect: BulletImpactModularBlue
-  DestoryEffect: BulletImpactModularBlue
+  AutoRecycleTime: 3
+  BulletBody: Player0002
+  HitEffect: MuzzleFlashRoundBlue
+  DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
+  isPlayerBullet: 1
   FireAudio: {fileID: 0}
   HitAudio: {fileID: 0}
   dir: {x: 0, y: 0, z: 0}
   Scale: {x: 1, y: 1, z: 1}
-  isPlayerBullet: 1
-  CanTrackEnemy: 0
-  SplitNum: 2
-  Issplit: 0
-  SplitBulletNumber: 
-  splitRange: 6
-  Accuracy: 0.5
-  ShotgunNum: 3
-  ShotgunRandomNum: 0
-  SplitedNum: 0
-  splitedRange: 1
-  splitedOutRange: 4
-  SplitedScale: 1
-  splitedOutRangeNow: 0
-  Target: {fileID: 0}
   eulers: 0
 --- !u!61 &1217614790077428214
 BoxCollider2D:
@@ -137,6 +125,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25000134, y: 0.8655175}
   m_EdgeRadius: 0
+--- !u!114 &114772684609376102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff60b81314b2495da9acb61b0e94e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletNew: {fileID: 114924334098070216, guid: bc24eae154a974760bbed85a78390875,
+    type: 3}
+  bullet: {fileID: 0}
 --- !u!1 &2796972595363093774
 GameObject:
   m_ObjectHideFlags: 0

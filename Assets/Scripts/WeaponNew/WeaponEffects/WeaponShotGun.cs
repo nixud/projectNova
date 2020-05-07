@@ -49,13 +49,13 @@ public class WeaponShotGun : WeaponNew
                 Vector3 dir;
                 dir = new Vector3(shootForward.y * Mathf.Sin(angle), shootForward.y * Mathf.Cos(angle), 0);
                 dir.Normalize();
-                bullet.GetComponent<Bullet>().dir = dir;
-                bullet.GetComponent<Bullet>().transform.position = shootPosition;
+                bullet.GetComponent<BulletHelper>().bulletNew.dir = dir;
+                bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
                 //Debug.Log(Mathf.Atan(dir.x / dir.y));
                 float eulers = -Mathf.Atan(dir.x / dir.y) * 180 / Mathf.PI;
-                bullet.GetComponent<Bullet>().transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-                bullet.GetComponent<Bullet>().transform.Rotate(new Vector3(0, 0, eulers));
-                bullet.GetComponent<Bullet>().eulers = eulers;
+                bullet.GetComponent<BulletHelper>().bulletNew.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                bullet.GetComponent<BulletHelper>().bulletNew.transform.Rotate(new Vector3(0, 0, eulers));
+                bullet.GetComponent<BulletHelper>().bulletNew.eulers = eulers;
             }
 
             StartCoroutine(WeaponCD());

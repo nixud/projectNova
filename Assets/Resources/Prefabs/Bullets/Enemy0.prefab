@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414888}
   - component: {fileID: 6269622423592242931}
-  - component: {fileID: 114322588298740208}
+  - component: {fileID: 114680372255958614}
   - component: {fileID: 2699036836864782580}
   m_Layer: 0
   m_Name: Enemy0
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff60b81314b2495da9acb61b0e94e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletNew: {fileID: 0}
-  bullet: {fileID: 114322588298740208}
---- !u!114 &114322588298740208
+  bulletNew: {fileID: 114680372255958614}
+  bullet: {fileID: 0}
+--- !u!114 &114680372255958614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,27 +58,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 190982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44d279a1c711444e97f60648e2830a3, type: 3}
+  m_Script: {fileID: 11500000, guid: fa5d2919f71164d218d5be289c06f7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 20
+  Damage: 8
   Speed:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.009155273
-      value: 0.13005388
-      inSlope: -0.00019314044
-      outSlope: -0.00019314044
+      time: -0.012639023
+      value: 0.13289726
+      inSlope: 0.00047738748
+      outSlope: 0.00047738748
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1.0106392
-      value: 0.12985691
-      inSlope: -0.00019314044
-      outSlope: -0.00019314044
+      time: 1.0244141
+      value: 0.13339233
+      inSlope: 0.00047738748
+      outSlope: 0.00047738748
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -86,29 +86,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  AutoRecycleTime: 4
   BulletBody: BulletModularEnemy2
-  HitEffect: BulletImpactModular
-  DestoryEffect: BulletImpactModular
+  HitEffect: MuzzleFlashRoundRed
+  DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
+  isPlayerBullet: 0
   FireAudio: {fileID: 0}
   HitAudio: {fileID: 0}
   dir: {x: 0, y: 0, z: 0}
   Scale: {x: 1, y: 1, z: 1}
-  isPlayerBullet: 0
-  CanTrackEnemy: 0
-  SplitNum: 2
-  Issplit: 0
-  SplitBulletNumber: 
-  splitRange: 6
-  Accuracy: 0.5
-  ShotgunNum: 3
-  ShotgunRandomNum: 0
-  SplitedNum: 0
-  splitedRange: 1
-  splitedOutRange: 4
-  SplitedScale: 1
-  splitedOutRangeNow: 0
-  Target: {fileID: 0}
   eulers: 0
 --- !u!61 &2699036836864782580
 BoxCollider2D:

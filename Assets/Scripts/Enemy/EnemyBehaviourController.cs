@@ -68,7 +68,7 @@ public class EnemyBehaviourController : MonoBehaviour
         behaviours[0]?.Start();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (IsNotRecycled)
         {
