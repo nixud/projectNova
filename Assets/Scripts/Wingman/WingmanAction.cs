@@ -14,7 +14,16 @@ public class WingmanAction : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         weaponControlWingman = GetComponent<WeaponControlWingman>();
+        weaponControlWingman.Init();
     }
+
+    public void Init()
+    {
+        rigidBody = GetComponent<Rigidbody2D>();
+        weaponControlWingman = GetComponent<WeaponControlWingman>();
+        weaponControlWingman.Init();
+    }
+
     /// <summary>
     /// 移动至目标点坐标
     /// </summary>

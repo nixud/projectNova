@@ -19,6 +19,7 @@ public class WingmanController : MonoBehaviour
     void Start()
     {
         wingmanAction = GetComponent<WingmanAction>();
+        wingmanAction.Init();
         lastPos = (Vector2)followTarget.transform.position;
         movePos = (Vector2)transform.position;
         targetPosQueue = new Queue<Vector2>();

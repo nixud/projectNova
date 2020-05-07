@@ -23,6 +23,13 @@ public class WeaponControlWingman : MonoBehaviour
         */
     }
 
+    public void Init()
+    {
+        WingmanJsonLoader loader = new WingmanJsonLoader();
+        wingman = loader.LoadData(wingmanNum);
+        weaponNew = WeaponLoader.LoadWeaponAndAttachToGO(WeaponNum, gameObject);
+    }
+
     public void Shoot(Vector3 shootPos,Vector3 shootForward)
     {
         weaponNew.Shoot(shootPos, shootForward);
