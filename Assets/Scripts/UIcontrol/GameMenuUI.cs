@@ -23,7 +23,7 @@ public class GameMenuUI : MonoBehaviour
     public void ExitButton()
     {
         Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Map1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StageSelect");
     }
 
     public void SettingButton()
