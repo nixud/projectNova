@@ -59,7 +59,6 @@
           <e p="Enemy" t="Include">
             <e p="BehaviourTest" t="Include">
               <e p="aaaaaa.cs" t="Include" />
-              <e p="bbbbbb.cs" t="Include" />
               <e p="behTest.cs" t="Include" />
             </e>
             <e p="Boss" t="Include">
@@ -102,8 +101,8 @@
             <e p="ItemButton.cs" t="Include" />
             <e p="ItemControl.cs" t="Include" />
             <e p="ItemEffects" t="Include">
-              <e p="Equip1.cs" t="Include" />
               <e p="Equip2.cs" t="Include" />
+              <e p="equip_103.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
               <e p="plugin_201.cs" t="Include" />
               <e p="plugin_202.cs" t="Include" />
@@ -152,6 +151,7 @@
             <e p="BackGroundScroll" t="Include">
               <e p="BGScroll.cs" t="Include" />
             </e>
+            <e p="FPSDisplay.cs" t="Include" />
             <e p="MapConfigData.cs" t="Include" />
             <e p="MapInfomation.cs" t="Include" />
             <e p="NowStageInfomation.cs" t="Include" />

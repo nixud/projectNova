@@ -83,7 +83,7 @@ public class BagUIController : MonoBehaviour
 
     private void RefreshList()
     {
-        // elemList.GetComponent<BagElemListController>().RefreshList();
+        elemList.GetComponent<BagElemListController>().RefreshList();
         pluginList.GetComponent<BagPluginListController>().RefreshList();
     }
 

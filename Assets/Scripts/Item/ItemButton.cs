@@ -72,15 +72,14 @@ public class ItemButton : MonoBehaviour
             effectTime = itemStatus.item.ItemEffects.time;
             if (type == ItemType.Accumulate)
             {
-                itemAccumulate = ((IAccumulate) itemStatus.item.ItemEffects).Accumulate;
+                itemAccumulate = itemStatus.item.Accumulate;
                 nowAccumulate = itemStatus.accumulate;
 
                 shouldFreeze = true;
             }
             else
-            {   
-                IConsume tmp = itemStatus.item.ItemEffects as IConsume;
-                itemCd = tmp.Cd;
+            {
+                itemCd = itemStatus.item.Cd;
                 nowEffectCount = itemStatus.effectCount;
 
                 shouldFreeze = false;

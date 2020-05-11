@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Player0001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Player0001.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Player0002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Player0002.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WaveTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WaveTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/items.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/items.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/Equip1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponAreaGun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet3.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +68,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1319B71-95C3-43E7-9B38-5CD3AA43F5DC/ba/4c748868/EqualityComparer`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1319B71-95C3-43E7-9B38-5CD3AA43F5DC/c2/cd98d558/ObjectEqualityComparer`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/NormalBullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/ItemEffectsOnWeapon/WeaponSpeedChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1319B71-95C3-43E7-9B38-5CD3AA43F5DC/48/981503cf/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,6 +81,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/f1/1ed92c0a/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/4a/94e2c798/JsonPropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/c8/d21bb741/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIcontroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,9 +92,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wingman/Wingman.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginDocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/KillSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,7 +110,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardChangeVelocity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/bbbbbb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/80/5fa97356/DefaultValueHandling.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/NowStageInfomation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/06/46ddabe2/Camera.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,23 +147,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginListControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginDocker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIcontroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/EquipObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/PickButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/ListElem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagElemListController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/WaveGroupCreater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EemyBehaviourLoader.cs" />
@@ -144,7 +161,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/behTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/StayHere.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" />
@@ -152,7 +168,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonWave.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Track.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/AlwaysShoot.cs" />
@@ -167,8 +182,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardToPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BehaviourTest/aaaaaa.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
       </list>
     </option>
   </component>
@@ -280,6 +309,10 @@
       <workItem from="1588690503379" duration="816000" />
       <workItem from="1588691801347" duration="7000" />
       <workItem from="1588691832473" duration="15000" />
+      <workItem from="1588995302062" duration="549000" />
+      <workItem from="1589029307740" duration="5077000" />
+      <workItem from="1589074194797" duration="22922000" />
+      <workItem from="1589175767125" duration="1550000" />
     </task>
     <servers />
   </component>

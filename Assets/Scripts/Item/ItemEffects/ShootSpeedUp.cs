@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootSpeedUp : ItemEffects, IAccumulate
+public class ShootSpeedUp : ItemEffects
 {
-    public int Accumulate { get; }
     public ShootSpeedUp()
     {
-        Accumulate = 1000;
-        time = 4f;
+        time = 10f;
     }
     public override void Run() {
-        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("/",3);
+        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("/",2);
+        
+        Debug.Log("equip_101 start");
     }
 
     public override void Update()
@@ -19,7 +19,9 @@ public class ShootSpeedUp : ItemEffects, IAccumulate
 
     public override void End()
     {
-        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("*", 3);
+        GameObject.Find("Player").GetComponent<CharacterControl>().WeaponSpeedChange("*", 2);
+        
+        Debug.Log("equip_101 end");
     }
 
     public override bool Condition()

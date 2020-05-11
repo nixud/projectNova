@@ -5,25 +5,20 @@ using UnityEngine;
 
 public class aaaaaa : MonoBehaviour
 {
-    public float speed;
-
-    public bool move = false;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
+        Item item = new Item();
+        item.Type = ItemType.Accumulate;
+        item.Name = "冷却系统过载";
+        item.Description = "";
+        item.Accumulate = 800;
+        item.EffectName = "ShootSpeedUp";
+        item.Number = 101;
+        item.Price = 50;
+        item.rareLevel = RareLevel.A;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.A))
-            transform.Translate(Vector3.left * (Time.deltaTime * speed));
-        if (Input.GetKey(KeyCode.D))
-            transform.Translate(Vector3.right * (Time.deltaTime * speed));
-        if (Input.GetKey(KeyCode.W))
-            transform.Translate(Vector3.up * (Time.deltaTime * speed));
-        if (Input.GetKey(KeyCode.S))
-            transform.Translate(Vector3.down * (Time.deltaTime * speed));
+        var list = ItemLoader.GetItemList();
+        list.Add(item);
+        // ItemLoader.SaveData();
     }
 }

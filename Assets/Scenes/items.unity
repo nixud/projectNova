@@ -6320,6 +6320,7 @@ MonoBehaviour:
   SaleButton: {fileID: 783249213}
   elemList: {fileID: 65109724}
   pluginList: {fileID: 1714470637}
+  _pluginTemp: {fileID: 0}
 --- !u!1 &1611454769
 GameObject:
   m_ObjectHideFlags: 0

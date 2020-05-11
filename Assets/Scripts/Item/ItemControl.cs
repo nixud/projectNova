@@ -48,7 +48,7 @@ public class ItemControl : MonoBehaviour
 
         #region test
 
-        var i2 = ItemLoader.LoadData(5);
+        var i2 = ItemLoader.LoadData(101);
         GetEquipment(i2);
         
         #endregion
@@ -175,6 +175,6 @@ public class ItemStatus
         accumulate = 0;
         effectCount = 0;
         if (item.Type == ItemType.Consume)
-            effectCount = ((IConsume) item.ItemEffects).EffectCount;
+            effectCount = item.EffectCount;
     }
 }

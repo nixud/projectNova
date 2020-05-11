@@ -33,7 +33,7 @@ public class ObjectPool
     private Dictionary<string, GameObject> prefabs;
 
     /// <summary>
-    /// 从对象池中获取对象
+    /// 从对象池中获取对象 
     /// </summary>
     /// <param name="objName"></param>
     /// <returns></returns>

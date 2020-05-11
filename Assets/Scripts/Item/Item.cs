@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Reflection;
+using Newtonsoft.Json;
 
 //所有道具的基类。道具通过继承它实现。
 public class Item : IComparable
 {
+    // 
+    public ItemType Type;
+    
     public int Number;
     public string Name;
     public string Description = "没有描述";
     public int Price;
     public string PicPath;
 
-    public ItemType Type;
-    
     public RareLevel rareLevel = RareLevel.E;
 
     public string EffectName;
+
+    public int Accumulate;
+    public int EffectCount;
+    public float Cd;
 
     public int CompareTo(object obj)
     {
@@ -26,7 +32,8 @@ public class Item : IComparable
     }
 
     private ItemEffects _itemEffects;
-    public ItemEffects ItemEffects
+
+    [JsonIgnore] public ItemEffects ItemEffects
     {
         get
         {

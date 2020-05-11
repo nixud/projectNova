@@ -17,6 +17,8 @@ public class plugin_201 : ItemEffects
         _uIcontroller++;
         _uIcontroller++;
         _uIcontroller++;
+        
+        Debug.Log("plugin_201 start");
     }
 
     public override void Update()

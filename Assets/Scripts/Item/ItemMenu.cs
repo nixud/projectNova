@@ -1,187 +1,129 @@
 ﻿#if UNITY_EDITOR
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEditor;
 
 public class ItemMenu : EditorWindow
 {
     static List<Item> items;
+    private static Item item;
 
-    static Item item;
-
-    static string[] selStrings;
-
-    static bool SaveError = false;
-    //static bool SaveErrorTemp = false;
-    //static bool NoWeapon = false;
-
-    static int selGridInt = 0;
-    static int selGridInttemp = 0;
-
-    //RareLevel rareLevel = RareLevel.E;
-
+    private static string[] itemNameList;
+    private static int[] itemIndexList;
+    private static int itemIndex = 0;
+    private static int itemIndexTemp;
+    
     [MenuItem("Nova/ItemEditor", false, 0)]
     static void Init()
     {
-        ItemMenu ItemMenu = new ItemMenu();
-        InitValue();
-        ItemMenu window = (ItemMenu)GetWindow(typeof(ItemMenu));
-        window.Show();
+        ItemMenu itemMenu = GetWindow<ItemMenu>();
+        LoadData();
+        RefreshWindow();
+        
+        
+        itemMenu.Show();
     }
 
-    void OnGUI()
+    private void OnGUI()
     {
-        GUILayout.Label("物品参数", EditorStyles.largeLabel);
-        item.Number = EditorGUILayout.IntField("物品编号", item.Number);
-
-        item.Name = EditorGUILayout.TextField("物品名称", item.Name);
-        GUILayout.Label("物品描述");
-        item.Description = EditorGUILayout.TextArea(item.Description, GUILayout.MaxHeight(75));
-
-        item.PicPath = EditorGUILayout.TextField("图标名", item.PicPath);
-
-        item.Price = EditorGUILayout.IntField("物品价格", item.Price);
-
-        // item.EffectNumber = EditorGUILayout.IntField("效果编号（如果用得到的话）", item.EffectNumber);
-
-        GUILayout.BeginVertical("Box");
-        selGridInttemp = selGridInt;
-        selGridInt = GUILayout.SelectionGrid(selGridInt, selStrings, 1);
-        if (selGridInt != selGridInttemp)
+        itemIndex = EditorGUILayout.IntPopup(itemIndex, itemNameList, itemIndexList);
+        if (itemIndexTemp != itemIndex)
         {
-            item = items[selGridInt];
+            itemIndexTemp = itemIndex;
+            item = items[itemIndex];
         }
+        
+        DrawItemBox();
+    }
+
+    private static void DrawItemBox()
+    {
+        GUILayout.BeginVertical("Box");
+        GUILayout.Label("道具属性");
+        item.Number = EditorGUILayout.IntField("Number", item.Number);
+        item.Name = EditorGUILayout.TextField("Name", item.Name);
+        GUILayout.Label("Description");
+        item.Description = EditorGUILayout.TextArea(item.Description);
+        item.Type = (ItemType)EditorGUILayout.EnumPopup("类型", item.Type);
+
+        item.rareLevel = (RareLevel) EditorGUILayout.EnumPopup("稀有度", item.rareLevel);
+        
+        if (item.Type == ItemType.Accumulate)
+        {
+            item.Accumulate = EditorGUILayout.IntField("充能值", item.Accumulate);
+        }
+        else if (item.Type == ItemType.Consume)
+        {
+            item.EffectCount = EditorGUILayout.IntField("使用次数", item.EffectCount);
+            item.Cd = EditorGUILayout.FloatField("CD", item.Cd);
+        }
+
+        item.EffectName = EditorGUILayout.TextField("效果脚本名", item.EffectName);
         GUILayout.EndVertical();
 
-        GUILayout.Label("稀有度：" + item.rareLevel.ToString());
-        if (GUILayout.Button("稀有度向上"))
-        { item.rareLevel++; }
-        if (GUILayout.Button("稀有度向下"))
-        { item.rareLevel--; }
-
-        if (SaveError) EditorGUILayout.HelpBox("输入内容不正确。请检查编号是否重复，编号是否为空等", MessageType.Error);
-
-        if (GUILayout.Button("添加新物品"))
+        if (GUILayout.Button("添加道具"))
         {
             AddItem();
         }
-        if (GUILayout.Button("保存物品信息"))
+
+        if (GUILayout.Button("删除道具"))
         {
-            SaveData(item);
-        }
-        if (GUILayout.Button("删除物品信息"))
-        {
-            DeleteData(selGridInt,items);
-        }
-    }
-
-    public static void InitValue() {
-        items = LoadData();
-        selStrings = new string[items.Count];
-        for (int i = 0; i < items.Count; i++)
-            selStrings[i] = items[i].Number.ToString();
-        if (items.Count >= 1)
-            item = items[0];
-        else
-        {
-            AddItem();
-            item = items[0];
-        }
-    }
-
-    static void AddItem()
-    {
-        SaveError = false;
-
-        item = new Item();
-        item.Number = 0;
-        items.Add(item);
-        items = ItemSort();
-
-        selStrings = new string[items.Count];
-        for (int i = 0; i < items.Count; i++)
-            selStrings[i] = items[i].Number.ToString();
-        selGridInt = 0;
-    }
-
-    public static List<Item> LoadData()
-    {
-        JsonLoader<Item> loader = new JsonLoader<Item>();
-        return loader.LoadData();
-    }
-
-    public Item LoadData(int ItemNum)
-    {
-        JsonLoader<Item> loader = new JsonLoader<Item>();
-        List<Item> itemlist = new List<Item>();
-
-        itemlist = loader.LoadData();
-
-        Item returnItem = new Item();
-        for (int i = 0; i < itemlist.Count; i++)
-        {
-            if (itemlist[i].Number == ItemNum)
-                returnItem = itemlist[i];
+            DeleteItem();
         }
 
-        return returnItem;
-    }
-
-    public void SaveData(Item item)
-    {
-        JsonLoader<Item> loader = new JsonLoader<Item>();
-        List<Item> itemlist = new List<Item>();
-
-        itemlist = LoadData();
-
-        int index = 0, i;
-        for (i = 0; i < itemlist.Count; i++)
+        if (GUILayout.Button("保存"))
         {
-            if (itemlist[i].Number == item.Number)
-                break;
+            SaveData();
+            RefreshWindow();
         }
-        index = i;
-        if (index != itemlist.Count)
+
+        if (GUILayout.Button("刷新"))
         {
-            itemlist.RemoveAt(index);
-        }
-        itemlist.Insert(index, item);
-
-        loader.SaveData(itemlist);
-
-        selStrings = new string[items.Count];
-        for (int ii = 0; ii < items.Count; ii++)
-            selStrings[ii] = items[ii].Number.ToString();
-    }
-    public void DeleteData(int index, List<Item> itemlist)
-    {
-        SaveError = false;
-
-        SaveData(item);
-
-        SaveError = false;
-
-        itemlist.RemoveAt(index);
-        JsonLoader<Item> loader = new JsonLoader<Item>();
-
-        //itemlist = ItemSort(itemlist);
-
-        loader.SaveData(itemlist);
-
-        items = LoadData();
-        selStrings = new string[items.Count];
-        for (int i = 0; i < items.Count; i++)
-            selStrings[i] = items[i].Number.ToString();
-        selGridInt = 0;
-        item = items[selGridInt];
-    }
-    public static List<Item> ItemSort()
-    {
-        if (items.Count > 1)
+            RefreshWindow();
             items.Sort();
-        return items;
+        }
+    }
+
+    private static void DeleteItem()
+    {
+        items.Remove(item);
+        itemIndex = 0;
+        item = items[itemIndex];
+    }
+
+    private static void AddItem()
+    {
+        items.Add(new Item());
+        itemIndex = items.Count - 1;
+        item = items[itemIndex];
+    }
+
+    private static void RefreshWindow()
+    {
+        itemNameList = new string[items.Count];
+        itemIndexList = new int[items.Count];
+        for (int i = 0; i < items.Count; i++)
+        {
+            itemNameList[i] = "[" + items[i].Number.ToString() + "]" + items[i].Name;
+            itemIndexList[i] = i;
+        }
+
+        itemIndex = 0;
+        item = items[itemIndex];
+    }
+
+    private static void SaveData()
+    {
+        ItemLoader.SaveData();
+    }
+
+    private static void LoadData()
+    {
+        items = ItemLoader.GetItemList();
     }
 }
 #endif

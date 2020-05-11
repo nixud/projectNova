@@ -9,6 +9,15 @@ public static class ItemLoader
     {
         JsonLoader<Item> loader = new JsonLoader<Item>();
         itemInfo = loader.LoadData();
+        itemInfo.Sort();
+    }
+
+    public static List<Item> GetItemList()
+    {
+        if (itemInfo == null)
+            LoadData();
+
+        return itemInfo;
     }
     
     public static Item LoadData(int ItemNum)
@@ -24,5 +33,11 @@ public static class ItemLoader
         }
 
         return returnItem;
+    }
+
+    public static void SaveData()
+    {
+        JsonLoader<Item> loader = new JsonLoader<Item>();
+        loader.SaveData(itemInfo);
     }
 }

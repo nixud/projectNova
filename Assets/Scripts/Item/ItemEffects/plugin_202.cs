@@ -8,13 +8,11 @@ public class plugin_202 : ItemEffects
 
     public plugin_202()
     {
-        _uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
+
     }
     public override void Run()
     {
-        PlayerStatus.GetInstance().HP += 2f;
-        _uIcontroller++;
-        _uIcontroller++;
+        Debug.Log("plugin_202 start");
     }
 
     public override void Update()
@@ -24,9 +22,7 @@ public class plugin_202 : ItemEffects
 
     public override void End()
     {
-        PlayerStatus.GetInstance().HP -= 2f;
-        _uIcontroller--;
-        _uIcontroller--;
+
     }
 
     public override bool Condition()
