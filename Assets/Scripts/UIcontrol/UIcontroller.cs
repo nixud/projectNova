@@ -20,7 +20,7 @@ public class UIcontroller : MonoBehaviour
 
     public void Init(int bloodsNum,int FullBloodsNum) {
         bloodsNumMax = FullBloodsNum;
-        bloodsNow = bloodsNumMax * 2;
+        bloodsNow = bloodsNumMax;
         if (FullBloodsNum <= bloods.Count)
         {
             for (int i = 0; i < FullBloodsNum; i++)
@@ -37,7 +37,7 @@ public class UIcontroller : MonoBehaviour
             }
         }
 
-        bloodsNow = bloodsNum * 2;
+        bloodsNow = bloodsNum;
 
         FreshBlood();
     }
@@ -71,6 +71,7 @@ public class UIcontroller : MonoBehaviour
     }
 
     public void FreshBlood(){
+        Debug.Log(bloodsNow);
         if (bloodsNumMax <= bloods.Count && bloodsNow <= bloods.Count)
         {
             for (int i = 0; i < (bloodsNow / 2); i++)

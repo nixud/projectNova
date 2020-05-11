@@ -148,7 +148,7 @@ public class CharacterControl : MonoBehaviour
     public void DecHP()
     {
         PlayerHittedEffect();
-        PlayerStatus.GetInstance().HP -= 0.5f;
+        PlayerStatus.GetInstance().HP -= 1f;
         //Debug.Log(PlayerStatus.GetInstance().HP);
         if (PlayerStatus.GetInstance().HP <= 0.3f)
         {
