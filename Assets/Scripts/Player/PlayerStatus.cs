@@ -34,7 +34,8 @@ public class PlayerStatus
 
     public int StarCoins = 233;
 
-    public int Fuel = 114;
+    public int Fuel = 15;
+    public int MaxFuel = 30;
 
     public float HP = 18;
     public float MaxHP = 9;
