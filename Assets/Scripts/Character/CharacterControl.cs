@@ -23,7 +23,7 @@ public class CharacterControl : MonoBehaviour
     public UIcontroller uIcontroller;
 
     List<WeaponControl> weaponControl = new List<WeaponControl>();
-    List<WeaponNew> weaponNews = new List<WeaponNew>();
+    public List<WeaponNew> weaponNews = new List<WeaponNew>();
     public List<GameObject> shootPoints = new List<GameObject>();
 
     ScoreData scoreData;

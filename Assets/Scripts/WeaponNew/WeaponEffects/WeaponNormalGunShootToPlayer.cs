@@ -34,6 +34,10 @@ public class WeaponNormalGunShootToPlayer : WeaponNew
 
             bullet.GetComponent<BulletHelper>().bulletNew.dir = shootForward;
             bullet.GetComponent<BulletHelper>().bulletNew.transform.position = shootPosition;
+            
+            // 添加子弹到角色子弹管理
+            if (gameObject.CompareTag("Player"))
+                gameObject.GetComponent<CharacterBulletControl>().OnAddBullet(bullet);
 
             StartCoroutine(WeaponCD());
         }

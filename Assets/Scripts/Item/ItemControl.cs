@@ -26,12 +26,15 @@ public class ItemControl : MonoBehaviour
 
         #region test
 
-        for (int i = 201; i <= 203; i++)
-        {
-            var p = ItemLoader.LoadData(i);
-            plugins.Add(p);
-        }
+        // for (int i = 201; i <= 203; i++)
+        // {
+        //     var p = ItemLoader.LoadData(i);
+        //     plugins.Add(p);
+        // }
 
+        var plu = ItemLoader.LoadData(202);
+        plugins.Add(plu);
+        
         #endregion
         
         foreach (var p in plugins)
@@ -48,15 +51,17 @@ public class ItemControl : MonoBehaviour
 
         #region test
 
-        var i2 = ItemLoader.LoadData(101);
+        var i2 = ItemLoader.LoadData(103);
         GetEquipment(i2);
+        var i3 = ItemLoader.LoadData(101);
+        GetEquipment(i3);
         
         #endregion
 
         _pluginStart?.Invoke();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         _pluginUpdate?.Invoke();
     }
@@ -118,9 +123,14 @@ public class ItemControl : MonoBehaviour
     }
 
     // 武器充能
-    public void GetAccumulate()
+    public void GetAccumulate(int acc)
     {
-        itemButton.GetAccumulation(256);
+        itemButton.GetAccumulation(acc);
+    }
+
+    public void TestAccumulate()
+    {
+        itemButton.GetAccumulation(200);
     }
 
     // 删除插件

@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// 装填强化
-public class plugin_203 : ItemEffects
+
+// 
+public class equip_101 : ItemEffects
 {
-    private readonly float rate = 1.2f;
-    private Component[] w;
     private GameObject player;
-    public plugin_203()
-    {    
-        
+    private Component[] w;
+    private readonly float rate = 2f;
+    
+    public equip_101()
+    {
+        time = 10f;
     }
     public override void Run()
     {
         player = GameObject.Find("Player");
         
+        // 获取武器组件貌似行为不对劲
+        // foreach (var weapon in characterControl.weaponNews)
+        // {
+        //     ((WeaponNormalGun) weapon).FireSpeed *= 2;
+        // }
         w = player.GetComponents(typeof(WeaponNormalGun));
         foreach (var component in w)
         {
@@ -24,8 +31,7 @@ public class plugin_203 : ItemEffects
     }
 
     public override void Update()
-    {
-    }
+    { return; }
 
     public override void End()
     {

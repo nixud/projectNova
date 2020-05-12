@@ -56,6 +56,10 @@ public class WeaponShotGun : WeaponNew
                 bullet.GetComponent<BulletHelper>().bulletNew.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 bullet.GetComponent<BulletHelper>().bulletNew.transform.Rotate(new Vector3(0, 0, eulers));
                 bullet.GetComponent<BulletHelper>().bulletNew.eulers = eulers;
+                
+                // 添加子弹到角色子弹管
+                if (gameObject.CompareTag("Player"))
+                    gameObject.GetComponent<CharacterBulletControl>().OnAddBullet(bullet);
             }
 
             StartCoroutine(WeaponCD());

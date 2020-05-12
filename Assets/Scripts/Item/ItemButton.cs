@@ -21,8 +21,8 @@ public class ItemButton : MonoBehaviour
     private bool shouldChangeItem = true;
 
     private float timer;
-    public bool isUsingItem;
-    public bool shouldFreeze;
+    private bool isUsingItem;
+    private bool shouldFreeze;
 
     private ItemType? type = null;
     
@@ -52,6 +52,12 @@ public class ItemButton : MonoBehaviour
         ItemFreeze();
         CheckoutCondition();
         ChangeItem(itemTemp);
+    }
+
+    private void FixedUpdate()
+    {
+        if (isUsingItem)
+            itemStatus.item.Update();
     }
 
     public void SetItem(ItemStatus itemStatus)
@@ -171,7 +177,7 @@ public class ItemButton : MonoBehaviour
 
     public void GetAccumulation(int acc)
     {
-        if (type == ItemType.Accumulate)
+        if (type == ItemType.Accumulate && !isUsingItem)
             nowAccumulate += acc;
         if (nowAccumulate >= itemAccumulate)
             nowAccumulate = itemAccumulate;

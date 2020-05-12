@@ -52,6 +52,7 @@
             <e p="BagUIController.cs" t="Include" />
           </e>
           <e p="Character" t="Include">
+            <e p="CharacterBulletControl.cs" t="Include" />
             <e p="CharacterControl.cs" t="Include" />
             <e p="CharacterInput.cs" t="Include" />
             <e p="CharacterInputMoblie.cs" t="Include" />
@@ -102,12 +103,15 @@
             <e p="ItemControl.cs" t="Include" />
             <e p="ItemEffects" t="Include">
               <e p="Equip2.cs" t="Include" />
+              <e p="equip_101.cs" t="Include" />
               <e p="equip_103.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
               <e p="plugin_201.cs" t="Include" />
               <e p="plugin_202.cs" t="Include" />
               <e p="plugin_203.cs" t="Include" />
-              <e p="ShootSpeedUp.cs" t="Include" />
+              <e p="plugin_204.cs" t="Include" />
+              <e p="plugin_205.cs" t="Include" />
+              <e p="plugin_206.cs" t="Include" />
             </e>
             <e p="ItemEffects.cs" t="Include" />
             <e p="ItemLoader.cs" t="Include" />

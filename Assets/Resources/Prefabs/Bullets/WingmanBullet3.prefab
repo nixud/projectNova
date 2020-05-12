@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 114159872096763788}
   m_Layer: 0
   m_Name: WingmanBullet3
-  m_TagString: PlayerBullet
+  m_TagString: WingmanBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

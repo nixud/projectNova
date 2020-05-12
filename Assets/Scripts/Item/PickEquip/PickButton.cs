@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// 拾捡道具按钮，周围无道具自动disable
+
 public class PickButton : MonoBehaviour
 {
     public Image image;

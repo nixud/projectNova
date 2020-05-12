@@ -62,7 +62,9 @@ public class ItemMenu : EditorWindow
             item.Cd = EditorGUILayout.FloatField("CD", item.Cd);
         }
 
-        item.EffectName = EditorGUILayout.TextField("效果脚本名", item.EffectName);
+        item.EffectName = GetTypeStr(item.Type) + item.Number.ToString();
+        EditorGUILayout.TextField("效果脚本名", item.EffectName);
+        item.PicPath = EditorGUILayout.TextField("PicPath", item.PicPath);
         GUILayout.EndVertical();
 
         if (GUILayout.Button("添加道具"))
@@ -124,6 +126,14 @@ public class ItemMenu : EditorWindow
     private static void LoadData()
     {
         items = ItemLoader.GetItemList();
+    }
+
+    private static string GetTypeStr(ItemType type)
+    {
+        if (type == ItemType.Plugin)
+            return "plugin_";
+        else
+            return "equip_";
     }
 }
 #endif

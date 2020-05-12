@@ -9,7 +9,7 @@ public class WeaponSpeedChanger
     static void WeaponSpeedChange(float num, List<WeaponNew> weaponNews) {
         for (int i = 0; i < weaponNews.Count; i++)
         {
-//            weaponNews[i].FireSpeed *= num;
+            // weaponNews[i].FireSpeed *= num;
         }
     }
 }

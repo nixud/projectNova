@@ -8,7 +8,7 @@ public class WeaponNormalGun : WeaponNew
 {
     GameObject bullet;
 
-    private float FireSpeed;
+    public float FireSpeed;
     private string BulletNumber;
 
     public override void LoadInfomation(WeaponInformation weapon) {
@@ -40,6 +40,9 @@ public class WeaponNormalGun : WeaponNew
             bullet.GetComponent<BulletHelper>().bulletNew.transform.Rotate(new Vector3(0, 0, eulers));
             bullet.GetComponent<BulletHelper>().bulletNew.eulers = eulers;
             
+            // 添加子弹到角色子弹管理
+            if (gameObject.CompareTag("Player"))
+                gameObject.GetComponent<CharacterBulletControl>().OnAddBullet(bullet);
 
             StartCoroutine(WeaponCD());
         }

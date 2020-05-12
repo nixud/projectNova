@@ -7,6 +7,8 @@ public class BulletNew : MonoBehaviour
     public float Damage;//伤害（敌人的子弹也要有该值，但敌人子弹伤害固定为一点）
     public AnimationCurve Speed;//速度曲线
 
+    [HideInInspector]public float SpeedRate = 1f;        // 速度倍率，调整子弹射速
+
     protected float NowSpeed;//当前速度
     protected float Nowtime = 0;//当前飞行的时间
 
@@ -41,7 +43,7 @@ public class BulletNew : MonoBehaviour
             Nowtime += Time.deltaTime;
             NowSpeed = Speed.Evaluate(Nowtime);
 
-            transform.Translate(dir * NowSpeed, Space.World);
+            transform.Translate(dir * (NowSpeed * SpeedRate), Space.World);
         }
     }
 
@@ -70,6 +72,9 @@ public class BulletNew : MonoBehaviour
             Nowtime = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
+            
+            // 回收时从角色子弹控制删除
+            OnRecycle();
         }
     }
     public virtual void HitRecycleNow()
@@ -85,6 +90,9 @@ public class BulletNew : MonoBehaviour
             Nowtime = 0;
             ObjectPool.GetInstance().RecycleObj(gameObject);
             IsNotRecycled = false;
+            
+            // 回收时从角色子弹控制删除
+            OnRecycle();
         }
     }
 
@@ -100,5 +108,12 @@ public class BulletNew : MonoBehaviour
             collision.gameObject.GetComponent<CharacterControl>().DecHP();
             HitRecycleNow();
         }
+    }
+
+    // 从角色子弹控制删除
+    protected void OnRecycle()
+    {
+        if (isPlayerBullet)
+            GameObject.Find("Player").GetComponent<CharacterBulletControl>().OnRemoveBullet(gameObject);
     }
 }

@@ -18,11 +18,12 @@ public class plugin_201 : ItemEffects
         _uIcontroller++;
         _uIcontroller++;
         
-        Debug.Log("plugin_201 start");
     }
 
     public override void Update()
     {
+        Debug.Log(GameObject.Find("Player").GetComponent<CharacterBulletControl>().bullets[0].transform.up);
+
         return;
     }
 
