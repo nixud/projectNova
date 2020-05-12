@@ -1,7 +1,6 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -10,6 +9,9 @@ using UnityEngine.UI;
 public class ItemControl : MonoBehaviour
 {
     public ItemButton itemButton;
+
+    public List<int> EquipList;
+    [FormerlySerializedAs("PluginLis")] public List<int> PluginList;
 
     [HideInInspector]public int equipmentMax = 2;
     [HideInInspector]public List<Item> plugins;
@@ -26,15 +28,18 @@ public class ItemControl : MonoBehaviour
 
         #region test
 
-        // for (int i = 201; i <= 203; i++)
-        // {
-        //     var p = ItemLoader.LoadData(i);
-        //     plugins.Add(p);
-        // }
+        foreach (var plugin in PluginList)
+        {
+            var p = ItemLoader.LoadData(plugin);
+            plugins.Add(p);
+        }
 
-        var plu = ItemLoader.LoadData(202);
-        plugins.Add(plu);
-        
+        foreach (var equip in EquipList)
+        {
+            var p = ItemLoader.LoadData(equip);
+            PlayerStatus.GetInstance().Equipments.Add(p);
+        }
+
         #endregion
         
         foreach (var p in plugins)
@@ -48,16 +53,7 @@ public class ItemControl : MonoBehaviour
         {
             GetEquipment(equipment, false);
         }
-
-        #region test
-
-        var i2 = ItemLoader.LoadData(103);
-        GetEquipment(i2);
-        var i3 = ItemLoader.LoadData(101);
-        GetEquipment(i3);
         
-        #endregion
-
         _pluginStart?.Invoke();
     }
 

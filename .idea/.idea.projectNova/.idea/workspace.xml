@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Enemy0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/Enemy0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanBullet1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanBullet1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanBullet3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanBullet3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanRay4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bullets/WingmanRay4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WaveTestScene 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/WaveTestScene 1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/items.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/items.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/ShootSpeedUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/PickButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/PickButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/ItemEffectsOnWeapon/WeaponSpeedChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/ItemEffectsOnWeapon/WeaponSpeedChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponMachineGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponMachineGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGunShootToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGunShootToPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponShotGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponShotGun.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,8 +186,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
       </list>
     </option>
   </component>
@@ -330,6 +305,7 @@
       <workItem from="1589175767125" duration="1550000" />
       <workItem from="1589177641231" duration="17414000" />
       <workItem from="1589274784763" duration="9679000" />
+      <workItem from="1589290184210" duration="482000" />
     </task>
     <servers />
   </component>
