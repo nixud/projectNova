@@ -9334,6 +9334,7 @@ GameObject:
   - component: {fileID: 476348}
   - component: {fileID: 19849584}
   - component: {fileID: 19957826}
+  - component: {fileID: 1491484130790750096}
   m_Layer: 0
   m_Name: MuzzleFlashRoundBlue
   m_TagString: Untagged
@@ -13973,3 +13974,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1491484130790750096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339c11a14fb8be44e8cc526b58fc773c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistoryTime: 3
