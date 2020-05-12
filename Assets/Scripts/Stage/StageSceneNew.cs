@@ -57,12 +57,10 @@ public class StageSceneNew : MonoBehaviour
     private int DottedLinePos = 0;
     public Sprite DottedlineSprite;
 
-    public GameObject start;
-    public GameObject end;
+    public Text FuelText;
 
     private void Start()
     {
-
         mapInfomation = MapInfomation.GetInstance();
 
         if (mapInfomation.MapStatus[mapConfigData.MapNumber] == '0')
@@ -116,6 +114,8 @@ public class StageSceneNew : MonoBehaviour
         PlayerPlane = GameObject.Find("New Sprite");
         PlayerPlane.transform.position = StagePointCheck[NowStageInfomation.GetInstance().PlayerPosition].transform.position + new Vector3(0,0,-1);
         FreshStageButtonStart();
+
+        FreshFuel();
     }
 
 
@@ -413,11 +413,16 @@ public class StageSceneNew : MonoBehaviour
         {
             if (TargetGO == null)
             {
+                PlayerStatus.GetInstance().Fuel--;
+                FreshFuel();
                 TargetGO = StagePointCheck[0];
                 StartStage();
             }
             else
             {
+                PlayerStatus.GetInstance().Fuel--;
+                FreshFuel();
+
                 PlayerPosition = StagePointCheck.IndexOf(TargetGO);
 
                 isMoving = true;
@@ -487,4 +492,13 @@ public class StageSceneNew : MonoBehaviour
     public void EnterBossLevel() { 
     
     }
+
+    #region UI控制的方法
+
+    private void FreshFuel() {
+        FuelText.GetComponent<Text>().text = PlayerStatus.GetInstance().Fuel.ToString()
+            + "/" + PlayerStatus.GetInstance().MaxFuel.ToString();
+    }
+
+    #endregion
 }

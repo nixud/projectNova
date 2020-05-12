@@ -4731,6 +4731,7 @@ GameObject:
   - component: {fileID: 486764}
   - component: {fileID: 19885130}
   - component: {fileID: 19943170}
+  - component: {fileID: 4701509067268962675}
   m_Layer: 0
   m_Name: MuzzleFlashRoundRed
   m_TagString: Untagged
@@ -9370,6 +9371,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4701509067268962675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339c11a14fb8be44e8cc526b58fc773c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistoryTime: 3
 --- !u!1 &189894
 GameObject:
   m_ObjectHideFlags: 0
