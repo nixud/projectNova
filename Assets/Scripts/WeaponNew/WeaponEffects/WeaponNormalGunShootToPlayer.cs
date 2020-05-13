@@ -37,7 +37,7 @@ public class WeaponNormalGunShootToPlayer : WeaponNew
             
             // 添加子弹到角色子弹管理
             if (gameObject.CompareTag("Player"))
-                gameObject.GetComponent<CharacterBulletControl>().OnAddBullet(bullet);
+                gameObject.GetComponent<CharacterBulletControl>().AddBullet(bullet);
 
             StartCoroutine(WeaponCD());
         }

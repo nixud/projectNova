@@ -114,6 +114,6 @@ public class BulletNew : MonoBehaviour
     protected void OnRecycle()
     {
         if (isPlayerBullet)
-            GameObject.Find("Player").GetComponent<CharacterBulletControl>().OnRemoveBullet(gameObject);
+            GameObject.Find("Player").GetComponent<CharacterBulletControl>().RemoveBullet(gameObject);
     }
 }

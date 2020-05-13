@@ -104,6 +104,7 @@
             <e p="ItemEffects" t="Include">
               <e p="Equip2.cs" t="Include" />
               <e p="equip_101.cs" t="Include" />
+              <e p="equip_102.cs" t="Include" />
               <e p="equip_103.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
               <e p="plugin_201.cs" t="Include" />

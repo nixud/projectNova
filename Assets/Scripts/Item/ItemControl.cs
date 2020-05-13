@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -124,11 +125,6 @@ public class ItemControl : MonoBehaviour
         itemButton.GetAccumulation(acc);
     }
 
-    public void TestAccumulate()
-    {
-        itemButton.GetAccumulation(200);
-    }
-
     // 删除插件
     public void DeletePlugin(Item plugin)
     {
@@ -163,6 +159,13 @@ public class ItemControl : MonoBehaviour
             itemButton.SetItem(null);
         else
             itemButton.SetItem(_equipments[index]);
+    }
+    
+    
+    // test
+    public void TestAcc()
+    {
+        GetAccumulate(1000);
     }
 }
 

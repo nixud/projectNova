@@ -22,8 +22,6 @@ public class plugin_201 : ItemEffects
 
     public override void Update()
     {
-        Debug.Log(GameObject.Find("Player").GetComponent<CharacterBulletControl>().bullets[0].transform.up);
-
         return;
     }
 

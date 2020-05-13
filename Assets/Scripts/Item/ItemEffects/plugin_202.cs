@@ -26,8 +26,8 @@ public class plugin_202 : ItemEffects
         playerPositon = GameObject.Find("Player").GetComponent<Transform>();
         bulletsTarget = new Dictionary<GameObject, Transform>();
 
-        characterBulletControl.AddBullet += OnAddBullet;
-        characterBulletControl.RemoveBullet += OnRemoveBullet;
+        characterBulletControl.OnAddBullet += OnAddBullet;
+        characterBulletControl.OnRemoveBullet += OnRemoveBullet;
     }
 
     public override void Update()
@@ -53,8 +53,8 @@ public class plugin_202 : ItemEffects
 
     public override void End()
     {
-        characterBulletControl.AddBullet -= OnAddBullet;
-        characterBulletControl.RemoveBullet -= OnRemoveBullet;
+        characterBulletControl.OnAddBullet -= OnAddBullet;
+        characterBulletControl.OnRemoveBullet -= OnRemoveBullet;
     }
 
     public override bool Condition()

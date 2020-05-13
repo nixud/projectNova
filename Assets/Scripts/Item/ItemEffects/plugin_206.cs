@@ -22,8 +22,8 @@ public class plugin_206 : ItemEffects
     
     public override void Run()
     {
-        characterBulletControl.AddBullet += OnAddBullet;
-        characterBulletControl.RemoveBullet += OnRemoveBullet;
+        characterBulletControl.OnAddBullet += OnAddBullet;
+        characterBulletControl.OnRemoveBullet += OnRemoveBullet;
     }
 
     public override void Update()
@@ -35,8 +35,8 @@ public class plugin_206 : ItemEffects
     {
         try
         {
-            characterBulletControl.AddBullet -= OnAddBullet;
-            characterBulletControl.RemoveBullet -= OnRemoveBullet;
+            characterBulletControl.OnAddBullet -= OnAddBullet;
+            characterBulletControl.OnRemoveBullet -= OnRemoveBullet;
             foreach (var bullet in characterBulletControl.bullets)
             {
                 OnRemoveBullet(bullet);
