@@ -96,6 +96,12 @@ public class BulletNew : MonoBehaviour
         }
     }
 
+    // 获取当前速度
+    public float GetSpeed
+    {
+        get => NowSpeed;
+    }
+
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (isPlayerBullet && (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss"))

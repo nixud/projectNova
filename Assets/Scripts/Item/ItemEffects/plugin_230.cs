@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 锁敌计算机
-public class plugin_202 : ItemEffects
+public class plugin_230 : ItemEffects
 {
     private CharacterBulletControl characterBulletControl;
     private Transform playerPositon;
@@ -14,8 +14,8 @@ public class plugin_202 : ItemEffects
 
     private float timeGone;
     private readonly float timeScile = 0.7f;
-    private float lerpSpeed = 0.002f;
-    public plugin_202()
+    private float lerpSpeed = 0.01f;
+    public plugin_230()
     {
         timeGone = 0f;
     }
@@ -46,7 +46,7 @@ public class plugin_202 : ItemEffects
                 var tmp = kvp.Value.position - kvp.Key.transform.position;
                 var lerp = Vector3.Lerp(kvp.Key.transform.up, tmp, lerpSpeed).normalized;
                 kvp.Key.transform.up = lerp.normalized;
-                kvp.Key.GetComponent<BulletHelper>().bulletNew.dir = tmp.normalized;
+                kvp.Key.GetComponent<BulletHelper>().bulletNew.dir = lerp.normalized;
             }
         }
     }

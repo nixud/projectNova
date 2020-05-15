@@ -108,11 +108,11 @@
               <e p="equip_103.cs" t="Include" />
               <e p="KillSelf.cs" t="Include" />
               <e p="plugin_201.cs" t="Include" />
-              <e p="plugin_202.cs" t="Include" />
               <e p="plugin_203.cs" t="Include" />
               <e p="plugin_204.cs" t="Include" />
               <e p="plugin_205.cs" t="Include" />
               <e p="plugin_206.cs" t="Include" />
+              <e p="plugin_230.cs" t="Include" />
             </e>
             <e p="ItemEffects.cs" t="Include" />
             <e p="ItemLoader.cs" t="Include" />

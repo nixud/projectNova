@@ -12,7 +12,7 @@ public class ItemControl : MonoBehaviour
     public ItemButton itemButton;
 
     public List<int> EquipList;
-    [FormerlySerializedAs("PluginLis")] public List<int> PluginList;
+    public List<int> PluginList;
 
     [HideInInspector]public int equipmentMax = 2;
     [HideInInspector]public List<Item> plugins;
@@ -28,7 +28,8 @@ public class ItemControl : MonoBehaviour
         plugins = PlayerStatus.GetInstance().Plugins;
 
         #region test
-
+        plugins.Sort();
+        Debug.Log(PluginList[0]);
         foreach (var plugin in PluginList)
         {
             var p = ItemLoader.LoadData(plugin);

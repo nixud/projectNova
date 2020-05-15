@@ -63,7 +63,7 @@ public class ItemMenu : EditorWindow
         }
 
         item.EffectName = GetTypeStr(item.Type) + item.Number.ToString();
-        EditorGUILayout.TextField("效果脚本名", item.EffectName);
+        // EditorGUILayout.TextField("效果脚本名", item.EffectName);
         item.PicPath = EditorGUILayout.TextField("PicPath", item.PicPath);
         GUILayout.EndVertical();
 
