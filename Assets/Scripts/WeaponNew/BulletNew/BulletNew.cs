@@ -21,6 +21,11 @@ public class BulletNew : MonoBehaviour
 
     public bool isPlayerBullet;
 
+    public bool isTrace;            //子弹是否追踪
+    public float attackArrange;     //子弹追踪的范围
+    public float rotateSpeed;       //子弹追踪时旋转角度
+    protected GameObject attackTarget;
+
     public AudioClip FireAudio;//声音
     public AudioClip HitAudio;
 
@@ -42,8 +47,21 @@ public class BulletNew : MonoBehaviour
         {
             Nowtime += Time.deltaTime;
             NowSpeed = Speed.Evaluate(Nowtime);
-
-            transform.Translate(dir * (NowSpeed * SpeedRate), Space.World);
+            if (isTrace)
+            {
+                CheckAttackTarget();
+                if (attackTarget != null)
+                {
+                    Vector2 Direction = attackTarget.transform.position - gameObject.transform.position;
+                    Vector2 lerp = Vector2.Lerp(gameObject.transform.up, Direction, rotateSpeed * 0.01f);
+                    gameObject.transform.up = (new Vector2(lerp.x, lerp.y)).normalized;
+                }
+                transform.Translate(gameObject.transform.up * (NowSpeed * SpeedRate), Space.World);
+            }
+            else
+            {
+                transform.Translate(dir * (NowSpeed * SpeedRate));
+            }
         }
     }
 
@@ -121,5 +139,60 @@ public class BulletNew : MonoBehaviour
     {
         if (isPlayerBullet)
             GameObject.Find("Player").GetComponent<CharacterBulletControl>().RemoveBullet(gameObject);
+    }
+
+    protected void CheckAttackTarget()
+    {
+        if (isPlayerBullet)
+        {
+            Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, attackArrange);
+
+            if (cols.Length > 0)
+            {
+                List<float> distanceList = new List<float>();
+                Dictionary<GameObject, float> colsDic = new Dictionary<GameObject, float>();
+                for (int i = 0; i < cols.Length; i++)
+                {
+                    if (cols[i].transform.CompareTag("Boss") || cols[i].transform.CompareTag("Enemy"))
+                    {
+                        float distance = (cols[i].transform.position - transform.position).magnitude;
+                        if (colsDic.ContainsKey(cols[i].gameObject))
+                        {
+                            colsDic.Add(cols[i].gameObject, distance);
+                        }
+                        else
+                        {
+                            colsDic[cols[i].gameObject] = distance;
+                        }
+                        if (!distanceList.Contains(distance))
+                        {
+                            distanceList.Add(distance);
+                        }
+                    }
+                }
+                if (distanceList.Count > 0)
+                {
+                    distanceList.Sort();
+                    foreach (KeyValuePair<GameObject, float> c in colsDic)
+                    {
+
+                        if (c.Value == distanceList[0])
+                        {
+                            attackTarget = c.Key.gameObject;
+                            dir = attackTarget.transform.position - transform.position;
+                            break;
+                        }
+                        else { attackTarget = null; }
+                    }
+                }
+                else{ attackTarget = null; }
+                
+            }
+            else { attackTarget = null; }
+        }
+        else
+        {
+            attackTarget = GameObject.Find("Player");
+        }
     }
 }

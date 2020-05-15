@@ -12,17 +12,6 @@ public class WeaponControlWingman : MonoBehaviour
     WeaponControl weaponControl;    //旧版实现
     WeaponNew weaponNew;
 
-    private void Start()
-    {
-        WingmanJsonLoader loader = new WingmanJsonLoader();
-        wingman = loader.LoadData(wingmanNum);
-        weaponNew = WeaponLoader.LoadWeaponAndAttachToGO(WeaponNum, gameObject);
-        /*
-        weaponControl = gameObject.AddComponent<WeaponControl>();
-        weaponControl.LoadWeapon(WeaponNum); // 旧weapon实现
-        */
-    }
-
     public void Init()
     {
         WingmanJsonLoader loader = new WingmanJsonLoader();

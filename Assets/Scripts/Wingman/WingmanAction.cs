@@ -10,13 +10,6 @@ public class WingmanAction : MonoBehaviour
     private Wingman wingman;
     // Start is called before the first frame update
 
-    private void Start()
-    {
-        rigidBody = GetComponent<Rigidbody2D>();
-        weaponControlWingman = GetComponent<WeaponControlWingman>();
-        weaponControlWingman.Init();
-    }
-
     public void Init()
     {
         rigidBody = GetComponent<Rigidbody2D>();
