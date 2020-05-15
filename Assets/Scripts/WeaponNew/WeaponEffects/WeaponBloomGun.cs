@@ -59,7 +59,7 @@ public class WeaponBloomGun : WeaponNew
             bullet.GetComponent<BulletHelper>().bulletNew.transform.position = ShootPos;
 
             if (gameObject.CompareTag("Player"))
-                gameObject.GetComponent<CharacterBulletControl>().OnAddBullet(bullet);
+                gameObject.GetComponent<CharacterBulletControl>().AddBullet(bullet);
         }
         IsInShootingCD = true;
         yield return new WaitForSeconds(FireSpeed);

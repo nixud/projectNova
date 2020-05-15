@@ -4,16 +4,7 @@
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponShotGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RareLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponAreaGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -149,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
@@ -200,6 +191,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_230.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" />
       </list>
     </option>
   </component>
@@ -324,6 +316,7 @@
       <workItem from="1589466776563" duration="3169000" />
       <workItem from="1589509615161" duration="5150000" />
       <workItem from="1589518699042" duration="514000" />
+      <workItem from="1589520406611" duration="73000" />
     </task>
     <servers />
   </component>

@@ -202,6 +202,8 @@
               <e p="BulletHelper.cs" t="Include" />
               <e p="BulletNew.cs" t="Include" />
               <e p="Bullets" t="Include">
+                <e p="BombBullet.cs" t="Include" />
+                <e p="Enemy1.cs" t="Include" />
                 <e p="NormalBullet.cs" t="Include" />
                 <e p="WingmanBullet1.cs" t="Include" />
                 <e p="WingmanBullet3.cs" t="Include" />
@@ -213,6 +215,7 @@
             </e>
             <e p="WeaponEffects" t="Include">
               <e p="WeaponAreaGun.cs" t="Include" />
+              <e p="WeaponBloomGun.cs" t="Include" />
               <e p="WeaponFlashRay.cs" t="Include" />
               <e p="WeaponLight.cs" t="Include" />
               <e p="WeaponMachineGun.cs" t="Include" />
