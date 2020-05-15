@@ -86,12 +86,16 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  SpeedRate: 1
   AutoRecycleTime: 4
   BulletBody: BulletModularEnemy2
   HitEffect: MuzzleFlashRoundRed
   DestoryEffect: "\u6027\u80FD\u6D4B\u8BD5\u7528\u7A7A\u7279\u6548"
   ShootGunEffect: 
   isPlayerBullet: 0
+  isTrace: 0
+  attackArrange: 0
+  rotateSpeed: 0
   FireAudio: {fileID: 0}
   HitAudio: {fileID: 0}
   dir: {x: 0, y: 0, z: 0}

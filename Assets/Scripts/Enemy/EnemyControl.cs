@@ -27,7 +27,7 @@ public class EnemyControl : MonoBehaviour
         HP -= hp;
         
         // 增加充能值
-        GameObject.Find("ItemControl").GetComponent<ItemControl>().GetAccumulate((int)hp);
+        GameObject.Find("ItemControl").GetComponent<ItemControl>().GetAccumulate((int)hp); 
         
         if (HP <= 0 && IsNotRecycled) {
             RecycleNow();

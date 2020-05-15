@@ -20,10 +20,11 @@ public class WingmanController : MonoBehaviour
     {
         wingmanAction = GetComponent<WingmanAction>();
         wingmanAction.Init();
-        lastPos = (Vector2)followTarget.transform.position;
-        movePos = (Vector2)transform.position;
+        lastPos = followTarget.transform.position;
+        movePos = transform.position;
         targetPosQueue = new Queue<Vector2>();
         StartCoroutine(CheckMovePos());
+        StartCoroutine(Attack());
         if (attackArrange > 0)
         {
             StartCoroutine(CheckAttackTarget());
@@ -36,7 +37,6 @@ public class WingmanController : MonoBehaviour
     void Update()
     {
         wingmanAction.Move(movePos);
-        wingmanAction.Attack(attackTargetPos);
     }
 
     public void SetTarget(GameObject obj)
@@ -116,7 +116,16 @@ public class WingmanController : MonoBehaviour
             {
                 attackTargetPos = Vector3.zero;
             }
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
     }
+    IEnumerator Attack()
+    {
+        while (true)
+        {
+            yield return new WaitForEndOfFrame();
+            wingmanAction.Attack(attackTargetPos);
+        }
+    }
+
 }

@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class WeaponLight : WeaponNew
 {
+    GameObject AimingLine;
+    GameObject Light;
 
-    GameObject ray;
-
-    public string RayNumber;
-    public float RayDamagePerSec;
+    public string AimingLineName;
+    public string LightName;
+    public float LightDamagePerSec;
     public float HittedTimePerSec;
-    public float RayLength;
-    public float RayWidth;
-
+    public float LightLength;
+    public float LightWidth;
+    public float AimingTime;
+    public float AttackingTime;
+    public bool IsPlayerWeapon;
+    bool IsAiming;
+    bool IsAttacking;
     Vector3 shootPosition;
     Vector3 shootForward;
 
@@ -22,29 +27,33 @@ public class WeaponLight : WeaponNew
         WeaponName = weapon.WeaponName;
         Description = weapon.Description;
 
-        RayNumber = weapon.WeaponStrings[0];
-        RayDamagePerSec = weapon.WeaponFloats[0];
+        AimingLineName = weapon.WeaponStrings[0];
+        LightName = weapon.WeaponStrings[1];
+        LightDamagePerSec = weapon.WeaponFloats[0];
         HittedTimePerSec = weapon.WeaponFloats[1];
-        RayLength = weapon.WeaponFloats[2];
-        RayWidth = weapon.WeaponFloats[3];
+        LightLength = weapon.WeaponFloats[2];
+        LightWidth = weapon.WeaponFloats[3];
+        AimingTime = weapon.WeaponFloats[4];
+        AttackingTime = weapon.WeaponFloats[5];
+        IsPlayerWeapon = weapon.WeaponBools[0];
 
         IconPath = weapon.IconPath;
         PicPath = weapon.PicPath;
 
         rareLevel = weapon.rareLevel;
 
-        ray = ObjectPool.GetInstance().GetObj(RayNumber, "Rays");
-
-        ray.GetComponent<LineRenderer>().startWidth = RayWidth;
-        ray.GetComponent<LineRenderer>().endWidth = RayWidth;
+        IsAiming = false;
+        IsAttacking = false;
     }
 
-    public override void Shoot(Vector3 shootPosition, Vector3 shootForward)
+    public override void Shoot(Vector3 attackPosition, Vector3 attackForward)
     {
-        this.shootPosition = shootPosition;
-        this.shootForward = shootForward;
-        ray.GetComponent<LineRenderer>().SetPosition(0, shootPosition);
-        ray.GetComponent<LineRenderer>().SetPosition(1, shootPosition + shootForward.normalized * RayLength);
+        shootPosition = attackPosition;
+        shootForward = attackForward;
+        if (!IsAiming&&!IsAttacking)
+        {
+            StartCoroutine(Aiming());
+        }
     }
 
     private void Update()
@@ -53,23 +62,52 @@ public class WeaponLight : WeaponNew
     }
     private void Attack()
     {
-        RaycastHit2D[] hits = Physics2D.LinecastAll(transform.position,shootForward*RayLength);
-        
-        for (int i = 0; hits.Length > 0 && i < hits.Length; i++)
+        if (IsAiming&&!IsAttacking)
         {
-            if (hits[i].collider.gameObject.CompareTag("Enemy"))
+            AimingLine.GetComponent<LineRenderer>().startWidth = LightWidth;
+            AimingLine.GetComponent<LineRenderer>().endWidth = LightWidth;
+            AimingLine.GetComponent<LineRenderer>().SetPosition(0, shootPosition);
+            AimingLine.GetComponent<LineRenderer>().SetPosition(1, shootPosition + shootForward.normalized * LightLength);
+        }
+        if (IsAttacking&&!IsAiming)
+        {
+            Light.GetComponent<LineRenderer>().startWidth = LightWidth;
+            Light.GetComponent<LineRenderer>().endWidth = LightWidth;
+            Light.GetComponent<LineRenderer>().SetPosition(0, shootPosition);
+            Light.GetComponent<LineRenderer>().SetPosition(1, shootPosition + shootForward.normalized * LightLength);
+
+            RaycastHit2D[] hits = Physics2D.LinecastAll(transform.position, shootForward * LightLength);
+            for (int i = 0; hits.Length > 0 && i < hits.Length; i++)
             {
-                if (!IsInCD)
+                if (IsPlayerWeapon)
                 {
-                    
-                    hits[i].collider.gameObject.GetComponent<EnemyControl>().Hitted(RayDamagePerSec / HittedTimePerSec);
+                    if (hits[i].collider.gameObject.CompareTag("Enemy"))
+                    {
+                        if (!IsInCD)
+                        {
+
+                            hits[i].collider.gameObject.GetComponent<EnemyControl>().Hitted(LightDamagePerSec / HittedTimePerSec);
+                        }
+
+                    }
+                }
+                else
+                {
+                    if (hits[i].collider.gameObject.CompareTag("Player"))
+                    {
+                        if (!IsInCD)
+                        {
+                            hits[i].collider.gameObject.GetComponent<CharacterControl>().DecHP();
+                        }
+
+                    }
                 }
 
             }
-        }
-        if (!IsInCD)
-        {
-            StartCoroutine(WeaponCD());
+            if (!IsInCD)
+            {
+                StartCoroutine(WeaponCD());
+            }
         }
     }
     IEnumerator WeaponCD()
@@ -77,5 +115,24 @@ public class WeaponLight : WeaponNew
         IsInCD = true;
         yield return new WaitForSeconds(1f / HittedTimePerSec);
         IsInCD = false;
+    }
+
+    IEnumerator Aiming()
+    {
+        AimingLine = ObjectPool.GetInstance().GetObj(AimingLineName, "Rays");
+        IsAiming = true;
+        yield return new WaitForSeconds(AimingTime);
+        ObjectPool.GetInstance().RecycleObj(AimingLine);
+        IsAiming = false;
+        StartCoroutine(Attacking());
+    }
+
+    IEnumerator Attacking()
+    {
+        Light = ObjectPool.GetInstance().GetObj(LightName, "Rays");
+        IsAttacking = true;
+        yield return new WaitForSeconds(AttackingTime);
+        IsAttacking = false;
+        ObjectPool.GetInstance().RecycleObj(Light);
     }
 }

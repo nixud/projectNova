@@ -37,6 +37,10 @@ public class WeaponLoader : MonoBehaviour
         {
             weaponNew = go.AddComponent<WeaponLight>();
         }
+        else if (weapon.WeaponSort == 7)
+        {
+            weaponNew = go.AddComponent<WeaponBloomGun>();
+        }
         else throw new Exception();
 
         weaponNew.LoadInfomation(weapon);

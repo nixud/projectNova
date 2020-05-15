@@ -35,16 +35,17 @@ public class WeaponRay : WeaponNew
         rareLevel = weapon.rareLevel;
 
         ray = ObjectPool.GetInstance().GetObj(RayNumber, "Rays");
-
+        ray.GetComponent<LineRenderer>().SetPosition(0, shootPosition);
+        ray.GetComponent<LineRenderer>().SetPosition(1, shootPosition + new Vector3(0, 20, 0));
         ray.GetComponent<LineRenderer>().startWidth = RayWidth;
         ray.GetComponent<LineRenderer>().endWidth = RayWidth;
     }
 
-    public override void Shoot(Vector3 shootPosition, Vector3 shootForward)
+    public override void Shoot(Vector3 attackPosition, Vector3 attackForward)
     {
 
-        this.shootPosition = shootPosition;
-        this.shootForward = shootForward;
+        shootPosition = attackPosition;
+        shootForward = attackForward;
 
         ShootWaitingTime = 0.05f;
     }
@@ -63,7 +64,7 @@ public class WeaponRay : WeaponNew
                 if (!IsRayhiting)
                     StartCoroutine(RayCD(hit));
             }
-            else
+            else if (hit.collider == null)
             {
                 ray.GetComponent<LineRenderer>().SetPosition(1, shootPosition + new Vector3(0, 20, 0));
             }
