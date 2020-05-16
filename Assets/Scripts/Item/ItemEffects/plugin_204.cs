@@ -30,7 +30,6 @@ public class plugin_204 : ItemEffects
         {
             if (bulletGone[k] >= distance)
             {
-                Debug.Log("askjdaksjd");
                 var bullet1 = ObjectPool.GetInstance().GetObj(k.name, "Bullet");
                 var bullet2 = ObjectPool.GetInstance().GetObj(k.name, "Bullet");
 
@@ -38,9 +37,11 @@ public class plugin_204 : ItemEffects
                 bullet2.transform.position = k.transform.position;
 
                 var dir = k.GetComponent<BulletHelper>().bulletNew.dir;
+                bullet1.transform.localScale = Vector3.one;
                 bullet1.transform.rotation = k.transform.rotation;
                 bullet1.transform.Rotate(new Vector3(0, 0, angle));
                 bullet1.GetComponent<BulletHelper>().bulletNew.dir = Quaternion.Euler(0, 0, angle) * dir;
+                bullet2.transform.localScale = Vector3.one;
                 bullet2.transform.rotation = k.transform.rotation;
                 bullet2.transform.Rotate(new Vector3(0, 0, -angle));
                 bullet2.GetComponent<BulletHelper>().bulletNew.dir = Quaternion.Euler(0, 0, -angle) * dir;
@@ -54,7 +55,6 @@ public class plugin_204 : ItemEffects
             }
             else
             {
-                Debug.Log(bulletGone[k]);
                 bulletGone[k] += k.GetComponent<BulletHelper>().bulletNew.GetSpeed * Time.deltaTime;
             }
         }
@@ -62,8 +62,21 @@ public class plugin_204 : ItemEffects
 
     public override void End()
     {
-        _characterBulletControl.OnAddBullet -= OnAddBullet;
-        _characterBulletControl.OnRemoveBullet -= OnRemoveBullet;
+        try
+        {
+            _characterBulletControl.OnAddBullet -= OnAddBullet;
+            _characterBulletControl.OnRemoveBullet -= OnRemoveBullet;
+
+            foreach (var g in bulletGone.Keys.ToList())
+            {
+                OnRemoveBullet(g);
+            }
+            bulletGone.Clear();
+        }
+        catch
+        {
+            // ignore
+        }
     }
 
     private void OnAddBullet(GameObject bullet)

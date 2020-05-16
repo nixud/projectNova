@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Demo/Materials/Skybox/PurpleSkybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Demo/Materials/Skybox/PurpleSkybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/Trails/purpletrail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/Trails/purpletrail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_shield.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_shield.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_speed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_speed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,14 +186,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBulletControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_230.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" />
         <option value="$PROJECT_DIR$/Assets/test/asss.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" />
       </list>
     </option>
   </component>
@@ -326,6 +321,7 @@
       <workItem from="1589520406611" duration="73000" />
       <workItem from="1589521166976" duration="3585000" />
       <workItem from="1589596403358" duration="636000" />
+      <workItem from="1589597266939" duration="3929000" />
     </task>
     <servers />
   </component>

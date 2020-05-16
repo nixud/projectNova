@@ -60,7 +60,7 @@ public class BulletNew : MonoBehaviour
             }
             else
             {
-                transform.Translate(dir * (NowSpeed * SpeedRate));
+                transform.Translate(dir * (NowSpeed * SpeedRate), Space.World);
             }
         }
     }
