@@ -245,6 +245,7 @@
           </e>
         </e>
         <e p="test" t="Include">
+          <e p="asss.cs" t="Include" />
           <e p="line.cs" t="Include" />
           <e p="NewBehaviourScript.cs" t="Include" />
           <e p="shader" t="Include">

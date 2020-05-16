@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Demo/Materials/Skybox/PurpleSkybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Demo/Materials/Skybox/PurpleSkybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/Trails/purpletrail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/Trails/purpletrail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_shield.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_shield.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_speed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/暂时没用到的插件/Pixel Arsenal/Materials/powerup_speed.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +98,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/test/asss.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plugin/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/test/shader/pixel.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/1e/708a945f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForwardChangeVelocity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -141,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveToPoint.cs" />
@@ -190,8 +196,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_230.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/test/asss.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
       </list>
     </option>
   </component>
@@ -317,6 +324,8 @@
       <workItem from="1589509615161" duration="5150000" />
       <workItem from="1589518699042" duration="514000" />
       <workItem from="1589520406611" duration="73000" />
+      <workItem from="1589521166976" duration="3585000" />
+      <workItem from="1589596403358" duration="636000" />
     </task>
     <servers />
   </component>

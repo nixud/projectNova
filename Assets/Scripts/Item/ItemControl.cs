@@ -29,7 +29,6 @@ public class ItemControl : MonoBehaviour
 
         #region test
         plugins.Sort();
-        Debug.Log(PluginList[0]);
         foreach (var plugin in PluginList)
         {
             var p = ItemLoader.LoadData(plugin);
