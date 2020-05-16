@@ -8,7 +8,7 @@ public class WeaponShotGun : WeaponNew
 {
     GameObject bullet;
 
-    private float FireSpeed;
+    public float FireSpeed;
     private string BulletNumber;
 
     private float Accuracy;

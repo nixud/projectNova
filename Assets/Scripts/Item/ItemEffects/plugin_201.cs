@@ -8,16 +8,18 @@ public class plugin_201 : ItemEffects
 
     public plugin_201()
     {
-        _uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
+        
     }
     public override void Run()
     {
+        _uIcontroller = GameObject.Find("Canvas").GetComponent<UIcontroller>();
         PlayerStatus.GetInstance().HP += 4f;
         _uIcontroller++;
         _uIcontroller++;
         _uIcontroller++;
         _uIcontroller++;
-        
+     
+        Debug.Log("201 run");
     }
 
     public override void Update()

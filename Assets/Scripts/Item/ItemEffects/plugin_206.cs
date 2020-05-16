@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 大号子弹
 public class plugin_206 : ItemEffects
 {
     private float scaleRate;
@@ -17,13 +18,15 @@ public class plugin_206 : ItemEffects
         speedRate = 0.5f;
         damageRate = 2f;
         
-        characterBulletControl = GameObject.Find("Player").GetComponent<CharacterBulletControl>();
     }
     
     public override void Run()
     {
+        characterBulletControl = GameObject.Find("Player").GetComponent<CharacterBulletControl>();
+
         characterBulletControl.OnAddBullet += OnAddBullet;
         characterBulletControl.OnRemoveBullet += OnRemoveBullet;
+        Debug.Log("206 run");
     }
 
     public override void Update()

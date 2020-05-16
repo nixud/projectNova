@@ -211,6 +211,15 @@ public class StageIniter : MonoBehaviour
             NowStageInfomation.GetInstance().HardStagePassnum++;
         }
 
+        try
+        {
+            GameObject.Find("ItemControl").GetComponent<ItemControl>().OnEnd();
+        }
+        catch
+        {
+            // ignore
+        }
+
         SceneManager.LoadScene("ScoreBroad");
         ObjectPool.GetInstance().EmptyPool();
     }

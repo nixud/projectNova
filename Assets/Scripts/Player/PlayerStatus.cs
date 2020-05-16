@@ -46,6 +46,8 @@ public class PlayerStatus
     // private List<Weapon> weapons;
     // private List<Plugin> plugins;
     // private List<Item> items;
+    public int EquipMax = 2;
+    
     public List<WeaponNew> Weapons = new List<WeaponNew>();
     public List<Item> Plugins = new List<Item>();
     public List<Item> Equipments = new List<Item>();

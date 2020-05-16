@@ -8,6 +8,7 @@ using UnityEngine;
 public class plugin_204 : ItemEffects
 {
     private readonly string catString = "plugin_204";
+    private readonly string limit102 = "equip_102";
     private readonly float distance = 0.1f;
     private readonly float angle = 35f;
 
@@ -22,6 +23,8 @@ public class plugin_204 : ItemEffects
         _characterBulletControl.OnRemoveBullet += OnRemoveBullet;
         
         bulletGone = new Dictionary<GameObject, float>();
+        
+        Debug.Log("204 run");
     }
 
     public override void Update()
@@ -30,8 +33,9 @@ public class plugin_204 : ItemEffects
         {
             if (bulletGone[k] >= distance)
             {
-                var bullet1 = ObjectPool.GetInstance().GetObj(k.name, "Bullet");
-                var bullet2 = ObjectPool.GetInstance().GetObj(k.name, "Bullet");
+                var name = k.name.Split(',').Last();
+                var bullet1 = ObjectPool.GetInstance().GetObj(name, "Bullet");
+                var bullet2 = ObjectPool.GetInstance().GetObj(name, "Bullet");
 
                 bullet1.transform.position = k.transform.position;
                 bullet2.transform.position = k.transform.position;
@@ -46,9 +50,12 @@ public class plugin_204 : ItemEffects
                 bullet2.transform.Rotate(new Vector3(0, 0, -angle));
                 bullet2.GetComponent<BulletHelper>().bulletNew.dir = Quaternion.Euler(0, 0, -angle) * dir;
 
-                bullet1.name = catString + bullet1.name;
-                bullet2.name = catString + bullet2.name;
-                
+                bullet1.name = catString + "," + bullet1.name;
+                bullet2.name = catString + "," + bullet2.name;
+                // 放置备用发射架再次触发
+                bullet1.name = limit102 + "," + bullet1.name;
+                bullet2.name = limit102 + "," + bullet2.name;
+
                 bulletGone.Remove(k);
                 _characterBulletControl.AddBullet(bullet1);
                 _characterBulletControl.AddBullet(bullet2);
@@ -81,10 +88,10 @@ public class plugin_204 : ItemEffects
 
     private void OnAddBullet(GameObject bullet)
     {
-        var index = bullet.name.IndexOf(catString, StringComparison.Ordinal);
-        if (index != -1)
+        if (bullet.name.Split(',').Contains(catString))
         {
-            bullet.name = bullet.name.Remove(index, catString.Length);
+            return;
+            // bullet.name = bullet.name.Remove(index, catString.Length);
         }
         else
         {

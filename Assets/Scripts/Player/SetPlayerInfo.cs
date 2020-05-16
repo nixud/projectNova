@@ -74,6 +74,7 @@ public class SetPlayerInfo : MonoBehaviour
     }
 
     public void EnterGame() {
-        SceneManager.LoadScene("StageSelect");
+        // SceneManager.LoadScene("StageSelect");
+        SceneManager.LoadScene("itemSelectScene");
     }
 }

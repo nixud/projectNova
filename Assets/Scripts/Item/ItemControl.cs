@@ -67,6 +67,7 @@ public class ItemControl : MonoBehaviour
     public void OnEnd()
     {
         _pluginEnd?.Invoke();
+        itemButton.OnEnd();
     }
 
     public void GetPlugins(List<Item> plugins)

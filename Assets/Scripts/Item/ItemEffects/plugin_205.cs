@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 深空雪球
 public class plugin_205 : ItemEffects
 {
     private Dictionary<GameObject, ChangeShapeInfo> bulletsAndTime;
@@ -12,17 +13,18 @@ public class plugin_205 : ItemEffects
 
     public plugin_205()
     {
-        bulletsAndTime = new Dictionary<GameObject, ChangeShapeInfo>();
         scaleRate = Mathf.Sqrt(1.4f);
         damageRate = 1.1f;
-        
-        characterBulletControl = GameObject.Find("Player").GetComponent<CharacterBulletControl>();
     }
     
     public override void Run()
     {
+        bulletsAndTime = new Dictionary<GameObject, ChangeShapeInfo>();
+        characterBulletControl = GameObject.Find("Player").GetComponent<CharacterBulletControl>();
         characterBulletControl.OnAddBullet += OnAddBullet;
         characterBulletControl.OnRemoveBullet += OnRemoveBullet;
+        
+        Debug.Log("205 run");
     }
 
     public override void Update()

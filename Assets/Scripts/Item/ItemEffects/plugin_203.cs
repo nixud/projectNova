@@ -6,8 +6,15 @@ using UnityEngine;
 public class plugin_203 : ItemEffects
 {
     private readonly float rate = 1.2f;
-    private Component[] w;
+    private WeaponNormalGun[] wng;
+    private WeaponShotGun[] wsg;
     private GameObject player;
+
+    private float realRate
+    {
+        get => 1 / rate;
+    }
+
     public plugin_203()
     {    
         
@@ -15,12 +22,19 @@ public class plugin_203 : ItemEffects
     public override void Run()
     {
         player = GameObject.Find("Player");
-        
-        w = player.GetComponents(typeof(WeaponNormalGun));
-        foreach (var component in w)
+
+        wng = player.GetComponents<WeaponNormalGun>();
+        wsg = player.GetComponents<WeaponShotGun>();
+        foreach (var gun in wng)
         {
-            ((WeaponNormalGun) component).FireSpeed *= 1 / rate;
+            gun.FireSpeed *= realRate;
         }
+
+        foreach (var gun in wsg)
+        {
+            gun.FireSpeed *= realRate;
+        }
+        Debug.Log("203 run");
     }
 
     public override void Update()
@@ -29,9 +43,14 @@ public class plugin_203 : ItemEffects
 
     public override void End()
     {
-        foreach (var component in w)
+        foreach (var gun in wng)
         {
-            ((WeaponNormalGun) component).FireSpeed /= 1 / rate;
+            gun.FireSpeed /= realRate;
+        }
+
+        foreach (var gun in wsg)
+        {
+            gun.FireSpeed /= realRate;
         }
     }
 

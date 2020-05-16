@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 //using System.Runtime.Remoting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -175,6 +176,22 @@ public class ItemButton : MonoBehaviour
     
     #endregion // UseItem
 
+    public void OnEnd()
+    {
+        if (isUsingItem)
+        {
+            StopCoroutine(Useitem());
+            itemStatus.item.End();
+            isUsingItem = false;
+            shouldFreeze = true;
+            shouldChangeItem = true;
+            if (type == ItemType.Consume && nowEffectCount == 0)
+                transform.GetComponentInParent<ItemControl>().ChangeEquipment();
+            UsingItemFreeze.gameObject.SetActive(false);
+        }
+    }
+    
+    // 充能
     public void GetAccumulation(int acc)
     {
         if (type == ItemType.Accumulate && !isUsingItem)
@@ -183,6 +200,7 @@ public class ItemButton : MonoBehaviour
             nowAccumulate = itemAccumulate;
     }
     
+    // 切换道具暂存状态
     public void SaveItemStatus()
     {
         if (type == ItemType.Accumulate)

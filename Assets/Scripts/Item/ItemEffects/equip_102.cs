@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 // 备用发射架
@@ -31,17 +32,14 @@ public class equip_102 : ItemEffects
 
     private void OnAddBullet(GameObject bullet)
     {
-        var index = bullet.name.IndexOf(catString, StringComparison.Ordinal);
-        if (index != -1)
+        if (bullet.name.Split(',').Contains(catString))
         {
-            // Debug.Log(bullet.name);
-            bullet.name = bullet.name.Remove(index, catString.Length);
-            // Debug.Log("remo: " + bullet.name);
+            return;
         }
         else
         {
-            var result = ObjectPool.GetInstance().GetObj(bullet.name, "Bullets");
-            result.name = catString + result.name;
+            var result = ObjectPool.GetInstance().GetObj(bullet.name.Split(',').Last(), "Bullets");
+            result.name = catString + "," + result.name;
             result.transform.localScale = bullet.transform.localScale;
             result.transform.position = new Vector3(bullet.transform.position.x + 0.2f, bullet.transform.position.y + 0.3f);
             result.transform.rotation = bullet.transform.rotation;

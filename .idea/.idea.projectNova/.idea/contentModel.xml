@@ -117,6 +117,8 @@
             <e p="ItemEffects.cs" t="Include" />
             <e p="ItemLoader.cs" t="Include" />
             <e p="ItemMenu.cs" t="Include" />
+            <e p="ItemSceneNext.cs" t="Include" />
+            <e p="ItemSelectSceneTest.cs" t="Include" />
             <e p="ItemUtility.cs" t="Include" />
             <e p="PickEquip" t="Include">
               <e p="EquipObject.cs" t="Include" />

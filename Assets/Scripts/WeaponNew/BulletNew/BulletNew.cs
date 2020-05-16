@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,9 +37,15 @@ public class BulletNew : MonoBehaviour
 
     public float eulers;
 
+    private string bulletName;
     public virtual void ActiveIt()
     {
         transform.localScale = Scale;
+    }
+
+    private void Awake()
+    {
+        bulletName = gameObject.name;
     }
 
     protected virtual void FixedUpdate()
@@ -88,11 +95,12 @@ public class BulletNew : MonoBehaviour
                 shootHitEffect.transform.position = transform.position;
             }
             Nowtime = 0;
-            ObjectPool.GetInstance().RecycleObj(gameObject);
-            IsNotRecycled = false;
             
             // 回收时从角色子弹控制删除
             OnRecycle();
+            
+            ObjectPool.GetInstance().RecycleObj(gameObject);
+            IsNotRecycled = false;
         }
     }
     public virtual void HitRecycleNow()
@@ -106,11 +114,12 @@ public class BulletNew : MonoBehaviour
                 shootHitEffect.transform.position = transform.position;
             }
             Nowtime = 0;
-            ObjectPool.GetInstance().RecycleObj(gameObject);
-            IsNotRecycled = false;
             
             // 回收时从角色子弹控制删除
             OnRecycle();
+            
+            ObjectPool.GetInstance().RecycleObj(gameObject);
+            IsNotRecycled = false;
         }
     }
 
@@ -137,6 +146,7 @@ public class BulletNew : MonoBehaviour
     // 从角色子弹控制删除
     protected void OnRecycle()
     {
+        gameObject.name = bulletName;
         if (isPlayerBullet)
             GameObject.Find("Player").GetComponent<CharacterBulletControl>().RemoveBullet(gameObject);
     }

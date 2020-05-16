@@ -28,6 +28,8 @@ public class plugin_230 : ItemEffects
 
         characterBulletControl.OnAddBullet += OnAddBullet;
         characterBulletControl.OnRemoveBullet += OnRemoveBullet;
+        
+        Debug.Log("230 run");
     }
 
     public override void Update()
