@@ -11,5 +11,10 @@ public abstract class ItemEffects
     public abstract void Run();
     public abstract void Update();
     public abstract void End();
+    
+    /// <summary>
+    /// 道具除法条件
+    /// </summary>
+    /// <returns></returns>
     public abstract bool Condition();
 }

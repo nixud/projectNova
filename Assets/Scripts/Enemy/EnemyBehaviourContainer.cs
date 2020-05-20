@@ -3,8 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// 保存每种预设行为信息
+/// </summary>
 public class EnemyBehaviourContainer
 {
+    /// <summary>
+    /// 静态方法，EnemyBehaviourController中调用设置行为列表
+    /// </summary>
+    /// <param name="enemyBehaviourContainer"></param>
+    /// <param name="gameObject"></param>
+    /// <param name="behaviourses"></param>
+    /// <param name="enemyName"></param>
     public static void SetBehaviour(EnemyBehaviourContainer enemyBehaviourContainer, GameObject gameObject, List<EnemyBehaviours> behaviourses, string enemyName)
     {
         int index;
@@ -86,6 +96,7 @@ public class EnemyBehaviourContainer
     public List<List<BaseBehaviourContainer>> behaviourGroup = new List<List<BaseBehaviourContainer>>();
 }
 
+// 原子行为保存结构
 public class BaseBehaviourContainer
 {
     public BehaviourEnum Type;
@@ -117,6 +128,7 @@ public class BaseBehaviourContainer
     }
 }
 
+// 原子行为枚举
 public enum BehaviourEnum
 {
     AlwaysShoot,

@@ -18,7 +18,7 @@ public class EquipObject : MonoBehaviour
         CreateEquipObject(1);
         _pickDistance = 5f;
     }
-
+    
     void Update()
     {
         Move();
@@ -35,6 +35,10 @@ public class EquipObject : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 生成道具实体时调用（暂定）
+    /// </summary>
+    /// <param name="itemNumber"></param>1
     public void CreateEquipObject(int itemNumber)
     {
         _equipment = ItemLoader.LoadData(itemNumber);
@@ -45,6 +49,9 @@ public class EquipObject : MonoBehaviour
         _inPickArea = false;
     }
 
+    /// <summary>
+    /// 道具实例运动逻辑
+    /// </summary>
     public void Move()
     {
         

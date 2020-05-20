@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // 拾捡道具按钮，周围无道具自动disable
-
 public class PickButton : MonoBehaviour
 {
     public Image image;
@@ -20,6 +19,7 @@ public class PickButton : MonoBehaviour
             gameObject.SetActive(false);
     }
 
+    // onClick
     public void Pick()
     {
         if (_itemControl == null)
@@ -30,6 +30,11 @@ public class PickButton : MonoBehaviour
         this._equipment = null;
     }
     
+    /// <summary>
+    /// 装备拾取道具
+    /// </summary>
+    /// <param name="equip"></param>
+    /// <param name="gobj"></param>
     public void SetEquipToPick(Item equip, GameObject gobj)
     {
         _equipment = equip;

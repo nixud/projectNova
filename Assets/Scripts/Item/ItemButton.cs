@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
 
-// 永久性道具栏按钮
+// 装备道具使用按钮
 public class ItemButton : MonoBehaviour
 {
     public Image Render;
@@ -36,19 +36,19 @@ public class ItemButton : MonoBehaviour
     private int nowEffectCount;
     private float itemCd;
 
-    void Awake()
+    private void Awake()
     {
         thisImage = GetComponent<Image>();
     }
 
-    void Start()
+    private void Start()
     {
         UsingItemFreeze.gameObject.SetActive(false);
         ChangeCount();
         ChangeSprite();
     }
 
-    void Update()
+    private void Update()
     {
         ItemFreeze();
         CheckoutCondition();
@@ -61,12 +61,20 @@ public class ItemButton : MonoBehaviour
             itemStatus.item.Update();
     }
 
+    /// <summary>
+    /// 设置当前显示道具
+    /// </summary>
+    /// <param name="itemStatus">道ItemStatus</param>
     public void SetItem(ItemStatus itemStatus)
     {
         itemTemp = itemStatus;
         itemChanged = true;
     }
     
+    /// <summary>
+    /// 切换道具
+    /// </summary>
+    /// <param name="itemStatus"></param>
     public void ChangeItem(ItemStatus itemStatus)
     {
         if (!itemChanged || !shouldChangeItem)
@@ -124,7 +132,11 @@ public class ItemButton : MonoBehaviour
             }
         }
     }
-    //计算道具cd
+    
+    /// <summary>
+    /// 道具效果时间
+    /// </summary>
+    /// <returns></returns>
     IEnumerator Useitem()
     {
         UsingItemFreeze.gameObject.SetActive(true);
@@ -142,7 +154,9 @@ public class ItemButton : MonoBehaviour
         UsingItemFreeze.gameObject.SetActive(false);
     }
     
-    // cd
+    /// <summary>
+    /// 道具使用后冷却cd计算
+    /// </summary>
     private void ItemFreeze()
     {
         if (shouldFreeze)
@@ -217,6 +231,7 @@ public class ItemButton : MonoBehaviour
             thisImage.sprite = Resources.Load<Sprite>(itemStatus.item.PicPath);
     }
 
+    // 更新消耗型道具次数
     private void ChangeCount()
     {
         if (type == ItemType.Consume)

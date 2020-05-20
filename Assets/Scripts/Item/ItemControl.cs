@@ -9,16 +9,20 @@ using UnityEngine.UI;
 // 设置道具栏道具
 public class ItemControl : MonoBehaviour
 {
+    // 道具使用按钮
     public ItemButton itemButton;
-
+    
     public List<int> EquipList;
     public List<int> PluginList;
 
+    // 装备道具最大数
     [HideInInspector]public int equipmentMax = 2;
+    
     [HideInInspector]public List<Item> plugins;
     private List<ItemStatus> _equipments = new List<ItemStatus>();
     private int _equipIndex;
     
+    // 插件委托
     private Action _pluginStart, _pluginUpdate, _pluginEnd;
     void Start()
     {
@@ -63,13 +67,20 @@ public class ItemControl : MonoBehaviour
         _pluginUpdate?.Invoke();
     }
 
-    // 关卡结束时调用
+    /// <summary>
+    /// 关卡结束时请调用（道具系统只需调用这个）
+    /// </summary>
     public void OnEnd()
     {
         _pluginEnd?.Invoke();
         itemButton.OnEnd();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="plugins"></param>
+    /// <exception cref="Exception"></exception>
     public void GetPlugins(List<Item> plugins)
     {
         foreach (var p in plugins)
@@ -81,13 +92,21 @@ public class ItemControl : MonoBehaviour
         }
     }
 
-    // 设置道具栏上限
+    /// <summary>
+    /// 设置道具栏装备上限
+    /// </summary>
+    /// <param name="max">装备最大值</param>
     public void SetEquipmentLimit(int max)
     {
         equipmentMax = max;
     }
 
-    // 添加道具
+    /// <summary>
+    /// 装备道具，默认装备到当前显示道具
+    /// </summary>
+    /// <param name="equipment">装备item</param>
+    /// <param name="addToStatus">是否将道具添加到PlayerStatus的道具列表，除itemControl初始化外调用需将该项设置为true</param>
+    /// <exception cref="Exception"></exception>
     public void GetEquipment(Item equipment, bool addToStatus = true)
     {
         if (equipment.Type != ItemType.Plugin)
@@ -111,6 +130,9 @@ public class ItemControl : MonoBehaviour
             throw new Exception("item type not match");
     }
     
+    /// <summary>
+    /// 切换道具
+    /// </summary>
     public void ChangeEquipment()
     {
         itemButton.SaveItemStatus();
@@ -120,13 +142,19 @@ public class ItemControl : MonoBehaviour
         SetItem(_equipIndex);
     }
 
-    // 武器充能
+    /// <summary>
+    /// 充能道具
+    /// </summary>
+    /// <param name="acc">充能值</param>
     public void GetAccumulate(int acc)
     {
         itemButton.GetAccumulation(acc);
     }
 
-    // 删除插件
+    /// <summary>
+    /// 删除插件
+    /// </summary>
+    /// <param name="plugin">插件item</param>
     public void DeletePlugin(Item plugin)
     {
         if (plugin == null)
@@ -139,6 +167,7 @@ public class ItemControl : MonoBehaviour
         plugin.End();
         plugins.Remove(plugin);
     }
+    
     
     private int ClearEquipList(int index)
     {
@@ -170,6 +199,7 @@ public class ItemControl : MonoBehaviour
     }
 }
 
+// 用作暂存道具状态
 public class ItemStatus
 {
     public Item item;
