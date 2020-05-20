@@ -90,6 +90,8 @@ MonoBehaviour:
   WeaponName:
   - EnemyWeapon1
   - EnemyWeapon1
+  DropMoneyChance: 0.7
+  DropMoney: 3
 --- !u!114 &6606226724523506239
 MonoBehaviour:
   m_ObjectHideFlags: 0

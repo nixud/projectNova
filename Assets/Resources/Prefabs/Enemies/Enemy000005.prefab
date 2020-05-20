@@ -57,6 +57,8 @@ MonoBehaviour:
   - {fileID: 6932832340490240356}
   WeaponName:
   - EnemyWeapon1
+  DropMoneyChance: 0.4
+  DropMoney: 5
 --- !u!114 &6606226724523506239
 MonoBehaviour:
   m_ObjectHideFlags: 0
