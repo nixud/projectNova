@@ -20,6 +20,9 @@ public class EnemyControl : MonoBehaviour
 
     public List<string> WeaponName = new List<string>();
 
+    public float DropMoneyChance = 0;
+    public int DropMoney = 0;
+
     private bool canHit = true;
 
     public virtual void Hitted(float hp)
@@ -79,6 +82,12 @@ public class EnemyControl : MonoBehaviour
     public void RecycleNow()
     {
         Destroy(gameObject);
+
+        if (UnityEngine.Random.Range(0f, 1f) < DropMoneyChance) {
+            PlayerStatus.GetInstance().StarCoins += DropMoney;
+            Debug.Log("加"+ DropMoney.ToString() + "元钱");
+        }
+
         try
         {
             Camera.main.GetComponent<StageIniter>().KilledOneEnemy();
