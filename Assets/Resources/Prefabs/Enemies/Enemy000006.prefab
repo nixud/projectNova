@@ -57,8 +57,6 @@ MonoBehaviour:
   - {fileID: 8095271365131598964}
   WeaponName:
   - EnemyWeapon6
-  DropMoneyChance: 0.7
-  DropMoney: 5
 --- !u!114 &5458494785157842735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9255152c35cdeef4294482528a2e8cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AlwaysShoot: 1
+  AlwaysShoot: 0
   AlwaysShootUntilNextBehaviour: 0
   AlwaysShootUntilNextBehaviourEnd: 0
   couldChangeBeh: 0
@@ -190,7 +188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6f5df926847f98740b471437d24d05a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fde873a3b96114d66bb8d3c6224196db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -225,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8095271365131598964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.46, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5458494785157842899}
