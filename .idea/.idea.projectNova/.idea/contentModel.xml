@@ -44,6 +44,11 @@
             </e>
           </e>
         </e>
+        <e p="Scenes" t="Include">
+          <e p="UITestScenes" t="Include">
+            <e p="adsasdasd.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Bag" t="Include">
             <e p="BagElemListController.cs" t="Include" />
@@ -130,6 +135,7 @@
             </e>
           </e>
           <e p="JsonLoader.cs" t="Include" />
+          <e p="LoadSceneManager.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerImage.cs" t="Include" />
             <e p="PlayerInfo.cs" t="Include" />
@@ -151,6 +157,7 @@
             <e p="ScoreBoard.cs" t="Include" />
             <e p="ScoreData.cs" t="Include" />
           </e>
+          <e p="Settings.cs" t="Include" />
           <e p="Ships" t="Include">
             <e p="Ship.cs" t="Include" />
           </e>
@@ -180,7 +187,19 @@
           <e p="TestScript.cs" t="Include" />
           <e p="UIcontrol" t="Include">
             <e p="GameMenuUI.cs" t="Include" />
+            <e p="StartSceneUI" t="Include">
+              <e p="Quit.cs" t="Include" />
+            </e>
             <e p="UIcontroller.cs" t="Include" />
+            <e p="UIUtility" t="Include">
+              <e p="ChangeToggleMark.cs" t="Include" />
+              <e p="EitherOrBoxControl.cs" t="Include" />
+              <e p="HighLightParent.cs" t="Include" />
+              <e p="NormalSliderCantControl.cs" t="Include" />
+              <e p="SettingButton.cs" t="Include" />
+              <e p="SettingCanvasControl.cs" t="Include" />
+              <e p="ShowSliderValue.cs" t="Include" />
+            </e>
           </e>
           <e p="UserConfig.cs" t="Include" />
           <e p="Weapon" t="Include">
