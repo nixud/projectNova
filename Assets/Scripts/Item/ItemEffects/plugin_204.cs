@@ -23,8 +23,6 @@ public class plugin_204 : ItemEffects
         _characterBulletControl.OnRemoveBullet += OnRemoveBullet;
         
         bulletGone = new Dictionary<GameObject, float>();
-        
-        Debug.Log("204 run");
     }
 
     public override void Update()

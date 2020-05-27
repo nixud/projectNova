@@ -9,18 +9,18 @@ using UnityEngine.UI;
 public class BagUIController : MonoBehaviour
 {
     public Text elemName;
-    public Text elemEffect;
     public Text elemDescription;
+    public Text elemType;
+    public Text elemLevel;
 
     public GameObject DeleteButton;
-    public GameObject SaleButton;
 
     public GameObject elemList;
     public GameObject pluginList;
 
-    public GameObject _pluginTemp;
+    [HideInInspector]public GameObject _gobjTemp;
     private Item _itemTemp;
-    
+    private GameObject _player;
     private void OnEnable()
     {
         RefreshList();
@@ -29,7 +29,7 @@ public class BagUIController : MonoBehaviour
 
     void Start()
     {
-        this.gameObject.SetActive(false);
+        // this.gameObject.SetActive(false);
     }
 
     public void ChangeBagActive()
@@ -40,45 +40,64 @@ public class BagUIController : MonoBehaviour
     public void ShowElem(Item item, GameObject gobj)
     {
         elemName.text = item.Name;
-        // ElemEffect.text = item.Effect;
         elemDescription.text = item.Description;
-
-        _itemTemp = item;
-        _pluginTemp = gobj;
+        elemType.text = "类型：" + (item.Type == ItemType.Plugin ? "插件" : "道具");
+        elemLevel.text = "等级：" + item.rareLevel.ToString();
         
-        DeleteButton.SetActive(true);
-        SaleButton.SetActive(true);
+        _itemTemp = item;
+        _gobjTemp = gobj;
+        DeleteButton.GetComponent<Button>().interactable = true;
     }
 
-    public void ShowElem(WeaponNew weapon)
+    public void ShowElem(WeaponNew weapon, GameObject gobj)
     {
         elemName.text = weapon.WeaponName;
-        // ElemEffect.text = weapon.Effect;
         elemDescription.text = weapon.Description;
+        elemType.text = "类型：武器";
+        elemLevel.text = "等级：" + weapon.rareLevel.ToString();
+
+        DeleteButton.GetComponent<Button>().interactable = true;
     }
 
-    public void ShowElem(Wingman wingman)
+    public void ShowElem(Wingman wingman, GameObject gobj)
     {
         elemName.text = wingman.Name;
-        // ElemEffect.text = wingman.Effect;
         elemDescription.text = wingman.Description;
+        
+        DeleteButton.GetComponent<Button>().interactable = true;
+    }
+
+    public void ShowElem(Ship ship)
+    {
+        // 目前ship为空的解决方案
+        if (ship == null)
+        {
+            elemName.text = "这个作者很懒什么都没有留下";
+            elemDescription.text = "这个作者很懒什么都没有留下";
+            elemType.text = "类型：旗舰";
+        }
+        else
+        {
+            elemName.text = ship.Name;
+            elemDescription.text = ship.Description;
+            elemType.text = "类型：旗舰";
+        }
+
+        DeleteButton.GetComponent<Button>().interactable = false;
     }
 
     public void DeletePlugin()
     {    
         GameObject.Find("ItemControl").GetComponent<ItemControl>().DeletePlugin(_itemTemp);
-        Destroy(_pluginTemp);
-        Debug.Log(_pluginTemp.GetComponent<BagListElem>()._item.Name);
-        
-        DeleteButton.SetActive(false);
-        SaleButton.SetActive(false);
+        Destroy(_gobjTemp);
         
         RefreshInfo();
     }
 
-    public void SalePlugin()
+    public void CloseBagList()
     {
-        // return;
+        Time.timeScale = 1;
+        gameObject.SetActive(false);
     }
 
     private void RefreshList()
@@ -89,18 +108,9 @@ public class BagUIController : MonoBehaviour
 
     private void RefreshInfo()
     {
-        try
-        {
-            // 默认显示第一列表第一项
-            //                 List         panel      first item
-            // pluginList.transform.GetChild(1).GetChild(0).GetChild(0).GetComponent<BagListElem>().SetElemToShow();
-            _pluginTemp = pluginList.GetComponent<BagPluginListController>().SetDefaultElem();
-            _itemTemp = _pluginTemp.GetComponent<BagListElem>()._item;
-        }
-        catch (Exception e)
-        {
-            // ignored
-        }
+        if (_player == null)
+            _player = GameObject.Find("Player");
+        ShowElem(_player.GetComponent<CharacterControl>().ship);
     }
 }
 

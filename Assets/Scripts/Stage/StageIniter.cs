@@ -25,10 +25,22 @@ public class StageIniter : MonoBehaviour
 
     private bool HighWave;
 
+    // ui
+    private GameObject startMessage;
+    private GameObject nextButton;
+    
     private void OnEnable()
     {
         ObjectPool.GetInstance().EmptyPool();
         thisStageWaves.Clear();
+        
+        // 调整开始关卡ui
+        // Debug.Log("asdasd");
+        startMessage = GameObject.Find("StartMessage");
+        // nextButton = GameObject.Find("NextButton");
+        startMessage.SetActive(false);
+        // nextButton.SetActive(false);
+        startMessage.GetComponent<StartMessageShow>().Show();
 
         NowStageInfomation nowStageInfomation = NowStageInfomation.GetInstance();
 
@@ -220,6 +232,7 @@ public class StageIniter : MonoBehaviour
             // ignore
         }
 
+        // nextButton.SetActive(true);
         SceneManager.LoadScene("ScoreBroad");
         ObjectPool.GetInstance().EmptyPool();
     }

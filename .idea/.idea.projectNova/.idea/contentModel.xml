@@ -46,7 +46,7 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="UITestScenes" t="Include">
-            <e p="adsasdasd.cs" t="Include" />
+            <e p="DragTest.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -187,6 +187,17 @@
           <e p="TestScript.cs" t="Include" />
           <e p="UIcontrol" t="Include">
             <e p="GameMenuUI.cs" t="Include" />
+            <e p="ModeSelectUI" t="Include">
+              <e p="ModeSelectControl.cs" t="Include" />
+            </e>
+            <e p="SettingCanvas" t="Include">
+              <e p="SettingPanelControl.cs" t="Include" />
+              <e p="SliderControl.cs" t="Include" />
+              <e p="ToggleControl.cs" t="Include" />
+            </e>
+            <e p="ShipSelectUI" t="Include">
+              <e p="ShipSelectControl.cs" t="Include" />
+            </e>
             <e p="StartSceneUI" t="Include">
               <e p="Quit.cs" t="Include" />
             </e>
@@ -194,11 +205,16 @@
             <e p="UIUtility" t="Include">
               <e p="ChangeToggleMark.cs" t="Include" />
               <e p="EitherOrBoxControl.cs" t="Include" />
+              <e p="EquipCanvasControl.cs" t="Include" />
+              <e p="GamePause.cs" t="Include" />
               <e p="HighLightParent.cs" t="Include" />
+              <e p="MoveWithGOBJ.cs" t="Include" />
+              <e p="NextButton.cs" t="Include" />
               <e p="NormalSliderCantControl.cs" t="Include" />
               <e p="SettingButton.cs" t="Include" />
               <e p="SettingCanvasControl.cs" t="Include" />
               <e p="ShowSliderValue.cs" t="Include" />
+              <e p="StartMessageShow.cs" t="Include" />
             </e>
           </e>
           <e p="UserConfig.cs" t="Include" />

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -17,6 +18,12 @@ public class BagListElem : MonoBehaviour
     public Item _item;
     private WeaponNew _weapon;
     private Wingman _wingman;
+
+    private Vector3 offSet;
+    private void Start()
+    {
+        offSet = elemIcon.transform.position;
+    }
 
     public void BagListElemInit(BagUIController bagUiController,ToggleGroup toggleGroup, Item item = null, WeaponNew weapon = null, Wingman wingman = null)
     {
@@ -53,24 +60,22 @@ public class BagListElem : MonoBehaviour
         if (_type == BagElemType.Item)
             _bagUiController.ShowElem(_item, this.gameObject);
         else if (_type == BagElemType.Weapon)
-            _bagUiController.ShowElem(_weapon);
+            _bagUiController.ShowElem(_weapon, this.gameObject);
         else if (_type == BagElemType.Wingman)
-            _bagUiController.ShowElem(_wingman);
-        
-        Debug.Log("itemset: " + _item.Name);
+            _bagUiController.ShowElem(_wingman, this.gameObject);
     }
     
-    public void SetElemToShowDefault()
-    {
-        if (_type == BagElemType.Item)
-            _bagUiController.ShowElem(_item, this.gameObject);
-        else if (_type == BagElemType.Weapon)
-            _bagUiController.ShowElem(_weapon);
-        else if (_type == BagElemType.Wingman)
-            _bagUiController.ShowElem(_wingman);
-        
-        Debug.Log("itemset: " + _item.Name);
-    }
+    // public void SetElemToShowDefault()
+    // {
+    //     if (_type == BagElemType.Item)
+    //         _bagUiController.ShowElem(_item, gameObject);
+    //     else if (_type == BagElemType.Weapon)
+    //         _bagUiController.ShowElem(_weapon, gameObject);
+    //     else if (_type == BagElemType.Wingman)
+    //         _bagUiController.ShowElem(_wingman, gameObject);
+    //     
+    //     Debug.Log("itemset: " + _item.Name);
+    // }
 
     public void SetEdge()
     {
@@ -79,4 +84,13 @@ public class BagListElem : MonoBehaviour
         else 
             pressedEdge.gameObject.SetActive(false);
     }
+
+    // private Vector2 localPoint;
+    // public void OnDrag(PointerEventData eventData)
+    // {
+    //     Vector3 vec = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
+    //     RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.GetComponent<RectTransform>(),
+    //         Camera.main.WorldToScreenPoint(vec), Camera.main, out localPoint);
+    //     drag.transform.position = localPoint;
+    // }
 }

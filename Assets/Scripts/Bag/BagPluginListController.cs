@@ -9,18 +9,15 @@ public class BagPluginListController : MonoBehaviour
 {
     public GameObject list;
     public ToggleGroup toggleGroup;
+    public BagUIController bagUiController;
 
-    private static readonly string _perfabPath = "Prefabs/ItemAbout/ListElem";
+    private static readonly string _perfabPath = @"Prefabs/ItemAbout/ListElem";
     private GameObject _perfab;
 
-    private BagUIController _bagUiController;
-    private List<GameObject> _perfabs;
+    private List<GameObject> _perfabs = new List<GameObject>();
 
-    private void Awake()
+    private void Start()
     {
-        _perfab = Resources.Load<GameObject>(_perfabPath);
-        _bagUiController = transform.GetComponentInParent<BagUIController>();
-        _perfabs = new List<GameObject>();
     }
 
     private void OnDisable()
@@ -42,22 +39,27 @@ public class BagPluginListController : MonoBehaviour
 
     public void RefreshList()
     {
+        if (_perfab == null)
+        {
+            _perfab = Resources.Load<GameObject>(_perfabPath);
+        }
+        
         foreach (var plugin in PlayerStatus.GetInstance().Plugins)
         {
             var p = Instantiate(_perfab, list.transform);
             p.transform.localScale = Vector3.one;
-            p.GetComponent<BagListElem>().BagListElemInit(_bagUiController, toggleGroup, plugin);
+            p.GetComponent<BagListElem>().BagListElemInit(bagUiController, toggleGroup, plugin);
     
             _perfabs.Add(p);
         }
     }
 
-    public GameObject SetDefaultElem()
-    {
-        var p = list.transform.GetChild(0).GetComponent<BagListElem>();
-        Debug.Log("default: " + p._item.Name);
-        Debug.Log(p.transform.position);
-        p.SetElemToShowDefault();
-        return p.gameObject;
-    }
+    // public GameObject SetDefaultElem()
+    // {
+        // var p = list.transform.GetChild(0).GetComponent<BagListElem>();
+        // Debug.Log("default: " + p._item.Name);
+        // Debug.Log(p.transform.position);
+        // p.SetElemToShowDefault();
+        // return p.gameObject;
+    // }
 }

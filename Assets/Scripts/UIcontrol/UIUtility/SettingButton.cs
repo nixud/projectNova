@@ -15,7 +15,7 @@ public class SettingButton : MonoBehaviour
             {
                 _settingCanvas = Resources.Load<GameObject>(Prefab);
                 _settingCanvas = Instantiate(_settingCanvas);
-                _settingCanvas.GetComponent<Canvas>().worldCamera = Camera.main;
+                // _settingCanvas.GetComponent<Canvas>().worldCamera = Camera.main;
                 _settingCanvas.SetActive(false);
             }
 

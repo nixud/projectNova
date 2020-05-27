@@ -4,6 +4,37 @@
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons/jsonItem.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewUIResources（占位）/图标/trash-can.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewUIResources（占位）/图标/trash-can.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemAbout/ListElem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemAbout/ListElem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemAbout/ListElem.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemAbout/ListElem.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SettingCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SettingCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScoreBroad.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScoreBroad.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScoreBroadFailed.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScoreBroadFailed.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StageSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StageSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIModeSelect.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIModeSelect.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIShipSelect.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIShipSelect.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIStartScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/UIStartScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/adsasdasd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UITestScenes/adsasdasd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/BagElemListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/BagElemListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StartSceneControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/StartSceneControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/StartSceneUI/Quit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/StartSceneUI/Quit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +70,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_206.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Jsons/jsonEnemyBehaviourContainer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/MoveWithGOBJ.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/UITestScenes/DragTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" root0="FORCE_HIGHLIGHTING" />
@@ -68,9 +101,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A3F68E4-AE18-416E-9941-EAFA34CABA8A/5f/fa2ce02b/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/242531B3-D7D7-4252-86FA-13A3E999EEA8/47/174e0adc/GUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/1e/c15f41c0/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/UITestScenes/adsasdasd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/GameMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponNew.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/EquipCanvasControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/f1/1ed92c0a/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/4a/94e2c798/JsonPropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,6 +115,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/09/7517f3cf/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/EquipObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/ModeSelectUI/ModeSelectControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInputMoblie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bag/BagElemListController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Jsons/jsonWeaponInformation.json" root0="FORCE_HIGHLIGHTING" />
@@ -89,12 +125,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_230.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PluginList/PluginDocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterBulletControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/5d/54143402/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/ShipSelectUI/ShipSelectControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NextButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Bullets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -104,6 +143,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B140E050-1769-43F4-A096-6C7CFA9CC579/43/3804506c/RectTransformUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test/asss.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plugin/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/ChangeToggleMark.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,22 +154,30 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/SetPlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NormalSliderCantControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/StartMessageShow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/StartSceneControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SettingPanelControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/ShowSliderValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/80/5fa97356/DefaultValueHandling.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/NowStageInfomation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponRay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/MapConfigData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE0442F8-588F-442E-A292-F0509C7CD4E6/06/46ddabe2/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/Wave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/WaveMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/WaveGroupCreater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56D97623-D556-49FE-AEC4-09BBD2AEC743/e6/f30fcddc/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/ToggleControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/b1/db4c7c70/KeyValuePair`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88477E65-A840-475F-ACD3-2FFE73039C2A/b6/5fc4bc81/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_205.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveBetween.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stage/StageUI/ViewScroll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ships/Ship.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score/ScoreBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score/ScoreData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootOnce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/StartSceneUI/Quit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/MoveForward.cs" root0="FORCE_HIGHLIGHTING" />
@@ -142,6 +190,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Move.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/ShootPlayerOnce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SliderControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wingman/WingmanAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviours/Kamikaze.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMenu.cs" root0="FORCE_HIGHLIGHTING" />
@@ -161,36 +210,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/ItemEffectsOnWeapon/WeaponSpeedChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponNew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponMachineGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGunShootToPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/Bullets/WingmanBullet3.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponNormalGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemUtility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_103.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_202.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBulletControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponBloomGun.cs" />
-        <option value="$PROJECT_DIR$/Assets/test/asss.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemSelectSceneTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemSceneNext.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/SetPlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/WeaponEffects/WeaponShotGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_101.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponNew/BulletNew/BulletNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/equip_102.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_201.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_203.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_205.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_206.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_230.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemButton.cs" />
@@ -198,20 +228,39 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/PickButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/EquipObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviourContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/HighLightParent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/EitherOrBoxControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/StartSceneUI/Quit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadSceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/aaaaaaaaaaa.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NormalSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/ShowSliderValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/ChangeToggleMark.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingCanvasHide.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NormalSliderCantControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/UITestScenes/adsasdasd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/MoveWithGOBJ.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_204.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/StartMessageShow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NextButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageIniter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/EquipCanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagElemListController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bag/BagPluginListController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/UITestScenes/DragTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/StartSceneUI/Quit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/StartSceneControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ModeSelectUI/ModeSelectControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingPanelControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/ToggleControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SettingPanelControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SliderControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ShipSelectUI/ShipSelectControl.cs" />
       </list>
     </option>
   </component>
@@ -347,6 +396,11 @@
       <workItem from="1590286677094" duration="3726000" />
       <workItem from="1590328282122" duration="3331000" />
       <workItem from="1590375016992" duration="4264000" />
+      <workItem from="1590417505738" duration="764000" />
+      <workItem from="1590459258783" duration="9145000" />
+      <workItem from="1590502065384" duration="4284000" />
+      <workItem from="1590538634340" duration="12007000" />
+      <workItem from="1590565178196" duration="6254000" />
     </task>
     <servers />
   </component>
@@ -441,6 +495,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="101" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589438644121" />
+    <state x="759" y="157" key="RollbackChangesDialog" timestamp="1590561276061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="157" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590561276061" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585558541072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

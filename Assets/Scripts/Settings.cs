@@ -13,7 +13,7 @@ public class Settings
     {
     }
 
-    public Settings Instance
+    public static Settings Instance
     {
         get
         {

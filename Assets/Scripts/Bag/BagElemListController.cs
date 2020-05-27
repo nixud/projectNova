@@ -8,21 +8,20 @@ public class BagElemListController : MonoBehaviour
 {
     public GameObject list;
     public ToggleGroup toggleGroup;
-    
+    public BagUIController bagUiController;
+
     private static readonly string _perfabPath = @"Prefabs/ItemAbout/ListElem";
     private GameObject _perfab;
 
-    private BagUIController _bagUiController;
-    private List<GameObject> _perfabs;
-    private void Awake()
+    private List<GameObject> _perfabs = new List<GameObject>();
+    
+    private void Start()
     {
-        _perfab = Resources.Load<GameObject>(_perfabPath);
-        _bagUiController = transform.GetComponentInParent<BagUIController>();
-        _perfabs = new List<GameObject>();
     }
 
     private void OnDisable()
     {
+        Debug.Log("disable");
         for (int i = _perfabs.Count - 1; i >= 0; i--)
         {
             Destroy(_perfabs[i]);
@@ -32,11 +31,16 @@ public class BagElemListController : MonoBehaviour
 
     public void RefreshList()
     {
+        if (_perfab == null)
+        {
+            _perfab = Resources.Load<GameObject>(_perfabPath);
+        }
+        
         foreach (var weapon in PlayerStatus.GetInstance().Weapons)
         {
             var p = Instantiate(_perfab, list.transform.GetChild(0));
             p.transform.localScale = Vector3.one;
-            p.GetComponent<BagListElem>().BagListElemInit(_bagUiController, toggleGroup,  weapon : weapon);
+            p.GetComponent<BagListElem>().BagListElemInit(bagUiController, toggleGroup,  weapon : weapon);
             
             _perfabs.Add(p);
         }
@@ -45,7 +49,7 @@ public class BagElemListController : MonoBehaviour
         {
             var p = Instantiate(_perfab, list.transform.GetChild(0));
             p.transform.localScale = Vector3.one;
-            p.GetComponent<BagListElem>().BagListElemInit(_bagUiController, toggleGroup, item : equipment);
+            p.GetComponent<BagListElem>().BagListElemInit(bagUiController, toggleGroup, item : equipment);
             
             _perfabs.Add(p);
         }
@@ -54,7 +58,7 @@ public class BagElemListController : MonoBehaviour
         {
             var p = Instantiate(_perfab, list.transform.GetChild(0));
             p.transform.localScale = Vector3.one;
-            p.GetComponent<BagListElem>().BagListElemInit(_bagUiController, toggleGroup, wingman : wingman);
+            p.GetComponent<BagListElem>().BagListElemInit(bagUiController, toggleGroup, wingman : wingman);
             
             _perfabs.Add(p);
         }

@@ -24,6 +24,6 @@ public class Quit : MonoBehaviour
     {
         // debug
         Debug.Log("quit");
-        // Application.Quit();
+        Application.Quit();
     }
 }

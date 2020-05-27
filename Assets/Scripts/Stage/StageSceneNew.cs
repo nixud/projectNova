@@ -113,6 +113,7 @@ public class StageSceneNew : MonoBehaviour
         }
         PlayerPlane = GameObject.Find("New Sprite");
         PlayerPlane.transform.position = StagePointCheck[NowStageInfomation.GetInstance().PlayerPosition].transform.position + new Vector3(0,0,-1);
+
         FreshStageButtonStart();
 
         FreshFuel();

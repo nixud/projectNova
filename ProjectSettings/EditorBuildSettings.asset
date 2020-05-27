@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/itemSelectScene.unity
     guid: 4e4213d73524c8d419185d67e853c735
+  - enabled: 1
+    path: Assets/Scenes/NEWStartScene.unity
+    guid: d1f18c6483da0ee4988d2e6cbd1955a9
+  - enabled: 1
+    path: Assets/Scenes/NEWModeSelect.unity
+    guid: 120e5c0fb1d677e46afa7375e701385d
+  - enabled: 1
+    path: Assets/Scenes/NEWShipSelect.unity
+    guid: e4fa3fc6774f4804abca4a2ba22d8896
   m_configObjects: {}

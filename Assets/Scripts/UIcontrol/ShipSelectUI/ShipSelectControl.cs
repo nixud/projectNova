@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartSceneControl : MonoBehaviour
+public class ShipSelectControl : MonoBehaviour
 {
-    public void EnterGame()
+    public void MoveToNext()
+    {
+        SceneManager.LoadScene("itemSelectScene");
+    }
+
+    public void MoveBack()
     {
         SceneManager.LoadScene("NEWModeSelect");
     }
