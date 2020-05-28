@@ -46,7 +46,7 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="UITestScenes" t="Include">
-            <e p="DragTest.cs" t="Include" />
+            <e p="asdsada.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -55,6 +55,8 @@
             <e p="BagListElem.cs" t="Include" />
             <e p="BagPluginListController.cs" t="Include" />
             <e p="BagUIController.cs" t="Include" />
+            <e p="DeleteButtonPointerEnter.cs" t="Include" />
+            <e p="DragElem.cs" t="Include" />
           </e>
           <e p="Character" t="Include">
             <e p="CharacterBulletControl.cs" t="Include" />
@@ -206,7 +208,6 @@
               <e p="ChangeToggleMark.cs" t="Include" />
               <e p="EitherOrBoxControl.cs" t="Include" />
               <e p="EquipCanvasControl.cs" t="Include" />
-              <e p="GamePause.cs" t="Include" />
               <e p="HighLightParent.cs" t="Include" />
               <e p="MoveWithGOBJ.cs" t="Include" />
               <e p="NextButton.cs" t="Include" />

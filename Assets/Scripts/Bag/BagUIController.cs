@@ -18,9 +18,14 @@ public class BagUIController : MonoBehaviour
     public GameObject elemList;
     public GameObject pluginList;
 
-    [HideInInspector]public GameObject _gobjTemp;
+    private GameObject _gobjTemp;
+    private BagElemType _deleteTyoe;
     private Item _itemTemp;
+    private WeaponNew _weaponTemp;
+    private Wingman _wingmanTemp;
     private GameObject _player;
+
+    private static readonly string dragItemPath = @"Prefabs/ItemAbout/DragItem"; 
     private void OnEnable()
     {
         RefreshList();
@@ -46,6 +51,7 @@ public class BagUIController : MonoBehaviour
         
         _itemTemp = item;
         _gobjTemp = gobj;
+        _deleteTyoe = BagElemType.Item;
         DeleteButton.GetComponent<Button>().interactable = true;
     }
 
@@ -56,6 +62,9 @@ public class BagUIController : MonoBehaviour
         elemType.text = "类型：武器";
         elemLevel.text = "等级：" + weapon.rareLevel.ToString();
 
+        _weaponTemp = weapon;
+        _gobjTemp = gobj;
+        _deleteTyoe = BagElemType.Weapon;
         DeleteButton.GetComponent<Button>().interactable = true;
     }
 
@@ -63,7 +72,12 @@ public class BagUIController : MonoBehaviour
     {
         elemName.text = wingman.Name;
         elemDescription.text = wingman.Description;
-        
+        elemType.text = "类型：僚机";
+        elemLevel.text = "等级：" + wingman.rareLevel.ToString();
+
+        _wingmanTemp = wingman;
+        _gobjTemp = gobj;
+        _deleteTyoe = BagElemType.Wingman;
         DeleteButton.GetComponent<Button>().interactable = true;
     }
 
@@ -86,14 +100,60 @@ public class BagUIController : MonoBehaviour
         DeleteButton.GetComponent<Button>().interactable = false;
     }
 
-    public void DeletePlugin()
+    public void Delete()
     {    
-        GameObject.Find("ItemControl").GetComponent<ItemControl>().DeletePlugin(_itemTemp);
-        Destroy(_gobjTemp);
+        if (_deleteTyoe == BagElemType.Item)
+            DeleteItem(_gobjTemp, _itemTemp);
+        else if (_deleteTyoe == BagElemType.Weapon)
+            DeleteWeapon(_gobjTemp, _weaponTemp);
+        else if (_deleteTyoe == BagElemType.Wingman)
+            DeleteWingman(_gobjTemp, _wingmanTemp);
+        else 
+            throw new Exception("Delete type not match");
         
         RefreshInfo();
     }
 
+    public void Delete(GameObject dragItem)
+    {
+        var dragElem = dragItem.GetComponent<DragElem>();
+        if (dragElem.elemType == BagElemType.Item)
+            DeleteItem(dragElem.deleteObject, dragElem.item);
+        else if (dragElem.elemType == BagElemType.Weapon)
+            DeleteWeapon(dragElem.deleteObject, dragElem.weapon);
+        else if (dragElem.elemType == BagElemType.Wingman)
+            DeleteWingman(dragElem.deleteObject, dragElem.wingman);
+        else 
+            throw new Exception("Delete type not match");
+    }
+
+    #region DeleteHelper
+
+    private void DeleteWeapon(GameObject gobj, WeaponNew weapon)
+    {
+        
+    }
+
+    private void DeleteWingman(GameObject gobj, Wingman wingman)
+    {
+        
+    }
+
+    private void DeleteItem(GameObject gobj, Item item)
+    {
+        if (item.Type == ItemType.Plugin)
+        {
+            GameObject.Find("ItemControl").GetComponent<ItemControl>().DeletePlugin(item);
+            Destroy(gobj);
+        }
+        else
+        {
+            
+        }
+    }
+
+    #endregion // DeleteHelper
+    
     public void CloseBagList()
     {
         Time.timeScale = 1;
@@ -111,6 +171,22 @@ public class BagUIController : MonoBehaviour
         if (_player == null)
             _player = GameObject.Find("Player");
         ShowElem(_player.GetComponent<CharacterControl>().ship);
+    }
+
+    private GameObject _dragHelper;
+    public GameObject DragHelper
+    {
+        get
+        {
+            if (_dragHelper == null)
+            {
+                _dragHelper = Resources.Load<GameObject>(dragItemPath);
+                _dragHelper = Instantiate(_dragHelper, transform);
+                _dragHelper.transform.position = new Vector3(1000, 1000);
+            }
+    
+            return _dragHelper;
+        }
     }
 }
 

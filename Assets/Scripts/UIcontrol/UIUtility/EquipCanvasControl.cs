@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class EquipCanvasControl : MonoBehaviour
 {
-    public GameObject equips;
-    // Start is called before the first frame update
-    void Start()
+    private readonly static string Prefab = @"Prefabs/UIPrefabs/EquipCanvas";
+    private GameObject _equipCanvas;
+
+    public GameObject EquipCanvas
     {
-        
+        get
+        {
+            if (_equipCanvas == null)
+            {
+                _equipCanvas = Resources.Load<GameObject>(Prefab);
+                _equipCanvas = Instantiate(_equipCanvas);
+                _equipCanvas.name = "EquipCanvas";
+                _equipCanvas.SetActive(false);
+            }
+
+            return _equipCanvas;
+        }
     }
 
     public void OnClick()
     {
-        Time.timeScale = 0;
-        equips.SetActive(true);
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
+        EquipCanvas.SetActive(!EquipCanvas.activeSelf);
+        if (EquipCanvas.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
+        else
+            Time.timeScale = 1f;
     }
 }

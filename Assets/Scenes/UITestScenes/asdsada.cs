@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GamePause : MonoBehaviour
+public class asdsada : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,10 @@ public class GamePause : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AAA()
+    {
+        Debug.Log("1");
     }
 }

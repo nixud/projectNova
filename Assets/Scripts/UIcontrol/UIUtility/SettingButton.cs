@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SettingButton : MonoBehaviour
 {
-    private readonly static string Prefab = "Prefabs/UIPrefabs/SettingCanvas";
+    private readonly static string Prefab = @"Prefabs/UIPrefabs/SettingCanvas";
     private GameObject _settingCanvas;
 
     public GameObject SettingCanvas
