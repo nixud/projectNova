@@ -135,4 +135,12 @@ public class WeaponLight : WeaponNew
         IsAttacking = false;
         ObjectPool.GetInstance().RecycleObj(Light);
     }
+
+    private void OnDestroy()
+    {
+        if (IsAiming)
+            ObjectPool.GetInstance().RecycleObj(AimingLine);
+        if (IsAttacking)
+            ObjectPool.GetInstance().RecycleObj(Light);
+    }
 }

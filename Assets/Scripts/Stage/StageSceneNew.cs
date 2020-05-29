@@ -57,7 +57,14 @@ public class StageSceneNew : MonoBehaviour
     private int DottedLinePos = 0;
     public Sprite DottedlineSprite;
 
+    #region 文本成员的声明
+
     public Text FuelText;
+
+    public GameObject m_WarningText;
+    public GameObject m_EnterButton;
+
+    #endregion
 
     private void Start()
     {
