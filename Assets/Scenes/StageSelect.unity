@@ -2346,6 +2346,12 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1529108573109620951, guid: 53075d1281544f54492ce2c7fa49d596,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     - target: {fileID: 1529108573656343414, guid: 53075d1281544f54492ce2c7fa49d596,
         type: 3}
       propertyPath: m_Sprite
@@ -3411,7 +3417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -4261,6 +4267,12 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1529108573109620951, guid: 53075d1281544f54492ce2c7fa49d596,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     - target: {fileID: 1529108573656343414, guid: 53075d1281544f54492ce2c7fa49d596,
         type: 3}
       propertyPath: m_Color.r
@@ -4859,6 +4871,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4209700968269844920, guid: d61fcbdff84954146be4e1e2cdb24db5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f2a5e8bf5c7044d278773c736de75aad,
+        type: 3}
     - target: {fileID: 4209700968269844921, guid: d61fcbdff84954146be4e1e2cdb24db5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4984,6 +5002,12 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 84
       objectReference: {fileID: 0}
+    - target: {fileID: 4209700970020950757, guid: d61fcbdff84954146be4e1e2cdb24db5,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     - target: {fileID: 4209700970020950758, guid: d61fcbdff84954146be4e1e2cdb24db5,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -5898,6 +5922,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7307387394244023402, guid: d1037b7e9018dbb43abe5c73d7438528,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
+    - target: {fileID: 7307387394405310148, guid: d1037b7e9018dbb43abe5c73d7438528,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1037b7e9018dbb43abe5c73d7438528, type: 3}
 --- !u!1 &610679162
@@ -11028,6 +11064,8 @@ MonoBehaviour:
   Diffculty: 
   DottedlineSprite: {fileID: 21300000, guid: e9bd40d93dee944fcb60e976af19f0ba, type: 3}
   FuelText: {fileID: 333430587}
+  m_WarningText: {fileID: 0}
+  m_EnterButton: {fileID: 0}
 --- !u!1 &1117521474
 GameObject:
   m_ObjectHideFlags: 0
@@ -11181,6 +11219,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4452914513417800360, guid: 7f7ea0671a5868844a97ca7d2f999bc2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d5ebd9c34bfacd4794c34cd06d2e76a,
+        type: 3}
     - target: {fileID: 4452914513417800361, guid: 7f7ea0671a5868844a97ca7d2f999bc2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11296,6 +11340,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u5F53\u524D\u661F\u533A"
       objectReference: {fileID: 0}
+    - target: {fileID: 4452914514111925692, guid: 7f7ea0671a5868844a97ca7d2f999bc2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f7ea0671a5868844a97ca7d2f999bc2, type: 3}
 --- !u!1 &1146511107
@@ -15791,7 +15841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 381, y: 624}
+  m_AnchoredPosition: {x: 500, y: 624}
   m_SizeDelta: {x: 318, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498067623
@@ -20387,7 +20437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8329366bd008b9f40b1c1a3a0822bf07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2a5e8bf5c7044d278773c736de75aad, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21650,6 +21700,12 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 4209700970020950757, guid: d61fcbdff84954146be4e1e2cdb24db5,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     - target: {fileID: 4209700970020950758, guid: d61fcbdff84954146be4e1e2cdb24db5,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -22725,5 +22781,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1529108573109620951, guid: 53075d1281544f54492ce2c7fa49d596,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 878ea4aec5f4fb74faea1912ed9096d4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53075d1281544f54492ce2c7fa49d596, type: 3}
