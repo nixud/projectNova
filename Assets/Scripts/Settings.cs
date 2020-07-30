@@ -25,10 +25,10 @@ public class Settings
     
     #endregion // 单例
 
-    public int MainVolume;   // 主音量
-    public int MusicVolume;  // 音乐音量
-    public int SoundVolume;  // 音效音量
+    public int MainVolume = 100;   // 主音量
+    public int MusicVolume = 100;  // 音乐音量
+    public int SoundVolume = 100;  // 音效音量
 
-    public bool AutoFire;    // 自动开火
-    public bool LeftHanded; // 惯用左手
+    public bool AutoFire = true;    // 自动开火
+    public bool LeftHanded = false; // 惯用左手
 }

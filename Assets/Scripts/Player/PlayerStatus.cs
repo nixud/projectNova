@@ -37,8 +37,8 @@ public class PlayerStatus
     public int Fuel = 15;
     public int MaxFuel = 30;
 
-    public float HP = 18;
-    public float MaxHP = 9;
+    public float HP = 12;
+    public float MaxHP = 6;
 
     private Ship ship;
     private Plugin plugin;

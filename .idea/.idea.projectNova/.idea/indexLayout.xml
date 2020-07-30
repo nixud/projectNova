@@ -17,6 +17,7 @@
       <Path>.idea</Path>
       <Path>General</Path>
       <Path>Library</Path>
+      <Path>Temp</Path>
       <Path>Test</Path>
       <Path>Tools</Path>
       <Path>WebGLPlugins</Path>

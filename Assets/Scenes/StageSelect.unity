@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 298721873}
@@ -536,6 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1341711934}
@@ -647,6 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2042749967}
@@ -1074,6 +1077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 759576678}
@@ -1343,6 +1347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 513991882}
@@ -1454,6 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 736224576}
@@ -1565,6 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 759235526}
@@ -1755,6 +1762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 874393086}
@@ -1872,6 +1880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 943457570}
@@ -1983,6 +1992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1457797267}
@@ -2435,6 +2445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 529370765}
@@ -2546,6 +2557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 58141726}
@@ -2657,6 +2669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1955039214}
@@ -2932,6 +2945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1708014359}
@@ -3199,6 +3213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 676304833}
@@ -3310,6 +3325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1948682868}
@@ -3741,6 +3757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1843631555}
@@ -3931,6 +3948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2072101743}
@@ -4593,6 +4611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1241882430}
@@ -4783,6 +4802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 112415750}
@@ -5184,6 +5204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 567562630}
@@ -5295,6 +5316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1499804611}
@@ -5406,6 +5428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1839285417}
@@ -5596,6 +5619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 507915433}
@@ -6147,6 +6171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1749235025}
@@ -6407,6 +6432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 472918062}
@@ -6677,6 +6703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1869412188}
@@ -6867,6 +6894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1455380920}
@@ -6978,6 +7006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1332634864}
@@ -7247,6 +7276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 781992773}
@@ -7516,6 +7546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 625289747}
@@ -7902,6 +7933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 674302487}
@@ -8092,6 +8124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1789276532}
@@ -8301,6 +8334,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &824558598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307387392892791033, guid: d1037b7e9018dbb43abe5c73d7438528,
+    type: 3}
+  m_PrefabInstance: {fileID: 603590873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &824558599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824558598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c02f946320daa4ba05b61bd084e201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuel: {fileID: 1262817191}
+  gold: {fileID: 1779413942}
+  text: {fileID: 385414858}
 --- !u!1 &832675942
 GameObject:
   m_ObjectHideFlags: 0
@@ -8361,6 +8415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 180579923}
@@ -8687,6 +8742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 159780076}
@@ -8798,6 +8854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 714754788}
@@ -9146,6 +9203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1571119101}
@@ -9257,6 +9315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 890744551}
@@ -9368,6 +9427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 788491374}
@@ -9479,6 +9539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 804108010}
@@ -9833,6 +9894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1411963364}
@@ -10023,6 +10085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1804187989}
@@ -10134,6 +10197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2013572807}
@@ -10245,6 +10309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 53817571}
@@ -10356,6 +10421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 16960019}
@@ -10546,6 +10612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 953866170}
@@ -10657,6 +10724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 294392701}
@@ -10847,6 +10915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2102644259}
@@ -11126,6 +11195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 128497680}
@@ -11408,6 +11478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1457338201}
@@ -11675,6 +11746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 610679162}
@@ -11896,6 +11968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 593612125}
@@ -12086,6 +12159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 428093831}
@@ -12197,6 +12271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1264957531}
@@ -12308,6 +12383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 973969063}
@@ -12419,6 +12495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1262879654}
@@ -12628,6 +12705,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1262817191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7307387394405310148, guid: d1037b7e9018dbb43abe5c73d7438528,
+    type: 3}
+  m_PrefabInstance: {fileID: 603590873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262879654
 GameObject:
   m_ObjectHideFlags: 0
@@ -12846,6 +12935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1066823335}
@@ -12957,6 +13047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 855760203}
@@ -13068,6 +13159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1446904692}
@@ -13440,6 +13532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1868391339}
@@ -13596,6 +13689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 350483098}
@@ -14023,6 +14117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 240622489}
@@ -14119,6 +14214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 495651283}
@@ -14245,6 +14341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 885312956}
@@ -14456,6 +14553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2115394226}
@@ -14567,6 +14665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1338418220}
@@ -14678,6 +14777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1008517408}
@@ -14947,6 +15047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1863941244}
@@ -15058,6 +15159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1477531655}
@@ -15169,6 +15271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1848433699}
@@ -15754,6 +15857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1604218829}
@@ -16103,6 +16207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1321254321}
@@ -16214,6 +16319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 856435398}
@@ -16325,6 +16431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 476639168}
@@ -16436,6 +16543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1903458922}
@@ -16547,6 +16655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 815742886}
@@ -16783,6 +16892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 32089948}
@@ -16973,6 +17083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 388315676}
@@ -17242,6 +17353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1415562429}
@@ -17707,6 +17819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 813727939}
@@ -17818,6 +17931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1699394948}
@@ -17929,6 +18043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 386946716}
@@ -18040,6 +18155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 393695879}
@@ -18151,6 +18267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1907930987}
@@ -18262,6 +18379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1464098615}
@@ -18373,6 +18491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1576785656}
@@ -18563,6 +18682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1074424819}
@@ -18674,6 +18794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1204660599}
@@ -18993,6 +19114,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1779413942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7307387394244023402, guid: d1037b7e9018dbb43abe5c73d7438528,
+    type: 3}
+  m_PrefabInstance: {fileID: 603590873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1789276532
 GameObject:
   m_ObjectHideFlags: 0
@@ -19573,6 +19706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1614517860}
@@ -20004,6 +20138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 574256535}
@@ -20330,6 +20465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1147560078}
@@ -20830,6 +20966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1942254901}
@@ -20941,6 +21078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2122387816}
@@ -21052,6 +21190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1285516109}
@@ -21242,6 +21381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1305336002}
@@ -21353,6 +21493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 484998519}
@@ -21685,6 +21826,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NormalButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4209700968269844922, guid: d61fcbdff84954146be4e1e2cdb24db5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4209700970020950757, guid: d61fcbdff84954146be4e1e2cdb24db5,
         type: 3}
       propertyPath: m_Text
@@ -21803,6 +21949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1249026827}
@@ -22386,6 +22533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 2083051449}
@@ -22497,6 +22645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1617509055}
@@ -22608,6 +22757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90d143185454ac2bd658d3b1e60c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDesc: {fileID: 385414858}
   stageSceneNew: {fileID: 1109564907}
   range: 0.3
   Light: {fileID: 1947534196}

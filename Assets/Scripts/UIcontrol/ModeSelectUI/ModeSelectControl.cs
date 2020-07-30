@@ -22,6 +22,11 @@ public class ModeSelectControl : MonoBehaviour
         SceneManager.LoadScene("NEWShipSelect");
     }
 
+    public void QuickMode()
+    {
+        SceneManager.LoadScene("StageSelect");
+    }
+
     public void MoveBack()
     {
         SceneManager.LoadScene("NEWStartScene");

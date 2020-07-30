@@ -181,6 +181,7 @@
               <e p="MoveCamera.cs" t="Include" />
               <e p="ViewScroll.cs" t="Include" />
             </e>
+            <e p="StarController.cs" t="Include" />
             <e p="TouchScriptTest.cs" t="Include" />
             <e p="Wave.cs" t="Include" />
             <e p="WaveGroupCreater.cs" t="Include" />
@@ -198,7 +199,14 @@
               <e p="ToggleControl.cs" t="Include" />
             </e>
             <e p="ShipSelectUI" t="Include">
+              <e p="DescriptionFill.cs" t="Include" />
               <e p="ShipSelectControl.cs" t="Include" />
+            </e>
+            <e p="ShopSceneUI" t="Include">
+              <e p="EitherOrBoxWithTitleImage.cs" t="Include" />
+              <e p="GoodsItemControl.cs" t="Include" />
+              <e p="OperationButtonClick.cs" t="Include" />
+              <e p="ShopUIControl.cs" t="Include" />
             </e>
             <e p="StartSceneUI" t="Include">
               <e p="Quit.cs" t="Include" />
@@ -207,6 +215,7 @@
             <e p="UIUtility" t="Include">
               <e p="ChangeToggleMark.cs" t="Include" />
               <e p="EitherOrBoxControl.cs" t="Include" />
+              <e p="EitherOrBoxWithTitleImageControl.cs" t="Include" />
               <e p="EquipCanvasControl.cs" t="Include" />
               <e p="HighLightParent.cs" t="Include" />
               <e p="MoveWithGOBJ.cs" t="Include" />
@@ -215,6 +224,7 @@
               <e p="SettingButton.cs" t="Include" />
               <e p="SettingCanvasControl.cs" t="Include" />
               <e p="ShowSliderValue.cs" t="Include" />
+              <e p="SimpleTitleControl.cs" t="Include" />
               <e p="StartMessageShow.cs" t="Include" />
             </e>
           </e>
@@ -280,6 +290,15 @@
               <e p="WingmanPlayerTest.cs" t="Include" />
               <e p="WingmanTest.cs" t="Include" />
             </e>
+          </e>
+          <e p="临时脚本" t="Include">
+            <e p="AddWingman.cs" t="Include" />
+            <e p="FuelCal.cs" t="Include" />
+            <e p="FuelInfo.cs" t="Include" />
+            <e p="FuelShow.cs" t="Include" />
+            <e p="PlayerCreator.cs" t="Include" />
+            <e p="PlayerSelect.cs" t="Include" />
+            <e p="ShipModel.cs" t="Include" />
           </e>
         </e>
         <e p="test" t="Include">

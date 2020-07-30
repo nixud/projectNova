@@ -15,17 +15,14 @@ public class SliderControl : MonoBehaviour
         if (settingItem == "MainVolume")
         {
             Settings.Instance.MainVolume = (int) (slider.value * 100);
-            Debug.Log(Settings.Instance.MainVolume);
         }
         else if (settingItem == "MusicVolume")
         {
             Settings.Instance.MusicVolume = (int) (slider.value * 100);
-            Debug.Log(Settings.Instance.MusicVolume);
         }
         else if (settingItem == "SoundVolume")
         {
             Settings.Instance.SoundVolume = (int) (slider.value * 100);
-            Debug.Log(Settings.Instance.SoundVolume);
         }
     }
 }

@@ -7,11 +7,12 @@ using UnityEngine;
 /// </summary>
 public class WingmanSystem : MonoBehaviour
 {
-    public List<string> wingmansNumbers;
+    //public List<string> wingmansNumbers;
     private List<GameObject> wingmans = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
+        var wingmansNumbers = PlayerSelect.Instance.wingmansNumbers;
         for (int i = 0; i < wingmansNumbers.Count; i++)
         {
             // 由wingmansNumbers从json中读取对应的僚机信息

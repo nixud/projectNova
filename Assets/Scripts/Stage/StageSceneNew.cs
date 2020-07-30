@@ -419,6 +419,12 @@ public class StageSceneNew : MonoBehaviour
     public void MoveAndEnter() {
         if (!isMoving)
         {
+            FuelInfo.Fuel--;
+            if (FuelInfo.Fuel < 0)
+            {
+                    
+            }
+            
             if (TargetGO == null)
             {
                 PlayerStatus.GetInstance().Fuel--;

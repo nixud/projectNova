@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class ItemSelectSceneTest : MonoBehaviour
 {
+    public Text desc;
+    public string d;
+    
     public int ItemNum;
 
     private Item _item;
@@ -28,7 +31,7 @@ public class ItemSelectSceneTest : MonoBehaviour
     {
         if (GetComponent<Toggle>().isOn)
         {
-            Debug.Log("add");
+            desc.text = d;
             GetComponent<Image>().color = pressColor;
             if (ItemNum - 200 > 0)
             {
@@ -41,7 +44,6 @@ public class ItemSelectSceneTest : MonoBehaviour
         }
         else
         {
-            Debug.Log("remove");
             GetComponent<Image>().color = normalColor;
             if (ItemNum - 200 > 0)
             {
