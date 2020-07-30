@@ -298,6 +298,7 @@
             <e p="FuelShow.cs" t="Include" />
             <e p="PlayerCreator.cs" t="Include" />
             <e p="PlayerSelect.cs" t="Include" />
+            <e p="Printer.cs" t="Include" />
             <e p="ShipModel.cs" t="Include" />
           </e>
         </e>

@@ -3,41 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6f11d8f4-c72f-4205-9bfe-532d48b3b2a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectNova/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square34Alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square4Alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square4Alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square5Alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square5Alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square6Alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square6Alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square7Alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UIs/通用UI控件/Square7Alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/Either_Or_Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/Either_Or_Box.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/EquipCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/EquipCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SettingCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SettingCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SimpleTitle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UIPrefabs/SimpleTitle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NEWModeSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NEWModeSelect.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NEWShipSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NEWShipSelect.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NEWStartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NEWStartScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleSceneBoss.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleSceneBoss.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShopStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ShopStage.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StageSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StageSelect.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/EffectTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScenes/ItemTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/itemSelectScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/itemSelectScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemSelectSceneTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemSelectSceneTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stage/TouchScriptTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stage/TouchScriptTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ModeSelectUI/ModeSelectControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ModeSelectUI/ModeSelectControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SliderControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/SettingCanvas/SliderControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ShipSelectUI/ShipSelectControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIcontrol/ShipSelectUI/ShipSelectControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wingman/WingmanSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wingman/WingmanSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +40,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/fa/5213fac2/JsonIgnoreAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bag/BagListElem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/临时脚本/Printer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/PickEquip/PickButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JsonLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemEffects/plugin_206.cs" root0="FORCE_HIGHLIGHTING" />
@@ -232,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/ChangeToggleMark.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingCanvasHide.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/SettingCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIcontrol/UIUtility/NormalSliderCantControl.cs" />
@@ -279,10 +247,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Stage/StageSceneNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/临时脚本/FuelShow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/临时脚本/FuelCal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stage/TouchScriptTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemSelectSceneTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/临时脚本/AddWingman.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stage/TouchScriptTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/临时脚本/Printer.cs" />
       </list>
     </option>
   </component>
@@ -435,6 +404,7 @@
       <workItem from="1596095008369" duration="2108000" />
       <workItem from="1596097357638" duration="2568000" />
       <workItem from="1596109770409" duration="11043000" />
+      <workItem from="1596123355442" duration="1374000" />
     </task>
     <servers />
   </component>
